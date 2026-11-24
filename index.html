@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ROAM-Bench evaluates embodied active spatial intelligence through complete exploration and interaction episodes: 250 tasks across 27 indoor environments.">
+  <meta name="theme-color" content="#3455df">
+  <meta property="og:title" content="ROAM-Bench — Embodied Active Spatial Intelligence">
+  <meta property="og:description" content="Explore, reason, and act. Evaluate the outcome and the process with ROAM-Bench.">
+  <meta property="og:image" content="assets/teaser-poster.webp">
+  <title>ROAM-Bench · Embodied Active Spatial Intelligence</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preload" href="assets/fonts/Manrope-Variable.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/style.css?v=5">
+  <link rel="stylesheet" href="assets/theme.css?v=3">
+  <script src="assets/project.js?v=9" defer></script>
+  <script src="assets/site.js?v=11" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="header-band"><header class="site-header">
+    <a class="wordmark" href="#top" aria-label="ROAM-Bench home"><svg viewBox="0 0 28 28" aria-hidden="true"><path d="M5 22V6h8a7 7 0 0 1 0 14H9m8-4 6 6"/></svg>ROAM<span>BENCH</span></a>
+    <nav aria-label="Main navigation"><a href="#benchmark">Benchmark</a><a href="#evaluation">Evaluation</a><a href="#results">Results</a></nav>
+  </header></div>
+  <main id="main">
+    <div class="masthead">
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 1500 1100" preserveAspectRatio="xMidYMin slice">
+          <defs><pattern id="spatial-grid" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M60 0H0V60"/></pattern><linearGradient id="route-color" x1="0" x2="1"><stop stop-color="#5078ec"/><stop offset="1" stop-color="#dd947f"/></linearGradient></defs>
+          <rect width="1500" height="1100" fill="url(#spatial-grid)" class="art-grid"/>
+          <g class="art-rooms"><path d="M-20 182H264V404H-20M106 182V404M264 282H342V506H116V656H-20M1500 120H1254V310H1500M1254 216H1148V458H1500M1374 310V458M1148 458V656H1304V792H1500"/><path d="M264 366V402M1254 184V216M1374 410V456" class="art-door"/></g>
+          <path class="art-route" d="M-10 510H62Q80 510 80 492V346Q80 326 100 326H190Q210 326 210 306V252M1510 702H1380Q1360 702 1360 682V520Q1360 500 1340 500H1208Q1188 500 1188 480V382"/>
+          <g class="art-nodes"><circle cx="210" cy="252" r="6"/><circle cx="1188" cy="382" r="6"/><circle cx="80" cy="492" r="4"/><circle cx="1360" cy="520" r="4"/></g>
+        </svg>
+      </div>
+    <section class="hero" id="top">
+      <div class="eyebrow"><span class="status-dot"></span> Embodied active spatial intelligence</div>
+      <h1>ROAM-<span class="hero-title-tail">Bench</span></h1>
+      <p class="paper-title">Evaluating Embodied Active Spatial Intelligence<br class="desktop-break"> through Evidence Verification</p>
+      <div id="authors" class="authors" aria-label="Authors"></div>
+      <div id="affiliations" class="affiliations"></div>
+      <p class="author-notes">‡ Project leader &nbsp; · &nbsp; † Corresponding author</p>
+      <div class="hero-links"><a class="button button-dark" data-resource="paper" href="https://arxiv.org/pdf/2611.33143"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 2h7l3 3v13H5zM12 2v4h3M8 10h4M8 13h4"/></svg>Paper</a><a class="button" data-resource="code" href="https://github.com/rxjfighting/ROAM-Bench"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 5-5 5 5 5m6-10 5 5-5 5m-2-12-2 14"/></svg>Code &amp; tasks</a><a class="button" data-resource="scenes" href="https://github.com/rxjfighting/ROAM-Bench#download-scene-assets"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m2 8 8-6 8 6v10H2zM7 18v-7h6v7"/></svg>Environments</a></div>
+      <p class="hero-description">A correct answer is only part of an embodied task.<br>ROAM-Bench also checks what the agent observes, searches, and does.</p>
+    </section>
+
+    <section class="demo-section" aria-labelledby="demo-title">
+      <div class="section-topline"><h2 id="demo-title">See exploration unfold</h2><span>Search rooms. Inspect closed storage. Complete the task.</span></div>
+      <div class="video-frame"><div class="video-topbar" aria-hidden="true"><span><svg viewBox="0 0 20 20"><path d="M4 15V7h6v6h6M13 10l3 3-3 3"/><circle cx="4" cy="4" r="1.5"/></svg>Task &amp; environment demo</span><span>Third-person view <i>/</i> 00:31</span></div><video id="teaser-video" controls playsinline preload="metadata" poster="assets/teaser-poster.webp" aria-label="Third-person task and simulation environment demonstration"><source src="assets/teaser.mp4" type="video/mp4"><a href="assets/teaser.mp4">Download the demonstration video</a></video></div>
+      <p class="demo-note"><span class="note-label">Task &amp; environment demo</span> This scripted illustration is not a VLM evaluation rollout. During evaluation, VLMs select atomic actions and the platform executes them. The authored robot motion and cabinet opening are not included in the evaluation results.</p>
+      <div class="stat-strip" aria-label="Benchmark scale"><div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18H6ZM9 7h6m-6 5h6m-6 5h4"/></svg><strong>250</strong><span>validated tasks</span></div><div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v11H3ZM9 21v-8h6v8"/></svg><strong>27</strong><span>indoor environments</span></div><div><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><strong>11</strong><span>task types</span></div><div><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5Z"/></svg><strong>5</strong><span>spatial ability groups</span></div></div>
+    </section>
+    </div>
+
+    <section class="overview-section" aria-label="An exploration task at a glance">
+      <div class="case-heading"><div><span class="mini-label">One task, a complete episode</span><h2>Follow the search.<br><span>Then verify it.</span></h2></div><p>Explore every room, look inside closed storage, and keep track of the mugs found along the way.</p></div>
+      <figure class="paper-figure overview-figure">
+        <button type="button" class="figure-image" data-figure="overview" aria-label="Enlarge the whole-home counting example">
+          <img src="assets/figures/overview.svg" width="1260" height="706" fetchpriority="high" alt="A whole-home mug-counting task: explore the living room, check a bedroom without mugs, visit the kitchen, and open a cupboard to find the fourth mug. Separate checks verify the count and the required exploration.">
+          <span class="figure-zoom-label" aria-hidden="true">Enlarge figure ↗</span>
+        </button>
+        <figcaption class="figure-caption"><div><span class="mini-label">A task, from exploration to verification</span><h3>Find every mug. Verify the search.</h3></div><p>Finding the visible mugs is only part of the task. The agent must also check the other rooms and inspect closed storage before its count meets the task requirements.</p></figcaption>
+      </figure>
+      <ol class="exploration-steps" aria-label="Exploration and verification sequence"><li><span>01</span><div><h3>Search the rooms</h3><p>Check rooms even when no mugs are found.</p></div></li><li><span>02</span><div><h3>Inspect closed storage</h3><p>Open the cupboard to reveal another mug.</p></div></li><li><span>03</span><div><h3>Count unique objects</h3><p>Combine sightings into a whole-home count.</p></div></li><li><span>04</span><div><h3>Verify the episode</h3><p>Check the answer and the required search.</p></div></li></ol>
+    </section>
+
+    <div class="section-band benchmark-band"><section class="content-section" id="benchmark">
+      <div class="section-heading"><div class="eyebrow">01 / The benchmark</div><h2>Spatial understanding<br>through exploration and action.</h2><p>From finding an object to moving it to the right place, tasks require agents to gather useful views and make spatial decisions under robot motion and collision constraints.</p></div>
+      <div class="taxonomy-layout">
+        <div class="composition-summary"><div><span class="mini-label">Task composition</span><span>250 tasks across five ability groups</span></div><div id="composition-bar" class="composition-bar" aria-label="Task counts by ability group"></div></div>
+        <div id="group-tabs" class="group-tabs" role="tablist" aria-label="Spatial ability groups"></div>
+        <div id="group-panel" class="group-panel" role="tabpanel" tabindex="0"></div>
+      </div>
+      <p class="figure-hint">Select an ability group to see its task examples. Click any example to explore the full task atlas.</p>
+    </section></div>
+
+    <div class="section-band evaluation-band"><section class="evaluation-section" id="evaluation">
+      <div class="section-heading"><div class="eyebrow">02 / Evaluation</div><h2>Check the outcome.<br>Check the process.</h2><p>Independent checks separate outcome correctness from task-required observations and interactions. Stronger checks add task-specific geometric, coverage, or placement corroboration.</p></div>
+      <ol class="workflow-rail" aria-label="Episode evaluation workflow"><li><span class="workflow-number">01</span><h3>Task &amp; references</h3><p>Know what to find and where to act.</p></li><li><span class="workflow-number">02</span><h3>Explore &amp; interact</h3><p>Gather views and execute actions.</p></li><li><span class="workflow-number">03</span><h3>Answer or finish</h3><p>Submit the answer or final state.</p></li><li><span class="workflow-number">04</span><h3>Independent checks</h3><p>Evaluate the outcome and process.</p></li></ol>
+      <figure class="paper-figure protocol-figure">
+        <button type="button" class="figure-image" data-figure="interaction-protocol" aria-label="Enlarge the agent interaction and evaluation diagram">
+          <img src="assets/figures/interaction-protocol.svg" width="1260" height="607" loading="lazy" decoding="async" alt="The agent receives its task, recent history, selected action views, odometry, and the latest camera observation. It can retrieve earlier images before choosing an action or submitting an answer. Actions produce new observations and feedback; finishing triggers independent evaluation.">
+          <span class="figure-zoom-label" aria-hidden="true">Enlarge figure ↗</span>
+        </button>
+        <figcaption class="figure-caption"><div><span class="mini-label">The interaction loop</span><h3>Observe, retrieve, act, and check.</h3></div><p>The agent can revisit earlier images before acting or answering. The platform returns new views and feedback after each action; independent checks evaluate the completed episode.</p></figcaption>
+      </figure>
+      <div class="evaluation-dashboard"><div class="metric-grid"><article class="metric-outcome"><div class="metric-card-top"><span class="metric-letter">A</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/><path d="M20 12v7H4V3h10"/></svg></div><h3>Outcome correctness</h3><p>Is the answer correct, or does the final state meet the goal?</p></article><article class="metric-required"><div class="metric-card-top"><span class="metric-letter">N</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12s3-6 9-6 9 6 9 6-3 6-9 6-9-6-9-6Z"/><circle cx="12" cy="12" r="2.5"/></svg></div><h3>Required observations &amp; actions</h3><p>Did the agent observe the required targets and complete the prescribed search and interactions?</p></article><article class="metric-stronger"><div class="metric-card-top"><span class="metric-letter">S</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 4v6c0 4-8 8-8 8s-8-4-8-8V7Z"/><path d="m8 12 3 3 5-6"/></svg></div><h3>Stronger corroboration</h3><p>Do the required checks pass, together with additional task-specific checks?</p></article><article class="task-success-card"><div class="metric-card-top"><span class="metric-letter">T</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="m8 12 3 3 5-6"/></svg></div><h3>Task success</h3><p>A correct outcome and complete task requirements: <strong>T = A ∧ N</strong>.</p></article></div>
+      <div class="scoring-rule">
+        <div class="scoring-rule-heading"><span class="mini-label">Scoring rule</span><h3>Task success requires both.</h3><p>The outcome must be correct and the task requirements complete.</p></div>
+        <div class="scoring-equation"><div class="rule-term"><strong>A</strong><span>Correct outcome</span></div><span class="rule-operator">AND</span><div class="rule-term"><strong>N</strong><span>Required observations<br>and actions</span></div><span class="rule-operator" aria-label="gives">→</span><div class="rule-term rule-success"><strong>T</strong><span>Task success</span></div></div>
+        <p class="scoring-rule-note"><strong>S</strong> combines the required checks with additional geometry, coverage, or placement checks. Passing S does not guarantee a correct answer.</p>
+      </div>
+      </div>
+    </section></div>
+
+    <div class="section-band results-band"><section class="content-section" id="results">
+      <div class="section-heading"><div class="eyebrow">03 / Results</div><h2>Connecting evidence<br>to reliable decisions remains difficult.</h2><p>Seven frontier VLMs share the same 250 tasks. Human evaluators complete a stratified 100-task sample through the public observation and action interface.</p></div>
+      <div class="finding-row"><article class="finding-model"><span class="finding-kicker">Frontier models</span><strong>69.2<span>%</span></strong><div class="finding-meter" aria-hidden="true"><span style="width:69.2%"></span></div><h3>Highest VLM task success</h3><p>GPT-6-astra leads the evaluated VLMs, while nearly one-third of tasks still fail.</p></article><article class="finding-human"><span class="finding-kicker">Human evaluation</span><strong>84.0<span>%</span></strong><div class="finding-meter" aria-hidden="true"><span style="width:84%"></span></div><h3>Human task success</h3><p>Every correct human outcome in the sample also meets the required checks.</p></article><article class="finding-failures"><span class="finding-kicker">Beyond correctness</span><strong>Two</strong><h3>Complementary failure modes</h3><div class="failure-patterns"><span><b>A ✓</b><i>N ×</i> Unmet requirements</span><span><b>S ✓</b><i>A ×</i> Incorrect outcome</span></div><p>Correct outcomes with unmet requirements, and incorrect outcomes despite stronger checks.</p></article></div>
+      <figure class="outcome-chart"><div class="outcome-chart-heading"><div><span class="mini-label">From answers to completed tasks</span><h3>Correctness and task success, side by side.</h3></div><div class="chart-legend"><span><i class="legend-a"></i>Outcome correctness (A)</span><span><i class="legend-t"></i>Task success (T)</span></div></div><div id="outcome-chart-body" class="outcome-chart-body" role="img" aria-label="Outcome correctness and task success for each model, from Table 2"></div><figcaption>VLMs: 250 tasks each. Humans: a stratified 100-task sample. Bars use the same 0–100% scale; the table below gives every metric.</figcaption></figure>
+      <div class="table-toolbar"><h3>Main evaluation</h3><label>Order by <select id="sort-metric"><option value="T">Task success (T)</option><option value="A">Outcome correctness (A)</option><option value="N">Required checks (N)</option><option value="S">Stronger checks (S)</option></select></label></div>
+      <div class="table-scroll"><table class="results-table"><thead><tr><th scope="col">Model</th><th scope="col">Tasks</th><th scope="col">A (%)</th><th scope="col" class="t-column">T (%)</th><th scope="col">N (%)</th><th scope="col">S (%)</th><th scope="col">Gap cases (n)</th><th scope="col">Error given S (%)</th><th scope="col">Avg. actions</th></tr></thead><tbody id="results-body"></tbody></table></div>
+      <p class="table-note">Results from Table 2 of the paper. Human results use 100 sampled tasks; VLM results use all 250. Gap cases counts correct outcomes with unmet task requirements. Error given S is the fraction of S-passing episodes with an incorrect outcome. Average actions includes failures.</p>
+      <div class="analysis-heading"><span class="mini-label">Task-group results</span><h3>How performance varies across task groups.</h3></div>
+      <div class="analysis-figures">
+        <figure class="paper-figure analysis-card analysis-profiles"><div class="analysis-card-heading"><span>Across task groups</span><span>Seven VLMs · Five ability groups</span></div>
+          <button type="button" class="figure-image" data-figure="task-performance" aria-label="Enlarge task-group performance and shared difficulty results">
+            <img src="assets/figures/task-performance.svg" width="1260" height="368" loading="lazy" decoding="async" alt="A heatmap compares task success across five spatial ability groups and seven VLMs. A second panel groups the 250 tasks by how many models answer correctly.">
+            <span class="figure-zoom-label" aria-hidden="true">Enlarge figure ↗</span>
+          </button>
+          <figcaption class="figure-caption"><div><span class="mini-label">Task-group performance</span><h3>Different tasks reveal different weaknesses.</h3></div><p>Success varies across grounding, counting, geometry, reference frames, and relocation. The shared-difficulty panel shows whether a task challenges several models or all of them.</p></figcaption>
+        </figure>
+      </div>
+    </section></div>
+
+  </main>
+  <footer><a class="wordmark" href="#top">ROAM<span>BENCH</span></a><p>Embodied Active Spatial Intelligence<br>through Evidence Verification</p><a href="#top">Back to top ↑</a></footer>
+  <dialog id="figure-dialog" class="figure-dialog" aria-labelledby="figure-dialog-title">
+    <div class="figure-dialog-toolbar"><div><span id="figure-dialog-count" class="mini-label"></span><h2 id="figure-dialog-title"></h2></div><div class="figure-dialog-actions"><button type="button" id="figure-previous" class="button" aria-label="Previous figure">←</button><button type="button" id="figure-next" class="button" aria-label="Next figure">→</button><button type="button" id="figure-zoom" class="button" aria-pressed="false">Full size</button><button type="button" id="figure-close" class="button" aria-label="Close figure viewer">Close ×</button></div></div>
+    <div id="figure-dialog-body" class="figure-dialog-body"><img id="figure-dialog-image" alt=""></div>
+    <p id="figure-dialog-caption" class="figure-dialog-caption"></p>
+  </dialog>
+</body>
+</html>
