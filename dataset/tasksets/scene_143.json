@@ -1,0 +1,1023 @@
+{
+  "schema_version": 4,
+  "benchmark": "ROAM-Bench",
+  "scene": "scene_143",
+  "spawn": {
+    "x": 9.75,
+    "y": 1.5,
+    "z": 8.6,
+    "yaw_deg": 0.0,
+    "horizon_deg": 0.0,
+    "room": "weaving_studio"
+  },
+  "specs": [
+    {
+      "task_id": "object_distance__dye_laboratory_waste_sorting_cabinet_0__finished_fabric_gallery_display_plinth_3",
+      "family": "object_distance",
+      "instruction": "Find the waste sorting cabinet and the display plinth in this house; they are in different rooms. Then tell me roughly how far apart they are, in metres, as a number. Measure the straight line between them, not the distance you walked.",
+      "referents": [
+        "dye_laboratory_waste_sorting_cabinet_0",
+        "finished_fabric_gallery_display_plinth_3"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 13,
+      "answer_tolerance": 2.6,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "dye_laboratory",
+          "finished_fabric_gallery"
+        ],
+        "must_open": [],
+        "must_see": [
+          "dye_laboratory_waste_sorting_cabinet_0",
+          "finished_fabric_gallery_display_plinth_3"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "dye_laboratory",
+          "finished_fabric_gallery"
+        ]
+      },
+      "kinds": [
+        "waste_sorting_cabinet",
+        "display_plinth"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "dye_laboratory_waste_sorting_cabinet_0",
+        "finished_fabric_gallery_display_plinth_3"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "13",
+      "oracle_read": [
+        "object_distance",
+        "dye_laboratory_waste_sorting_cabinet_0",
+        "finished_fabric_gallery_display_plinth_3"
+      ],
+      "truth": {
+        "a": "dye_laboratory_waste_sorting_cabinet_0",
+        "b": "finished_fabric_gallery_display_plinth_3",
+        "metres": 12.9,
+        "a_room": "dye_laboratory",
+        "b_room": "finished_fabric_gallery",
+        "tol_m": 1,
+        "spawn": {
+          "x": 6.25,
+          "y": 1.5,
+          "z": 8.0,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "pattern_design_room"
+        }
+      },
+      "goal_images": [
+        [
+          "the waste sorting cabinet this task refers to -- this exact object",
+          "../references/f9ae1bf7a40f7cce144c95b0e4f190412078af42b5fb90b933d6df85a9497594.png"
+        ],
+        [
+          "the display plinth this task refers to -- this exact object",
+          "../references/a4f081229914419a919f17ddb5196cc13d8addb79363611c1acccdf04679725d.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "object_distance__dye_laboratory_waste_sorting_cabinet_0__finished_fabric_gallery_textile_display_rail_0",
+      "family": "object_distance",
+      "instruction": "Find the waste sorting cabinet and the textile display rail in this house; they are in different rooms. Then tell me roughly how far apart they are, in metres, as a number. Measure the straight line between them, not the distance you walked.",
+      "referents": [
+        "dye_laboratory_waste_sorting_cabinet_0",
+        "finished_fabric_gallery_textile_display_rail_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 15,
+      "answer_tolerance": 3.0,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "dye_laboratory",
+          "finished_fabric_gallery"
+        ],
+        "must_open": [],
+        "must_see": [
+          "dye_laboratory_waste_sorting_cabinet_0",
+          "finished_fabric_gallery_textile_display_rail_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "dye_laboratory",
+          "finished_fabric_gallery"
+        ]
+      },
+      "kinds": [
+        "waste_sorting_cabinet",
+        "textile_display_rail"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "dye_laboratory_waste_sorting_cabinet_0",
+        "finished_fabric_gallery_textile_display_rail_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "15",
+      "oracle_read": [
+        "object_distance",
+        "dye_laboratory_waste_sorting_cabinet_0",
+        "finished_fabric_gallery_textile_display_rail_0"
+      ],
+      "truth": {
+        "a": "dye_laboratory_waste_sorting_cabinet_0",
+        "b": "finished_fabric_gallery_textile_display_rail_0",
+        "metres": 15.0,
+        "a_room": "dye_laboratory",
+        "b_room": "finished_fabric_gallery",
+        "tol_m": 1,
+        "spawn": {
+          "x": 14.25,
+          "y": 1.5,
+          "z": 6.85,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "yarn_preparation_room"
+        }
+      },
+      "goal_images": [
+        [
+          "the waste sorting cabinet this task refers to -- this exact object",
+          "../references/f9ae1bf7a40f7cce144c95b0e4f190412078af42b5fb90b933d6df85a9497594.png"
+        ],
+        [
+          "the textile display rail this task refers to -- this exact object",
+          "../references/d752a96c0c21b765a83121c0d4eef3495f5dff5b1ab570aeba887b5b26fd7e91.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relocation__weaving_studio_textile_sample_binder_0__to__finished_fabric_gallery_storage_cabinet_0",
+      "family": "relocation",
+      "instruction": "Find the textile sample binder, pick it up, and put it on the storage cabinet.",
+      "referents": [
+        "weaving_studio_textile_sample_binder_0",
+        "finished_fabric_gallery_storage_cabinet_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('weaving_studio_textile_sample_binder_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('weaving_studio_textile_sample_binder_0','finished_fabric_gallery_storage_cabinet_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "finished_fabric_gallery",
+          "weaving_studio"
+        ],
+        "must_open": [],
+        "must_see": [
+          "finished_fabric_gallery_storage_cabinet_0",
+          "weaving_studio_textile_sample_binder_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "drying_room",
+          "dye_laboratory",
+          "finished_fabric_gallery",
+          "pattern_design_room",
+          "weaving_studio",
+          "yarn_preparation_room"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "weaving_studio_textile_sample_binder_0",
+        "finished_fabric_gallery_storage_cabinet_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "weaving_studio_textile_sample_binder_0"
+        ],
+        [
+          "pick",
+          "weaving_studio_textile_sample_binder_0"
+        ],
+        [
+          "navigate",
+          "finished_fabric_gallery_storage_cabinet_0"
+        ],
+        [
+          "place",
+          "finished_fabric_gallery_storage_cabinet_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "weaving_studio_textile_sample_binder_0",
+        "from_room": "weaving_studio",
+        "from_room_id": "weaving_studio",
+        "dest": "finished_fabric_gallery_storage_cabinet_0",
+        "to_room": "finished_fabric_gallery",
+        "to_room_id": "finished_fabric_gallery",
+        "spawn": {
+          "x": 17.75,
+          "y": 1.5,
+          "z": 0.85,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "dye_laboratory"
+        }
+      },
+      "goal_images": [
+        [
+          "the textile sample binder this task refers to -- this exact object",
+          "../references/83505fc8eaf6d63e33e28d204b80e3cae109df37c2208edfbb2aad683d1c9454.png"
+        ],
+        [
+          "the storage cabinet this task refers to -- this exact object",
+          "../references/56d0863a0115fe39af0728d28ca8a45505748d02575fea3d1609c698ed0d05d9.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relocation__yarn_preparation_room_spool_stand_0__to__weaving_studio_textile_cutting_table_0",
+      "family": "relocation",
+      "instruction": "Find the spool stand, pick it up, and put it on the textile cutting table.",
+      "referents": [
+        "yarn_preparation_room_spool_stand_0",
+        "weaving_studio_textile_cutting_table_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('yarn_preparation_room_spool_stand_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('yarn_preparation_room_spool_stand_0','weaving_studio_textile_cutting_table_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "weaving_studio",
+          "yarn_preparation_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "weaving_studio_textile_cutting_table_0",
+          "yarn_preparation_room_spool_stand_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "drying_room",
+          "dye_laboratory",
+          "finished_fabric_gallery",
+          "pattern_design_room",
+          "weaving_studio",
+          "yarn_preparation_room"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "yarn_preparation_room_spool_stand_0",
+        "weaving_studio_textile_cutting_table_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "yarn_preparation_room_spool_stand_0"
+        ],
+        [
+          "pick",
+          "yarn_preparation_room_spool_stand_0"
+        ],
+        [
+          "navigate",
+          "weaving_studio_textile_cutting_table_0"
+        ],
+        [
+          "place",
+          "weaving_studio_textile_cutting_table_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "yarn_preparation_room_spool_stand_0",
+        "from_room": "yarn_preparation_room",
+        "from_room_id": "yarn_preparation_room",
+        "dest": "weaving_studio_textile_cutting_table_0",
+        "to_room": "weaving_studio",
+        "to_room_id": "weaving_studio",
+        "spawn": {
+          "x": 12.25,
+          "y": 1.5,
+          "z": 0.45,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "drying_room"
+        }
+      },
+      "goal_images": [
+        [
+          "the spool stand this task refers to -- this exact object",
+          "../references/67e0268a07e3235595f386cafc803fa8f0a8712905ddcd2f7631699613418fc8.png"
+        ],
+        [
+          "the textile cutting table this task refers to -- this exact object",
+          "../references/bc8e6400884d7be04277d4dbc29adcba2d99e2232cd20e725e8db6cbe14cade8.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__dye_laboratory_waste_sorting_cabinet_0__finished_fabric_gallery_storage_cabinet_0",
+      "family": "path_integration",
+      "instruction": "Find the waste sorting cabinet and then the storage cabinet; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "dye_laboratory_waste_sorting_cabinet_0",
+        "finished_fabric_gallery_storage_cabinet_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "dye_laboratory",
+          "finished_fabric_gallery"
+        ],
+        "must_open": [],
+        "must_see": [
+          "dye_laboratory_waste_sorting_cabinet_0",
+          "finished_fabric_gallery_storage_cabinet_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "dye_laboratory",
+          "finished_fabric_gallery"
+        ]
+      },
+      "kinds": [
+        "waste_sorting_cabinet",
+        "storage_cabinet"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "dye_laboratory_waste_sorting_cabinet_0",
+        "finished_fabric_gallery_storage_cabinet_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "dye_laboratory_waste_sorting_cabinet_0",
+        "finished_fabric_gallery_storage_cabinet_0"
+      ],
+      "truth": {
+        "x": "dye_laboratory_waste_sorting_cabinet_0",
+        "y": "finished_fabric_gallery_storage_cabinet_0",
+        "x_room": "dye_laboratory",
+        "y_room": "finished_fabric_gallery",
+        "leg_m": 11.48,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": 1.25,
+          "y": 1.5,
+          "z": 8.0,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "pattern_design_room"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the waste sorting cabinet this task refers to -- this exact object",
+          "../references/f9ae1bf7a40f7cce144c95b0e4f190412078af42b5fb90b933d6df85a9497594.png"
+        ],
+        [
+          "the storage cabinet this task refers to -- this exact object",
+          "../references/56d0863a0115fe39af0728d28ca8a45505748d02575fea3d1609c698ed0d05d9.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__pattern_design_room_fabric_bolt_storage_shelf_0__dye_laboratory_worktable_0",
+      "family": "path_integration",
+      "instruction": "Find the fabric bolt storage shelf and then the worktable; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "pattern_design_room_fabric_bolt_storage_shelf_0",
+        "dye_laboratory_worktable_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "dye_laboratory",
+          "pattern_design_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "dye_laboratory_worktable_0",
+          "pattern_design_room_fabric_bolt_storage_shelf_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "dye_laboratory",
+          "pattern_design_room"
+        ]
+      },
+      "kinds": [
+        "fabric_bolt_storage_shelf",
+        "worktable"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "pattern_design_room_fabric_bolt_storage_shelf_0",
+        "dye_laboratory_worktable_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "pattern_design_room_fabric_bolt_storage_shelf_0",
+        "dye_laboratory_worktable_0"
+      ],
+      "truth": {
+        "x": "pattern_design_room_fabric_bolt_storage_shelf_0",
+        "y": "dye_laboratory_worktable_0",
+        "x_room": "pattern_design_room",
+        "y_room": "dye_laboratory",
+        "leg_m": 15.22,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": 10.25,
+          "y": 1.5,
+          "z": 2.45,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "drying_room"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the fabric bolt storage shelf this task refers to -- this exact object",
+          "../references/548d116b4461d2d231f804bcdd72bf4faef589fd17fe74bfa173087333e39cb8.png"
+        ],
+        [
+          "the worktable this task refers to -- this exact object",
+          "../references/be9885ba012c56f47f754b7b5a79e6897358f48349c71cd242fa964c666a6400.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relative_direction__dye_laboratory_waste_sorting_cabinet_0__dye_laboratory_worktable_0__pattern_design_room_fabric_bolt_storage_shelf_0",
+      "family": "relative_direction",
+      "instruction": "Find the waste sorting cabinet and the worktable; they are in the same room. Also find the fabric bolt storage shelf, which is somewhere else in this house. Then answer this: if you stood at the waste sorting cabinet and faced the worktable, which direction would the fabric bolt storage shelf be in? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "dye_laboratory_waste_sorting_cabinet_0",
+        "dye_laboratory_worktable_0",
+        "pattern_design_room_fabric_bolt_storage_shelf_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 150,
+      "answer_number": 0,
+      "answer_tolerance": 22,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "dye_laboratory",
+          "pattern_design_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "dye_laboratory_waste_sorting_cabinet_0",
+          "dye_laboratory_worktable_0",
+          "pattern_design_room_fabric_bolt_storage_shelf_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "dye_laboratory",
+          "pattern_design_room"
+        ]
+      },
+      "kinds": [
+        "waste_sorting_cabinet",
+        "fabric_bolt_storage_shelf",
+        "worktable"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "dye_laboratory_waste_sorting_cabinet_0",
+        "pattern_design_room_fabric_bolt_storage_shelf_0",
+        "dye_laboratory_worktable_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "0",
+      "oracle_read": [
+        "relative_direction",
+        "dye_laboratory_waste_sorting_cabinet_0",
+        "dye_laboratory_worktable_0",
+        "pattern_design_room_fabric_bolt_storage_shelf_0"
+      ],
+      "truth": {
+        "origin": "dye_laboratory_waste_sorting_cabinet_0",
+        "forward": "dye_laboratory_worktable_0",
+        "target": "pattern_design_room_fabric_bolt_storage_shelf_0",
+        "bearing_deg": 359.21,
+        "sector_deg": 0,
+        "offset_deg": 0.79,
+        "origin_room": "dye_laboratory",
+        "target_room": "pattern_design_room",
+        "leg_m": 17.2,
+        "spawn": {
+          "x": 12.0,
+          "y": 1.5,
+          "z": 5.85,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "weaving_studio"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the waste sorting cabinet this task refers to -- this exact object",
+          "../references/f9ae1bf7a40f7cce144c95b0e4f190412078af42b5fb90b933d6df85a9497594.png"
+        ],
+        [
+          "the worktable this task refers to -- this exact object",
+          "../references/be9885ba012c56f47f754b7b5a79e6897358f48349c71cd242fa964c666a6400.png"
+        ],
+        [
+          "the fabric bolt storage shelf this task refers to -- this exact object",
+          "../references/548d116b4461d2d231f804bcdd72bf4faef589fd17fe74bfa173087333e39cb8.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_localization__pattern_design_room_muslin_roll_0",
+      "family": "room_localization",
+      "instruction": "Find the muslin roll somewhere in this house, then tell me which room it is in. If there is no muslin roll here, choose NOT_PRESENT instead of guessing a room.\n\nRoom choices (use exactly one option key):\n- ROOM_01 — drying room\n- ROOM_02 — dye laboratory\n- ROOM_03 — finished fabric gallery\n- ROOM_04 — pattern design\n- ROOM_05 — weaving studio\n- ROOM_06 — yarn preparation\n- NOT_PRESENT — not present\nReply with only one option key, for example ROOM_01 or NOT_PRESENT.",
+      "referents": [
+        "pattern_design_room_muslin_roll_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "ROOM_04"
+        ]
+      ],
+      "answer_choices": [
+        "ROOM_01",
+        "ROOM_02",
+        "ROOM_03",
+        "ROOM_04",
+        "ROOM_05",
+        "ROOM_06",
+        "NOT_PRESENT"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "pattern_design_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "pattern_design_room_muslin_roll_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "drying_room",
+          "dye_laboratory",
+          "finished_fabric_gallery",
+          "pattern_design_room",
+          "weaving_studio",
+          "yarn_preparation_room"
+        ]
+      },
+      "kinds": [
+        "muslin_roll"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "pattern_design_room_muslin_roll_0"
+      ],
+      "answer_instances": [
+        "pattern_design_room_muslin_roll_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "pattern_design_room_muslin_roll_0"
+        ]
+      ],
+      "oracle_answer": "pattern design",
+      "oracle_read": [
+        "room_here"
+      ],
+      "truth": {
+        "alias": "pattern_design_room_muslin_roll_0",
+        "kind": "muslin_roll",
+        "room": "pattern_design_room",
+        "room_id": "pattern_design_room",
+        "room_name": "pattern design",
+        "spawn": {
+          "x": 14.5,
+          "y": 1.5,
+          "z": 1.35,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "dye_laboratory"
+        },
+        "room_answer_choice": "ROOM_04",
+        "room_answer_label": "pattern design",
+        "absence_option": "NOT_PRESENT"
+      },
+      "answer_choice_labels": [
+        "drying room",
+        "dye laboratory",
+        "finished fabric gallery",
+        "pattern design",
+        "weaving studio",
+        "yarn preparation",
+        "not present"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the muslin roll this task refers to -- this exact object",
+          "../references/e94dbf4565af89b4f343f619db6c02b6710c626cb9a91202f202a40eb0991673.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_localization__weaving_studio_folded_linen_fabric_0",
+      "family": "room_localization",
+      "instruction": "Find the folded linen fabric somewhere in this house, then tell me which room it is in. If there is no folded linen fabric here, choose NOT_PRESENT instead of guessing a room.\n\nRoom choices (use exactly one option key):\n- ROOM_01 — drying room\n- ROOM_02 — dye laboratory\n- ROOM_03 — finished fabric gallery\n- ROOM_04 — pattern design\n- ROOM_05 — weaving studio\n- ROOM_06 — yarn preparation\n- NOT_PRESENT — not present\nReply with only one option key, for example ROOM_01 or NOT_PRESENT.",
+      "referents": [
+        "weaving_studio_folded_linen_fabric_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "ROOM_05"
+        ]
+      ],
+      "answer_choices": [
+        "ROOM_01",
+        "ROOM_02",
+        "ROOM_03",
+        "ROOM_04",
+        "ROOM_05",
+        "ROOM_06",
+        "NOT_PRESENT"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "weaving_studio"
+        ],
+        "must_open": [],
+        "must_see": [
+          "weaving_studio_folded_linen_fabric_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "drying_room",
+          "dye_laboratory",
+          "finished_fabric_gallery",
+          "pattern_design_room",
+          "weaving_studio",
+          "yarn_preparation_room"
+        ]
+      },
+      "kinds": [
+        "folded_linen_fabric"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "weaving_studio_folded_linen_fabric_0"
+      ],
+      "answer_instances": [
+        "weaving_studio_folded_linen_fabric_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "weaving_studio_folded_linen_fabric_0"
+        ]
+      ],
+      "oracle_answer": "weaving studio",
+      "oracle_read": [
+        "room_here"
+      ],
+      "truth": {
+        "alias": "weaving_studio_folded_linen_fabric_0",
+        "kind": "folded_linen_fabric",
+        "room": "weaving_studio",
+        "room_id": "weaving_studio",
+        "room_name": "weaving studio",
+        "spawn": {
+          "x": 17.0,
+          "y": 1.5,
+          "z": 5.35,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "dye_laboratory"
+        },
+        "room_answer_choice": "ROOM_05",
+        "room_answer_label": "weaving studio",
+        "absence_option": "NOT_PRESENT"
+      },
+      "answer_choice_labels": [
+        "drying room",
+        "dye laboratory",
+        "finished fabric gallery",
+        "pattern design",
+        "weaving studio",
+        "yarn preparation",
+        "not present"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the folded linen fabric this task refers to -- this exact object",
+          "../references/abe5935cdc3544ce8ef38697865027497dd2f003653b2b5fca1831dd10828174.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_area__finished_fabric_gallery",
+      "family": "room_area",
+      "instruction": "Find the finished fabric gallery in this house, then tell me roughly how big its floor is, in square metres, as a number. I want the floor area of that one room, measured inside its walls -- not the whole house, and not the other rooms.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m2",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 35,
+      "answer_tolerance": 8.75,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "finished_fabric_gallery"
+        ],
+        "must_open": [],
+        "must_see": [],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "drying_room",
+          "dye_laboratory",
+          "finished_fabric_gallery",
+          "pattern_design_room",
+          "weaving_studio",
+          "yarn_preparation_room"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "35",
+      "oracle_read": [
+        "room_area",
+        "finished_fabric_gallery"
+      ],
+      "truth": {
+        "room": "finished_fabric_gallery",
+        "name": "finished fabric gallery",
+        "m2": 35,
+        "tol_m2": 4,
+        "spawn": {
+          "x": 0.5,
+          "y": 1.5,
+          "z": 1.25,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "finished_fabric_gallery"
+        }
+      },
+      "goal_images": []
+    },
+    {
+      "task_id": "room_area__pattern_design_room",
+      "family": "room_area",
+      "instruction": "Find the pattern design in this house, then tell me roughly how big its floor is, in square metres, as a number. I want the floor area of that one room, measured inside its walls -- not the whole house, and not the other rooms.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m2",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 25,
+      "answer_tolerance": 6.25,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "pattern_design_room"
+        ],
+        "must_open": [],
+        "must_see": [],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "drying_room",
+          "dye_laboratory",
+          "finished_fabric_gallery",
+          "pattern_design_room",
+          "weaving_studio",
+          "yarn_preparation_room"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "25",
+      "oracle_read": [
+        "room_area",
+        "pattern_design_room"
+      ],
+      "truth": {
+        "room": "pattern_design_room",
+        "name": "pattern design",
+        "m2": 25,
+        "tol_m2": 3,
+        "spawn": {
+          "x": 15.75,
+          "y": 1.5,
+          "z": 2.6,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "dye_laboratory"
+        }
+      },
+      "goal_images": []
+    }
+  ],
+  "dataset_version": "1.1"
+}

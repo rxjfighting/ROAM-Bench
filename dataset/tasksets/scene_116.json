@@ -1,0 +1,1565 @@
+{
+  "schema_version": 4,
+  "benchmark": "ROAM-Bench",
+  "scene": "scene_116",
+  "spawn": {
+    "x": 3.25,
+    "y": 1.5,
+    "z": 2.75,
+    "yaw_deg": 0.0,
+    "horizon_deg": 0.0,
+    "room": "dining_area"
+  },
+  "specs": [
+    {
+      "task_id": "surface_contents__baking_kitchen_prep_island_0",
+      "family": "surface_contents",
+      "instruction": "Go to the prep island. Which of the following objects are resting on it? Select every option that applies. Answer only with the option IDs.\nOptions:\n- OBJ_01: stainless steel slab\n- OBJ_02: measuring cup\n- OBJ_03: quarter sheet pan\n- OBJ_04: dish brush\n- OBJ_05: bread dough\n- OBJ_06: microfiber cleaning cloth\n- OBJ_07: mixing bowl\n- OBJ_08: rolling pin",
+      "referents": [
+        "baking_kitchen_prep_island_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "OBJ_01"
+        ],
+        [
+          "OBJ_05"
+        ],
+        [
+          "OBJ_07"
+        ],
+        [
+          "OBJ_08"
+        ]
+      ],
+      "answer_choices": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_unit": "",
+      "answer_match": "set",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "baking_kitchen"
+        ],
+        "must_open": [],
+        "must_see": [
+          "baking_kitchen_bread_dough_0",
+          "baking_kitchen_mixing_bowl_0",
+          "baking_kitchen_prep_island_0",
+          "baking_kitchen_rolling_pin_0",
+          "baking_kitchen_stainless_steel_slab_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "baking_kitchen",
+          "dining_area",
+          "dry_storage",
+          "proofing_mixing_room",
+          "service_counter",
+          "staff_restroom"
+        ]
+      },
+      "kinds": [
+        "bread_dough",
+        "mixing_bowl",
+        "rolling_pin",
+        "stainless_steel_slab"
+      ],
+      "receptacle_kinds": [
+        "prep_island"
+      ],
+      "evidence": [
+        "baking_kitchen_prep_island_0",
+        "baking_kitchen_bread_dough_0",
+        "baking_kitchen_mixing_bowl_0",
+        "baking_kitchen_rolling_pin_0",
+        "baking_kitchen_stainless_steel_slab_0"
+      ],
+      "answer_instances": [
+        "baking_kitchen_bread_dough_0",
+        "baking_kitchen_mixing_bowl_0",
+        "baking_kitchen_rolling_pin_0",
+        "baking_kitchen_stainless_steel_slab_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "baking_kitchen_prep_island_0"
+        ]
+      ],
+      "oracle_answer": "OBJ_01, OBJ_05, OBJ_07, OBJ_08",
+      "oracle_read": [
+        "surface_contents",
+        "baking_kitchen_prep_island_0"
+      ],
+      "truth": {
+        "host": "baking_kitchen_prep_island_0",
+        "host_kind": "prep_island",
+        "room": "baking_kitchen",
+        "children": [
+          {
+            "alias": "baking_kitchen_bread_dough_0",
+            "kind": "bread_dough"
+          },
+          {
+            "alias": "baking_kitchen_mixing_bowl_0",
+            "kind": "mixing_bowl"
+          },
+          {
+            "alias": "baking_kitchen_rolling_pin_0",
+            "kind": "rolling_pin"
+          },
+          {
+            "alias": "baking_kitchen_stainless_steel_slab_0",
+            "kind": "stainless_steel_slab"
+          }
+        ],
+        "spawn": {
+          "x": 0.5,
+          "y": 1.5,
+          "z": 0.5,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "dining_area"
+        },
+        "answer_options": [
+          {
+            "id": "OBJ_01",
+            "label": "stainless steel slab",
+            "kind": "stainless_steel_slab",
+            "alias": "baking_kitchen_stainless_steel_slab_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_02",
+            "label": "measuring cup",
+            "kind": "measuring_cup",
+            "alias": "baking_kitchen_measuring_cup_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_03",
+            "label": "quarter sheet pan",
+            "kind": "quarter_sheet_pan",
+            "alias": "baking_kitchen_quarter_sheet_pan_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_04",
+            "label": "dish brush",
+            "kind": "dish_brush",
+            "alias": "baking_kitchen_dish_brush_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_05",
+            "label": "bread dough",
+            "kind": "bread_dough",
+            "alias": "baking_kitchen_bread_dough_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_06",
+            "label": "microfiber cleaning cloth",
+            "kind": "microfiber_cleaning_cloth",
+            "alias": "baking_kitchen_microfiber_cleaning_cloth_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_07",
+            "label": "mixing bowl",
+            "kind": "mixing_bowl",
+            "alias": "baking_kitchen_mixing_bowl_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_08",
+            "label": "rolling pin",
+            "kind": "rolling_pin",
+            "alias": "baking_kitchen_rolling_pin_0",
+            "correct": true
+          }
+        ]
+      },
+      "answer_choice_labels": [
+        "stainless steel slab",
+        "measuring cup",
+        "quarter sheet pan",
+        "dish brush",
+        "bread dough",
+        "microfiber cleaning cloth",
+        "mixing bowl",
+        "rolling pin"
+      ],
+      "answer_choice_mode": "multiple",
+      "goal_images": [
+        [
+          "the prep island this task refers to -- this exact object",
+          "../references/71a7afff09c34a667b2e14c98e5499b231710d4522638d9ea0ec224912d941d9.png"
+        ],
+        [
+          "Option OBJ_01 — stainless steel slab; category reference image",
+          "../references/bbcc81fe51512c50327cd67e505e80686fd4bb087675c0d5d4c121db93c409b7.png"
+        ],
+        [
+          "Option OBJ_02 — measuring cup; category reference image",
+          "../references/cd9564b8dd4ad1174aad10fc935e1442fd95d3772ec444c7e516ab2c0d23f074.png"
+        ],
+        [
+          "Option OBJ_03 — quarter sheet pan; category reference image",
+          "../references/8404a983d09ff7dc413c807e6e6dea9ea122d81b0c76f54e4aa30721aba2e55f.png"
+        ],
+        [
+          "Option OBJ_04 — dish brush; category reference image",
+          "../references/824008fa4844a43380858ba7c25c7ecbbb65f8ec6e7a8ecd82ce9446eca7a660.png"
+        ],
+        [
+          "Option OBJ_05 — bread dough; category reference image",
+          "../references/de03730a4d1e1ccba5a48a6fa88db87e0ebf3652bd54425de5af28507c4899f5.png"
+        ],
+        [
+          "Option OBJ_06 — microfiber cleaning cloth; category reference image",
+          "../references/c5e259aeb70edd115bc4d8ba24daa259321208fb8bc18f254682807c860a0a09.png"
+        ],
+        [
+          "Option OBJ_07 — mixing bowl; category reference image",
+          "../references/ab2bbf89c1a1dbe8b21241e623a4373bebf8b8b0e2b320f5afac8d294440cfec.png"
+        ],
+        [
+          "Option OBJ_08 — rolling pin; category reference image",
+          "../references/f8a4ee768919ef738055204891c8240c95218b231cd6019776ac493a90d4dac7.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "surface_contents__baking_kitchen_sink_cabinet_0",
+      "family": "surface_contents",
+      "instruction": "Go to the sink cabinet. Which of the following objects are resting on it? Select every option that applies. Answer only with the option IDs.\nOptions:\n- OBJ_01: dish brush\n- OBJ_02: bread dough\n- OBJ_03: digital kitchen scale\n- OBJ_04: quarter sheet pan\n- OBJ_05: mixing bowl\n- OBJ_06: measuring cup\n- OBJ_07: rolling pin\n- OBJ_08: microfiber cleaning cloth",
+      "referents": [
+        "baking_kitchen_sink_cabinet_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "OBJ_01"
+        ],
+        [
+          "OBJ_08"
+        ]
+      ],
+      "answer_choices": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_unit": "",
+      "answer_match": "set",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "baking_kitchen"
+        ],
+        "must_open": [],
+        "must_see": [
+          "baking_kitchen_dish_brush_0",
+          "baking_kitchen_microfiber_cleaning_cloth_0",
+          "baking_kitchen_sink_cabinet_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "baking_kitchen",
+          "dining_area",
+          "dry_storage",
+          "proofing_mixing_room",
+          "service_counter",
+          "staff_restroom"
+        ]
+      },
+      "kinds": [
+        "dish_brush",
+        "microfiber_cleaning_cloth"
+      ],
+      "receptacle_kinds": [
+        "sink_cabinet"
+      ],
+      "evidence": [
+        "baking_kitchen_sink_cabinet_0",
+        "baking_kitchen_dish_brush_0",
+        "baking_kitchen_microfiber_cleaning_cloth_0"
+      ],
+      "answer_instances": [
+        "baking_kitchen_dish_brush_0",
+        "baking_kitchen_microfiber_cleaning_cloth_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "baking_kitchen_sink_cabinet_0"
+        ]
+      ],
+      "oracle_answer": "OBJ_01, OBJ_08",
+      "oracle_read": [
+        "surface_contents",
+        "baking_kitchen_sink_cabinet_0"
+      ],
+      "truth": {
+        "host": "baking_kitchen_sink_cabinet_0",
+        "host_kind": "sink_cabinet",
+        "room": "baking_kitchen",
+        "children": [
+          {
+            "alias": "baking_kitchen_dish_brush_0",
+            "kind": "dish_brush"
+          },
+          {
+            "alias": "baking_kitchen_microfiber_cleaning_cloth_0",
+            "kind": "microfiber_cleaning_cloth"
+          }
+        ],
+        "spawn": {
+          "x": 2.45,
+          "y": 1.5,
+          "z": -10.0,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "proofing_mixing_room"
+        },
+        "answer_options": [
+          {
+            "id": "OBJ_01",
+            "label": "dish brush",
+            "kind": "dish_brush",
+            "alias": "baking_kitchen_dish_brush_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_02",
+            "label": "bread dough",
+            "kind": "bread_dough",
+            "alias": "baking_kitchen_bread_dough_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_03",
+            "label": "digital kitchen scale",
+            "kind": "digital_kitchen_scale",
+            "alias": "baking_kitchen_digital_kitchen_scale_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_04",
+            "label": "quarter sheet pan",
+            "kind": "quarter_sheet_pan",
+            "alias": "baking_kitchen_quarter_sheet_pan_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_05",
+            "label": "mixing bowl",
+            "kind": "mixing_bowl",
+            "alias": "baking_kitchen_mixing_bowl_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_06",
+            "label": "measuring cup",
+            "kind": "measuring_cup",
+            "alias": "baking_kitchen_measuring_cup_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_07",
+            "label": "rolling pin",
+            "kind": "rolling_pin",
+            "alias": "baking_kitchen_rolling_pin_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_08",
+            "label": "microfiber cleaning cloth",
+            "kind": "microfiber_cleaning_cloth",
+            "alias": "baking_kitchen_microfiber_cleaning_cloth_0",
+            "correct": true
+          }
+        ]
+      },
+      "answer_choice_labels": [
+        "dish brush",
+        "bread dough",
+        "digital kitchen scale",
+        "quarter sheet pan",
+        "mixing bowl",
+        "measuring cup",
+        "rolling pin",
+        "microfiber cleaning cloth"
+      ],
+      "answer_choice_mode": "multiple",
+      "goal_images": [
+        [
+          "the sink cabinet this task refers to -- this exact object",
+          "../references/ec3a5554f03cc6d5c204eea06d2c89bd2025f81a81030808cd831506f7ecb5cf.png"
+        ],
+        [
+          "Option OBJ_01 — dish brush; category reference image",
+          "../references/824008fa4844a43380858ba7c25c7ecbbb65f8ec6e7a8ecd82ce9446eca7a660.png"
+        ],
+        [
+          "Option OBJ_02 — bread dough; category reference image",
+          "../references/de03730a4d1e1ccba5a48a6fa88db87e0ebf3652bd54425de5af28507c4899f5.png"
+        ],
+        [
+          "Option OBJ_03 — digital kitchen scale; category reference image",
+          "../references/29d6aba1e45eeddb71c3e22e89e328d4b3af0e7d00875ee67f5ff378c38c68da.png"
+        ],
+        [
+          "Option OBJ_04 — quarter sheet pan; category reference image",
+          "../references/8404a983d09ff7dc413c807e6e6dea9ea122d81b0c76f54e4aa30721aba2e55f.png"
+        ],
+        [
+          "Option OBJ_05 — mixing bowl; category reference image",
+          "../references/ab2bbf89c1a1dbe8b21241e623a4373bebf8b8b0e2b320f5afac8d294440cfec.png"
+        ],
+        [
+          "Option OBJ_06 — measuring cup; category reference image",
+          "../references/cd9564b8dd4ad1174aad10fc935e1442fd95d3772ec444c7e516ab2c0d23f074.png"
+        ],
+        [
+          "Option OBJ_07 — rolling pin; category reference image",
+          "../references/f8a4ee768919ef738055204891c8240c95218b231cd6019776ac493a90d4dac7.png"
+        ],
+        [
+          "Option OBJ_08 — microfiber cleaning cloth; category reference image",
+          "../references/c5e259aeb70edd115bc4d8ba24daa259321208fb8bc18f254682807c860a0a09.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "surface_contents__service_counter_pastry_display_case_0",
+      "family": "surface_contents",
+      "instruction": "Go to the pastry display case. Which of the following objects are resting on it? Select every option that applies. Answer only with the option IDs.\nOptions:\n- OBJ_01: thermal receipt printer\n- OBJ_02: milk frothing pitcher\n- OBJ_03: point of sale register\n- OBJ_04: croissant pastry\n- OBJ_05: filled bakery display tray\n- OBJ_06: espresso machine\n- OBJ_07: flour canister\n- OBJ_08: menu sign holder",
+      "referents": [
+        "service_counter_pastry_display_case_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "OBJ_05"
+        ]
+      ],
+      "answer_choices": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_unit": "",
+      "answer_match": "set",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "service_counter"
+        ],
+        "must_open": [],
+        "must_see": [
+          "service_counter_filled_container_0",
+          "service_counter_filled_container_1",
+          "service_counter_pastry_display_case_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "baking_kitchen",
+          "dining_area",
+          "dry_storage",
+          "proofing_mixing_room",
+          "service_counter",
+          "staff_restroom"
+        ]
+      },
+      "kinds": [
+        "filled_bakery_display_tray",
+        "filled_bakery_display_tray"
+      ],
+      "receptacle_kinds": [
+        "pastry_display_case"
+      ],
+      "evidence": [
+        "service_counter_pastry_display_case_0",
+        "service_counter_filled_container_0",
+        "service_counter_filled_container_1"
+      ],
+      "answer_instances": [
+        "service_counter_filled_container_0",
+        "service_counter_filled_container_1"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "service_counter_pastry_display_case_0"
+        ]
+      ],
+      "oracle_answer": "OBJ_05",
+      "oracle_read": [
+        "surface_contents",
+        "service_counter_pastry_display_case_0"
+      ],
+      "truth": {
+        "host": "service_counter_pastry_display_case_0",
+        "host_kind": "pastry_display_case",
+        "room": "service_counter",
+        "children": [
+          {
+            "alias": "service_counter_filled_container_0",
+            "kind": "filled_bakery_display_tray"
+          },
+          {
+            "alias": "service_counter_filled_container_1",
+            "kind": "filled_bakery_display_tray"
+          }
+        ],
+        "spawn": {
+          "x": 2.0,
+          "y": 1.5,
+          "z": -5.0,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "baking_kitchen"
+        },
+        "answer_options": [
+          {
+            "id": "OBJ_01",
+            "label": "thermal receipt printer",
+            "kind": "thermal_receipt_printer",
+            "alias": "service_counter_thermal_receipt_printer_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_02",
+            "label": "milk frothing pitcher",
+            "kind": "milk_frothing_pitcher",
+            "alias": "service_counter_milk_frothing_pitcher_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_03",
+            "label": "point of sale register",
+            "kind": "point_of_sale_register",
+            "alias": "service_counter_point_of_sale_register_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_04",
+            "label": "croissant pastry",
+            "kind": "croissant_pastry",
+            "alias": "dining_area_croissant_pastry_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_05",
+            "label": "filled bakery display tray",
+            "kind": "filled_bakery_display_tray",
+            "alias": "service_counter_filled_container_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_06",
+            "label": "espresso machine",
+            "kind": "espresso_machine",
+            "alias": "service_counter_espresso_machine_1",
+            "correct": false
+          },
+          {
+            "id": "OBJ_07",
+            "label": "flour canister",
+            "kind": "flour_canister",
+            "alias": "dry_storage_flour_canister_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_08",
+            "label": "menu sign holder",
+            "kind": "menu_sign_holder",
+            "alias": "service_counter_menu_sign_holder_0",
+            "correct": false
+          }
+        ]
+      },
+      "answer_choice_labels": [
+        "thermal receipt printer",
+        "milk frothing pitcher",
+        "point of sale register",
+        "croissant pastry",
+        "filled bakery display tray",
+        "espresso machine",
+        "flour canister",
+        "menu sign holder"
+      ],
+      "answer_choice_mode": "multiple",
+      "goal_images": [
+        [
+          "the pastry display case this task refers to -- this exact object",
+          "../references/ee5fb7a0f067c81c3ebfc432137dc94012e5b8b65d9dd7fb51374e6c4c1918d0.png"
+        ],
+        [
+          "Option OBJ_01 — thermal receipt printer; category reference image",
+          "../references/0e6213305c965e2e82b294b501cd7b611b1ef52486c9a2ecf67c2fa9edadd77e.png"
+        ],
+        [
+          "Option OBJ_02 — milk frothing pitcher; category reference image",
+          "../references/39e1c071346998dfa62d9155cfd5409bb976d699b725def22acb9a7f900cd130.png"
+        ],
+        [
+          "Option OBJ_03 — point of sale register; category reference image",
+          "../references/87884ab391dc7effcc059d4f8e177ec1f68ec8359b8272f9dcde5e855ee74e7f.png"
+        ],
+        [
+          "Option OBJ_04 — croissant pastry; category reference image",
+          "../references/04cf257a9b15919c715a9ea18a45c83f31b799dfb5692f3bc89be488f36162bf.png"
+        ],
+        [
+          "Option OBJ_05 — filled bakery display tray; category reference image",
+          "../references/fd3380cfac536c9f6f41dbda2552e418cc9a2ce35a3d79951dec1a0bad36d52a.png"
+        ],
+        [
+          "Option OBJ_06 — espresso machine; category reference image",
+          "../references/1f5eb6b9c396d71dc7de946f084620f7ea1808544f6fac87c1f87afba6deefaa.png"
+        ],
+        [
+          "Option OBJ_07 — flour canister; category reference image",
+          "../references/fc093b2e3e9e48fec7296ee9ffae22e6094ac093fd1ab0f4e1fa0379afd323ad.png"
+        ],
+        [
+          "Option OBJ_08 — menu sign holder; category reference image",
+          "../references/50dfe490a9ce0478b0d56a2d1fbb7637adfd4db1da49191cf6067dbe33541ad8.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "object_count__digital_kitchen_scale",
+      "family": "object_count",
+      "instruction": "Search this house and count the digital kitchen scales. There is more than one room, and there may be digital kitchen scales in more than one of them. When you have finished searching, tell me how many digital kitchen scales there are in total, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 2,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "baking_kitchen",
+          "proofing_mixing_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "baking_kitchen_digital_kitchen_scale_0",
+          "proofing_mixing_room_digital_kitchen_scale_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "baking_kitchen",
+          "dining_area",
+          "dry_storage",
+          "proofing_mixing_room",
+          "service_counter",
+          "staff_restroom"
+        ]
+      },
+      "kinds": [
+        "digital_kitchen_scale"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "baking_kitchen_digital_kitchen_scale_0",
+        "proofing_mixing_room_digital_kitchen_scale_0"
+      ],
+      "answer_instances": [
+        "baking_kitchen_digital_kitchen_scale_0",
+        "proofing_mixing_room_digital_kitchen_scale_0"
+      ],
+      "plan": [],
+      "oracle_answer": "2",
+      "oracle_read": [
+        "count_seen",
+        "digital_kitchen_scale",
+        [
+          "baking_kitchen",
+          "dining_area",
+          "dry_storage",
+          "proofing_mixing_room",
+          "service_counter",
+          "staff_restroom"
+        ]
+      ],
+      "truth": {
+        "kind": "digital_kitchen_scale",
+        "total": 2,
+        "noun": "digital kitchen scale",
+        "rooms": [
+          "baking_kitchen",
+          "proofing_mixing_room"
+        ],
+        "per_room": {
+          "baking_kitchen": 1,
+          "proofing_mixing_room": 1
+        },
+        "spawn": {
+          "x": 3.25,
+          "y": 1.5,
+          "z": 2.75,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "dining_area"
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'digital kitchen scale' -- the task is about every digital kitchen scale in the house, and the others need not look like this one",
+          "../references/29d6aba1e45eeddb71c3e22e89e328d4b3af0e7d00875ee67f5ff378c38c68da.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "object_count__poster",
+      "family": "object_count",
+      "instruction": "Search this house and count the posters. For this task, count framed graphic posters, not plaques displaying only a name, logo, or mandatory safety symbol. There is more than one room, and there may be posters in more than one of them. When you have finished searching, tell me how many posters there are in total, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 2,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "baking_kitchen",
+          "dry_storage"
+        ],
+        "must_open": [],
+        "must_see": [
+          "baking_kitchen_poster_0",
+          "dry_storage_poster_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "baking_kitchen",
+          "dining_area",
+          "dry_storage",
+          "proofing_mixing_room",
+          "service_counter",
+          "staff_restroom"
+        ]
+      },
+      "kinds": [
+        "poster"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "baking_kitchen_poster_0",
+        "dry_storage_poster_0"
+      ],
+      "answer_instances": [
+        "baking_kitchen_poster_0",
+        "dry_storage_poster_0"
+      ],
+      "plan": [],
+      "oracle_answer": "2",
+      "oracle_read": [
+        "count_seen",
+        "poster",
+        [
+          "baking_kitchen",
+          "dining_area",
+          "dry_storage",
+          "proofing_mixing_room",
+          "service_counter",
+          "staff_restroom"
+        ]
+      ],
+      "truth": {
+        "kind": "poster",
+        "total": 2,
+        "noun": "poster",
+        "rooms": [
+          "baking_kitchen",
+          "dry_storage"
+        ],
+        "per_room": {
+          "baking_kitchen": 1,
+          "dry_storage": 1
+        },
+        "spawn": {
+          "x": 1.25,
+          "y": 1.5,
+          "z": -2.75,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "service_counter"
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'poster' -- the task is about every poster in the house, and the others need not look like this one; use the task definition; name, logo, and safety-symbol plaques are excluded",
+          "../references/90b29ccc5132b465d4dcb738332ce0e3257842b653b11ccbbad71405ba903c0b.png"
+        ]
+      ],
+      "scene_variant": {
+        "schema": "task-scene-variant-v1",
+        "exclude": [
+          "baking_kitchen_diagram_print_0",
+          "baking_kitchen_illustration_print_0",
+          "dining_area_art_print_0",
+          "dining_area_art_print_1",
+          "dining_area_art_print_2",
+          "service_counter_botanical_print_0",
+          "staff_restroom_botanical_print_0",
+          "staff_restroom_botanical_print_1",
+          "staff_restroom_framed_print_0",
+          "staff_restroom_reminder_sign_0"
+        ]
+      }
+    },
+    {
+      "task_id": "object_count__wall_clock",
+      "family": "object_count",
+      "instruction": "Search this house and count the wall clocks. There is more than one room, and there may be wall clocks in more than one of them. When you have finished searching, tell me how many wall clocks there are in total, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 5,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "baking_kitchen",
+          "dining_area",
+          "dry_storage",
+          "proofing_mixing_room",
+          "service_counter"
+        ],
+        "must_open": [],
+        "must_see": [
+          "baking_kitchen_clock_0",
+          "dining_area_wall_clock_0",
+          "dry_storage_wall_clock_0",
+          "proofing_mixing_room_wall_clock_0",
+          "service_counter_wall_clock_0"
+        ],
+        "min_distinct_viewpoints": 4,
+        "search_regions": [
+          "baking_kitchen",
+          "dining_area",
+          "dry_storage",
+          "proofing_mixing_room",
+          "service_counter",
+          "staff_restroom"
+        ]
+      },
+      "kinds": [
+        "wall_clock"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "baking_kitchen_clock_0",
+        "dining_area_wall_clock_0",
+        "dry_storage_wall_clock_0",
+        "proofing_mixing_room_wall_clock_0",
+        "service_counter_wall_clock_0"
+      ],
+      "answer_instances": [
+        "baking_kitchen_clock_0",
+        "dining_area_wall_clock_0",
+        "dry_storage_wall_clock_0",
+        "proofing_mixing_room_wall_clock_0",
+        "service_counter_wall_clock_0"
+      ],
+      "plan": [],
+      "oracle_answer": "5",
+      "oracle_read": [
+        "count_seen",
+        "wall_clock",
+        [
+          "baking_kitchen",
+          "dining_area",
+          "dry_storage",
+          "proofing_mixing_room",
+          "service_counter",
+          "staff_restroom"
+        ]
+      ],
+      "truth": {
+        "kind": "wall_clock",
+        "total": 5,
+        "noun": "wall clock",
+        "rooms": [
+          "baking_kitchen",
+          "dining_area",
+          "dry_storage",
+          "proofing_mixing_room",
+          "service_counter"
+        ],
+        "per_room": {
+          "baking_kitchen": 1,
+          "dining_area": 1,
+          "dry_storage": 1,
+          "proofing_mixing_room": 1,
+          "service_counter": 1
+        },
+        "spawn": {
+          "x": 3.25,
+          "y": 1.5,
+          "z": -7.0,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "baking_kitchen"
+        },
+        "category_membership": {
+          "schema": "reviewed-category-members-v1",
+          "aliases": [
+            "baking_kitchen_clock_0",
+            "dining_area_wall_clock_0",
+            "dry_storage_wall_clock_0",
+            "proofing_mixing_room_wall_clock_0",
+            "service_counter_wall_clock_0"
+          ],
+          "category": "wall_clock"
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'wall clock' -- the task is about every wall clock in the house, and the others need not look like this one",
+          "../references/441bf6879cd7972d807b98d5d62eb98d9e321817e68694894e5e631d77602d4f.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "gap_width__baking_kitchen_sink_cabinet_0__baking_kitchen_storage_cabinet_0",
+      "family": "gap_width",
+      "instruction": "Find the sink cabinet and the storage cabinet in this house; they are in the same room, standing apart. Then tell me roughly how wide the clear gap between them is, in centimetres, as a number. Measure the empty floor from the edge of one to the edge of the other, not the distance between their centres.",
+      "referents": [
+        "baking_kitchen_sink_cabinet_0",
+        "baking_kitchen_storage_cabinet_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "cm",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 85,
+      "answer_tolerance": 10,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "baking_kitchen"
+        ],
+        "must_open": [],
+        "must_see": [
+          "baking_kitchen_sink_cabinet_0",
+          "baking_kitchen_storage_cabinet_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "baking_kitchen"
+        ]
+      },
+      "kinds": [
+        "sink_cabinet",
+        "storage_cabinet"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "baking_kitchen_sink_cabinet_0",
+        "baking_kitchen_storage_cabinet_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "85",
+      "oracle_read": [
+        "gap_width",
+        "baking_kitchen_sink_cabinet_0",
+        "baking_kitchen_storage_cabinet_0"
+      ],
+      "truth": {
+        "a": "baking_kitchen_sink_cabinet_0",
+        "b": "baking_kitchen_storage_cabinet_0",
+        "cm": 85,
+        "room": "baking_kitchen",
+        "tol_cm": 10,
+        "spawn": {
+          "x": 6.45,
+          "y": 1.5,
+          "z": -10.75,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "dry_storage"
+        }
+      },
+      "goal_images": [
+        [
+          "the sink cabinet this task refers to -- this exact object",
+          "../references/ec3a5554f03cc6d5c204eea06d2c89bd2025f81a81030808cd831506f7ecb5cf.png"
+        ],
+        [
+          "the storage cabinet this task refers to -- this exact object",
+          "../references/0b2f84423c19bab505ba8159920c4658d9e3e41b1ef1137bcbfcea82d38aa667.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__proofing_mixing_room_bakery_worktable_0__staff_restroom_waste_bin_0",
+      "family": "path_integration",
+      "instruction": "Find the bakery worktable and then the waste bin; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "proofing_mixing_room_bakery_worktable_0",
+        "staff_restroom_waste_bin_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "proofing_mixing_room",
+          "staff_restroom"
+        ],
+        "must_open": [],
+        "must_see": [
+          "proofing_mixing_room_bakery_worktable_0",
+          "staff_restroom_waste_bin_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "proofing_mixing_room",
+          "staff_restroom"
+        ]
+      },
+      "kinds": [
+        "bakery_worktable",
+        "waste_bin"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "proofing_mixing_room_bakery_worktable_0",
+        "staff_restroom_waste_bin_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "proofing_mixing_room_bakery_worktable_0",
+        "staff_restroom_waste_bin_0"
+      ],
+      "truth": {
+        "x": "proofing_mixing_room_bakery_worktable_0",
+        "y": "staff_restroom_waste_bin_0",
+        "x_room": "proofing_mixing_room",
+        "y_room": "staff_restroom",
+        "leg_m": 11.11,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": 1.75,
+          "y": 1.5,
+          "z": -8.0,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "baking_kitchen"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the bakery worktable this task refers to -- this exact object",
+          "../references/5b1b120f3cf3bc2b4ddfb94a018ebfca4a0ef7191b3511fb2f32187dcee9dd69.png"
+        ],
+        [
+          "the waste bin this task refers to -- this exact object",
+          "../references/646ffa4295c40aad16f27702162e8d0874041ce6174bbba6bfe6cc2b9d91e488.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "nearer_object_comparison__baking_kitchen_bakery_work_counter_0",
+      "family": "nearer_object_comparison",
+      "instruction": "Somewhere in this house there are the pastry display case, the pastry display service case and the vanity cabinet. None of them is in the same room as the bakery work counter. Find out which one of them is closest to the bakery work counter, and answer with just that one thing. Compare the straight-line distances, not how far you had to walk.",
+      "referents": [
+        "baking_kitchen_bakery_work_counter_0",
+        "service_counter_pastry_display_case_0",
+        "staff_restroom_vanity_cabinet_0",
+        "dining_area_pastry_display_service_case_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "pastry display case"
+        ]
+      ],
+      "answer_choices": [
+        "pastry display case",
+        "pastry display service case",
+        "vanity cabinet"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "baking_kitchen",
+          "dining_area",
+          "service_counter",
+          "staff_restroom"
+        ],
+        "must_open": [],
+        "must_see": [
+          "baking_kitchen_bakery_work_counter_0",
+          "dining_area_pastry_display_service_case_0",
+          "service_counter_pastry_display_case_0",
+          "staff_restroom_vanity_cabinet_0"
+        ],
+        "min_distinct_viewpoints": 4,
+        "search_regions": [
+          "baking_kitchen",
+          "dining_area",
+          "service_counter",
+          "staff_restroom"
+        ]
+      },
+      "kinds": [
+        "pastry_display_case",
+        "vanity_cabinet",
+        "pastry_display_service_case",
+        "bakery_work_counter"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "baking_kitchen_bakery_work_counter_0",
+        "service_counter_pastry_display_case_0",
+        "staff_restroom_vanity_cabinet_0",
+        "dining_area_pastry_display_service_case_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "pastry display case",
+      "oracle_read": [
+        "nearest_of",
+        "baking_kitchen_bakery_work_counter_0",
+        [
+          [
+            "service_counter_pastry_display_case_0",
+            "pastry display case"
+          ],
+          [
+            "staff_restroom_vanity_cabinet_0",
+            "vanity cabinet"
+          ],
+          [
+            "dining_area_pastry_display_service_case_0",
+            "pastry display service case"
+          ]
+        ]
+      ],
+      "truth": {
+        "x": "baking_kitchen_bakery_work_counter_0",
+        "winner": "service_counter_pastry_display_case_0",
+        "choices": [
+          "service_counter_pastry_display_case_0",
+          "staff_restroom_vanity_cabinet_0",
+          "dining_area_pastry_display_service_case_0"
+        ],
+        "words": [
+          "pastry display case",
+          "pastry display service case",
+          "vanity cabinet"
+        ],
+        "metres": {
+          "service_counter_pastry_display_case_0": 3.24,
+          "staff_restroom_vanity_cabinet_0": 7.96,
+          "dining_area_pastry_display_service_case_0": 11.1
+        },
+        "lead_m": 4.72,
+        "x_room": "baking_kitchen",
+        "spawn": {
+          "x": 7.7,
+          "y": 1.5,
+          "z": -11.5,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "dry_storage"
+        }
+      },
+      "answer_choice_labels": [
+        "pastry display case",
+        "pastry display service case",
+        "vanity cabinet"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the bakery work counter this task refers to -- this exact object",
+          "../references/47f281280571eef4901884381983baaad678b325d24a61b28c9f1e8e1dbb63c5.png"
+        ],
+        [
+          "the pastry display case this task refers to -- this exact object",
+          "../references/ee5fb7a0f067c81c3ebfc432137dc94012e5b8b65d9dd7fb51374e6c4c1918d0.png"
+        ],
+        [
+          "the vanity cabinet this task refers to -- this exact object",
+          "../references/58ca6a2ae689e6d9376add8a823462a1a890226206cbb3013a8472d6ee9f6cfb.png"
+        ],
+        [
+          "the pastry display service case this task refers to -- this exact object",
+          "../references/4c5f9b67491dd5507056088904dbfd59cc3df9313bd042128728d26e8d14e83c.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_count__mixing_bowl",
+      "family": "room_count",
+      "instruction": "Search this house and find out which rooms contain at least one mixing bowl. Count two places as different rooms if you have to go through a doorway to get from one to the other. Some rooms contain no mixing bowls at all, and a room with several mixing bowls still counts once. Tell me how many rooms contain at least one mixing bowl, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 2,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "baking_kitchen",
+          "proofing_mixing_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "baking_kitchen_mixing_bowl_0",
+          "proofing_mixing_room_mixing_bowl_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "baking_kitchen",
+          "dining_area",
+          "dry_storage",
+          "proofing_mixing_room",
+          "service_counter",
+          "staff_restroom"
+        ]
+      },
+      "kinds": [
+        "mixing_bowl"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "baking_kitchen_mixing_bowl_0",
+        "proofing_mixing_room_mixing_bowl_0"
+      ],
+      "answer_instances": [
+        "baking_kitchen_mixing_bowl_0",
+        "proofing_mixing_room_mixing_bowl_0"
+      ],
+      "plan": [],
+      "oracle_answer": "2",
+      "oracle_read": [
+        "room_count_seen",
+        "mixing_bowl",
+        [
+          "baking_kitchen",
+          "dining_area",
+          "dry_storage",
+          "proofing_mixing_room",
+          "service_counter",
+          "staff_restroom"
+        ],
+        []
+      ],
+      "truth": {
+        "kind": "mixing_bowl",
+        "n_rooms": 2,
+        "noun": "mixing bowl",
+        "rooms": [
+          "baking_kitchen",
+          "proofing_mixing_room"
+        ],
+        "places": [
+          [
+            "baking_kitchen"
+          ],
+          [
+            "proofing_mixing_room"
+          ]
+        ],
+        "n_places_in_scope": 6,
+        "total": 2,
+        "spawn": {
+          "x": 7.0,
+          "y": 1.5,
+          "z": -2.09,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "staff_restroom"
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'mixing bowl' -- the task is about every mixing bowl in the house, and the others need not look like this one",
+          "../references/ab2bbf89c1a1dbe8b21241e623a4373bebf8b8b0e2b320f5afac8d294440cfec.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_count__wall_clock",
+      "family": "room_count",
+      "instruction": "Search this house and find out which rooms contain at least one wall clock. Count two places as different rooms if you have to go through a doorway to get from one to the other. Some rooms contain no wall clocks at all, and a room with several wall clocks still counts once. Tell me how many rooms contain at least one wall clock, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 5,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "baking_kitchen",
+          "dining_area",
+          "dry_storage",
+          "proofing_mixing_room",
+          "service_counter"
+        ],
+        "must_open": [],
+        "must_see": [
+          "baking_kitchen_clock_0",
+          "dining_area_wall_clock_0",
+          "dry_storage_wall_clock_0",
+          "proofing_mixing_room_wall_clock_0",
+          "service_counter_wall_clock_0"
+        ],
+        "min_distinct_viewpoints": 4,
+        "search_regions": [
+          "baking_kitchen",
+          "dining_area",
+          "dry_storage",
+          "proofing_mixing_room",
+          "service_counter",
+          "staff_restroom"
+        ]
+      },
+      "kinds": [
+        "wall_clock"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "baking_kitchen_clock_0",
+        "dining_area_wall_clock_0",
+        "dry_storage_wall_clock_0",
+        "proofing_mixing_room_wall_clock_0",
+        "service_counter_wall_clock_0"
+      ],
+      "answer_instances": [
+        "baking_kitchen_clock_0",
+        "dining_area_wall_clock_0",
+        "dry_storage_wall_clock_0",
+        "proofing_mixing_room_wall_clock_0",
+        "service_counter_wall_clock_0"
+      ],
+      "plan": [],
+      "oracle_answer": "5",
+      "oracle_read": [
+        "room_count_seen",
+        "wall_clock",
+        [
+          "baking_kitchen",
+          "dining_area",
+          "dry_storage",
+          "proofing_mixing_room",
+          "service_counter",
+          "staff_restroom"
+        ],
+        []
+      ],
+      "truth": {
+        "kind": "wall_clock",
+        "n_rooms": 5,
+        "noun": "wall clock",
+        "rooms": [
+          "baking_kitchen",
+          "dining_area",
+          "dry_storage",
+          "proofing_mixing_room",
+          "service_counter"
+        ],
+        "places": [
+          [
+            "baking_kitchen"
+          ],
+          [
+            "dining_area"
+          ],
+          [
+            "dry_storage"
+          ],
+          [
+            "proofing_mixing_room"
+          ],
+          [
+            "service_counter"
+          ]
+        ],
+        "n_places_in_scope": 6,
+        "total": 5,
+        "spawn": {
+          "x": 4.0,
+          "y": 1.5,
+          "z": -5.0,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "baking_kitchen"
+        },
+        "category_membership": {
+          "schema": "reviewed-category-members-v1",
+          "aliases": [
+            "baking_kitchen_clock_0",
+            "dining_area_wall_clock_0",
+            "dry_storage_wall_clock_0",
+            "proofing_mixing_room_wall_clock_0",
+            "service_counter_wall_clock_0"
+          ],
+          "category": "wall_clock"
+        },
+        "per_room": {
+          "baking_kitchen": 1,
+          "dining_area": 1,
+          "dry_storage": 1,
+          "proofing_mixing_room": 1,
+          "service_counter": 1
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'wall clock' -- the task is about every wall clock in the house, and the others need not look like this one",
+          "../references/441bf6879cd7972d807b98d5d62eb98d9e321817e68694894e5e631d77602d4f.png"
+        ]
+      ]
+    }
+  ],
+  "dataset_version": "1.1"
+}

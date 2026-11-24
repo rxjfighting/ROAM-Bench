@@ -1,0 +1,687 @@
+{
+  "schema_version": 4,
+  "benchmark": "ROAM-Bench",
+  "scene": "scene_109",
+  "spawn": {
+    "x": 6.5,
+    "y": 1.5,
+    "z": 0.75,
+    "yaw_deg": 0.0,
+    "horizon_deg": 0.0,
+    "room": "hallway"
+  },
+  "specs": [
+    {
+      "task_id": "object_distance__bathroom_bathroom_sink_vanity_0__kitchen_dining_table_0",
+      "family": "object_distance",
+      "instruction": "Find the bathroom sink vanity and the dining table in this house; they are in different rooms. Then tell me roughly how far apart they are, in metres, as a number. Measure the straight line between them, not the distance you walked.",
+      "referents": [
+        "bathroom_bathroom_sink_vanity_0",
+        "kitchen_dining_table_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m",
+      "answer_match": "count",
+      "max_steps": 200,
+      "answer_number": 11,
+      "answer_tolerance": 2.2,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "bathroom",
+          "kitchen"
+        ],
+        "must_open": [],
+        "must_see": [
+          "bathroom_bathroom_sink_vanity_0",
+          "kitchen_dining_table_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "bathroom",
+          "kitchen"
+        ]
+      },
+      "kinds": [
+        "bathroom_sink_vanity",
+        "dining_table"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "bathroom_bathroom_sink_vanity_0",
+        "kitchen_dining_table_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "11",
+      "oracle_read": [
+        "object_distance",
+        "bathroom_bathroom_sink_vanity_0",
+        "kitchen_dining_table_0"
+      ],
+      "truth": {
+        "a": "bathroom_bathroom_sink_vanity_0",
+        "b": "kitchen_dining_table_0",
+        "metres": 11.02,
+        "a_room": "bathroom",
+        "b_room": "kitchen",
+        "tol_m": 1,
+        "spawn": {
+          "x": 5.0,
+          "y": 1.5,
+          "z": 0.5,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "hallway"
+        }
+      },
+      "goal_images": [
+        [
+          "the bathroom sink vanity this task refers to -- this exact object",
+          "../references/4e24c48eb9c9b5c6414d48963d4b06b5509def29f165a88f09f7ad63dd81f328.png"
+        ],
+        [
+          "the dining table this task refers to -- this exact object",
+          "../references/a63886618e949009fecb8e8666e16934d532b1502ad11255102c1c8dbff3740e.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relocation__bedroom_2_desk_lamp_0__to__bedroom_bed_0",
+      "family": "relocation",
+      "instruction": "Find the desk lamp, pick it up, and put it on the bed.",
+      "referents": [
+        "bedroom_2_desk_lamp_0",
+        "bedroom_bed_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('bedroom_2_desk_lamp_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('bedroom_2_desk_lamp_0','bedroom_bed_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 200,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "bedroom",
+          "bedroom_2"
+        ],
+        "must_open": [
+          "bedroom_2_nightstand_0"
+        ],
+        "must_see": [
+          "bedroom_2_desk_lamp_0",
+          "bedroom_bed_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "bathroom",
+          "bedroom",
+          "bedroom_2",
+          "bedroom_3",
+          "hallway",
+          "kitchen",
+          "living_room",
+          "study"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "bedroom_2_desk_lamp_0",
+        "bedroom_bed_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "bedroom_2_desk_lamp_0"
+        ],
+        [
+          "pick",
+          "bedroom_2_desk_lamp_0"
+        ],
+        [
+          "navigate",
+          "bedroom_bed_0"
+        ],
+        [
+          "place",
+          "bedroom_bed_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "bedroom_2_desk_lamp_0",
+        "from_room": "bedroom",
+        "from_room_id": "bedroom_2",
+        "dest": "bedroom_bed_0",
+        "to_room": "bedroom",
+        "to_room_id": "bedroom",
+        "spawn": {
+          "x": 3.73,
+          "y": 1.5,
+          "z": -1.3,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "bathroom"
+        }
+      },
+      "goal_images": [
+        [
+          "the desk lamp this task refers to -- this exact object",
+          "../references/a5bb75e9bfcaeadb9678dcb6d158d46da2b0a9e306182eca7ac9130c40f17b10.png"
+        ],
+        [
+          "the bed this task refers to -- this exact object",
+          "../references/62bdda96394a4ae068210506c7cb887a49bf8d917c4f64c50bb924d55ab7e5b2.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relocation__bedroom_2_laptop_computer_0__to__kitchen_kitchen_island_counter_0",
+      "family": "relocation",
+      "instruction": "Find the closed silver laptop, pick it up, and put it on the kitchen island counter.",
+      "referents": [
+        "bedroom_2_laptop_computer_0",
+        "kitchen_kitchen_island_counter_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('bedroom_2_laptop_computer_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('bedroom_2_laptop_computer_0','kitchen_kitchen_island_counter_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 200,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "bedroom_2",
+          "kitchen"
+        ],
+        "must_open": [
+          "bedroom_2_writing_desk_0"
+        ],
+        "must_see": [
+          "bedroom_2_laptop_computer_0",
+          "kitchen_kitchen_island_counter_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "bathroom",
+          "bedroom",
+          "bedroom_2",
+          "bedroom_3",
+          "hallway",
+          "kitchen",
+          "living_room",
+          "study"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "bedroom_2_laptop_computer_0",
+        "kitchen_kitchen_island_counter_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "bedroom_2_laptop_computer_0"
+        ],
+        [
+          "pick",
+          "bedroom_2_laptop_computer_0"
+        ],
+        [
+          "navigate",
+          "kitchen_kitchen_island_counter_0"
+        ],
+        [
+          "place",
+          "kitchen_kitchen_island_counter_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "bedroom_2_laptop_computer_0",
+        "from_room": "bedroom",
+        "from_room_id": "bedroom_2",
+        "dest": "kitchen_kitchen_island_counter_0",
+        "to_room": "kitchen",
+        "to_room_id": "kitchen",
+        "spawn": {
+          "x": -0.55,
+          "y": 1.5,
+          "z": -1.85,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "bedroom_3"
+        }
+      },
+      "goal_images": [
+        [
+          "target laptop: closed silver laptop",
+          "../references/babd4b6ce215dc33195884100f3fcd0186c01e76096675a3ba4359246cc0b16d.png"
+        ],
+        [
+          "the kitchen island counter this task refers to -- this exact object",
+          "../references/0a5b28bce7069918f2e18a7d9cd2d971ed1b03672e3347d99d759964244fdc9b.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relocation__bedroom_3_desk_lamp_0__to__bedroom_bed_0",
+      "family": "relocation",
+      "instruction": "Find the desk lamp, pick it up, and put it on the bed.",
+      "referents": [
+        "bedroom_3_desk_lamp_0",
+        "bedroom_bed_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('bedroom_3_desk_lamp_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('bedroom_3_desk_lamp_0','bedroom_bed_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 200,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "bedroom",
+          "bedroom_3"
+        ],
+        "must_open": [
+          "bedroom_3_writing_desk_0"
+        ],
+        "must_see": [
+          "bedroom_3_desk_lamp_0",
+          "bedroom_bed_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "bathroom",
+          "bedroom",
+          "bedroom_2",
+          "bedroom_3",
+          "hallway",
+          "kitchen",
+          "living_room",
+          "study"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "bedroom_3_desk_lamp_0",
+        "bedroom_bed_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "bedroom_3_desk_lamp_0"
+        ],
+        [
+          "pick",
+          "bedroom_3_desk_lamp_0"
+        ],
+        [
+          "navigate",
+          "bedroom_bed_0"
+        ],
+        [
+          "place",
+          "bedroom_bed_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "bedroom_3_desk_lamp_0",
+        "from_room": "bedroom",
+        "from_room_id": "bedroom_3",
+        "dest": "bedroom_bed_0",
+        "to_room": "bedroom",
+        "to_room_id": "bedroom",
+        "spawn": {
+          "x": 11.05,
+          "y": 1.5,
+          "z": -3.1,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "bedroom_2"
+        }
+      },
+      "goal_images": [
+        [
+          "the desk lamp this task refers to -- this exact object",
+          "../references/c06e786f06f804af3959f597c2423bb866c56ea10b403738a72982f1f7c6765d.png"
+        ],
+        [
+          "the bed this task refers to -- this exact object",
+          "../references/62bdda96394a4ae068210506c7cb887a49bf8d917c4f64c50bb924d55ab7e5b2.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relocation__bedroom_3_laptop_computer_0__to__study_communal_study_table_0",
+      "family": "relocation",
+      "instruction": "Find the open silver laptop with a black screen, pick it up, and put it on the communal study table.",
+      "referents": [
+        "bedroom_3_laptop_computer_0",
+        "study_communal_study_table_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('bedroom_3_laptop_computer_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('bedroom_3_laptop_computer_0','study_communal_study_table_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 200,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "bedroom_3",
+          "study"
+        ],
+        "must_open": [
+          "bedroom_3_writing_desk_0"
+        ],
+        "must_see": [
+          "bedroom_3_laptop_computer_0",
+          "study_communal_study_table_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "bathroom",
+          "bedroom",
+          "bedroom_2",
+          "bedroom_3",
+          "hallway",
+          "kitchen",
+          "living_room",
+          "study"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "bedroom_3_laptop_computer_0",
+        "study_communal_study_table_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "bedroom_3_laptop_computer_0"
+        ],
+        [
+          "pick",
+          "bedroom_3_laptop_computer_0"
+        ],
+        [
+          "navigate",
+          "study_communal_study_table_0"
+        ],
+        [
+          "place",
+          "study_communal_study_table_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "bedroom_3_laptop_computer_0",
+        "from_room": "bedroom",
+        "from_room_id": "bedroom_3",
+        "dest": "study_communal_study_table_0",
+        "to_room": "study",
+        "to_room_id": "study",
+        "spawn": {
+          "x": 2.98,
+          "y": 1.5,
+          "z": -2.3,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "bathroom"
+        }
+      },
+      "goal_images": [
+        [
+          "target laptop: open silver laptop with a black screen",
+          "../references/8b5c09da81d6f338bece4ea42b1dc0eeeba2470d4760fb2feb3e15981abfa251.png"
+        ],
+        [
+          "the communal study table this task refers to -- this exact object",
+          "../references/844df15d807ed8a5cbb0a69f6cdb7840e0897f064436af62deec69d45aece1c6.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "gap_width__kitchen_dining_table_0__kitchen_refrigerator_freezer_0",
+      "family": "gap_width",
+      "instruction": "Find the dining table and the refrigerator freezer in this house; they are in the same room, standing apart. Then tell me roughly how wide the clear gap between them is, in centimetres, as a number. Measure the empty floor from the edge of one to the edge of the other, not the distance between their centres.",
+      "referents": [
+        "kitchen_dining_table_0",
+        "kitchen_refrigerator_freezer_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "cm",
+      "answer_match": "count",
+      "max_steps": 200,
+      "answer_number": 105,
+      "answer_tolerance": 10,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "kitchen"
+        ],
+        "must_open": [],
+        "must_see": [
+          "kitchen_dining_table_0",
+          "kitchen_refrigerator_freezer_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "kitchen"
+        ]
+      },
+      "kinds": [
+        "dining_table",
+        "refrigerator_freezer"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "kitchen_dining_table_0",
+        "kitchen_refrigerator_freezer_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "105",
+      "oracle_read": [
+        "gap_width",
+        "kitchen_dining_table_0",
+        "kitchen_refrigerator_freezer_0"
+      ],
+      "truth": {
+        "a": "kitchen_dining_table_0",
+        "b": "kitchen_refrigerator_freezer_0",
+        "cm": 105,
+        "room": "kitchen",
+        "tol_cm": 10,
+        "spawn": {
+          "x": 11.05,
+          "y": 1.5,
+          "z": -0.6,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "bedroom_2"
+        }
+      },
+      "goal_images": [
+        [
+          "the dining table this task refers to -- this exact object",
+          "../references/a63886618e949009fecb8e8666e16934d532b1502ad11255102c1c8dbff3740e.png"
+        ],
+        [
+          "the refrigerator freezer this task refers to -- this exact object",
+          "../references/da67ba71c0d95de1bbec4f6a9bcfcdb7ee7182965a5e5823152d4fd00dd3da12.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "gap_width__living_room_couch_0__living_room_side_table_0",
+      "family": "gap_width",
+      "instruction": "Find the couch and the side table in this house; they are in the same room, standing apart. Then tell me roughly how wide the clear gap between them is, in centimetres, as a number. Measure the empty floor from the edge of one to the edge of the other, not the distance between their centres.",
+      "referents": [
+        "living_room_couch_0",
+        "living_room_side_table_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "cm",
+      "answer_match": "count",
+      "max_steps": 200,
+      "answer_number": 147,
+      "answer_tolerance": 10,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "living_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "living_room_couch_0",
+          "living_room_side_table_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "living_room"
+        ]
+      },
+      "kinds": [
+        "couch",
+        "side_table"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "living_room_couch_0",
+        "living_room_side_table_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "147",
+      "oracle_read": [
+        "gap_width",
+        "living_room_couch_0",
+        "living_room_side_table_0"
+      ],
+      "truth": {
+        "a": "living_room_couch_0",
+        "b": "living_room_side_table_0",
+        "cm": 147,
+        "room": "living_room",
+        "tol_cm": 10,
+        "spawn": {
+          "x": 1.45,
+          "y": 1.5,
+          "z": 2.0,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "study"
+        }
+      },
+      "goal_images": [
+        [
+          "the couch this task refers to -- this exact object",
+          "../references/a83fe369aed3794cf68efe430ee7539741c18c5cd24b1fa141e1f12db54e1033.png"
+        ],
+        [
+          "the side table this task refers to -- this exact object",
+          "../references/f8e96f8427a83318770a7ad9d47fecbe5cc744370cf6cba82d4c121bd47b0dc8.png"
+        ]
+      ]
+    }
+  ],
+  "dataset_version": "1.1"
+}

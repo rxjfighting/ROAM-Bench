@@ -1,0 +1,874 @@
+{
+  "schema_version": 4,
+  "benchmark": "ROAM-Bench",
+  "scene": "scene_142",
+  "spawn": {
+    "x": 7.75,
+    "y": 1.5,
+    "z": 6.9,
+    "yaw_deg": 0.0,
+    "horizon_deg": 0.0,
+    "room": "team_changing_room"
+  },
+  "specs": [
+    {
+      "task_id": "surface_contents__rink_side_first_aid_room_treatment_table_0",
+      "family": "surface_contents",
+      "instruction": "Go to the treatment table. Which of the following objects are resting on it? Select every option that applies. Answer only with the option IDs.\nOptions:\n- OBJ_01: medical examination pillow\n- OBJ_02: antiseptic solution bottle\n- OBJ_03: first aid kit\n- OBJ_04: inspection flashlight\n- OBJ_05: cleaning pad\n- OBJ_06: cleaning towel\n- OBJ_07: pneumatic air hose\n- OBJ_08: examination paper sheet",
+      "referents": [
+        "rink_side_first_aid_room_treatment_table_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "OBJ_01"
+        ],
+        [
+          "OBJ_08"
+        ]
+      ],
+      "answer_choices": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_unit": "",
+      "answer_match": "set",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "rink_side_first_aid_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "rink_side_first_aid_room_examination_paper_sheet_0",
+          "rink_side_first_aid_room_medical_examination_pillow_0",
+          "rink_side_first_aid_room_treatment_table_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "equipment_drying_room",
+          "ice_maintenance_workshop",
+          "rink_side_first_aid_room",
+          "skate_rental_room",
+          "team_changing_room",
+          "ticket_lobby"
+        ]
+      },
+      "kinds": [
+        "examination_paper_sheet",
+        "medical_examination_pillow"
+      ],
+      "receptacle_kinds": [
+        "treatment_table"
+      ],
+      "evidence": [
+        "rink_side_first_aid_room_treatment_table_0",
+        "rink_side_first_aid_room_examination_paper_sheet_0",
+        "rink_side_first_aid_room_medical_examination_pillow_0"
+      ],
+      "answer_instances": [
+        "rink_side_first_aid_room_examination_paper_sheet_0",
+        "rink_side_first_aid_room_medical_examination_pillow_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "rink_side_first_aid_room_treatment_table_0"
+        ]
+      ],
+      "oracle_answer": "OBJ_01, OBJ_08",
+      "oracle_read": [
+        "surface_contents",
+        "rink_side_first_aid_room_treatment_table_0"
+      ],
+      "truth": {
+        "host": "rink_side_first_aid_room_treatment_table_0",
+        "host_kind": "treatment_table",
+        "room": "rink_side_first_aid_room",
+        "children": [
+          {
+            "alias": "rink_side_first_aid_room_examination_paper_sheet_0",
+            "kind": "examination_paper_sheet"
+          },
+          {
+            "alias": "rink_side_first_aid_room_medical_examination_pillow_0",
+            "kind": "medical_examination_pillow"
+          }
+        ],
+        "spawn": {
+          "x": 1.5,
+          "y": 1.5,
+          "z": 8.5,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "skate_rental_room"
+        },
+        "answer_options": [
+          {
+            "id": "OBJ_01",
+            "label": "medical examination pillow",
+            "kind": "medical_examination_pillow",
+            "alias": "rink_side_first_aid_room_medical_examination_pillow_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_02",
+            "label": "antiseptic solution bottle",
+            "kind": "antiseptic_solution_bottle",
+            "alias": "rink_side_first_aid_room_antiseptic_solution_bottle_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_03",
+            "label": "first aid kit",
+            "kind": "first_aid_kit",
+            "alias": "rink_side_first_aid_room_first_aid_kit_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_04",
+            "label": "inspection flashlight",
+            "kind": "inspection_flashlight",
+            "alias": "ice_maintenance_workshop_inspection_flashlight_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_05",
+            "label": "cleaning pad",
+            "kind": "cleaning_pad",
+            "alias": "equipment_drying_room_cleaning_pad_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_06",
+            "label": "cleaning towel",
+            "kind": "cleaning_towel",
+            "alias": "skate_rental_room_cleaning_towel_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_07",
+            "label": "pneumatic air hose",
+            "kind": "pneumatic_air_hose",
+            "alias": "ice_maintenance_workshop_pneumatic_air_hose_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_08",
+            "label": "examination paper sheet",
+            "kind": "examination_paper_sheet",
+            "alias": "rink_side_first_aid_room_examination_paper_sheet_0",
+            "correct": true
+          }
+        ]
+      },
+      "answer_choice_labels": [
+        "medical examination pillow",
+        "antiseptic solution bottle",
+        "first aid kit",
+        "inspection flashlight",
+        "cleaning pad",
+        "cleaning towel",
+        "pneumatic air hose",
+        "examination paper sheet"
+      ],
+      "answer_choice_mode": "multiple",
+      "goal_images": [
+        [
+          "the treatment table this task refers to -- this exact object",
+          "../references/150a213239f4ae286e74b50f7383a92b9a6a4024b4f76bda4ce89c4752089b7e.png"
+        ],
+        [
+          "Option OBJ_01 — medical examination pillow; category reference image",
+          "../references/031778f8ed7fe764381839dac14790a5ad534771d40f0fe002ed9792eb229e1f.png"
+        ],
+        [
+          "Option OBJ_02 — antiseptic solution bottle; category reference image",
+          "../references/076ec505b2016acaaa345cd9d9513a94fe8f7c8bf53b32db7daea18ac19bf2a0.png"
+        ],
+        [
+          "Option OBJ_03 — first aid kit; category reference image",
+          "../references/1ea46c8173fd9f0f9f73b7323db1a956de55cf7d8bb22013327a34700fefd6fe.png"
+        ],
+        [
+          "Option OBJ_04 — inspection flashlight; category reference image",
+          "../references/f9f1053eef207c11302a9f539f95044f2d77b0f4f760bfcb8fce5e87957d0756.png"
+        ],
+        [
+          "Option OBJ_05 — cleaning pad; category reference image",
+          "../references/eace4c0dbe12897bb3597afe3cc0ef575d97f045a3a0ed25dad1d0a22051e59a.png"
+        ],
+        [
+          "Option OBJ_06 — cleaning towel; category reference image",
+          "../references/38acba9091c127a1e9851a92064b50ee05e72180974728e0e9c4793bf6d4bb2f.png"
+        ],
+        [
+          "Option OBJ_07 — pneumatic air hose; category reference image",
+          "../references/5cac9f98414c9aa14eff015fdca2adfa8c8e1cdc1fdcf3d10ba9322a2a3dce75.png"
+        ],
+        [
+          "Option OBJ_08 — examination paper sheet; category reference image",
+          "../references/b60fec16e4ce310a8e4e78904c67a6f50c5a1fcefe82f8cd7b445e8c0c116dca.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "surface_contents__team_changing_room_shoe_cubby_bench_0",
+      "family": "surface_contents",
+      "instruction": "Go to the shoe cubby bench. Which of the following objects are resting on it? Select every option that applies. Answer only with the option IDs.\nOptions:\n- OBJ_01: equipment case\n- OBJ_02: cleaning towel\n- OBJ_03: right athletic training shoe\n- OBJ_04: dispenser box\n- OBJ_05: gym towel\n- OBJ_06: zip pouch\n- OBJ_07: left athletic training shoe\n- OBJ_08: shop towel",
+      "referents": [
+        "team_changing_room_shoe_cubby_bench_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "OBJ_05"
+        ],
+        [
+          "OBJ_06"
+        ]
+      ],
+      "answer_choices": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_unit": "",
+      "answer_match": "set",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "team_changing_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "team_changing_room_gym_towel_0",
+          "team_changing_room_shoe_cubby_bench_0",
+          "team_changing_room_zip_pouch_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "equipment_drying_room",
+          "ice_maintenance_workshop",
+          "rink_side_first_aid_room",
+          "skate_rental_room",
+          "team_changing_room",
+          "ticket_lobby"
+        ]
+      },
+      "kinds": [
+        "gym_towel",
+        "zip_pouch"
+      ],
+      "receptacle_kinds": [
+        "shoe_cubby_bench"
+      ],
+      "evidence": [
+        "team_changing_room_shoe_cubby_bench_0",
+        "team_changing_room_gym_towel_0",
+        "team_changing_room_zip_pouch_0"
+      ],
+      "answer_instances": [
+        "team_changing_room_gym_towel_0",
+        "team_changing_room_zip_pouch_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "team_changing_room_shoe_cubby_bench_0"
+        ]
+      ],
+      "oracle_answer": "OBJ_05, OBJ_06",
+      "oracle_read": [
+        "surface_contents",
+        "team_changing_room_shoe_cubby_bench_0"
+      ],
+      "truth": {
+        "host": "team_changing_room_shoe_cubby_bench_0",
+        "host_kind": "shoe_cubby_bench",
+        "room": "team_changing_room",
+        "children": [
+          {
+            "alias": "team_changing_room_gym_towel_0",
+            "kind": "gym_towel"
+          },
+          {
+            "alias": "team_changing_room_zip_pouch_0",
+            "kind": "zip_pouch"
+          }
+        ],
+        "spawn": {
+          "x": 1.0,
+          "y": 1.5,
+          "z": 2.5,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "ticket_lobby"
+        },
+        "answer_options": [
+          {
+            "id": "OBJ_01",
+            "label": "equipment case",
+            "kind": "equipment_case",
+            "alias": "equipment_drying_room_equipment_case_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_02",
+            "label": "cleaning towel",
+            "kind": "cleaning_towel",
+            "alias": "skate_rental_room_cleaning_towel_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_03",
+            "label": "right athletic training shoe",
+            "kind": "right_athletic_training_shoe",
+            "alias": "team_changing_room_right_athletic_training_shoe_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_04",
+            "label": "dispenser box",
+            "kind": "dispenser_box",
+            "alias": "ice_maintenance_workshop_dispenser_box_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_05",
+            "label": "gym towel",
+            "kind": "gym_towel",
+            "alias": "team_changing_room_gym_towel_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_06",
+            "label": "zip pouch",
+            "kind": "zip_pouch",
+            "alias": "team_changing_room_zip_pouch_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_07",
+            "label": "left athletic training shoe",
+            "kind": "left_athletic_training_shoe",
+            "alias": "team_changing_room_left_athletic_training_shoe_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_08",
+            "label": "shop towel",
+            "kind": "shop_towel",
+            "alias": "ice_maintenance_workshop_shop_towel_0",
+            "correct": false
+          }
+        ]
+      },
+      "answer_choice_labels": [
+        "equipment case",
+        "cleaning towel",
+        "right athletic training shoe",
+        "dispenser box",
+        "gym towel",
+        "zip pouch",
+        "left athletic training shoe",
+        "shop towel"
+      ],
+      "answer_choice_mode": "multiple",
+      "goal_images": [
+        [
+          "the shoe cubby bench this task refers to -- this exact object",
+          "../references/ea09f19c52df1551a76a9305acae9a96dbc5b74fb33760c9358f02be6ca6e76d.png"
+        ],
+        [
+          "Option OBJ_01 — equipment case; category reference image",
+          "../references/32e016007554baa347f6b78983fc6239f78532259f33856b1c45cfcee55141ef.png"
+        ],
+        [
+          "Option OBJ_02 — cleaning towel; category reference image",
+          "../references/38acba9091c127a1e9851a92064b50ee05e72180974728e0e9c4793bf6d4bb2f.png"
+        ],
+        [
+          "Option OBJ_03 — right athletic training shoe; category reference image",
+          "../references/6c3fabc55afa06f350c8164e8d4d155b92fcc755e50827fe6c5c996b912d01f9.png"
+        ],
+        [
+          "Option OBJ_04 — dispenser box; category reference image",
+          "../references/79d46ad5c22dcd95a18ba5cdfc2b94a706c004c5b50ed5d573a35e0c4bc0fe01.png"
+        ],
+        [
+          "Option OBJ_05 — gym towel; category reference image",
+          "../references/3ed4355e8ed0a27f35ac45ac3b82311d40842dfcf6231342ef64badf01cc7afc.png"
+        ],
+        [
+          "Option OBJ_06 — zip pouch; category reference image",
+          "../references/bf93f1bae18d576e5aefb92c903c77bac0abaa3304e12f7cb19f5102422a6d96.png"
+        ],
+        [
+          "Option OBJ_07 — left athletic training shoe; category reference image",
+          "../references/923b046274a09482eb8f5ea45958140794d8e568ddc635fe4259aaa01b7c5452.png"
+        ],
+        [
+          "Option OBJ_08 — shop towel; category reference image",
+          "../references/a9df3e644c4fa5300c3ba368049a45b1f5c7903ba6b855f425477cbc0732f828.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relocation__equipment_drying_room_safety_goggles_0__to__skate_rental_room_service_desk_0",
+      "family": "relocation",
+      "instruction": "Find the safety goggles, pick it up, and put it on the service desk.",
+      "referents": [
+        "equipment_drying_room_safety_goggles_0",
+        "skate_rental_room_service_desk_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('equipment_drying_room_safety_goggles_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('equipment_drying_room_safety_goggles_0','skate_rental_room_service_desk_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "equipment_drying_room",
+          "skate_rental_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "equipment_drying_room_safety_goggles_0",
+          "skate_rental_room_service_desk_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "equipment_drying_room",
+          "ice_maintenance_workshop",
+          "rink_side_first_aid_room",
+          "skate_rental_room",
+          "team_changing_room",
+          "ticket_lobby"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "equipment_drying_room_safety_goggles_0",
+        "skate_rental_room_service_desk_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "equipment_drying_room_safety_goggles_0"
+        ],
+        [
+          "pick",
+          "equipment_drying_room_safety_goggles_0"
+        ],
+        [
+          "navigate",
+          "skate_rental_room_service_desk_0"
+        ],
+        [
+          "place",
+          "skate_rental_room_service_desk_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "equipment_drying_room_safety_goggles_0",
+        "from_room": "equipment_drying_room",
+        "from_room_id": "equipment_drying_room",
+        "dest": "skate_rental_room_service_desk_0",
+        "to_room": "skate_rental_room",
+        "to_room_id": "skate_rental_room",
+        "spawn": {
+          "x": 5.05,
+          "y": 1.5,
+          "z": -1.85,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "ice_maintenance_workshop"
+        }
+      },
+      "goal_images": [
+        [
+          "the safety goggles this task refers to -- this exact object",
+          "../references/3a4a284a354afcc687f5d28aa6147ddcd372b7dfbaeadb246542a408fb2f918a.png"
+        ],
+        [
+          "the service desk this task refers to -- this exact object",
+          "../references/a5fa243652688330e9495d54c212782e8edce682a3d6489f865b31dab1a68629.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relocation__ice_maintenance_workshop_aerosol_spray_lubricant_can_0__to__equipment_drying_room_utility_workbench_0",
+      "family": "relocation",
+      "instruction": "Find the aerosol spray lubricant can, pick it up, and put it on the utility workbench.",
+      "referents": [
+        "ice_maintenance_workshop_aerosol_spray_lubricant_can_0",
+        "equipment_drying_room_utility_workbench_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('ice_maintenance_workshop_aerosol_spray_lubricant_can_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('ice_maintenance_workshop_aerosol_spray_lubricant_can_0','equipment_drying_room_utility_workbench_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "equipment_drying_room",
+          "ice_maintenance_workshop"
+        ],
+        "must_open": [],
+        "must_see": [
+          "equipment_drying_room_utility_workbench_0",
+          "ice_maintenance_workshop_aerosol_spray_lubricant_can_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "equipment_drying_room",
+          "ice_maintenance_workshop",
+          "rink_side_first_aid_room",
+          "skate_rental_room",
+          "team_changing_room",
+          "ticket_lobby"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "ice_maintenance_workshop_aerosol_spray_lubricant_can_0",
+        "equipment_drying_room_utility_workbench_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "ice_maintenance_workshop_aerosol_spray_lubricant_can_0"
+        ],
+        [
+          "pick",
+          "ice_maintenance_workshop_aerosol_spray_lubricant_can_0"
+        ],
+        [
+          "navigate",
+          "equipment_drying_room_utility_workbench_0"
+        ],
+        [
+          "place",
+          "equipment_drying_room_utility_workbench_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "ice_maintenance_workshop_aerosol_spray_lubricant_can_0",
+        "from_room": "ice_maintenance_workshop",
+        "from_room_id": "ice_maintenance_workshop",
+        "dest": "equipment_drying_room_utility_workbench_0",
+        "to_room": "equipment_drying_room",
+        "to_room_id": "equipment_drying_room",
+        "spawn": {
+          "x": 2.25,
+          "y": 1.5,
+          "z": 0.0,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "rink_side_first_aid_room"
+        }
+      },
+      "goal_images": [
+        [
+          "the aerosol spray lubricant can this task refers to -- this exact object",
+          "../references/b8602bbfe573e9accb672ca91f703afe0a0f9696fc598375b95a9098082af503.png"
+        ],
+        [
+          "the utility workbench this task refers to -- this exact object",
+          "../references/11946d5223e6558ffdd1d56fa07519160d488bc61b103d70bd061d167c458688.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__ice_maintenance_workshop_workbench_0__equipment_drying_room_utility_workbench_0",
+      "family": "path_integration",
+      "instruction": "Find the workbench and then the utility workbench; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "ice_maintenance_workshop_workbench_0",
+        "equipment_drying_room_utility_workbench_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "equipment_drying_room",
+          "ice_maintenance_workshop"
+        ],
+        "must_open": [],
+        "must_see": [
+          "equipment_drying_room_utility_workbench_0",
+          "ice_maintenance_workshop_workbench_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "equipment_drying_room",
+          "ice_maintenance_workshop"
+        ]
+      },
+      "kinds": [
+        "workbench",
+        "utility_workbench"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "ice_maintenance_workshop_workbench_0",
+        "equipment_drying_room_utility_workbench_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "ice_maintenance_workshop_workbench_0",
+        "equipment_drying_room_utility_workbench_0"
+      ],
+      "truth": {
+        "x": "ice_maintenance_workshop_workbench_0",
+        "y": "equipment_drying_room_utility_workbench_0",
+        "x_room": "ice_maintenance_workshop",
+        "y_room": "equipment_drying_room",
+        "leg_m": 8.13,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": 0.5,
+          "y": 1.5,
+          "z": 5.5,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "skate_rental_room"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the workbench this task refers to -- this exact object",
+          "../references/f776c636524ed12d4e213db1925eb89df39ff080aa1392b4a2564b1103c2a745.png"
+        ],
+        [
+          "the utility workbench this task refers to -- this exact object",
+          "../references/11946d5223e6558ffdd1d56fa07519160d488bc61b103d70bd061d167c458688.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__skate_rental_room_service_desk_0__rink_side_first_aid_room_medical_supply_cart_0",
+      "family": "path_integration",
+      "instruction": "Find the service desk and then the medical supply cart; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "skate_rental_room_service_desk_0",
+        "rink_side_first_aid_room_medical_supply_cart_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "rink_side_first_aid_room",
+          "skate_rental_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "rink_side_first_aid_room_medical_supply_cart_0",
+          "skate_rental_room_service_desk_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "rink_side_first_aid_room",
+          "skate_rental_room"
+        ]
+      },
+      "kinds": [
+        "service_desk",
+        "medical_supply_cart"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "skate_rental_room_service_desk_0",
+        "rink_side_first_aid_room_medical_supply_cart_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "skate_rental_room_service_desk_0",
+        "rink_side_first_aid_room_medical_supply_cart_0"
+      ],
+      "truth": {
+        "x": "skate_rental_room_service_desk_0",
+        "y": "rink_side_first_aid_room_medical_supply_cart_0",
+        "x_room": "skate_rental_room",
+        "y_room": "rink_side_first_aid_room",
+        "leg_m": 10.97,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": 9.5,
+          "y": 1.5,
+          "z": 3.4,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "equipment_drying_room"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the service desk this task refers to -- this exact object",
+          "../references/a5fa243652688330e9495d54c212782e8edce682a3d6489f865b31dab1a68629.png"
+        ],
+        [
+          "the medical supply cart this task refers to -- this exact object",
+          "../references/a557977fbf36a8ae3c6d00c8cb017ebdc225ac6d9b799303b01a3e5e69c83010.png"
+        ]
+      ]
+    }
+  ],
+  "dataset_version": "1.1"
+}

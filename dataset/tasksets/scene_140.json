@@ -1,0 +1,1094 @@
+{
+  "schema_version": 4,
+  "benchmark": "ROAM-Bench",
+  "scene": "scene_140",
+  "spawn": {
+    "x": 8.5,
+    "y": 1.5,
+    "z": 4.8,
+    "yaw_deg": 0.0,
+    "horizon_deg": 0.0,
+    "room": "fermentation_room"
+  },
+  "specs": [
+    {
+      "task_id": "object_count__poster",
+      "family": "object_count",
+      "instruction": "Search this house and count the posters. For this task, count framed graphic posters, not plaques displaying only a name, logo, or mandatory safety symbol. There is more than one room, and there may be posters in more than one of them. When you have finished searching, tell me how many posters there are in total, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 3,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "brewhouse",
+          "grain_milling_room",
+          "quality_control_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "brewhouse_poster_0",
+          "grain_milling_room_poster_0",
+          "quality_control_room_procedure_poster_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "brewhouse",
+          "cold_packaging_room",
+          "fermentation_room",
+          "grain_milling_room",
+          "quality_control_room",
+          "tasting_room"
+        ]
+      },
+      "kinds": [
+        "poster"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "brewhouse_poster_0",
+        "grain_milling_room_poster_0",
+        "quality_control_room_procedure_poster_0"
+      ],
+      "answer_instances": [
+        "brewhouse_poster_0",
+        "grain_milling_room_poster_0",
+        "quality_control_room_procedure_poster_0"
+      ],
+      "plan": [],
+      "oracle_answer": "3",
+      "oracle_read": [
+        "count_seen",
+        "poster",
+        [
+          "brewhouse",
+          "cold_packaging_room",
+          "fermentation_room",
+          "grain_milling_room",
+          "quality_control_room",
+          "tasting_room"
+        ]
+      ],
+      "truth": {
+        "kind": "poster",
+        "total": 3,
+        "noun": "poster",
+        "rooms": [
+          "brewhouse",
+          "grain_milling_room",
+          "quality_control_room"
+        ],
+        "per_room": {
+          "brewhouse": 1,
+          "grain_milling_room": 1,
+          "quality_control_room": 1
+        },
+        "spawn": {
+          "x": 10.25,
+          "y": 1.5,
+          "z": -4.2,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "cold_packaging_room"
+        },
+        "category_membership": {
+          "schema": "reviewed-category-members-v1",
+          "aliases": [
+            "brewhouse_poster_0",
+            "grain_milling_room_poster_0",
+            "quality_control_room_procedure_poster_0"
+          ],
+          "category": "poster"
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'poster' -- the task is about every poster in the house, and the others need not look like this one; use the task definition; name, logo, and safety-symbol plaques are excluded",
+          "../references/f9748d6110d5b89102697c50b85cde20a37d063a7325db2fbdfdc275d7961f91.png"
+        ]
+      ],
+      "scene_variant": {
+        "schema": "task-scene-variant-v1",
+        "exclude": [
+          "brewhouse_botanical_print_0",
+          "fermentation_room_botanical_print_0",
+          "fermentation_room_botanical_print_1",
+          "fermentation_room_technical_diagram_0",
+          "tasting_room_diagram_print_0",
+          "tasting_room_educational_print_0",
+          "cold_packaging_room_wall_sign_0"
+        ]
+      }
+    },
+    {
+      "task_id": "object_distance__grain_milling_room_grain_weighing_station_0__quality_control_room_utility_trolley_0",
+      "family": "object_distance",
+      "instruction": "Find the grain weighing station and the utility trolley in this house; they are in different rooms. Then tell me roughly how far apart they are, in metres, as a number. Measure the straight line between them, not the distance you walked.",
+      "referents": [
+        "grain_milling_room_grain_weighing_station_0",
+        "quality_control_room_utility_trolley_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 10,
+      "answer_tolerance": 2.0,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "grain_milling_room",
+          "quality_control_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "grain_milling_room_grain_weighing_station_0",
+          "quality_control_room_utility_trolley_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "grain_milling_room",
+          "quality_control_room"
+        ]
+      },
+      "kinds": [
+        "grain_weighing_station",
+        "utility_trolley"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "grain_milling_room_grain_weighing_station_0",
+        "quality_control_room_utility_trolley_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "10",
+      "oracle_read": [
+        "object_distance",
+        "grain_milling_room_grain_weighing_station_0",
+        "quality_control_room_utility_trolley_0"
+      ],
+      "truth": {
+        "a": "grain_milling_room_grain_weighing_station_0",
+        "b": "quality_control_room_utility_trolley_0",
+        "metres": 9.91,
+        "a_room": "grain_milling_room",
+        "b_room": "quality_control_room",
+        "tol_m": 1,
+        "spawn": {
+          "x": 1.75,
+          "y": 1.5,
+          "z": 4.0,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "brewhouse"
+        }
+      },
+      "goal_images": [
+        [
+          "the grain weighing station this task refers to -- this exact object",
+          "../references/ab9a579e1ccc36d66f3bc9f5b8e7c3b9b1db5f4be6a5ad6320196549d837d89b.png"
+        ],
+        [
+          "the utility trolley this task refers to -- this exact object",
+          "../references/dddc3a58670212efde9273f99c91735b5913d26da50addee890fb7cabc69c9e0.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "object_distance__quality_control_room_sink_base_cabinet_0__tasting_room_host_podium_0",
+      "family": "object_distance",
+      "instruction": "Find the sink base cabinet and the host podium in this house; they are in different rooms. Then tell me roughly how far apart they are, in metres, as a number. Measure the straight line between them, not the distance you walked.",
+      "referents": [
+        "quality_control_room_sink_base_cabinet_0",
+        "tasting_room_host_podium_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 14,
+      "answer_tolerance": 2.8000000000000003,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "quality_control_room",
+          "tasting_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "quality_control_room_sink_base_cabinet_0",
+          "tasting_room_host_podium_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "quality_control_room",
+          "tasting_room"
+        ]
+      },
+      "kinds": [
+        "sink_base_cabinet",
+        "host_podium"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "quality_control_room_sink_base_cabinet_0",
+        "tasting_room_host_podium_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "14",
+      "oracle_read": [
+        "object_distance",
+        "quality_control_room_sink_base_cabinet_0",
+        "tasting_room_host_podium_0"
+      ],
+      "truth": {
+        "a": "quality_control_room_sink_base_cabinet_0",
+        "b": "tasting_room_host_podium_0",
+        "metres": 13.91,
+        "a_room": "quality_control_room",
+        "b_room": "tasting_room",
+        "tol_m": 1,
+        "spawn": {
+          "x": 2.25,
+          "y": 1.5,
+          "z": 1.25,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "grain_milling_room"
+        }
+      },
+      "goal_images": [
+        [
+          "the sink base cabinet this task refers to -- this exact object",
+          "../references/58ca6a2ae689e6d9376add8a823462a1a890226206cbb3013a8472d6ee9f6cfb.png"
+        ],
+        [
+          "the host podium this task refers to -- this exact object",
+          "../references/504cc4da796139b0f031ea9c220b36a231d7434d223041bd733e437e717f15e6.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__quality_control_room_worktable_0__grain_milling_room_shelving_unit_0",
+      "family": "path_integration",
+      "instruction": "Find the worktable and then the shelving unit; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "quality_control_room_worktable_0",
+        "grain_milling_room_shelving_unit_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "grain_milling_room",
+          "quality_control_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "grain_milling_room_shelving_unit_0",
+          "quality_control_room_worktable_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "grain_milling_room",
+          "quality_control_room"
+        ]
+      },
+      "kinds": [
+        "worktable",
+        "shelving_unit"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "quality_control_room_worktable_0",
+        "grain_milling_room_shelving_unit_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "quality_control_room_worktable_0",
+        "grain_milling_room_shelving_unit_0"
+      ],
+      "truth": {
+        "x": "quality_control_room_worktable_0",
+        "y": "grain_milling_room_shelving_unit_0",
+        "x_room": "quality_control_room",
+        "y_room": "grain_milling_room",
+        "leg_m": 8.85,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": 6.75,
+          "y": 1.5,
+          "z": -4.2,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "cold_packaging_room"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the worktable this task refers to -- this exact object",
+          "../references/7f45619b1c414cffa478c4b9a976b05fb18222060cb7e85673671209a8e9bc63.png"
+        ],
+        [
+          "the shelving unit this task refers to -- this exact object",
+          "../references/de508d0175af6e0300341adde796e365e3dcf462bdd11532a29c071eec8eced0.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__quality_control_room_worktable_0__tasting_room_host_podium_0",
+      "family": "path_integration",
+      "instruction": "Find the worktable and then the host podium; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "quality_control_room_worktable_0",
+        "tasting_room_host_podium_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "quality_control_room",
+          "tasting_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "quality_control_room_worktable_0",
+          "tasting_room_host_podium_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "quality_control_room",
+          "tasting_room"
+        ]
+      },
+      "kinds": [
+        "worktable",
+        "host_podium"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "quality_control_room_worktable_0",
+        "tasting_room_host_podium_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "quality_control_room_worktable_0",
+        "tasting_room_host_podium_0"
+      ],
+      "truth": {
+        "x": "quality_control_room_worktable_0",
+        "y": "tasting_room_host_podium_0",
+        "x_room": "quality_control_room",
+        "y_room": "tasting_room",
+        "leg_m": 15.11,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": 0.75,
+          "y": 1.5,
+          "z": 2.0,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "grain_milling_room"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the worktable this task refers to -- this exact object",
+          "../references/7f45619b1c414cffa478c4b9a976b05fb18222060cb7e85673671209a8e9bc63.png"
+        ],
+        [
+          "the host podium this task refers to -- this exact object",
+          "../references/504cc4da796139b0f031ea9c220b36a231d7434d223041bd733e437e717f15e6.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relative_direction__grain_milling_room_brewery_worktable_0__grain_milling_room_shelving_unit_0__quality_control_room_utility_trolley_0",
+      "family": "relative_direction",
+      "instruction": "Find the brewery worktable and the shelving unit; they are in the same room. Also find the utility trolley, which is somewhere else in this house. Then answer this: if you stood at the brewery worktable and faced the shelving unit, which direction would the utility trolley be in? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "grain_milling_room_brewery_worktable_0",
+        "grain_milling_room_shelving_unit_0",
+        "quality_control_room_utility_trolley_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 150,
+      "answer_number": 0,
+      "answer_tolerance": 22,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "grain_milling_room",
+          "quality_control_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "grain_milling_room_brewery_worktable_0",
+          "grain_milling_room_shelving_unit_0",
+          "quality_control_room_utility_trolley_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "grain_milling_room",
+          "quality_control_room"
+        ]
+      },
+      "kinds": [
+        "brewery_worktable",
+        "utility_trolley",
+        "shelving_unit"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "grain_milling_room_brewery_worktable_0",
+        "quality_control_room_utility_trolley_0",
+        "grain_milling_room_shelving_unit_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "0",
+      "oracle_read": [
+        "relative_direction",
+        "grain_milling_room_brewery_worktable_0",
+        "grain_milling_room_shelving_unit_0",
+        "quality_control_room_utility_trolley_0"
+      ],
+      "truth": {
+        "origin": "grain_milling_room_brewery_worktable_0",
+        "forward": "grain_milling_room_shelving_unit_0",
+        "target": "quality_control_room_utility_trolley_0",
+        "bearing_deg": 359.44,
+        "sector_deg": 0,
+        "offset_deg": 0.56,
+        "origin_room": "grain_milling_room",
+        "target_room": "quality_control_room",
+        "leg_m": 9.32,
+        "spawn": {
+          "x": 8.0,
+          "y": 1.5,
+          "z": 1.3,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "cold_packaging_room"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the brewery worktable this task refers to -- this exact object",
+          "../references/fa580a638def2bbb98a08b4c6fb986cb132a3d955bc9c4a047ba97f63da3ba9a.png"
+        ],
+        [
+          "the shelving unit this task refers to -- this exact object",
+          "../references/de508d0175af6e0300341adde796e365e3dcf462bdd11532a29c071eec8eced0.png"
+        ],
+        [
+          "the utility trolley this task refers to -- this exact object",
+          "../references/dddc3a58670212efde9273f99c91735b5913d26da50addee890fb7cabc69c9e0.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relative_direction__grain_milling_room_shelving_unit_0__grain_milling_room_brewery_worktable_0__quality_control_room_utility_trolley_0",
+      "family": "relative_direction",
+      "instruction": "Find the shelving unit and the brewery worktable; they are in the same room. Also find the utility trolley, which is somewhere else in this house. Then answer this: if you stood at the shelving unit and faced the brewery worktable, which direction would the utility trolley be in? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "grain_milling_room_shelving_unit_0",
+        "grain_milling_room_brewery_worktable_0",
+        "quality_control_room_utility_trolley_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 150,
+      "answer_number": 180,
+      "answer_tolerance": 22,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "grain_milling_room",
+          "quality_control_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "grain_milling_room_brewery_worktable_0",
+          "grain_milling_room_shelving_unit_0",
+          "quality_control_room_utility_trolley_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "grain_milling_room",
+          "quality_control_room"
+        ]
+      },
+      "kinds": [
+        "shelving_unit",
+        "utility_trolley",
+        "brewery_worktable"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "grain_milling_room_shelving_unit_0",
+        "quality_control_room_utility_trolley_0",
+        "grain_milling_room_brewery_worktable_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "180",
+      "oracle_read": [
+        "relative_direction",
+        "grain_milling_room_shelving_unit_0",
+        "grain_milling_room_brewery_worktable_0",
+        "quality_control_room_utility_trolley_0"
+      ],
+      "truth": {
+        "origin": "grain_milling_room_shelving_unit_0",
+        "forward": "grain_milling_room_brewery_worktable_0",
+        "target": "quality_control_room_utility_trolley_0",
+        "bearing_deg": 179.13,
+        "sector_deg": 180,
+        "offset_deg": 0.87,
+        "origin_room": "grain_milling_room",
+        "target_room": "quality_control_room",
+        "leg_m": 6.02,
+        "spawn": {
+          "x": -0.25,
+          "y": 1.5,
+          "z": -3.6,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "tasting_room"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the shelving unit this task refers to -- this exact object",
+          "../references/de508d0175af6e0300341adde796e365e3dcf462bdd11532a29c071eec8eced0.png"
+        ],
+        [
+          "the brewery worktable this task refers to -- this exact object",
+          "../references/fa580a638def2bbb98a08b4c6fb986cb132a3d955bc9c4a047ba97f63da3ba9a.png"
+        ],
+        [
+          "the utility trolley this task refers to -- this exact object",
+          "../references/dddc3a58670212efde9273f99c91735b5913d26da50addee890fb7cabc69c9e0.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relative_direction__quality_control_room_utility_trolley_0__quality_control_room_laboratory_testing_desk_0__tasting_room_service_counter_0",
+      "family": "relative_direction",
+      "instruction": "Find the utility trolley and the laboratory testing desk; they are in the same room. Also find the service counter, which is somewhere else in this house. Then answer this: if you stood at the utility trolley and faced the laboratory testing desk, which direction would the service counter be in? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "quality_control_room_utility_trolley_0",
+        "quality_control_room_laboratory_testing_desk_0",
+        "tasting_room_service_counter_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 150,
+      "answer_number": 225,
+      "answer_tolerance": 22,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "quality_control_room",
+          "tasting_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "quality_control_room_laboratory_testing_desk_0",
+          "quality_control_room_utility_trolley_0",
+          "tasting_room_service_counter_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "quality_control_room",
+          "tasting_room"
+        ]
+      },
+      "kinds": [
+        "utility_trolley",
+        "service_counter",
+        "laboratory_testing_desk"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "quality_control_room_utility_trolley_0",
+        "tasting_room_service_counter_0",
+        "quality_control_room_laboratory_testing_desk_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "225",
+      "oracle_read": [
+        "relative_direction",
+        "quality_control_room_utility_trolley_0",
+        "quality_control_room_laboratory_testing_desk_0",
+        "tasting_room_service_counter_0"
+      ],
+      "truth": {
+        "origin": "quality_control_room_utility_trolley_0",
+        "forward": "quality_control_room_laboratory_testing_desk_0",
+        "target": "tasting_room_service_counter_0",
+        "bearing_deg": 223.59,
+        "sector_deg": 225,
+        "offset_deg": 1.41,
+        "origin_room": "quality_control_room",
+        "target_room": "tasting_room",
+        "leg_m": 11.58,
+        "spawn": {
+          "x": 6.25,
+          "y": 1.5,
+          "z": 7.8,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "fermentation_room"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the utility trolley this task refers to -- this exact object",
+          "../references/dddc3a58670212efde9273f99c91735b5913d26da50addee890fb7cabc69c9e0.png"
+        ],
+        [
+          "the laboratory testing desk this task refers to -- this exact object",
+          "../references/ee0089dd1f90fdf9d1681c07a9f2f23508951ca554da22bec0a78a39a784e544.png"
+        ],
+        [
+          "the service counter this task refers to -- this exact object",
+          "../references/753561c464d24ff22a34c0b565cae575716ee006f3f9c9e5f5e27f0c207699c9.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "nearer_object_comparison__brewhouse_utility_sink_cabinet_0",
+      "family": "nearer_object_comparison",
+      "instruction": "Somewhere in this house there are the brewery worktable, the shelving unit and the utility trolley. None of them is in the same room as the utility sink cabinet. Find out which one of them is closest to the utility sink cabinet, and answer with just that one thing. Compare the straight-line distances, not how far you had to walk.",
+      "referents": [
+        "brewhouse_utility_sink_cabinet_0",
+        "grain_milling_room_shelving_unit_0",
+        "grain_milling_room_brewery_worktable_0",
+        "quality_control_room_utility_trolley_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "shelving unit"
+        ]
+      ],
+      "answer_choices": [
+        "brewery worktable",
+        "shelving unit",
+        "utility trolley"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "brewhouse",
+          "grain_milling_room",
+          "quality_control_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "brewhouse_utility_sink_cabinet_0",
+          "grain_milling_room_brewery_worktable_0",
+          "grain_milling_room_shelving_unit_0",
+          "quality_control_room_utility_trolley_0"
+        ],
+        "min_distinct_viewpoints": 3,
+        "search_regions": [
+          "brewhouse",
+          "grain_milling_room",
+          "quality_control_room"
+        ]
+      },
+      "kinds": [
+        "shelving_unit",
+        "brewery_worktable",
+        "utility_trolley",
+        "utility_sink_cabinet"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "brewhouse_utility_sink_cabinet_0",
+        "grain_milling_room_shelving_unit_0",
+        "grain_milling_room_brewery_worktable_0",
+        "quality_control_room_utility_trolley_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "shelving unit",
+      "oracle_read": [
+        "nearest_of",
+        "brewhouse_utility_sink_cabinet_0",
+        [
+          [
+            "grain_milling_room_shelving_unit_0",
+            "shelving unit"
+          ],
+          [
+            "grain_milling_room_brewery_worktable_0",
+            "brewery worktable"
+          ],
+          [
+            "quality_control_room_utility_trolley_0",
+            "utility trolley"
+          ]
+        ]
+      ],
+      "truth": {
+        "x": "brewhouse_utility_sink_cabinet_0",
+        "winner": "grain_milling_room_shelving_unit_0",
+        "choices": [
+          "grain_milling_room_shelving_unit_0",
+          "grain_milling_room_brewery_worktable_0",
+          "quality_control_room_utility_trolley_0"
+        ],
+        "words": [
+          "brewery worktable",
+          "shelving unit",
+          "utility trolley"
+        ],
+        "metres": {
+          "grain_milling_room_shelving_unit_0": 1.16,
+          "grain_milling_room_brewery_worktable_0": 4.44,
+          "quality_control_room_utility_trolley_0": 4.88
+        },
+        "lead_m": 3.28,
+        "x_room": "brewhouse",
+        "spawn": {
+          "x": 10.75,
+          "y": 1.5,
+          "z": 7.8,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "fermentation_room"
+        }
+      },
+      "answer_choice_labels": [
+        "brewery worktable",
+        "shelving unit",
+        "utility trolley"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the utility sink cabinet this task refers to -- this exact object",
+          "../references/10359a4510d0d4dfd9c26ec7c2b03c7e81a4f894d9cd2eef51547a761ad00b5a.png"
+        ],
+        [
+          "the shelving unit this task refers to -- this exact object",
+          "../references/de508d0175af6e0300341adde796e365e3dcf462bdd11532a29c071eec8eced0.png"
+        ],
+        [
+          "the brewery worktable this task refers to -- this exact object",
+          "../references/fa580a638def2bbb98a08b4c6fb986cb132a3d955bc9c4a047ba97f63da3ba9a.png"
+        ],
+        [
+          "the utility trolley this task refers to -- this exact object",
+          "../references/dddc3a58670212efde9273f99c91735b5913d26da50addee890fb7cabc69c9e0.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_count__worktable",
+      "family": "room_count",
+      "instruction": "Search this house and find out which rooms contain at least one worktable. Count two places as different rooms if you have to go through a doorway to get from one to the other. Some rooms contain no worktables at all, and a room with several worktables still counts once. Tell me how many rooms contain at least one worktable, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 4,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "brewhouse",
+          "cold_packaging_room",
+          "grain_milling_room",
+          "quality_control_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "brewhouse_brewery_worktable_0",
+          "cold_packaging_room_worktable_0",
+          "grain_milling_room_brewery_worktable_0",
+          "quality_control_room_worktable_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "brewhouse",
+          "cold_packaging_room",
+          "fermentation_room",
+          "grain_milling_room",
+          "quality_control_room",
+          "tasting_room"
+        ]
+      },
+      "kinds": [
+        "worktable"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "brewhouse_brewery_worktable_0",
+        "cold_packaging_room_worktable_0",
+        "grain_milling_room_brewery_worktable_0",
+        "quality_control_room_worktable_0"
+      ],
+      "answer_instances": [
+        "brewhouse_brewery_worktable_0",
+        "cold_packaging_room_worktable_0",
+        "grain_milling_room_brewery_worktable_0",
+        "quality_control_room_worktable_0"
+      ],
+      "plan": [],
+      "oracle_answer": "4",
+      "oracle_read": [
+        "room_count_seen",
+        "worktable",
+        [
+          "brewhouse",
+          "cold_packaging_room",
+          "fermentation_room",
+          "grain_milling_room",
+          "quality_control_room",
+          "tasting_room"
+        ],
+        []
+      ],
+      "truth": {
+        "kind": "worktable",
+        "n_rooms": 4,
+        "noun": "worktable",
+        "rooms": [
+          "brewhouse",
+          "cold_packaging_room",
+          "grain_milling_room",
+          "quality_control_room"
+        ],
+        "places": [
+          [
+            "brewhouse"
+          ],
+          [
+            "cold_packaging_room"
+          ],
+          [
+            "grain_milling_room"
+          ],
+          [
+            "quality_control_room"
+          ]
+        ],
+        "n_places_in_scope": 6,
+        "total": 4,
+        "spawn": {
+          "x": 0.5,
+          "y": 1.5,
+          "z": 3.5,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "grain_milling_room"
+        },
+        "category_membership": {
+          "schema": "reviewed-category-members-v1",
+          "aliases": [
+            "brewhouse_brewery_worktable_0",
+            "cold_packaging_room_worktable_0",
+            "grain_milling_room_brewery_worktable_0",
+            "quality_control_room_worktable_0"
+          ],
+          "category": "worktable"
+        },
+        "per_room": {
+          "brewhouse": 1,
+          "cold_packaging_room": 1,
+          "grain_milling_room": 1,
+          "quality_control_room": 1
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'worktable' -- the task is about every worktable in the house, and the others need not look like this one",
+          "../references/77d73707783fa65fcc0d503623dbb92d60504c31a2458fb8714b3543a6ce40ab.png"
+        ]
+      ]
+    }
+  ],
+  "dataset_version": "1.1"
+}

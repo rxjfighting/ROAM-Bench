@@ -1,0 +1,64 @@
+{
+  "scene": "scene_142",
+  "lights": [
+    {
+      "emitter_id": "whole_layer_00",
+      "zone_id": "furniture_014_zone_00",
+      "light_type": "RectLight",
+      "width": 0.6218200922012329,
+      "height": 0.3739628493785858,
+      "intensity": 1800.0,
+      "position": [
+        5.533948237040432,
+        -4.730834715689023,
+        0.6985728619573658
+      ],
+      "direction": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "world_transform_readback": [
+        [
+          0.10323231075351152,
+          -0.9946572726404258,
+          0.0,
+          0.0
+        ],
+        [
+          0.9946572726404258,
+          0.10323231075351152,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          5.533948237040432,
+          -4.730834715689023,
+          0.6985728619573658,
+          1.0
+        ]
+      ],
+      "normalize": true,
+      "exposure": 0.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "diffuse": 1.0,
+      "specular": 1.0,
+      "shadow_enable": true,
+      "cone_angle": 65.0,
+      "cone_softness": 0.3499999940395355,
+      "placement_uses_layer_geometry_not_can_coordinates": true,
+      "path": "/World/ActiveBenchManualShelfPanel1800V1/whole_layer_00",
+      "actual_usd_light_attributes_read_back": true
+    }
+  ]
+}

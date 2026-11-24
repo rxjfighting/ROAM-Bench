@@ -1,0 +1,2015 @@
+{
+  "benchmark": "ROAM-Bench",
+  "version": "1.1",
+  "task_count": 250,
+  "scene_count": 27,
+  "groups": {
+    "G1": 49,
+    "G2": 38,
+    "G4": 56,
+    "G3": 77,
+    "G5": 30
+  },
+  "tasks": [
+    {
+      "scene": "scene_100",
+      "task_id": "surface_contents__bedroom_nightstand_0",
+      "family": "surface_contents",
+      "group": "G1",
+      "task_type": "Surface contents",
+      "action_budget": 100
+    },
+    {
+      "scene": "scene_100",
+      "task_id": "object_count__mirror",
+      "family": "object_count",
+      "group": "G2",
+      "task_type": "Object count",
+      "action_budget": 100
+    },
+    {
+      "scene": "scene_100",
+      "task_id": "relative_direction__bedroom_nightstand_0__bedroom_wardrobe_0__hallway_shoe_bench_0",
+      "family": "relative_direction",
+      "group": "G4",
+      "task_type": "Relative direction",
+      "action_budget": 100
+    },
+    {
+      "scene": "scene_100",
+      "task_id": "relative_direction__bedroom_nightstand_0__bedroom_wardrobe_0__kitchen_base_cooking_unit_0",
+      "family": "relative_direction",
+      "group": "G4",
+      "task_type": "Relative direction",
+      "action_budget": 100
+    },
+    {
+      "scene": "scene_100",
+      "task_id": "nearer_object_comparison__hallway_shoe_bench_0",
+      "family": "nearer_object_comparison",
+      "group": "G3",
+      "task_type": "Nearer-object comparison",
+      "action_budget": 100
+    },
+    {
+      "scene": "scene_100",
+      "task_id": "room_count__mirror",
+      "family": "room_count",
+      "group": "G2",
+      "task_type": "Room count",
+      "action_budget": 100
+    },
+    {
+      "scene": "scene_102",
+      "task_id": "object_count__smoke_detector",
+      "family": "object_count",
+      "group": "G2",
+      "task_type": "Object count",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_102",
+      "task_id": "relocation__exam_room_2_laptop_computer_0__to__exam_room_1_workstation_desk_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_102",
+      "task_id": "gap_width__exam_room_1_examination_table_0__exam_room_1_workstation_desk_0",
+      "family": "gap_width",
+      "group": "G3",
+      "task_type": "Gap width",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_102",
+      "task_id": "nearer_object_comparison__restroom_toilet_0",
+      "family": "nearer_object_comparison",
+      "group": "G3",
+      "task_type": "Nearer-object comparison",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_102",
+      "task_id": "room_area__reception",
+      "family": "room_area",
+      "group": "G3",
+      "task_type": "Room area",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_105",
+      "task_id": "object_count__wall_clock",
+      "family": "object_count",
+      "group": "G2",
+      "task_type": "Object count",
+      "action_budget": 175
+    },
+    {
+      "scene": "scene_105",
+      "task_id": "relocation__bedroom_digital_alarm_clock_0__to__kitchen_breakfast_table_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 175
+    },
+    {
+      "scene": "scene_105",
+      "task_id": "relocation__master_bedroom_water_tumbler_0__to__living_room_side_table_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 175
+    },
+    {
+      "scene": "scene_105",
+      "task_id": "gap_width__bathroom_bathroom_vanity_0__bathroom_shower_cubicle_0",
+      "family": "gap_width",
+      "group": "G3",
+      "task_type": "Gap width",
+      "action_budget": 175
+    },
+    {
+      "scene": "scene_105",
+      "task_id": "nearer_object_comparison__living_room_coffee_table_0",
+      "family": "nearer_object_comparison",
+      "group": "G3",
+      "task_type": "Nearer-object comparison",
+      "action_budget": 175
+    },
+    {
+      "scene": "scene_106",
+      "task_id": "surface_contents__meeting_room_conference_table_0",
+      "family": "surface_contents",
+      "group": "G1",
+      "task_type": "Surface contents",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_106",
+      "task_id": "object_count__pendant_light",
+      "family": "object_count",
+      "group": "G2",
+      "task_type": "Object count",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_106",
+      "task_id": "object_count__wall_clock",
+      "family": "object_count",
+      "group": "G2",
+      "task_type": "Object count",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_106",
+      "task_id": "relocation__kitchenette_electric_kettle_0__to__reception_side_table_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_106",
+      "task_id": "room_comparison__pendant_light",
+      "family": "room_comparison",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_106",
+      "task_id": "path_integration__reception_side_table_0__kitchenette_dining_table_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_106",
+      "task_id": "path_integration__reception_side_table_0__kitchenette_kitchen_workbench_cabinet_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_106",
+      "task_id": "relative_direction__kitchenette_dining_table_0__kitchenette_kitchen_workbench_cabinet_0__print_supply_room_copier_printer_0",
+      "family": "relative_direction",
+      "group": "G4",
+      "task_type": "Relative direction",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_106",
+      "task_id": "relative_direction__reception_side_table_0__reception_reception_service_desk_0__print_supply_room_worktable_0",
+      "family": "relative_direction",
+      "group": "G4",
+      "task_type": "Relative direction",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_106",
+      "task_id": "room_localization__workspace_architect_ruler_0",
+      "family": "room_localization",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_106",
+      "task_id": "room_area__workspace",
+      "family": "room_area",
+      "group": "G3",
+      "task_type": "Room area",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_106",
+      "task_id": "room_count__wall_clock",
+      "family": "room_count",
+      "group": "G2",
+      "task_type": "Room count",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_107",
+      "task_id": "surface_contents__guest_suite_bedroom_side_table_0",
+      "family": "surface_contents",
+      "group": "G1",
+      "task_type": "Surface contents",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_107",
+      "task_id": "object_count__mirror",
+      "family": "object_count",
+      "group": "G2",
+      "task_type": "Object count",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_107",
+      "task_id": "object_count__side_table",
+      "family": "object_count",
+      "group": "G2",
+      "task_type": "Object count",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_107",
+      "task_id": "object_distance__guest_suite_bedroom_dresser_0__housekeeping_store_linen_cart_0",
+      "family": "object_distance",
+      "group": "G3",
+      "task_type": "Object distance",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_107",
+      "task_id": "gap_width__housekeeping_store_linen_cart_0__housekeeping_store_linen_folding_work_counter_0",
+      "family": "gap_width",
+      "group": "G3",
+      "task_type": "Gap width",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_107",
+      "task_id": "path_integration__breakfast_nook_cafe_table_0__housekeeping_store_linen_folding_work_counter_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_107",
+      "task_id": "nearer_object_comparison__guest_lounge_side_table_0",
+      "family": "nearer_object_comparison",
+      "group": "G3",
+      "task_type": "Nearer-object comparison",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_107",
+      "task_id": "room_area__corridor",
+      "family": "room_area",
+      "group": "G3",
+      "task_type": "Room area",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_107",
+      "task_id": "room_count__mirror",
+      "family": "room_count",
+      "group": "G2",
+      "task_type": "Room count",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_108",
+      "task_id": "object_count__painting",
+      "family": "object_count",
+      "group": "G2",
+      "task_type": "Object count",
+      "action_budget": 100
+    },
+    {
+      "scene": "scene_108",
+      "task_id": "object_count__wall_clock",
+      "family": "object_count",
+      "group": "G2",
+      "task_type": "Object count",
+      "action_budget": 100
+    },
+    {
+      "scene": "scene_108",
+      "task_id": "object_distance__bathroom_bathroom_vanity_0__kitchen_refrigerator_0",
+      "family": "object_distance",
+      "group": "G3",
+      "task_type": "Object distance",
+      "action_budget": 100
+    },
+    {
+      "scene": "scene_108",
+      "task_id": "object_distance__bathroom_shower_enclosure_0__open_studio_workbench_table_0",
+      "family": "object_distance",
+      "group": "G3",
+      "task_type": "Object distance",
+      "action_budget": 100
+    },
+    {
+      "scene": "scene_108",
+      "task_id": "object_distance__kitchen_kitchen_base_counter_0__sleeping_alcove_mattress_platform_0",
+      "family": "object_distance",
+      "group": "G3",
+      "task_type": "Object distance",
+      "action_budget": 100
+    },
+    {
+      "scene": "scene_108",
+      "task_id": "object_distance__kitchen_refrigerator_0__open_studio_workbench_table_0",
+      "family": "object_distance",
+      "group": "G3",
+      "task_type": "Object distance",
+      "action_budget": 100
+    },
+    {
+      "scene": "scene_108",
+      "task_id": "gap_width__kitchen_kitchen_base_counter_0__kitchen_kitchen_prep_counter_0",
+      "family": "gap_width",
+      "group": "G3",
+      "task_type": "Gap width",
+      "action_budget": 100
+    },
+    {
+      "scene": "scene_108",
+      "task_id": "relative_direction__kitchen_kitchen_prep_counter_0__kitchen_refrigerator_0__bathroom_shower_enclosure_0",
+      "family": "relative_direction",
+      "group": "G4",
+      "task_type": "Relative direction",
+      "action_budget": 100
+    },
+    {
+      "scene": "scene_108",
+      "task_id": "room_count__mirror",
+      "family": "room_count",
+      "group": "G2",
+      "task_type": "Room count",
+      "action_budget": 100
+    },
+    {
+      "scene": "scene_108",
+      "task_id": "room_count__painting",
+      "family": "room_count",
+      "group": "G2",
+      "task_type": "Room count",
+      "action_budget": 100
+    },
+    {
+      "scene": "scene_108",
+      "task_id": "room_count__wall_clock",
+      "family": "room_count",
+      "group": "G2",
+      "task_type": "Room count",
+      "action_budget": 100
+    },
+    {
+      "scene": "scene_109",
+      "task_id": "object_distance__bathroom_bathroom_sink_vanity_0__kitchen_dining_table_0",
+      "family": "object_distance",
+      "group": "G3",
+      "task_type": "Object distance",
+      "action_budget": 200
+    },
+    {
+      "scene": "scene_109",
+      "task_id": "relocation__bedroom_2_desk_lamp_0__to__bedroom_bed_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 200
+    },
+    {
+      "scene": "scene_109",
+      "task_id": "relocation__bedroom_2_laptop_computer_0__to__kitchen_kitchen_island_counter_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 200
+    },
+    {
+      "scene": "scene_109",
+      "task_id": "relocation__bedroom_3_desk_lamp_0__to__bedroom_bed_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 200
+    },
+    {
+      "scene": "scene_109",
+      "task_id": "relocation__bedroom_3_laptop_computer_0__to__study_communal_study_table_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 200
+    },
+    {
+      "scene": "scene_109",
+      "task_id": "gap_width__kitchen_dining_table_0__kitchen_refrigerator_freezer_0",
+      "family": "gap_width",
+      "group": "G3",
+      "task_type": "Gap width",
+      "action_budget": 200
+    },
+    {
+      "scene": "scene_109",
+      "task_id": "gap_width__living_room_couch_0__living_room_side_table_0",
+      "family": "gap_width",
+      "group": "G3",
+      "task_type": "Gap width",
+      "action_budget": 200
+    },
+    {
+      "scene": "scene_111",
+      "task_id": "surface_contents__waiting_room_side_table_0",
+      "family": "surface_contents",
+      "group": "G1",
+      "task_type": "Surface contents",
+      "action_budget": 100
+    },
+    {
+      "scene": "scene_111",
+      "task_id": "object_count__wall_clock",
+      "family": "object_count",
+      "group": "G2",
+      "task_type": "Object count",
+      "action_budget": 100
+    },
+    {
+      "scene": "scene_111",
+      "task_id": "gap_width__sterilization_room_clinical_utility_cart_0__sterilization_room_workbench_0",
+      "family": "gap_width",
+      "group": "G3",
+      "task_type": "Gap width",
+      "action_budget": 100
+    },
+    {
+      "scene": "scene_111",
+      "task_id": "room_localization__sterilization_room_clinical_instrument_case_0",
+      "family": "room_localization",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 100
+    },
+    {
+      "scene": "scene_111",
+      "task_id": "room_count__poster",
+      "family": "room_count",
+      "group": "G2",
+      "task_type": "Room count",
+      "action_budget": 100
+    },
+    {
+      "scene": "scene_112",
+      "task_id": "surface_contents__retail_floor_checkout_service_counter_0",
+      "family": "surface_contents",
+      "group": "G1",
+      "task_type": "Surface contents",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_112",
+      "task_id": "object_count__wall_clock",
+      "family": "object_count",
+      "group": "G2",
+      "task_type": "Object count",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_112",
+      "task_id": "relocation__loading_nook_kraft_paper_roll_0__to__retail_floor_retail_flower_display_pedestal_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_112",
+      "task_id": "gap_width__loading_nook_shelving_unit_0__loading_nook_utility_sink_0",
+      "family": "gap_width",
+      "group": "G3",
+      "task_type": "Gap width",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_112",
+      "task_id": "gap_width__office_filing_chest_0__office_shelving_unit_0",
+      "family": "gap_width",
+      "group": "G3",
+      "task_type": "Gap width",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_112",
+      "task_id": "relative_direction__retail_floor_checkout_service_counter_0__retail_floor_plant_display_rack_0__workshop_shelving_unit_0",
+      "family": "relative_direction",
+      "group": "G4",
+      "task_type": "Relative direction",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_112",
+      "task_id": "nearer_object_comparison__loading_nook_shelving_unit_0",
+      "family": "nearer_object_comparison",
+      "group": "G3",
+      "task_type": "Nearer-object comparison",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_112",
+      "task_id": "nearer_object_comparison__workshop_florist_cooler_0",
+      "family": "nearer_object_comparison",
+      "group": "G3",
+      "task_type": "Nearer-object comparison",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_112",
+      "task_id": "room_area__workshop",
+      "family": "room_area",
+      "group": "G3",
+      "task_type": "Room area",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_113",
+      "task_id": "surface_contents__changing_room_changing_room_bench_0",
+      "family": "surface_contents",
+      "group": "G1",
+      "task_type": "Surface contents",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_113",
+      "task_id": "surface_contents__smaller_practice_room_storage_cabinet_0",
+      "family": "surface_contents",
+      "group": "G1",
+      "task_type": "Surface contents",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_113",
+      "task_id": "surface_contents__treatment_room_shelving_unit_0",
+      "family": "surface_contents",
+      "group": "G1",
+      "task_type": "Surface contents",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_113",
+      "task_id": "object_distance__main_practice_room_yoga_equipment_storage_rack_0__smaller_practice_room_storage_cabinet_0",
+      "family": "object_distance",
+      "group": "G3",
+      "task_type": "Object distance",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_113",
+      "task_id": "relative_direction__main_practice_room_shelving_cabinet_0__main_practice_room_yoga_equipment_storage_rack_0__smaller_practice_room_speaker_pedestal_stand_0",
+      "family": "relative_direction",
+      "group": "G4",
+      "task_type": "Relative direction",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_113",
+      "task_id": "relative_direction__smaller_practice_room_speaker_pedestal_stand_0__smaller_practice_room_storage_cabinet_0__main_practice_room_shelving_cabinet_0",
+      "family": "relative_direction",
+      "group": "G4",
+      "task_type": "Relative direction",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_113",
+      "task_id": "relative_direction__smaller_practice_room_speaker_pedestal_stand_0__smaller_practice_room_storage_cabinet_0__main_practice_room_yoga_equipment_storage_rack_0",
+      "family": "relative_direction",
+      "group": "G4",
+      "task_type": "Relative direction",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_113",
+      "task_id": "nearer_object_comparison__changing_room_changing_room_bench_0",
+      "family": "nearer_object_comparison",
+      "group": "G3",
+      "task_type": "Nearer-object comparison",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_113",
+      "task_id": "nearer_object_comparison__treatment_room_shelving_unit_0",
+      "family": "nearer_object_comparison",
+      "group": "G3",
+      "task_type": "Nearer-object comparison",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_113",
+      "task_id": "room_area__changing_room",
+      "family": "room_area",
+      "group": "G3",
+      "task_type": "Room area",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_113",
+      "task_id": "room_area__main_practice_room",
+      "family": "room_area",
+      "group": "G3",
+      "task_type": "Room area",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_113",
+      "task_id": "room_count__flush_mount",
+      "family": "room_count",
+      "group": "G2",
+      "task_type": "Room count",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_114",
+      "task_id": "surface_contents__partners_office_executive_desk_0",
+      "family": "surface_contents",
+      "group": "G1",
+      "task_type": "Surface contents",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_114",
+      "task_id": "object_count__wall_clock",
+      "family": "object_count",
+      "group": "G2",
+      "task_type": "Object count",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_114",
+      "task_id": "relocation__partners_office_document_tray_0__to__conference_room_conference_table_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_114",
+      "task_id": "room_comparison__flush_mount",
+      "family": "room_comparison",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_114",
+      "task_id": "room_localization__partners_office_filled_container_0",
+      "family": "room_localization",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_114",
+      "task_id": "room_count__artwork",
+      "family": "room_count",
+      "group": "G2",
+      "task_type": "Room count",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_114",
+      "task_id": "room_count__print",
+      "family": "room_count",
+      "group": "G2",
+      "task_type": "Room count",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_114",
+      "task_id": "room_count__wall_clock",
+      "family": "room_count",
+      "group": "G2",
+      "task_type": "Room count",
+      "action_budget": 125
+    },
+    {
+      "scene": "scene_116",
+      "task_id": "surface_contents__baking_kitchen_prep_island_0",
+      "family": "surface_contents",
+      "group": "G1",
+      "task_type": "Surface contents",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_116",
+      "task_id": "surface_contents__baking_kitchen_sink_cabinet_0",
+      "family": "surface_contents",
+      "group": "G1",
+      "task_type": "Surface contents",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_116",
+      "task_id": "surface_contents__service_counter_pastry_display_case_0",
+      "family": "surface_contents",
+      "group": "G1",
+      "task_type": "Surface contents",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_116",
+      "task_id": "object_count__digital_kitchen_scale",
+      "family": "object_count",
+      "group": "G2",
+      "task_type": "Object count",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_116",
+      "task_id": "object_count__poster",
+      "family": "object_count",
+      "group": "G2",
+      "task_type": "Object count",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_116",
+      "task_id": "object_count__wall_clock",
+      "family": "object_count",
+      "group": "G2",
+      "task_type": "Object count",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_116",
+      "task_id": "gap_width__baking_kitchen_sink_cabinet_0__baking_kitchen_storage_cabinet_0",
+      "family": "gap_width",
+      "group": "G3",
+      "task_type": "Gap width",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_116",
+      "task_id": "path_integration__proofing_mixing_room_bakery_worktable_0__staff_restroom_waste_bin_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_116",
+      "task_id": "nearer_object_comparison__baking_kitchen_bakery_work_counter_0",
+      "family": "nearer_object_comparison",
+      "group": "G3",
+      "task_type": "Nearer-object comparison",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_116",
+      "task_id": "room_count__mixing_bowl",
+      "family": "room_count",
+      "group": "G2",
+      "task_type": "Room count",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_116",
+      "task_id": "room_count__wall_clock",
+      "family": "room_count",
+      "group": "G2",
+      "task_type": "Room count",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_118",
+      "task_id": "object_distance__bathroom_bathroom_vanity_0__kitchen_kitchen_range_cabinet_0",
+      "family": "object_distance",
+      "group": "G3",
+      "task_type": "Object distance",
+      "action_budget": 175
+    },
+    {
+      "scene": "scene_118",
+      "task_id": "gap_width__bathroom_bathtub_0__bathroom_toilet_0",
+      "family": "gap_width",
+      "group": "G3",
+      "task_type": "Gap width",
+      "action_budget": 175
+    },
+    {
+      "scene": "scene_118",
+      "task_id": "gap_width__dining_room_dining_table_0__dining_room_sideboard_0",
+      "family": "gap_width",
+      "group": "G3",
+      "task_type": "Gap width",
+      "action_budget": 175
+    },
+    {
+      "scene": "scene_118",
+      "task_id": "gap_width__kitchen_breakfast_island_table_0__kitchen_refrigerator_0",
+      "family": "gap_width",
+      "group": "G3",
+      "task_type": "Gap width",
+      "action_budget": 175
+    },
+    {
+      "scene": "scene_118",
+      "task_id": "gap_width__kitchen_breakfast_island_table_0__kitchen_utility_counter_0",
+      "family": "gap_width",
+      "group": "G3",
+      "task_type": "Gap width",
+      "action_budget": 175
+    },
+    {
+      "scene": "scene_118",
+      "task_id": "gap_width__living_room_bookcase_0__living_room_sectional_sofa_0",
+      "family": "gap_width",
+      "group": "G3",
+      "task_type": "Gap width",
+      "action_budget": 175
+    },
+    {
+      "scene": "scene_118",
+      "task_id": "gap_width__third_bedroom_garment_rack_0__third_bedroom_writing_desk_0",
+      "family": "gap_width",
+      "group": "G3",
+      "task_type": "Gap width",
+      "action_budget": 175
+    },
+    {
+      "scene": "scene_118",
+      "task_id": "path_integration__second_bedroom_writing_desk_0__kitchen_refrigerator_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 175
+    },
+    {
+      "scene": "scene_118",
+      "task_id": "path_integration__third_bedroom_writing_desk_0__bathroom_bathtub_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 175
+    },
+    {
+      "scene": "scene_118",
+      "task_id": "relative_direction__living_room_sectional_sofa_0__living_room_coffee_table_0__master_bedroom_wardrobe_0",
+      "family": "relative_direction",
+      "group": "G4",
+      "task_type": "Relative direction",
+      "action_budget": 175
+    },
+    {
+      "scene": "scene_118",
+      "task_id": "nearer_object_comparison__kitchen_utility_counter_0",
+      "family": "nearer_object_comparison",
+      "group": "G3",
+      "task_type": "Nearer-object comparison",
+      "action_budget": 175
+    },
+    {
+      "scene": "scene_118",
+      "task_id": "room_localization__third_bedroom_laptop_0",
+      "family": "room_localization",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 175
+    },
+    {
+      "scene": "scene_118",
+      "task_id": "room_area__living_room",
+      "family": "room_area",
+      "group": "G3",
+      "task_type": "Room area",
+      "action_budget": 175
+    },
+    {
+      "scene": "scene_119",
+      "task_id": "object_distance__individual_practice_room_2_upright_piano_0__percussion_practice_room_storage_cabinet_0",
+      "family": "object_distance",
+      "group": "G3",
+      "task_type": "Object distance",
+      "action_budget": 200
+    },
+    {
+      "scene": "scene_119",
+      "task_id": "relocation__individual_practice_room_2_mechanical_metronome_0__to__individual_practice_room_1_upright_piano_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 200
+    },
+    {
+      "scene": "scene_119",
+      "task_id": "path_integration__individual_practice_room_2_upright_piano_0__storage_room_cubby_rack_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 200
+    },
+    {
+      "scene": "scene_119",
+      "task_id": "path_integration__individual_practice_room_2_upright_piano_0__storage_room_inspection_table_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 200
+    },
+    {
+      "scene": "scene_119",
+      "task_id": "path_integration__storage_room_cubby_rack_0__individual_practice_room_2_upright_piano_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 200
+    },
+    {
+      "scene": "scene_119",
+      "task_id": "relative_direction__staff_lounge_coffee_counter_0__staff_lounge_staff_break_table_0__individual_practice_room_1_upright_piano_0",
+      "family": "relative_direction",
+      "group": "G4",
+      "task_type": "Relative direction",
+      "action_budget": 200
+    },
+    {
+      "scene": "scene_119",
+      "task_id": "relative_direction__staff_lounge_coffee_counter_0__staff_lounge_staff_break_table_0__storage_room_cubby_rack_0",
+      "family": "relative_direction",
+      "group": "G4",
+      "task_type": "Relative direction",
+      "action_budget": 200
+    },
+    {
+      "scene": "scene_119",
+      "task_id": "relative_direction__storage_room_cubby_rack_0__storage_room_inspection_table_0__individual_practice_room_1_upright_piano_0",
+      "family": "relative_direction",
+      "group": "G4",
+      "task_type": "Relative direction",
+      "action_budget": 200
+    },
+    {
+      "scene": "scene_119",
+      "task_id": "relative_direction__storage_room_cubby_rack_0__storage_room_inspection_table_0__staff_lounge_coffee_counter_0",
+      "family": "relative_direction",
+      "group": "G4",
+      "task_type": "Relative direction",
+      "action_budget": 200
+    },
+    {
+      "scene": "scene_119",
+      "task_id": "relative_direction__storage_room_inspection_table_0__storage_room_cubby_rack_0__individual_practice_room_2_upright_piano_0",
+      "family": "relative_direction",
+      "group": "G4",
+      "task_type": "Relative direction",
+      "action_budget": 200
+    },
+    {
+      "scene": "scene_119",
+      "task_id": "room_area__percussion_practice_room",
+      "family": "room_area",
+      "group": "G3",
+      "task_type": "Room area",
+      "action_budget": 200
+    },
+    {
+      "scene": "scene_139",
+      "task_id": "surface_contents__relaxation_lounge_spa_bench_0",
+      "family": "surface_contents",
+      "group": "G1",
+      "task_type": "Surface contents",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_139",
+      "task_id": "object_count__side_table",
+      "family": "object_count",
+      "group": "G2",
+      "task_type": "Object count",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_139",
+      "task_id": "object_distance__dry_sauna_sauna_bleacher_bench_0__relaxation_lounge_towel_storage_cabinet_0",
+      "family": "object_distance",
+      "group": "G3",
+      "task_type": "Object distance",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_139",
+      "task_id": "relocation__changing_room_left_shower_slide_sandal_0__to__reception_reception_service_counter_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_139",
+      "task_id": "relocation__changing_room_swim_goggles_0__to__reception_side_table_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_139",
+      "task_id": "relocation__shower_room_facial_cleanser_bottle_0__to__reception_reception_service_counter_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_139",
+      "task_id": "room_localization__changing_room_spa_towel_0",
+      "family": "room_localization",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_139",
+      "task_id": "room_localization__relaxation_lounge_bath_towel_0",
+      "family": "room_localization",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_139",
+      "task_id": "room_localization__relaxation_lounge_spa_hand_towel_0",
+      "family": "room_localization",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_139",
+      "task_id": "room_area__reception",
+      "family": "room_area",
+      "group": "G3",
+      "task_type": "Room area",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_139",
+      "task_id": "room_area__shower_room",
+      "family": "room_area",
+      "group": "G3",
+      "task_type": "Room area",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_139",
+      "task_id": "room_count__side_table",
+      "family": "room_count",
+      "group": "G2",
+      "task_type": "Room count",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_140",
+      "task_id": "object_count__poster",
+      "family": "object_count",
+      "group": "G2",
+      "task_type": "Object count",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_140",
+      "task_id": "object_distance__grain_milling_room_grain_weighing_station_0__quality_control_room_utility_trolley_0",
+      "family": "object_distance",
+      "group": "G3",
+      "task_type": "Object distance",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_140",
+      "task_id": "object_distance__quality_control_room_sink_base_cabinet_0__tasting_room_host_podium_0",
+      "family": "object_distance",
+      "group": "G3",
+      "task_type": "Object distance",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_140",
+      "task_id": "path_integration__quality_control_room_worktable_0__grain_milling_room_shelving_unit_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_140",
+      "task_id": "path_integration__quality_control_room_worktable_0__tasting_room_host_podium_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_140",
+      "task_id": "relative_direction__grain_milling_room_brewery_worktable_0__grain_milling_room_shelving_unit_0__quality_control_room_utility_trolley_0",
+      "family": "relative_direction",
+      "group": "G4",
+      "task_type": "Relative direction",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_140",
+      "task_id": "relative_direction__grain_milling_room_shelving_unit_0__grain_milling_room_brewery_worktable_0__quality_control_room_utility_trolley_0",
+      "family": "relative_direction",
+      "group": "G4",
+      "task_type": "Relative direction",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_140",
+      "task_id": "relative_direction__quality_control_room_utility_trolley_0__quality_control_room_laboratory_testing_desk_0__tasting_room_service_counter_0",
+      "family": "relative_direction",
+      "group": "G4",
+      "task_type": "Relative direction",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_140",
+      "task_id": "nearer_object_comparison__brewhouse_utility_sink_cabinet_0",
+      "family": "nearer_object_comparison",
+      "group": "G3",
+      "task_type": "Nearer-object comparison",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_140",
+      "task_id": "room_count__worktable",
+      "family": "room_count",
+      "group": "G2",
+      "task_type": "Room count",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_141",
+      "task_id": "path_integration__musicians_lounge_coffee_table_0__percussion_studio_worktable_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_141",
+      "task_id": "path_integration__percussion_studio_storage_cabinet_0__audio_listening_room_audio_equipment_rack_cabinet_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_141",
+      "task_id": "path_integration__percussion_studio_storage_cabinet_0__audio_listening_room_mixing_console_desk_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_141",
+      "task_id": "path_integration__percussion_studio_storage_cabinet_0__audio_listening_room_side_table_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_141",
+      "task_id": "path_integration__percussion_studio_storage_cabinet_0__instrument_library_shelving_rack_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_141",
+      "task_id": "path_integration__percussion_studio_storage_cabinet_0__musicians_lounge_coffee_table_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_141",
+      "task_id": "path_integration__percussion_studio_storage_cabinet_0__piano_practice_room_upright_piano_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_141",
+      "task_id": "relative_direction__audio_listening_room_audio_equipment_rack_cabinet_0__audio_listening_room_mixing_console_desk_0__musicians_lounge_coffee_table_0",
+      "family": "relative_direction",
+      "group": "G4",
+      "task_type": "Relative direction",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_141",
+      "task_id": "nearer_object_comparison__instrument_library_shelving_rack_0",
+      "family": "nearer_object_comparison",
+      "group": "G3",
+      "task_type": "Nearer-object comparison",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_141",
+      "task_id": "nearer_object_comparison__musicians_lounge_coffee_table_0",
+      "family": "nearer_object_comparison",
+      "group": "G3",
+      "task_type": "Nearer-object comparison",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_141",
+      "task_id": "nearer_object_comparison__piano_practice_room_upright_piano_0",
+      "family": "nearer_object_comparison",
+      "group": "G3",
+      "task_type": "Nearer-object comparison",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_141",
+      "task_id": "room_area__piano_practice_room",
+      "family": "room_area",
+      "group": "G3",
+      "task_type": "Room area",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_142",
+      "task_id": "surface_contents__rink_side_first_aid_room_treatment_table_0",
+      "family": "surface_contents",
+      "group": "G1",
+      "task_type": "Surface contents",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_142",
+      "task_id": "surface_contents__team_changing_room_shoe_cubby_bench_0",
+      "family": "surface_contents",
+      "group": "G1",
+      "task_type": "Surface contents",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_142",
+      "task_id": "relocation__equipment_drying_room_safety_goggles_0__to__skate_rental_room_service_desk_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_142",
+      "task_id": "relocation__ice_maintenance_workshop_aerosol_spray_lubricant_can_0__to__equipment_drying_room_utility_workbench_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_142",
+      "task_id": "path_integration__ice_maintenance_workshop_workbench_0__equipment_drying_room_utility_workbench_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_142",
+      "task_id": "path_integration__skate_rental_room_service_desk_0__rink_side_first_aid_room_medical_supply_cart_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_143",
+      "task_id": "object_distance__dye_laboratory_waste_sorting_cabinet_0__finished_fabric_gallery_display_plinth_3",
+      "family": "object_distance",
+      "group": "G3",
+      "task_type": "Object distance",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_143",
+      "task_id": "object_distance__dye_laboratory_waste_sorting_cabinet_0__finished_fabric_gallery_textile_display_rail_0",
+      "family": "object_distance",
+      "group": "G3",
+      "task_type": "Object distance",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_143",
+      "task_id": "relocation__weaving_studio_textile_sample_binder_0__to__finished_fabric_gallery_storage_cabinet_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_143",
+      "task_id": "relocation__yarn_preparation_room_spool_stand_0__to__weaving_studio_textile_cutting_table_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_143",
+      "task_id": "path_integration__dye_laboratory_waste_sorting_cabinet_0__finished_fabric_gallery_storage_cabinet_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_143",
+      "task_id": "path_integration__pattern_design_room_fabric_bolt_storage_shelf_0__dye_laboratory_worktable_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_143",
+      "task_id": "relative_direction__dye_laboratory_waste_sorting_cabinet_0__dye_laboratory_worktable_0__pattern_design_room_fabric_bolt_storage_shelf_0",
+      "family": "relative_direction",
+      "group": "G4",
+      "task_type": "Relative direction",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_143",
+      "task_id": "room_localization__pattern_design_room_muslin_roll_0",
+      "family": "room_localization",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_143",
+      "task_id": "room_localization__weaving_studio_folded_linen_fabric_0",
+      "family": "room_localization",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_143",
+      "task_id": "room_area__finished_fabric_gallery",
+      "family": "room_area",
+      "group": "G3",
+      "task_type": "Room area",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_143",
+      "task_id": "room_area__pattern_design_room",
+      "family": "room_area",
+      "group": "G3",
+      "task_type": "Room area",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_144",
+      "task_id": "gap_width__courtroom_judges_bench_0__courtroom_witness_stand_0",
+      "family": "gap_width",
+      "group": "G3",
+      "task_type": "Gap width",
+      "action_budget": 25
+    },
+    {
+      "scene": "scene_144",
+      "task_id": "room_localization__courtroom_water_tumbler_0",
+      "family": "room_localization",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 25
+    },
+    {
+      "scene": "scene_144",
+      "task_id": "room_localization__courtroom_water_tumbler_1",
+      "family": "room_localization",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 25
+    },
+    {
+      "scene": "scene_144",
+      "task_id": "room_area__courtroom",
+      "family": "room_area",
+      "group": "G3",
+      "task_type": "Room area",
+      "action_budget": 25
+    },
+    {
+      "scene": "scene_145",
+      "task_id": "room_localization__game_room_robot_prize_toy_0",
+      "family": "room_localization",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 25
+    },
+    {
+      "scene": "scene_145",
+      "task_id": "room_area__game_room",
+      "family": "room_area",
+      "group": "G3",
+      "task_type": "Room area",
+      "action_budget": 25
+    },
+    {
+      "scene": "scene_146",
+      "task_id": "surface_contents__scent_consultation_salon_service_counter_0",
+      "family": "surface_contents",
+      "group": "G1",
+      "task_type": "Surface contents",
+      "action_budget": 50
+    },
+    {
+      "scene": "scene_146",
+      "task_id": "object_distance__fragrance_formulation_laboratory_island_worktable_0__scent_consultation_salon_service_counter_0",
+      "family": "object_distance",
+      "group": "G3",
+      "task_type": "Object distance",
+      "action_budget": 50
+    },
+    {
+      "scene": "scene_146",
+      "task_id": "gap_width__scent_consultation_salon_consultation_table_0__scent_consultation_salon_service_counter_0",
+      "family": "gap_width",
+      "group": "G3",
+      "task_type": "Gap width",
+      "action_budget": 50
+    },
+    {
+      "scene": "scene_146",
+      "task_id": "gap_width__scent_consultation_salon_display_cabinet_0__scent_consultation_salon_service_counter_0",
+      "family": "gap_width",
+      "group": "G3",
+      "task_type": "Gap width",
+      "action_budget": 50
+    },
+    {
+      "scene": "scene_146",
+      "task_id": "path_integration__fragrance_formulation_laboratory_island_worktable_0__scent_consultation_salon_consultation_table_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 50
+    },
+    {
+      "scene": "scene_146",
+      "task_id": "path_integration__fragrance_formulation_laboratory_island_worktable_0__scent_consultation_salon_display_cabinet_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 50
+    },
+    {
+      "scene": "scene_146",
+      "task_id": "relative_direction__scent_consultation_salon_service_counter_0__scent_consultation_salon_consultation_table_0__fragrance_formulation_laboratory_island_worktable_0",
+      "family": "relative_direction",
+      "group": "G4",
+      "task_type": "Relative direction",
+      "action_budget": 50
+    },
+    {
+      "scene": "scene_146",
+      "task_id": "relative_direction__scent_consultation_salon_side_table_0__scent_consultation_salon_service_counter_0__fragrance_formulation_laboratory_laboratory_sink_bench_0",
+      "family": "relative_direction",
+      "group": "G4",
+      "task_type": "Relative direction",
+      "action_budget": 50
+    },
+    {
+      "scene": "scene_146",
+      "task_id": "nearer_object_comparison__fragrance_formulation_laboratory_island_worktable_0",
+      "family": "nearer_object_comparison",
+      "group": "G3",
+      "task_type": "Nearer-object comparison",
+      "action_budget": 50
+    },
+    {
+      "scene": "scene_146",
+      "task_id": "room_localization__scent_consultation_salon_fragrance_sample_box_0",
+      "family": "room_localization",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 50
+    },
+    {
+      "scene": "scene_146",
+      "task_id": "room_localization__scent_consultation_salon_fragrance_sample_box_1",
+      "family": "room_localization",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 50
+    },
+    {
+      "scene": "scene_146",
+      "task_id": "room_area__fragrance_formulation_laboratory",
+      "family": "room_area",
+      "group": "G3",
+      "task_type": "Room area",
+      "action_budget": 50
+    },
+    {
+      "scene": "scene_147",
+      "task_id": "surface_contents__press_hall_storage_cabinet_0",
+      "family": "surface_contents",
+      "group": "G1",
+      "task_type": "Surface contents",
+      "action_budget": 50
+    },
+    {
+      "scene": "scene_147",
+      "task_id": "object_distance__press_hall_composing_worktable_0__typesetting_bookbinding_studio_bookcase_0",
+      "family": "object_distance",
+      "group": "G3",
+      "task_type": "Object distance",
+      "action_budget": 50
+    },
+    {
+      "scene": "scene_147",
+      "task_id": "object_distance__press_hall_composing_worktable_0__typesetting_bookbinding_studio_materials_cabinet_0",
+      "family": "object_distance",
+      "group": "G3",
+      "task_type": "Object distance",
+      "action_budget": 50
+    },
+    {
+      "scene": "scene_147",
+      "task_id": "object_distance__press_hall_storage_cabinet_0__typesetting_bookbinding_studio_bookcase_0",
+      "family": "object_distance",
+      "group": "G3",
+      "task_type": "Object distance",
+      "action_budget": 50
+    },
+    {
+      "scene": "scene_147",
+      "task_id": "object_distance__press_hall_storage_cabinet_0__typesetting_bookbinding_studio_materials_cabinet_0",
+      "family": "object_distance",
+      "group": "G3",
+      "task_type": "Object distance",
+      "action_budget": 50
+    },
+    {
+      "scene": "scene_147",
+      "task_id": "relocation__press_hall_printed_letterpress_proof_card_0__to__typesetting_bookbinding_studio_bookbinders_workbench_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 50
+    },
+    {
+      "scene": "scene_147",
+      "task_id": "relocation__typesetting_bookbinding_studio_navy_bookbinding_cloth_swatch_0__to__press_hall_storage_cabinet_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 50
+    },
+    {
+      "scene": "scene_147",
+      "task_id": "relocation__typesetting_bookbinding_studio_printers_galley_tray_0__to__press_hall_storage_cabinet_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 50
+    },
+    {
+      "scene": "scene_147",
+      "task_id": "path_integration__press_hall_storage_cabinet_0__typesetting_bookbinding_studio_bookcase_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 50
+    },
+    {
+      "scene": "scene_147",
+      "task_id": "relative_direction__press_hall_storage_cabinet_0__press_hall_composing_worktable_0__typesetting_bookbinding_studio_bookbinders_workbench_0",
+      "family": "relative_direction",
+      "group": "G4",
+      "task_type": "Relative direction",
+      "action_budget": 50
+    },
+    {
+      "scene": "scene_147",
+      "task_id": "relative_direction__press_hall_storage_cabinet_0__press_hall_composing_worktable_0__typesetting_bookbinding_studio_bookcase_0",
+      "family": "relative_direction",
+      "group": "G4",
+      "task_type": "Relative direction",
+      "action_budget": 50
+    },
+    {
+      "scene": "scene_147",
+      "task_id": "relative_direction__typesetting_bookbinding_studio_bookbinders_workbench_0__typesetting_bookbinding_studio_materials_cabinet_0__press_hall_composing_worktable_0",
+      "family": "relative_direction",
+      "group": "G4",
+      "task_type": "Relative direction",
+      "action_budget": 50
+    },
+    {
+      "scene": "scene_147",
+      "task_id": "relative_direction__typesetting_bookbinding_studio_bookbinders_workbench_0__typesetting_bookbinding_studio_materials_cabinet_0__press_hall_storage_cabinet_0",
+      "family": "relative_direction",
+      "group": "G4",
+      "task_type": "Relative direction",
+      "action_budget": 50
+    },
+    {
+      "scene": "scene_148",
+      "task_id": "object_count__smoke_detector",
+      "family": "object_count",
+      "group": "G2",
+      "task_type": "Object count",
+      "action_budget": 75
+    },
+    {
+      "scene": "scene_148",
+      "task_id": "relocation__germination_testing_room_dispenser_box_0__to__accession_laboratory_laboratory_bench_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 75
+    },
+    {
+      "scene": "scene_148",
+      "task_id": "relocation__germination_testing_room_dispenser_box_0__to__accession_laboratory_workbench_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 75
+    },
+    {
+      "scene": "scene_148",
+      "task_id": "relocation__germination_testing_room_laboratory_logbook_0__to__accession_laboratory_laboratory_bench_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 75
+    },
+    {
+      "scene": "scene_148",
+      "task_id": "relocation__seed_vault_seed_sample_jar_0__to__accession_laboratory_laboratory_bench_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 75
+    },
+    {
+      "scene": "scene_148",
+      "task_id": "relocation__seed_vault_thermal_barcode_label_roll_0__to__accession_laboratory_specimen_storage_cabinet_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 75
+    },
+    {
+      "scene": "scene_148",
+      "task_id": "room_localization__germination_testing_room_dispenser_box_0",
+      "family": "room_localization",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 75
+    },
+    {
+      "scene": "scene_148",
+      "task_id": "room_localization__germination_testing_room_filled_container_0",
+      "family": "room_localization",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 75
+    },
+    {
+      "scene": "scene_148",
+      "task_id": "room_localization__germination_testing_room_filled_container_1",
+      "family": "room_localization",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 75
+    },
+    {
+      "scene": "scene_148",
+      "task_id": "room_localization__germination_testing_room_laboratory_microscope_1",
+      "family": "room_localization",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 75
+    },
+    {
+      "scene": "scene_148",
+      "task_id": "room_localization__germination_testing_room_temperature_humidity_monitor_1",
+      "family": "room_localization",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 75
+    },
+    {
+      "scene": "scene_148",
+      "task_id": "room_localization__seed_vault_barcode_scanner_0",
+      "family": "room_localization",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 75
+    },
+    {
+      "scene": "scene_148",
+      "task_id": "room_localization__seed_vault_filled_container_0",
+      "family": "room_localization",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 75
+    },
+    {
+      "scene": "scene_148",
+      "task_id": "room_area__seed_vault",
+      "family": "room_area",
+      "group": "G3",
+      "task_type": "Room area",
+      "action_budget": 75
+    },
+    {
+      "scene": "scene_148",
+      "task_id": "room_count__smoke_detector",
+      "family": "room_count",
+      "group": "G2",
+      "task_type": "Room count",
+      "action_budget": 75
+    },
+    {
+      "scene": "scene_149",
+      "task_id": "surface_contents__rehearsal_studio_equipment_cabinet_0",
+      "family": "surface_contents",
+      "group": "G1",
+      "task_type": "Surface contents",
+      "action_budget": 75
+    },
+    {
+      "scene": "scene_149",
+      "task_id": "object_count__poster",
+      "family": "object_count",
+      "group": "G2",
+      "task_type": "Object count",
+      "action_budget": 75
+    },
+    {
+      "scene": "scene_149",
+      "task_id": "object_distance__black_box_theatre_puppet_theater_booth_0__workshop_paint_storage_rack_0",
+      "family": "object_distance",
+      "group": "G3",
+      "task_type": "Object distance",
+      "action_budget": 75
+    },
+    {
+      "scene": "scene_149",
+      "task_id": "relocation__workshop_sewing_machine_0__to__black_box_theatre_puppet_theater_booth_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 75
+    },
+    {
+      "scene": "scene_149",
+      "task_id": "relocation__workshop_v_gouge_0__to__rehearsal_studio_puppet_theatre_booth_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 75
+    },
+    {
+      "scene": "scene_149",
+      "task_id": "nearer_object_comparison__black_box_theatre_puppet_theater_booth_0",
+      "family": "nearer_object_comparison",
+      "group": "G3",
+      "task_type": "Nearer-object comparison",
+      "action_budget": 75
+    },
+    {
+      "scene": "scene_149",
+      "task_id": "room_localization__rehearsal_studio_archival_prop_box_0",
+      "family": "room_localization",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 75
+    },
+    {
+      "scene": "scene_149",
+      "task_id": "room_localization__rehearsal_studio_archival_prop_box_2",
+      "family": "room_localization",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 75
+    },
+    {
+      "scene": "scene_149",
+      "task_id": "room_localization__rehearsal_studio_cream_cotton_fabric_swatch_0",
+      "family": "room_localization",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 75
+    },
+    {
+      "scene": "scene_149",
+      "task_id": "room_area__black_box_theatre",
+      "family": "room_area",
+      "group": "G3",
+      "task_type": "Room area",
+      "action_budget": 75
+    },
+    {
+      "scene": "scene_149",
+      "task_id": "room_count__whiteboard",
+      "family": "room_count",
+      "group": "G2",
+      "task_type": "Room count",
+      "action_budget": 75
+    },
+    {
+      "scene": "scene_198",
+      "task_id": "surface_contents__master_bedroom_rug_0",
+      "family": "surface_contents",
+      "group": "G1",
+      "task_type": "Surface contents",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_198",
+      "task_id": "object_count__rug",
+      "family": "object_count",
+      "group": "G2",
+      "task_type": "Object count",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_198",
+      "task_id": "relocation__hallway_amber_glass_bottle_0__to__bathroom_bathtub_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_198",
+      "task_id": "gap_width__kitchen_kitchen_island_0__kitchen_sink_cabinet_0",
+      "family": "gap_width",
+      "group": "G3",
+      "task_type": "Gap width",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_198",
+      "task_id": "nearer_object_comparison__kids_room_writing_desk_0",
+      "family": "nearer_object_comparison",
+      "group": "G3",
+      "task_type": "Nearer-object comparison",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_198",
+      "task_id": "room_count__rug",
+      "family": "room_count",
+      "group": "G2",
+      "task_type": "Room count",
+      "action_budget": 150
+    },
+    {
+      "scene": "scene_208",
+      "task_id": "surface_contents__main_hall_table_0",
+      "family": "surface_contents",
+      "group": "G1",
+      "task_type": "Surface contents",
+      "action_budget": 325
+    },
+    {
+      "scene": "scene_208",
+      "task_id": "relocation__activity_room_art_drawing_pad_0__to__bathroom_1_toilet_0",
+      "family": "relocation",
+      "group": "G5",
+      "task_type": "Relocation",
+      "action_budget": 325
+    },
+    {
+      "scene": "scene_208",
+      "task_id": "path_integration__activity_room_art_desk_0__kitchen_wall_shelf_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 325
+    },
+    {
+      "scene": "scene_208",
+      "task_id": "path_integration__activity_room_crafts_credenza_0__reception_coffee_table_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 325
+    },
+    {
+      "scene": "scene_208",
+      "task_id": "path_integration__reception_side_table_0__activity_room_crafts_craft_worktable_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 325
+    },
+    {
+      "scene": "scene_208",
+      "task_id": "path_integration__reception_side_table_0__activity_room_crafts_credenza_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 325
+    },
+    {
+      "scene": "scene_208",
+      "task_id": "path_integration__storage_room_storage_bench_0__activity_room_art_worktable_0",
+      "family": "path_integration",
+      "group": "G4",
+      "task_type": "Path integration",
+      "action_budget": 325
+    },
+    {
+      "scene": "scene_208",
+      "task_id": "room_localization__kitchen_sanitizer_spray_bottle_0",
+      "family": "room_localization",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 325
+    },
+    {
+      "scene": "scene_208",
+      "task_id": "room_localization__main_hall_laptop_0",
+      "family": "room_localization",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 325
+    },
+    {
+      "scene": "scene_208",
+      "task_id": "room_localization__storage_room_office_binder_5",
+      "family": "room_localization",
+      "group": "G1",
+      "task_type": "Room localization",
+      "action_budget": 325
+    },
+    {
+      "scene": "scene_208",
+      "task_id": "room_area__hallway",
+      "family": "room_area",
+      "group": "G3",
+      "task_type": "Room area",
+      "action_budget": 325
+    },
+    {
+      "scene": "scene_208",
+      "task_id": "room_area__main_hall",
+      "family": "room_area",
+      "group": "G3",
+      "task_type": "Room area",
+      "action_budget": 325
+    }
+  ]
+}

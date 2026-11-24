@@ -1,0 +1,222 @@
+{
+  "scene_count": 27,
+  "archives": [
+    {
+      "scene": "scene_100",
+      "archive": "scene_100.tar.gz",
+      "bytes": 516633981,
+      "sha256": "69e6470a7bcfd006df7d4b22fac1dec084dc28a0043aa99baa3913b9e9592554",
+      "file_count": 5549,
+      "unpacked_bytes": 594095309
+    },
+    {
+      "scene": "scene_102",
+      "archive": "scene_102.tar.gz",
+      "bytes": 696903424,
+      "sha256": "24d3248db66f058df26b23c20fdf46b0a8734d0710c2647eb2811d93461d338c",
+      "file_count": 8336,
+      "unpacked_bytes": 765234237
+    },
+    {
+      "scene": "scene_105",
+      "archive": "scene_105.tar.gz",
+      "bytes": 933917338,
+      "sha256": "4fe48f2734217e591bb7c530a66f8dc1d22a76816773992360bc5e5464abcb7f",
+      "file_count": 12224,
+      "unpacked_bytes": 1038604098
+    },
+    {
+      "scene": "scene_106",
+      "archive": "scene_106.tar.gz",
+      "bytes": 742349201,
+      "sha256": "4ab12fd1591f2602ca0d61cf18331578adeebccef40d48bd7af77fca3b4668e1",
+      "file_count": 7701,
+      "unpacked_bytes": 847773698
+    },
+    {
+      "scene": "scene_107",
+      "archive": "scene_107.tar.gz",
+      "bytes": 726977096,
+      "sha256": "4761689e5bff0127616e36d5725ca384ff469075b296c872956b89f26fecc9d7",
+      "file_count": 7863,
+      "unpacked_bytes": 797101660
+    },
+    {
+      "scene": "scene_108",
+      "archive": "scene_108.tar.gz",
+      "bytes": 585832439,
+      "sha256": "45af9901f195353d71291368e867d345adb4e49470dea09d411854664fe167ed",
+      "file_count": 6072,
+      "unpacked_bytes": 629912395
+    },
+    {
+      "scene": "scene_109",
+      "archive": "scene_109.tar.gz",
+      "bytes": 936078553,
+      "sha256": "2f4944f510fa0c1b5a45edd019b14045a7fff3bf803fc47b5c7f5f89d79d613d",
+      "file_count": 13817,
+      "unpacked_bytes": 1039528516
+    },
+    {
+      "scene": "scene_111",
+      "archive": "scene_111.tar.gz",
+      "bytes": 430391609,
+      "sha256": "925fddf8d47335a0808ec70ff838f91e00b3d2e5392732fb7359eef8dc9063f9",
+      "file_count": 5218,
+      "unpacked_bytes": 473745717
+    },
+    {
+      "scene": "scene_112",
+      "archive": "scene_112.tar.gz",
+      "bytes": 794840367,
+      "sha256": "502d9a7d03b6afda15b11ed57a9d50073340b65cdded7e6623bcb76b9f5075b2",
+      "file_count": 12599,
+      "unpacked_bytes": 956739278
+    },
+    {
+      "scene": "scene_113",
+      "archive": "scene_113.tar.gz",
+      "bytes": 394682753,
+      "sha256": "92478843188ee93adcde2abebcca5555ab045fa67881afe19fd45ba8c0a66dc9",
+      "file_count": 6045,
+      "unpacked_bytes": 453807177
+    },
+    {
+      "scene": "scene_114",
+      "archive": "scene_114.tar.gz",
+      "bytes": 774727450,
+      "sha256": "fc7e4818291778028a718ba150cb8c3a60db332b757b3759f0d8be01c7d763bc",
+      "file_count": 6627,
+      "unpacked_bytes": 863975286
+    },
+    {
+      "scene": "scene_116",
+      "archive": "scene_116.tar.gz",
+      "bytes": 787769381,
+      "sha256": "d519e3b4ae57595632033af6bf1bceb25fa8f4dd5170d70522d7907d6e09d598",
+      "file_count": 13187,
+      "unpacked_bytes": 909302036
+    },
+    {
+      "scene": "scene_118",
+      "archive": "scene_118.tar.gz",
+      "bytes": 924012201,
+      "sha256": "e6a1c171a6f404ada8a3b8af1a3360e012f7670ef9c6c0c7d426507ffab61c4a",
+      "file_count": 14576,
+      "unpacked_bytes": 1041490856
+    },
+    {
+      "scene": "scene_119",
+      "archive": "scene_119.tar.gz",
+      "bytes": 1191747205,
+      "sha256": "cf9edd4c6d76f291ec055eaa8775dc5c282d7669ce1362ca3981186322dee63b",
+      "file_count": 9849,
+      "unpacked_bytes": 1278010153
+    },
+    {
+      "scene": "scene_139",
+      "archive": "scene_139.tar.gz",
+      "bytes": 290588598,
+      "sha256": "2c93fd2a57f60b21eb936b2c8accedd1dd7f5c35d6bb3bf54f83ea6b08c9fa37",
+      "file_count": 8082,
+      "unpacked_bytes": 374745469
+    },
+    {
+      "scene": "scene_140",
+      "archive": "scene_140.tar.gz",
+      "bytes": 294129045,
+      "sha256": "7f4ece22c4665b90da3e3a54a3ec0c11ac225549ee588c4244cf0f2571fc8573",
+      "file_count": 10035,
+      "unpacked_bytes": 376266131
+    },
+    {
+      "scene": "scene_141",
+      "archive": "scene_141.tar.gz",
+      "bytes": 319933196,
+      "sha256": "23a36da9f01d5a7b9466accfe4dbe032914e249f5a2d517483a2738d9a9b1ce3",
+      "file_count": 9937,
+      "unpacked_bytes": 402007782
+    },
+    {
+      "scene": "scene_142",
+      "archive": "scene_142.tar.gz",
+      "bytes": 394936494,
+      "sha256": "2fc0edf7c78ac9dc5cb0a740589fdcd3680f095b5aba0483c31108479609b52c",
+      "file_count": 12822,
+      "unpacked_bytes": 561136817
+    },
+    {
+      "scene": "scene_143",
+      "archive": "scene_143.tar.gz",
+      "bytes": 508372315,
+      "sha256": "85bf7e24be70f68668349b6f872d8672f339928057aa9b1083e8158818f6f3e0",
+      "file_count": 16385,
+      "unpacked_bytes": 696993848
+    },
+    {
+      "scene": "scene_144",
+      "archive": "scene_144.tar.gz",
+      "bytes": 201749358,
+      "sha256": "912ecbcdfd52b84866e48440fa61bc87f194fa417c22f846d3a44f15e70180b3",
+      "file_count": 3176,
+      "unpacked_bytes": 225589160
+    },
+    {
+      "scene": "scene_145",
+      "archive": "scene_145.tar.gz",
+      "bytes": 149311563,
+      "sha256": "430c0341a2f6e24e0a217c8c666bac6b84962ce09473d85b6334bc612ccb9577",
+      "file_count": 2012,
+      "unpacked_bytes": 166559254
+    },
+    {
+      "scene": "scene_146",
+      "archive": "scene_146.tar.gz",
+      "bytes": 367408873,
+      "sha256": "98a418231c916ec1f24e29f5dd82fae7d6c1d29df79e16944068fd3a51b1d829",
+      "file_count": 4420,
+      "unpacked_bytes": 404315631
+    },
+    {
+      "scene": "scene_147",
+      "archive": "scene_147.tar.gz",
+      "bytes": 433693875,
+      "sha256": "d930406b3c99e69003e35ba9497b3df0eac517a7eaf527d23faf91036ef37648",
+      "file_count": 5200,
+      "unpacked_bytes": 480222189
+    },
+    {
+      "scene": "scene_148",
+      "archive": "scene_148.tar.gz",
+      "bytes": 253117595,
+      "sha256": "36187e496b22cd107a7dbdef52658ac2c853a2470f4caf4e7c4fbeca0f0c50f4",
+      "file_count": 5187,
+      "unpacked_bytes": 298710468
+    },
+    {
+      "scene": "scene_149",
+      "archive": "scene_149.tar.gz",
+      "bytes": 460893600,
+      "sha256": "23fc9bac3a46521f6c038258472a1f44c62dc420663e19063a1f3eef9eaa6430",
+      "file_count": 6929,
+      "unpacked_bytes": 530008778
+    },
+    {
+      "scene": "scene_198",
+      "archive": "scene_198.tar.gz",
+      "bytes": 880307416,
+      "sha256": "8896533c8f9055f3cd8ffc56002a342c38e41167371c2f666adbb68622187ca9",
+      "file_count": 12093,
+      "unpacked_bytes": 1040160561
+    },
+    {
+      "scene": "scene_208",
+      "archive": "scene_208.tar.gz",
+      "bytes": 2138698073,
+      "sha256": "908479ece701678b1080381acbfadf60227daae12b67f925d7a6776b3cbd4653",
+      "file_count": 27896,
+      "unpacked_bytes": 2434368428
+    }
+  ],
+  "total_compressed_bytes": 17130002999
+}

@@ -1,0 +1,1063 @@
+{
+  "schema_version": 4,
+  "benchmark": "ROAM-Bench",
+  "scene": "scene_112",
+  "spawn": {
+    "x": 4.0,
+    "y": 1.5,
+    "z": 3.0,
+    "yaw_deg": 0.0,
+    "horizon_deg": 0.0,
+    "room": "retail_floor"
+  },
+  "specs": [
+    {
+      "task_id": "surface_contents__retail_floor_checkout_service_counter_0",
+      "family": "surface_contents",
+      "instruction": "Go to the checkout service counter. Which of the following objects are resting on it? Select every option that applies. Answer only with the option IDs.\nOptions:\n- OBJ_01: potted peperomia\n- OBJ_02: checkout touchscreen tablet\n- OBJ_03: potted barrel cactus\n- OBJ_04: floral greeting card\n- OBJ_05: string of pearls potted plant\n- OBJ_06: payment card reader\n- OBJ_07: cash register\n- OBJ_08: bud vase",
+      "referents": [
+        "retail_floor_checkout_service_counter_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "OBJ_02"
+        ],
+        [
+          "OBJ_06"
+        ],
+        [
+          "OBJ_07"
+        ]
+      ],
+      "answer_choices": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_unit": "",
+      "answer_match": "set",
+      "max_steps": 125,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "retail_floor"
+        ],
+        "must_open": [],
+        "must_see": [
+          "retail_floor_cash_register_0",
+          "retail_floor_checkout_service_counter_0",
+          "retail_floor_checkout_touchscreen_tablet_0",
+          "retail_floor_payment_card_reader_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "loading_nook",
+          "office",
+          "retail_floor",
+          "walk_in_cooler",
+          "workshop"
+        ]
+      },
+      "kinds": [
+        "cash_register",
+        "checkout_touchscreen_tablet",
+        "payment_card_reader"
+      ],
+      "receptacle_kinds": [
+        "checkout_service_counter"
+      ],
+      "evidence": [
+        "retail_floor_checkout_service_counter_0",
+        "retail_floor_cash_register_0",
+        "retail_floor_checkout_touchscreen_tablet_0",
+        "retail_floor_payment_card_reader_0"
+      ],
+      "answer_instances": [
+        "retail_floor_cash_register_0",
+        "retail_floor_checkout_touchscreen_tablet_0",
+        "retail_floor_payment_card_reader_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "retail_floor_checkout_service_counter_0"
+        ]
+      ],
+      "oracle_answer": "OBJ_02, OBJ_06, OBJ_07",
+      "oracle_read": [
+        "surface_contents",
+        "retail_floor_checkout_service_counter_0"
+      ],
+      "truth": {
+        "host": "retail_floor_checkout_service_counter_0",
+        "host_kind": "checkout_service_counter",
+        "room": "retail_floor",
+        "children": [
+          {
+            "alias": "retail_floor_cash_register_0",
+            "kind": "cash_register"
+          },
+          {
+            "alias": "retail_floor_checkout_touchscreen_tablet_0",
+            "kind": "checkout_touchscreen_tablet"
+          },
+          {
+            "alias": "retail_floor_payment_card_reader_0",
+            "kind": "payment_card_reader"
+          }
+        ],
+        "spawn": {
+          "x": -0.7,
+          "y": 1.5,
+          "z": 10.4,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "loading_nook"
+        },
+        "answer_options": [
+          {
+            "id": "OBJ_01",
+            "label": "potted peperomia",
+            "kind": "potted_peperomia",
+            "alias": "retail_floor_potted_peperomia_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_02",
+            "label": "checkout touchscreen tablet",
+            "kind": "checkout_touchscreen_tablet",
+            "alias": "retail_floor_checkout_touchscreen_tablet_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_03",
+            "label": "potted barrel cactus",
+            "kind": "potted_barrel_cactus",
+            "alias": "retail_floor_potted_barrel_cactus_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_04",
+            "label": "floral greeting card",
+            "kind": "floral_greeting_card",
+            "alias": "retail_floor_floral_greeting_card_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_05",
+            "label": "string of pearls potted plant",
+            "kind": "string_of_pearls_potted_plant",
+            "alias": "retail_floor_string_of_pearls_potted_plant_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_06",
+            "label": "payment card reader",
+            "kind": "payment_card_reader",
+            "alias": "retail_floor_payment_card_reader_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_07",
+            "label": "cash register",
+            "kind": "cash_register",
+            "alias": "retail_floor_cash_register_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_08",
+            "label": "bud vase",
+            "kind": "bud_vase",
+            "alias": "retail_floor_bud_vase_0",
+            "correct": false
+          }
+        ]
+      },
+      "answer_choice_labels": [
+        "potted peperomia",
+        "checkout touchscreen tablet",
+        "potted barrel cactus",
+        "floral greeting card",
+        "string of pearls potted plant",
+        "payment card reader",
+        "cash register",
+        "bud vase"
+      ],
+      "answer_choice_mode": "multiple",
+      "goal_images": [
+        [
+          "the checkout service counter this task refers to -- this exact object",
+          "../references/ce5d770f9470845cdd9bf5cab3dd8ee8d75f82585808ed8cd68980b86cdc924f.png"
+        ],
+        [
+          "Option OBJ_01 — potted peperomia; category reference image",
+          "../references/9e051c1549f0660571e1fa2dadba12a12931e421a8cfcf193c7b64a8bc82d76e.png"
+        ],
+        [
+          "Option OBJ_02 — checkout touchscreen tablet; category reference image",
+          "../references/44a072b97b990477bfc3474ab8049dfd48df969cfe76be3438170ee23c45b6d5.png"
+        ],
+        [
+          "Option OBJ_03 — potted barrel cactus; category reference image",
+          "../references/67da1dc647407e1721393e8ab1fec2f94a97225e134075ec63b9be5a71e27b92.png"
+        ],
+        [
+          "Option OBJ_04 — floral greeting card; category reference image",
+          "../references/866c383fd1283312352905ff69c30d682a9be2115a9be80ce8dfe19c2c38e176.png"
+        ],
+        [
+          "Option OBJ_05 — string of pearls potted plant; category reference image",
+          "../references/10d42cc697d3bd02355203d254870fcdae9d0f8504ba6852630df7806f73ad08.png"
+        ],
+        [
+          "Option OBJ_06 — payment card reader; category reference image",
+          "../references/3b715edb7664e207828709d681edc3dbf1603a275e34d27cd6e9e1c32bc1b0c1.png"
+        ],
+        [
+          "Option OBJ_07 — cash register; category reference image",
+          "../references/f8bdb5a0293f629e281cc10f3e665370674812985f7d83bbde4a670a623c5cf0.png"
+        ],
+        [
+          "Option OBJ_08 — bud vase; category reference image",
+          "../references/5c6562bc57ba5282c195829b032f92d4ae83d49fc7a03759d378bddb54f83df4.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "object_count__wall_clock",
+      "family": "object_count",
+      "instruction": "Search this house and count the wall clocks. There is more than one room, and there may be wall clocks in more than one of them. When you have finished searching, tell me how many wall clocks there are in total, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 125,
+      "answer_number": 5,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "loading_nook",
+          "office",
+          "retail_floor",
+          "walk_in_cooler",
+          "workshop"
+        ],
+        "must_open": [],
+        "must_see": [
+          "loading_nook_wall_clock_0",
+          "office_wall_clock_0",
+          "retail_floor_wall_clock_0",
+          "walk_in_cooler_wall_clock_0",
+          "workshop_clock_0"
+        ],
+        "min_distinct_viewpoints": 4,
+        "search_regions": [
+          "loading_nook",
+          "office",
+          "retail_floor",
+          "walk_in_cooler",
+          "workshop"
+        ]
+      },
+      "kinds": [
+        "wall_clock"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "loading_nook_wall_clock_0",
+        "office_wall_clock_0",
+        "retail_floor_wall_clock_0",
+        "walk_in_cooler_wall_clock_0",
+        "workshop_clock_0"
+      ],
+      "answer_instances": [
+        "loading_nook_wall_clock_0",
+        "office_wall_clock_0",
+        "retail_floor_wall_clock_0",
+        "walk_in_cooler_wall_clock_0",
+        "workshop_clock_0"
+      ],
+      "plan": [],
+      "oracle_answer": "5",
+      "oracle_read": [
+        "count_seen",
+        "wall_clock",
+        [
+          "loading_nook",
+          "office",
+          "retail_floor",
+          "walk_in_cooler",
+          "workshop"
+        ]
+      ],
+      "truth": {
+        "kind": "wall_clock",
+        "total": 5,
+        "noun": "wall clock",
+        "rooms": [
+          "loading_nook",
+          "office",
+          "retail_floor",
+          "walk_in_cooler",
+          "workshop"
+        ],
+        "per_room": {
+          "loading_nook": 1,
+          "office": 1,
+          "retail_floor": 1,
+          "walk_in_cooler": 1,
+          "workshop": 1
+        },
+        "spawn": {
+          "x": 0.3,
+          "y": 1.5,
+          "z": 9.25,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "workshop"
+        },
+        "category_membership": {
+          "schema": "reviewed-category-members-v1",
+          "aliases": [
+            "loading_nook_wall_clock_0",
+            "office_wall_clock_0",
+            "retail_floor_wall_clock_0",
+            "walk_in_cooler_wall_clock_0",
+            "workshop_clock_0"
+          ],
+          "category": "wall_clock"
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'wall clock' -- the task is about every wall clock in the house, and the others need not look like this one",
+          "../references/a56be4f72a9d541fea4594f7dc73fca67dca859a1f2131c46425ade54b35c408.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relocation__loading_nook_kraft_paper_roll_0__to__retail_floor_retail_flower_display_pedestal_0",
+      "family": "relocation",
+      "instruction": "Find the kraft paper roll, pick it up, and put it on the retail flower display pedestal.",
+      "referents": [
+        "loading_nook_kraft_paper_roll_0",
+        "retail_floor_retail_flower_display_pedestal_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('loading_nook_kraft_paper_roll_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('loading_nook_kraft_paper_roll_0','retail_floor_retail_flower_display_pedestal_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 125,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "loading_nook",
+          "retail_floor"
+        ],
+        "must_open": [],
+        "must_see": [
+          "loading_nook_kraft_paper_roll_0",
+          "retail_floor_retail_flower_display_pedestal_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "loading_nook",
+          "office",
+          "retail_floor",
+          "walk_in_cooler",
+          "workshop"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "loading_nook_kraft_paper_roll_0",
+        "retail_floor_retail_flower_display_pedestal_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "loading_nook_kraft_paper_roll_0"
+        ],
+        [
+          "pick",
+          "loading_nook_kraft_paper_roll_0"
+        ],
+        [
+          "navigate",
+          "retail_floor_retail_flower_display_pedestal_0"
+        ],
+        [
+          "place",
+          "retail_floor_retail_flower_display_pedestal_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "loading_nook_kraft_paper_roll_0",
+        "from_room": "loading_nook",
+        "from_room_id": "loading_nook",
+        "dest": "retail_floor_retail_flower_display_pedestal_0",
+        "to_room": "retail_floor",
+        "to_room_id": "retail_floor",
+        "spawn": {
+          "x": -1.5,
+          "y": 1.5,
+          "z": 2.18,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "office"
+        }
+      },
+      "goal_images": [
+        [
+          "the kraft paper roll this task refers to -- this exact object",
+          "../references/d37565d5ebf856afd2d9d664578d15f6d9ccb1363dd1709d9c602103daeb4b1f.png"
+        ],
+        [
+          "the retail flower display pedestal this task refers to -- this exact object",
+          "../references/a013471fbca3d497f7844a0299bc9ca007e51bcf05ae9f0777abca54e5d69a43.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "gap_width__loading_nook_shelving_unit_0__loading_nook_utility_sink_0",
+      "family": "gap_width",
+      "instruction": "Find the shelving unit and the utility sink in this house; they are in the same room, standing apart. Then tell me roughly how wide the clear gap between them is, in centimetres, as a number. Measure the empty floor from the edge of one to the edge of the other, not the distance between their centres.",
+      "referents": [
+        "loading_nook_shelving_unit_0",
+        "loading_nook_utility_sink_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "cm",
+      "answer_match": "count",
+      "max_steps": 125,
+      "answer_number": 56,
+      "answer_tolerance": 10,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "loading_nook"
+        ],
+        "must_open": [],
+        "must_see": [
+          "loading_nook_shelving_unit_0",
+          "loading_nook_utility_sink_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "loading_nook"
+        ]
+      },
+      "kinds": [
+        "shelving_unit",
+        "utility_sink"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "loading_nook_shelving_unit_0",
+        "loading_nook_utility_sink_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "56",
+      "oracle_read": [
+        "gap_width",
+        "loading_nook_shelving_unit_0",
+        "loading_nook_utility_sink_0"
+      ],
+      "truth": {
+        "a": "loading_nook_shelving_unit_0",
+        "b": "loading_nook_utility_sink_0",
+        "cm": 56,
+        "room": "loading_nook",
+        "tol_cm": 10,
+        "spawn": {
+          "x": 1.25,
+          "y": 1.5,
+          "z": 3.0,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "retail_floor"
+        }
+      },
+      "goal_images": [
+        [
+          "the shelving unit this task refers to -- this exact object",
+          "../references/5cd6d96a8fce3897882c4b820bccd4032d150f6e1ece93094412502b1807c5c7.png"
+        ],
+        [
+          "the utility sink this task refers to -- this exact object",
+          "../references/171e74acd7b2b570386ec9a4008491d9a310be8cc9cfb84b52f54a3a1770b89d.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "gap_width__office_filing_chest_0__office_shelving_unit_0",
+      "family": "gap_width",
+      "instruction": "Find the filing chest and the shelving unit in this house; they are in the same room, standing apart. Then tell me roughly how wide the clear gap between them is, in centimetres, as a number. Measure the empty floor from the edge of one to the edge of the other, not the distance between their centres.",
+      "referents": [
+        "office_filing_chest_0",
+        "office_shelving_unit_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "cm",
+      "answer_match": "count",
+      "max_steps": 125,
+      "answer_number": 66,
+      "answer_tolerance": 10,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "office"
+        ],
+        "must_open": [],
+        "must_see": [
+          "office_filing_chest_0",
+          "office_shelving_unit_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "office"
+        ]
+      },
+      "kinds": [
+        "filing_chest",
+        "shelving_unit"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "office_filing_chest_0",
+        "office_shelving_unit_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "66",
+      "oracle_read": [
+        "gap_width",
+        "office_filing_chest_0",
+        "office_shelving_unit_0"
+      ],
+      "truth": {
+        "a": "office_filing_chest_0",
+        "b": "office_shelving_unit_0",
+        "cm": 66,
+        "room": "office",
+        "tol_cm": 10,
+        "spawn": {
+          "x": -1.95,
+          "y": 1.5,
+          "z": 9.15,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "loading_nook"
+        }
+      },
+      "goal_images": [
+        [
+          "the filing chest this task refers to -- this exact object",
+          "../references/de631d3918f288acf23fba7709a035cf5630eab6de1f12c409aaf4b95f121c4e.png"
+        ],
+        [
+          "the shelving unit this task refers to -- this exact object",
+          "../references/57a4ac99c8174c182dec54d2054c556ba437b88715a373ec49c57fec92d64e33.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relative_direction__retail_floor_checkout_service_counter_0__retail_floor_plant_display_rack_0__workshop_shelving_unit_0",
+      "family": "relative_direction",
+      "instruction": "Find the checkout service counter and the plant display rack; they are in the same room. Also find the shelving unit, which is somewhere else in this house. Then answer this: if you stood at the checkout service counter and faced the plant display rack, which direction would the shelving unit be in? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "retail_floor_checkout_service_counter_0",
+        "retail_floor_plant_display_rack_0",
+        "workshop_shelving_unit_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 125,
+      "answer_number": 270,
+      "answer_tolerance": 22,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "retail_floor",
+          "workshop"
+        ],
+        "must_open": [],
+        "must_see": [
+          "retail_floor_checkout_service_counter_0",
+          "retail_floor_plant_display_rack_0",
+          "workshop_shelving_unit_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "retail_floor",
+          "workshop"
+        ]
+      },
+      "kinds": [
+        "checkout_service_counter",
+        "shelving_unit",
+        "plant_display_rack"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "retail_floor_checkout_service_counter_0",
+        "workshop_shelving_unit_0",
+        "retail_floor_plant_display_rack_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "270",
+      "oracle_read": [
+        "relative_direction",
+        "retail_floor_checkout_service_counter_0",
+        "retail_floor_plant_display_rack_0",
+        "workshop_shelving_unit_0"
+      ],
+      "truth": {
+        "origin": "retail_floor_checkout_service_counter_0",
+        "forward": "retail_floor_plant_display_rack_0",
+        "target": "workshop_shelving_unit_0",
+        "bearing_deg": 269.16,
+        "sector_deg": 270,
+        "offset_deg": 0.84,
+        "origin_room": "retail_floor",
+        "target_room": "workshop",
+        "leg_m": 7.97,
+        "spawn": {
+          "x": -2.7,
+          "y": 1.5,
+          "z": 10.4,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "loading_nook"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the checkout service counter this task refers to -- this exact object",
+          "../references/ce5d770f9470845cdd9bf5cab3dd8ee8d75f82585808ed8cd68980b86cdc924f.png"
+        ],
+        [
+          "the plant display rack this task refers to -- this exact object",
+          "../references/7aef5c94bcc3476660378a34ddcdd707fb7cc86efad7c98c85d0cd94d61f65f7.png"
+        ],
+        [
+          "the shelving unit this task refers to -- this exact object",
+          "../references/53bb81155aaad57ccddfbba3354241d481d634e13804c4222f31e3edec8fb470.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "nearer_object_comparison__loading_nook_shelving_unit_0",
+      "family": "nearer_object_comparison",
+      "instruction": "Somewhere in this house there are the desk, the utility sink workstation and the worktable. None of them is in the same room as the shelving unit. Find out which one of them is closest to the shelving unit, and answer with just that one thing. Compare the straight-line distances, not how far you had to walk.",
+      "referents": [
+        "loading_nook_shelving_unit_0",
+        "workshop_utility_sink_workstation_0",
+        "workshop_worktable_0",
+        "office_desk_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "utility sink workstation"
+        ]
+      ],
+      "answer_choices": [
+        "desk",
+        "utility sink workstation",
+        "worktable"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 125,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "loading_nook",
+          "office",
+          "workshop"
+        ],
+        "must_open": [],
+        "must_see": [
+          "loading_nook_shelving_unit_0",
+          "office_desk_0",
+          "workshop_utility_sink_workstation_0",
+          "workshop_worktable_0"
+        ],
+        "min_distinct_viewpoints": 3,
+        "search_regions": [
+          "loading_nook",
+          "office",
+          "workshop"
+        ]
+      },
+      "kinds": [
+        "utility_sink_workstation",
+        "worktable",
+        "desk",
+        "shelving_unit"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "loading_nook_shelving_unit_0",
+        "workshop_utility_sink_workstation_0",
+        "workshop_worktable_0",
+        "office_desk_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "utility sink workstation",
+      "oracle_read": [
+        "nearest_of",
+        "loading_nook_shelving_unit_0",
+        [
+          [
+            "workshop_utility_sink_workstation_0",
+            "utility sink workstation"
+          ],
+          [
+            "workshop_worktable_0",
+            "worktable"
+          ],
+          [
+            "office_desk_0",
+            "desk"
+          ]
+        ]
+      ],
+      "truth": {
+        "x": "loading_nook_shelving_unit_0",
+        "winner": "workshop_utility_sink_workstation_0",
+        "choices": [
+          "workshop_utility_sink_workstation_0",
+          "workshop_worktable_0",
+          "office_desk_0"
+        ],
+        "words": [
+          "desk",
+          "utility sink workstation",
+          "worktable"
+        ],
+        "metres": {
+          "workshop_utility_sink_workstation_0": 3.91,
+          "workshop_worktable_0": 6.39,
+          "office_desk_0": 6.85
+        },
+        "lead_m": 2.48,
+        "x_room": "loading_nook",
+        "spawn": {
+          "x": 7.5,
+          "y": 1.5,
+          "z": 0.5,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "retail_floor"
+        }
+      },
+      "answer_choice_labels": [
+        "desk",
+        "utility sink workstation",
+        "worktable"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the shelving unit this task refers to -- this exact object",
+          "../references/5cd6d96a8fce3897882c4b820bccd4032d150f6e1ece93094412502b1807c5c7.png"
+        ],
+        [
+          "the utility sink workstation this task refers to -- this exact object",
+          "../references/4326c5799622ff490d0018b02cea32b4c46f3da180af1c9b39a1c867cf13c873.png"
+        ],
+        [
+          "the worktable this task refers to -- this exact object",
+          "../references/374ed53c4c1504a501dc31d18457e2e9f04b12c7ab0273a7abaff00420856fe3.png"
+        ],
+        [
+          "the desk this task refers to -- this exact object",
+          "../references/ca7db5fca30930e7ffce0a0f2bed3281af0050c1881ebb8c896bb8214ca867d0.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "nearer_object_comparison__workshop_florist_cooler_0",
+      "family": "nearer_object_comparison",
+      "instruction": "Somewhere in this house there are the checkout service counter, the retail flower display pedestal and the utility sink. None of them is in the same room as the florist cooler. Find out which one of them is closest to the florist cooler, and answer with just that one thing. Compare the straight-line distances, not how far you had to walk.",
+      "referents": [
+        "workshop_florist_cooler_0",
+        "retail_floor_retail_flower_display_pedestal_0",
+        "retail_floor_checkout_service_counter_0",
+        "loading_nook_utility_sink_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "retail flower display pedestal"
+        ]
+      ],
+      "answer_choices": [
+        "checkout service counter",
+        "retail flower display pedestal",
+        "utility sink"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 125,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "loading_nook",
+          "retail_floor",
+          "workshop"
+        ],
+        "must_open": [],
+        "must_see": [
+          "loading_nook_utility_sink_0",
+          "retail_floor_checkout_service_counter_0",
+          "retail_floor_retail_flower_display_pedestal_0",
+          "workshop_florist_cooler_0"
+        ],
+        "min_distinct_viewpoints": 3,
+        "search_regions": [
+          "loading_nook",
+          "retail_floor",
+          "workshop"
+        ]
+      },
+      "kinds": [
+        "retail_flower_display_pedestal",
+        "checkout_service_counter",
+        "utility_sink",
+        "florist_cooler"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "workshop_florist_cooler_0",
+        "retail_floor_retail_flower_display_pedestal_0",
+        "retail_floor_checkout_service_counter_0",
+        "loading_nook_utility_sink_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "retail flower display pedestal",
+      "oracle_read": [
+        "nearest_of",
+        "workshop_florist_cooler_0",
+        [
+          [
+            "retail_floor_retail_flower_display_pedestal_0",
+            "retail flower display pedestal"
+          ],
+          [
+            "retail_floor_checkout_service_counter_0",
+            "checkout service counter"
+          ],
+          [
+            "loading_nook_utility_sink_0",
+            "utility sink"
+          ]
+        ]
+      ],
+      "truth": {
+        "x": "workshop_florist_cooler_0",
+        "winner": "retail_floor_retail_flower_display_pedestal_0",
+        "choices": [
+          "retail_floor_retail_flower_display_pedestal_0",
+          "retail_floor_checkout_service_counter_0",
+          "loading_nook_utility_sink_0"
+        ],
+        "words": [
+          "checkout service counter",
+          "retail flower display pedestal",
+          "utility sink"
+        ],
+        "metres": {
+          "retail_floor_retail_flower_display_pedestal_0": 5.46,
+          "retail_floor_checkout_service_counter_0": 7.7,
+          "loading_nook_utility_sink_0": 8.55
+        },
+        "lead_m": 2.24,
+        "x_room": "workshop",
+        "spawn": {
+          "x": 5.8,
+          "y": 1.5,
+          "z": 8.75,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "walk_in_cooler"
+        }
+      },
+      "answer_choice_labels": [
+        "checkout service counter",
+        "retail flower display pedestal",
+        "utility sink"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the florist cooler this task refers to -- this exact object",
+          "../references/83f4904e3304028ee5aaf3c83d1c84d5cfeaf4ac720ea8bf02861d331d435803.png"
+        ],
+        [
+          "the retail flower display pedestal this task refers to -- this exact object",
+          "../references/a013471fbca3d497f7844a0299bc9ca007e51bcf05ae9f0777abca54e5d69a43.png"
+        ],
+        [
+          "the checkout service counter this task refers to -- this exact object",
+          "../references/ce5d770f9470845cdd9bf5cab3dd8ee8d75f82585808ed8cd68980b86cdc924f.png"
+        ],
+        [
+          "the utility sink this task refers to -- this exact object",
+          "../references/171e74acd7b2b570386ec9a4008491d9a310be8cc9cfb84b52f54a3a1770b89d.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_area__workshop",
+      "family": "room_area",
+      "instruction": "Find the workshop room in this house, then tell me roughly how big its floor is, in square metres, as a number. I want the floor area of that one room, measured inside its walls -- not the whole house, and not the other rooms.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m2",
+      "answer_match": "count",
+      "max_steps": 125,
+      "answer_number": 30,
+      "answer_tolerance": 7.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "workshop"
+        ],
+        "must_open": [],
+        "must_see": [],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "loading_nook",
+          "office",
+          "retail_floor",
+          "walk_in_cooler",
+          "workshop"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "30",
+      "oracle_read": [
+        "room_area",
+        "workshop"
+      ],
+      "truth": {
+        "room": "workshop",
+        "name": "workshop room",
+        "m2": 30,
+        "tol_m2": 4,
+        "spawn": {
+          "x": -1.95,
+          "y": 1.5,
+          "z": 9.15,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "loading_nook"
+        }
+      },
+      "goal_images": []
+    }
+  ],
+  "dataset_version": "1.1"
+}

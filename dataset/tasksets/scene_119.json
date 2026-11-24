@@ -1,0 +1,1158 @@
+{
+  "schema_version": 4,
+  "benchmark": "ROAM-Bench",
+  "scene": "scene_119",
+  "spawn": {
+    "x": 8.5,
+    "y": 1.5,
+    "z": 1.5,
+    "yaw_deg": 0.0,
+    "horizon_deg": 0.0,
+    "room": "entry_lobby"
+  },
+  "specs": [
+    {
+      "task_id": "object_distance__individual_practice_room_2_upright_piano_0__percussion_practice_room_storage_cabinet_0",
+      "family": "object_distance",
+      "instruction": "Find the upright piano and the storage cabinet in this house; they are in different rooms. Then tell me roughly how far apart they are, in metres, as a number. Measure the straight line between them, not the distance you walked.",
+      "referents": [
+        "individual_practice_room_2_upright_piano_0",
+        "percussion_practice_room_storage_cabinet_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m",
+      "answer_match": "count",
+      "max_steps": 200,
+      "answer_number": 9,
+      "answer_tolerance": 2.0,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "individual_practice_room_2",
+          "percussion_practice_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "individual_practice_room_2_upright_piano_0",
+          "percussion_practice_room_storage_cabinet_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "individual_practice_room_2",
+          "percussion_practice_room"
+        ]
+      },
+      "kinds": [
+        "upright_piano",
+        "storage_cabinet"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "individual_practice_room_2_upright_piano_0",
+        "percussion_practice_room_storage_cabinet_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "9",
+      "oracle_read": [
+        "object_distance",
+        "individual_practice_room_2_upright_piano_0",
+        "percussion_practice_room_storage_cabinet_0"
+      ],
+      "truth": {
+        "a": "individual_practice_room_2_upright_piano_0",
+        "b": "percussion_practice_room_storage_cabinet_0",
+        "metres": 8.7,
+        "a_room": "individual_practice_room_2",
+        "b_room": "percussion_practice_room",
+        "tol_m": 1,
+        "spawn": {
+          "x": 15.93,
+          "y": 1.5,
+          "z": -1.7,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "individual_practice_room_1"
+        }
+      },
+      "goal_images": [
+        [
+          "the upright piano this task refers to -- this exact object",
+          "../references/18c21a2a3e76fe0ad774817dd6768e3633caded8556fb2c896191833ed8e8c50.png"
+        ],
+        [
+          "the storage cabinet this task refers to -- this exact object",
+          "../references/576bb48ead14d61078244cdaa6169bb3f3d15d1082e17357f875ce7f76302886.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relocation__individual_practice_room_2_mechanical_metronome_0__to__individual_practice_room_1_upright_piano_0",
+      "family": "relocation",
+      "instruction": "Find the mechanical metronome, pick it up, and put it on the upright piano.",
+      "referents": [
+        "individual_practice_room_2_mechanical_metronome_0",
+        "individual_practice_room_1_upright_piano_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('individual_practice_room_2_mechanical_metronome_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('individual_practice_room_2_mechanical_metronome_0','individual_practice_room_1_upright_piano_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 200,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "individual_practice_room_1",
+          "individual_practice_room_2"
+        ],
+        "must_open": [],
+        "must_see": [
+          "individual_practice_room_1_upright_piano_0",
+          "individual_practice_room_2_mechanical_metronome_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "entry_lobby",
+          "individual_practice_room_1",
+          "individual_practice_room_2",
+          "individual_practice_room_3",
+          "large_ensemble_room",
+          "percussion_practice_room",
+          "staff_lounge",
+          "storage_room"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "individual_practice_room_2_mechanical_metronome_0",
+        "individual_practice_room_1_upright_piano_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "individual_practice_room_2_mechanical_metronome_0"
+        ],
+        [
+          "pick",
+          "individual_practice_room_2_mechanical_metronome_0"
+        ],
+        [
+          "navigate",
+          "individual_practice_room_1_upright_piano_0"
+        ],
+        [
+          "place",
+          "individual_practice_room_1_upright_piano_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "individual_practice_room_2_mechanical_metronome_0",
+        "from_room": "individual_practice_room_2",
+        "from_room_id": "individual_practice_room_2",
+        "dest": "individual_practice_room_1_upright_piano_0",
+        "to_room": "individual_practice_room_1",
+        "to_room_id": "individual_practice_room_1",
+        "spawn": {
+          "x": 15.5,
+          "y": 1.5,
+          "z": 3.5,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "storage_room"
+        }
+      },
+      "goal_images": [
+        [
+          "the mechanical metronome this task refers to -- this exact object",
+          "../references/a762980bcd884b344b6caf5bc67aeb8b9dcfc6270d073d9ef88778cf940ff64d.png"
+        ],
+        [
+          "the upright piano this task refers to -- this exact object",
+          "../references/a5a0dbb48eae6a81bb4f01dc7ff8fc8e7ad1fbb1e233b9c42c7c51798a875d78.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__individual_practice_room_2_upright_piano_0__storage_room_cubby_rack_0",
+      "family": "path_integration",
+      "instruction": "Find the upright piano and then the cubby rack; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "individual_practice_room_2_upright_piano_0",
+        "storage_room_cubby_rack_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 200,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "individual_practice_room_2",
+          "storage_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "individual_practice_room_2_upright_piano_0",
+          "storage_room_cubby_rack_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "individual_practice_room_2",
+          "storage_room"
+        ]
+      },
+      "kinds": [
+        "upright_piano",
+        "cubby_rack"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "individual_practice_room_2_upright_piano_0",
+        "storage_room_cubby_rack_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "individual_practice_room_2_upright_piano_0",
+        "storage_room_cubby_rack_0"
+      ],
+      "truth": {
+        "x": "individual_practice_room_2_upright_piano_0",
+        "y": "storage_room_cubby_rack_0",
+        "x_room": "individual_practice_room_2",
+        "y_room": "storage_room",
+        "leg_m": 17.67,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": 16.18,
+          "y": 1.5,
+          "z": -0.45,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "individual_practice_room_1"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the upright piano this task refers to -- this exact object",
+          "../references/18c21a2a3e76fe0ad774817dd6768e3633caded8556fb2c896191833ed8e8c50.png"
+        ],
+        [
+          "the cubby rack this task refers to -- this exact object",
+          "../references/be67c491f3127e1d36d35818e6f5d6e8cee59748d34ff609ded9022687cd076d.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__individual_practice_room_2_upright_piano_0__storage_room_inspection_table_0",
+      "family": "path_integration",
+      "instruction": "Find the upright piano and then the inspection table; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "individual_practice_room_2_upright_piano_0",
+        "storage_room_inspection_table_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 200,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "individual_practice_room_2",
+          "storage_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "individual_practice_room_2_upright_piano_0",
+          "storage_room_inspection_table_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "individual_practice_room_2",
+          "storage_room"
+        ]
+      },
+      "kinds": [
+        "upright_piano",
+        "inspection_table"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "individual_practice_room_2_upright_piano_0",
+        "storage_room_inspection_table_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "individual_practice_room_2_upright_piano_0",
+        "storage_room_inspection_table_0"
+      ],
+      "truth": {
+        "x": "individual_practice_room_2_upright_piano_0",
+        "y": "storage_room_inspection_table_0",
+        "x_room": "individual_practice_room_2",
+        "y_room": "storage_room",
+        "leg_m": 15.33,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": 9.75,
+          "y": 1.5,
+          "z": 9.5,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "large_ensemble_room"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the upright piano this task refers to -- this exact object",
+          "../references/18c21a2a3e76fe0ad774817dd6768e3633caded8556fb2c896191833ed8e8c50.png"
+        ],
+        [
+          "the inspection table this task refers to -- this exact object",
+          "../references/cf0c30b70a5460f069bf7a9da58118c9c72024679f46a5124f887d100cc16145.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__storage_room_cubby_rack_0__individual_practice_room_2_upright_piano_0",
+      "family": "path_integration",
+      "instruction": "Find the cubby rack and then the upright piano; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "storage_room_cubby_rack_0",
+        "individual_practice_room_2_upright_piano_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 200,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "individual_practice_room_2",
+          "storage_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "individual_practice_room_2_upright_piano_0",
+          "storage_room_cubby_rack_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "individual_practice_room_2",
+          "storage_room"
+        ]
+      },
+      "kinds": [
+        "cubby_rack",
+        "upright_piano"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "storage_room_cubby_rack_0",
+        "individual_practice_room_2_upright_piano_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "storage_room_cubby_rack_0",
+        "individual_practice_room_2_upright_piano_0"
+      ],
+      "truth": {
+        "x": "storage_room_cubby_rack_0",
+        "y": "individual_practice_room_2_upright_piano_0",
+        "x_room": "storage_room",
+        "y_room": "individual_practice_room_2",
+        "leg_m": 17.67,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": 10.8,
+          "y": 1.5,
+          "z": -1.5,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "staff_lounge"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the cubby rack this task refers to -- this exact object",
+          "../references/be67c491f3127e1d36d35818e6f5d6e8cee59748d34ff609ded9022687cd076d.png"
+        ],
+        [
+          "the upright piano this task refers to -- this exact object",
+          "../references/18c21a2a3e76fe0ad774817dd6768e3633caded8556fb2c896191833ed8e8c50.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relative_direction__staff_lounge_coffee_counter_0__staff_lounge_staff_break_table_0__individual_practice_room_1_upright_piano_0",
+      "family": "relative_direction",
+      "instruction": "Find the coffee counter and the staff break table; they are in the same room. Also find the upright piano, which is somewhere else in this house. Then answer this: if you stood at the coffee counter and faced the staff break table, which direction would the upright piano be in? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "staff_lounge_coffee_counter_0",
+        "staff_lounge_staff_break_table_0",
+        "individual_practice_room_1_upright_piano_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 200,
+      "answer_number": 315,
+      "answer_tolerance": 22,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "individual_practice_room_1",
+          "staff_lounge"
+        ],
+        "must_open": [],
+        "must_see": [
+          "individual_practice_room_1_upright_piano_0",
+          "staff_lounge_coffee_counter_0",
+          "staff_lounge_staff_break_table_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "individual_practice_room_1",
+          "staff_lounge"
+        ]
+      },
+      "kinds": [
+        "coffee_counter",
+        "upright_piano",
+        "staff_break_table"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "staff_lounge_coffee_counter_0",
+        "individual_practice_room_1_upright_piano_0",
+        "staff_lounge_staff_break_table_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "315",
+      "oracle_read": [
+        "relative_direction",
+        "staff_lounge_coffee_counter_0",
+        "staff_lounge_staff_break_table_0",
+        "individual_practice_room_1_upright_piano_0"
+      ],
+      "truth": {
+        "origin": "staff_lounge_coffee_counter_0",
+        "forward": "staff_lounge_staff_break_table_0",
+        "target": "individual_practice_room_1_upright_piano_0",
+        "bearing_deg": 317.49,
+        "sector_deg": 315,
+        "offset_deg": 2.49,
+        "origin_room": "staff_lounge",
+        "target_room": "individual_practice_room_1",
+        "leg_m": 5.45,
+        "spawn": {
+          "x": 1.87,
+          "y": 1.5,
+          "z": 5.5,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "individual_practice_room_3"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the coffee counter this task refers to -- this exact object",
+          "../references/890f1f3f868e85a22ebb313267e7ad6327cd06a9d8d0d04cd08439fe7b3b744f.png"
+        ],
+        [
+          "the staff break table this task refers to -- this exact object",
+          "../references/38ffb08ac980b96a091f6dd7beb94d84afe0c7bb2f55305a1ee2abe7ef4c1eea.png"
+        ],
+        [
+          "the upright piano this task refers to -- this exact object",
+          "../references/a5a0dbb48eae6a81bb4f01dc7ff8fc8e7ad1fbb1e233b9c42c7c51798a875d78.png"
+        ]
+      ],
+      "scene_variant": {
+        "schema": "task-scene-variant-v1",
+        "exclude": [
+          "individual_practice_room_2_upright_piano_0"
+        ],
+        "reposition": [
+          {
+            "alias": "individual_practice_room_2_mechanical_metronome_0",
+            "translation": [
+              -1.385312268124489,
+              -0.07229191508701102,
+              0.002
+            ],
+            "support": "floor"
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "relative_direction__staff_lounge_coffee_counter_0__staff_lounge_staff_break_table_0__storage_room_cubby_rack_0",
+      "family": "relative_direction",
+      "instruction": "Find the coffee counter and the staff break table; they are in the same room. Also find the cubby rack, which is somewhere else in this house. Then answer this: if you stood at the coffee counter and faced the staff break table, which direction would the cubby rack be in? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "staff_lounge_coffee_counter_0",
+        "staff_lounge_staff_break_table_0",
+        "storage_room_cubby_rack_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 200,
+      "answer_number": 270,
+      "answer_tolerance": 22,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "staff_lounge",
+          "storage_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "staff_lounge_coffee_counter_0",
+          "staff_lounge_staff_break_table_0",
+          "storage_room_cubby_rack_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "staff_lounge",
+          "storage_room"
+        ]
+      },
+      "kinds": [
+        "coffee_counter",
+        "cubby_rack",
+        "staff_break_table"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "staff_lounge_coffee_counter_0",
+        "storage_room_cubby_rack_0",
+        "staff_lounge_staff_break_table_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "270",
+      "oracle_read": [
+        "relative_direction",
+        "staff_lounge_coffee_counter_0",
+        "staff_lounge_staff_break_table_0",
+        "storage_room_cubby_rack_0"
+      ],
+      "truth": {
+        "origin": "staff_lounge_coffee_counter_0",
+        "forward": "staff_lounge_staff_break_table_0",
+        "target": "storage_room_cubby_rack_0",
+        "bearing_deg": 265.54,
+        "sector_deg": 270,
+        "offset_deg": 4.46,
+        "origin_room": "staff_lounge",
+        "target_room": "storage_room",
+        "leg_m": 9.77,
+        "spawn": {
+          "x": 2.37,
+          "y": 1.5,
+          "z": -0.45,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "individual_practice_room_2"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the coffee counter this task refers to -- this exact object",
+          "../references/890f1f3f868e85a22ebb313267e7ad6327cd06a9d8d0d04cd08439fe7b3b744f.png"
+        ],
+        [
+          "the staff break table this task refers to -- this exact object",
+          "../references/38ffb08ac980b96a091f6dd7beb94d84afe0c7bb2f55305a1ee2abe7ef4c1eea.png"
+        ],
+        [
+          "the cubby rack this task refers to -- this exact object",
+          "../references/be67c491f3127e1d36d35818e6f5d6e8cee59748d34ff609ded9022687cd076d.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relative_direction__storage_room_cubby_rack_0__storage_room_inspection_table_0__individual_practice_room_1_upright_piano_0",
+      "family": "relative_direction",
+      "instruction": "Find the cubby rack and the inspection table; they are in the same room. Also find the upright piano, which is somewhere else in this house. Then answer this: if you stood at the cubby rack and faced the inspection table, which direction would the upright piano be in? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "storage_room_cubby_rack_0",
+        "storage_room_inspection_table_0",
+        "individual_practice_room_1_upright_piano_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 200,
+      "answer_number": 270,
+      "answer_tolerance": 22,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "individual_practice_room_1",
+          "storage_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "individual_practice_room_1_upright_piano_0",
+          "storage_room_cubby_rack_0",
+          "storage_room_inspection_table_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "individual_practice_room_1",
+          "storage_room"
+        ]
+      },
+      "kinds": [
+        "cubby_rack",
+        "upright_piano",
+        "inspection_table"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "storage_room_cubby_rack_0",
+        "individual_practice_room_1_upright_piano_0",
+        "storage_room_inspection_table_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "270",
+      "oracle_read": [
+        "relative_direction",
+        "storage_room_cubby_rack_0",
+        "storage_room_inspection_table_0",
+        "individual_practice_room_1_upright_piano_0"
+      ],
+      "truth": {
+        "origin": "storage_room_cubby_rack_0",
+        "forward": "storage_room_inspection_table_0",
+        "target": "individual_practice_room_1_upright_piano_0",
+        "bearing_deg": 270.13,
+        "sector_deg": 270,
+        "offset_deg": 0.13,
+        "origin_room": "storage_room",
+        "target_room": "individual_practice_room_1",
+        "leg_m": 7.72,
+        "spawn": {
+          "x": 8.3,
+          "y": 1.5,
+          "z": -1.25,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "percussion_practice_room"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the cubby rack this task refers to -- this exact object",
+          "../references/be67c491f3127e1d36d35818e6f5d6e8cee59748d34ff609ded9022687cd076d.png"
+        ],
+        [
+          "the inspection table this task refers to -- this exact object",
+          "../references/cf0c30b70a5460f069bf7a9da58118c9c72024679f46a5124f887d100cc16145.png"
+        ],
+        [
+          "the upright piano this task refers to -- this exact object",
+          "../references/a5a0dbb48eae6a81bb4f01dc7ff8fc8e7ad1fbb1e233b9c42c7c51798a875d78.png"
+        ]
+      ],
+      "scene_variant": {
+        "schema": "task-scene-variant-v1",
+        "exclude": [
+          "individual_practice_room_2_upright_piano_0"
+        ],
+        "reposition": [
+          {
+            "alias": "individual_practice_room_2_mechanical_metronome_0",
+            "translation": [
+              -1.385312268124489,
+              -0.07229191508701102,
+              0.002
+            ],
+            "support": "floor"
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "relative_direction__storage_room_cubby_rack_0__storage_room_inspection_table_0__staff_lounge_coffee_counter_0",
+      "family": "relative_direction",
+      "instruction": "Find the cubby rack and the inspection table; they are in the same room. Also find the coffee counter, which is somewhere else in this house. Then answer this: if you stood at the cubby rack and faced the inspection table, which direction would the coffee counter be in? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "storage_room_cubby_rack_0",
+        "storage_room_inspection_table_0",
+        "staff_lounge_coffee_counter_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 200,
+      "answer_number": 315,
+      "answer_tolerance": 22,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "staff_lounge",
+          "storage_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "staff_lounge_coffee_counter_0",
+          "storage_room_cubby_rack_0",
+          "storage_room_inspection_table_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "staff_lounge",
+          "storage_room"
+        ]
+      },
+      "kinds": [
+        "cubby_rack",
+        "coffee_counter",
+        "inspection_table"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "storage_room_cubby_rack_0",
+        "staff_lounge_coffee_counter_0",
+        "storage_room_inspection_table_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "315",
+      "oracle_read": [
+        "relative_direction",
+        "storage_room_cubby_rack_0",
+        "storage_room_inspection_table_0",
+        "staff_lounge_coffee_counter_0"
+      ],
+      "truth": {
+        "origin": "storage_room_cubby_rack_0",
+        "forward": "storage_room_inspection_table_0",
+        "target": "staff_lounge_coffee_counter_0",
+        "bearing_deg": 303.92,
+        "sector_deg": 315,
+        "offset_deg": 11.08,
+        "origin_room": "storage_room",
+        "target_room": "staff_lounge",
+        "leg_m": 9.77,
+        "spawn": {
+          "x": 2.37,
+          "y": 1.5,
+          "z": 3.5,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "individual_practice_room_3"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the cubby rack this task refers to -- this exact object",
+          "../references/be67c491f3127e1d36d35818e6f5d6e8cee59748d34ff609ded9022687cd076d.png"
+        ],
+        [
+          "the inspection table this task refers to -- this exact object",
+          "../references/cf0c30b70a5460f069bf7a9da58118c9c72024679f46a5124f887d100cc16145.png"
+        ],
+        [
+          "the coffee counter this task refers to -- this exact object",
+          "../references/890f1f3f868e85a22ebb313267e7ad6327cd06a9d8d0d04cd08439fe7b3b744f.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relative_direction__storage_room_inspection_table_0__storage_room_cubby_rack_0__individual_practice_room_2_upright_piano_0",
+      "family": "relative_direction",
+      "instruction": "Find the inspection table and the cubby rack; they are in the same room. Also find the upright piano, which is somewhere else in this house. Then answer this: if you stood at the inspection table and faced the cubby rack, which direction would the upright piano be in? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "storage_room_inspection_table_0",
+        "storage_room_cubby_rack_0",
+        "individual_practice_room_2_upright_piano_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 200,
+      "answer_number": 135,
+      "answer_tolerance": 22,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "individual_practice_room_2",
+          "storage_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "individual_practice_room_2_upright_piano_0",
+          "storage_room_cubby_rack_0",
+          "storage_room_inspection_table_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "individual_practice_room_2",
+          "storage_room"
+        ]
+      },
+      "kinds": [
+        "inspection_table",
+        "upright_piano",
+        "cubby_rack"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "storage_room_inspection_table_0",
+        "individual_practice_room_2_upright_piano_0",
+        "storage_room_cubby_rack_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "135",
+      "oracle_read": [
+        "relative_direction",
+        "storage_room_inspection_table_0",
+        "storage_room_cubby_rack_0",
+        "individual_practice_room_2_upright_piano_0"
+      ],
+      "truth": {
+        "origin": "storage_room_inspection_table_0",
+        "forward": "storage_room_cubby_rack_0",
+        "target": "individual_practice_room_2_upright_piano_0",
+        "bearing_deg": 138.57,
+        "sector_deg": 135,
+        "offset_deg": 3.57,
+        "origin_room": "storage_room",
+        "target_room": "individual_practice_room_2",
+        "leg_m": 15.33,
+        "spawn": {
+          "x": 16.93,
+          "y": 1.5,
+          "z": -2.7,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "individual_practice_room_1"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the inspection table this task refers to -- this exact object",
+          "../references/cf0c30b70a5460f069bf7a9da58118c9c72024679f46a5124f887d100cc16145.png"
+        ],
+        [
+          "the cubby rack this task refers to -- this exact object",
+          "../references/be67c491f3127e1d36d35818e6f5d6e8cee59748d34ff609ded9022687cd076d.png"
+        ],
+        [
+          "the upright piano this task refers to -- this exact object",
+          "../references/18c21a2a3e76fe0ad774817dd6768e3633caded8556fb2c896191833ed8e8c50.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_area__percussion_practice_room",
+      "family": "room_area",
+      "instruction": "Find the percussion practice in this house, then tell me roughly how big its floor is, in square metres, as a number. I want the floor area of that one room, measured inside its walls -- not the whole house, and not the other rooms.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m2",
+      "answer_match": "count",
+      "max_steps": 200,
+      "answer_number": 20,
+      "answer_tolerance": 5.0,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "percussion_practice_room"
+        ],
+        "must_open": [],
+        "must_see": [],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "entry_lobby",
+          "individual_practice_room_1",
+          "individual_practice_room_2",
+          "individual_practice_room_3",
+          "large_ensemble_room",
+          "percussion_practice_room",
+          "staff_lounge",
+          "storage_room"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "20",
+      "oracle_read": [
+        "room_area",
+        "percussion_practice_room"
+      ],
+      "truth": {
+        "room": "percussion_practice_room",
+        "name": "percussion practice",
+        "m2": 20,
+        "tol_m2": 3,
+        "spawn": {
+          "x": 14.25,
+          "y": 1.5,
+          "z": 3.75,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "storage_room"
+        }
+      },
+      "goal_images": []
+    }
+  ],
+  "dataset_version": "1.1"
+}

@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "roam-bench"
+version = "1.1.0"
+description = "ROAM-Bench: Embodied Active Spatial Intelligence through Evidence Verification"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.11,<3.12"
+dependencies = ["numpy>=1.26,<2", "Pillow>=11,<12", "PyYAML>=6,<7"]
+
+[project.optional-dependencies]
+hub = ["huggingface_hub>=0.34,<2"]
+test = ["pytest>=8"]
+geometry = ["trimesh>=4,<5", "scipy>=1.11,<2"]
+media = ["imageio>=2.37", "imageio-ffmpeg>=0.6"]
+
+[project.scripts]
+roam-evaluate = "roam_bench.cli:main"
+roam-summarize = "roam_bench.summary:main"
+roam-build-environment = "roam_bench.build_environment:main"
+
+[tool.setuptools.packages.find]
+include = ["roam_bench*"]
+
+[tool.setuptools.package-data]
+roam_bench = ["*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

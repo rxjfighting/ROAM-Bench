@@ -1,0 +1,831 @@
+{
+  "schema_version": 4,
+  "benchmark": "ROAM-Bench",
+  "scene": "scene_198",
+  "spawn": {
+    "x": -1.51,
+    "y": 1.5,
+    "z": 6.85,
+    "yaw_deg": 0.0,
+    "horizon_deg": 0.0,
+    "room": "living_dining_room"
+  },
+  "specs": [
+    {
+      "task_id": "surface_contents__master_bedroom_rug_0",
+      "family": "surface_contents",
+      "instruction": "Go to the rug. Which of the following objects are resting on it? Select every option that applies. Answer only with the option IDs.\nOptions:\n- OBJ_01: coffee table\n- OBJ_02: bunk bed\n- OBJ_03: shoe bench\n- OBJ_04: side table\n- OBJ_05: dresser\n- OBJ_06: bedroom bench\n- OBJ_07: bedside table\n- OBJ_08: bed",
+      "referents": [
+        "master_bedroom_rug_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "OBJ_06"
+        ],
+        [
+          "OBJ_07"
+        ],
+        [
+          "OBJ_08"
+        ]
+      ],
+      "answer_choices": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_unit": "",
+      "answer_match": "set",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "master_bedroom"
+        ],
+        "must_open": [],
+        "must_see": [
+          "master_bedroom_bed_0",
+          "master_bedroom_bedroom_bench_0",
+          "master_bedroom_bedside_table_0",
+          "master_bedroom_bedside_table_1",
+          "master_bedroom_rug_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "bathroom",
+          "hallway",
+          "kids_room",
+          "kitchen",
+          "living_dining_room",
+          "master_bedroom"
+        ]
+      },
+      "kinds": [
+        "bed",
+        "bedroom_bench",
+        "bedside_table",
+        "bedside_table"
+      ],
+      "receptacle_kinds": [
+        "rug"
+      ],
+      "evidence": [
+        "master_bedroom_bed_0",
+        "master_bedroom_bedroom_bench_0",
+        "master_bedroom_bedside_table_0",
+        "master_bedroom_bedside_table_1",
+        "master_bedroom_rug_0"
+      ],
+      "answer_instances": [
+        "master_bedroom_bed_0",
+        "master_bedroom_bedroom_bench_0",
+        "master_bedroom_bedside_table_0",
+        "master_bedroom_bedside_table_1"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "master_bedroom_rug_0"
+        ]
+      ],
+      "oracle_answer": "OBJ_06, OBJ_07, OBJ_08",
+      "oracle_read": [
+        "surface_contents",
+        "master_bedroom_rug_0"
+      ],
+      "truth": {
+        "host": "master_bedroom_rug_0",
+        "host_kind": "rug",
+        "room": "master_bedroom",
+        "children": [
+          {
+            "alias": "master_bedroom_bed_0",
+            "kind": "bed"
+          },
+          {
+            "alias": "master_bedroom_bedroom_bench_0",
+            "kind": "bedroom_bench"
+          },
+          {
+            "alias": "master_bedroom_bedside_table_0",
+            "kind": "bedside_table"
+          },
+          {
+            "alias": "master_bedroom_bedside_table_1",
+            "kind": "bedside_table"
+          }
+        ],
+        "spawn": {
+          "x": -0.26,
+          "y": 1.5,
+          "z": 6.35,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "living_dining_room"
+        },
+        "answer_options": [
+          {
+            "id": "OBJ_01",
+            "label": "coffee table",
+            "kind": "coffee_table",
+            "alias": "living_dining_room_coffee_table_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_02",
+            "label": "bunk bed",
+            "kind": "bunk_bed",
+            "alias": "kids_room_bunk_bed_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_03",
+            "label": "shoe bench",
+            "kind": "shoe_bench",
+            "alias": "hallway_shoe_bench_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_04",
+            "label": "side table",
+            "kind": "side_table",
+            "alias": "living_dining_room_side_table_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_05",
+            "label": "dresser",
+            "kind": "dresser",
+            "alias": "master_bedroom_dresser_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_06",
+            "label": "bedroom bench",
+            "kind": "bedroom_bench",
+            "alias": "master_bedroom_bedroom_bench_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_07",
+            "label": "bedside table",
+            "kind": "bedside_table",
+            "alias": "master_bedroom_bedside_table_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_08",
+            "label": "bed",
+            "kind": "bed",
+            "alias": "master_bedroom_bed_0",
+            "correct": true
+          }
+        ],
+        "reviewed_contents": {
+          "schema": "visually-reviewed-contents-v1",
+          "aliases": [
+            "master_bedroom_bed_0",
+            "master_bedroom_bedroom_bench_0",
+            "master_bedroom_bedside_table_0",
+            "master_bedroom_bedside_table_1"
+          ],
+          "evidence_scope": "all reviewed host contents including unlisted objects",
+          "answer_scope": "the eight public reference instances"
+        }
+      },
+      "answer_choice_labels": [
+        "coffee table",
+        "bunk bed",
+        "shoe bench",
+        "side table",
+        "dresser",
+        "bedroom bench",
+        "bedside table",
+        "bed"
+      ],
+      "answer_choice_mode": "multiple",
+      "goal_images": [
+        [
+          "the rug this task refers to -- this exact object",
+          "../references/ac4e05734fcb0857b174f2aa38de2ac8b8660d2d5b4bb1ed368c3c79e7d051d5.png"
+        ],
+        [
+          "Option OBJ_01 — coffee table; category reference image",
+          "../references/17db7032012df4add9402d9a133c589256d132e39b27979091e84410c55a772a.png"
+        ],
+        [
+          "Option OBJ_02 — bunk bed; category reference image",
+          "../references/2f573be6e4a1c1baf28aa2b462adcb1347496c352381dd2d262c9fddc5a74bff.png"
+        ],
+        [
+          "Option OBJ_03 — shoe bench; category reference image",
+          "../references/a57d63c3f3ba423a74c871cbb10a622dcd758b4c7c18f232ece1dde9b5887980.png"
+        ],
+        [
+          "Option OBJ_04 — side table; category reference image",
+          "../references/e95b2f87dfd8bcd5eff57213eb343c896a93b2815f1bb0031eb366c26b334189.png"
+        ],
+        [
+          "Option OBJ_05 — dresser; category reference image",
+          "../references/cb4ef56c54a7d961bc308286f0a7951af2e42a6d1721dd68d2df84fec6ebf43e.png"
+        ],
+        [
+          "Option OBJ_06 — bedroom bench; category reference image",
+          "../references/1b8d1771a0061dd580acf20d4003ac653b0ff3b19d805fe5c4254a7d2800e944.png"
+        ],
+        [
+          "Option OBJ_07 — bedside table; category reference image",
+          "../references/b348cd7e6d8e0c515c65c58816735e58df2da00f9e001017db7b733b70223d71.png"
+        ],
+        [
+          "Option OBJ_08 — bed; category reference image",
+          "../references/8f044f27b59896f7883e909a723a149dfc94565af2fb1a9d6fb404d47825beca.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "object_count__rug",
+      "family": "object_count",
+      "instruction": "Search this house and count the rugs. For this task, include decorative rugs and hallway runners, but exclude the mat used as the children's play area, with toys placed on it. There is more than one room, and there may be rugs in more than one of them. When you have finished searching, tell me how many rugs there are in total, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 4,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "bathroom",
+          "hallway",
+          "living_dining_room",
+          "master_bedroom"
+        ],
+        "must_open": [],
+        "must_see": [
+          "bathroom_bath_rug_0",
+          "hallway_runner_rug_0",
+          "living_dining_room_rug_0",
+          "master_bedroom_rug_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "bathroom",
+          "hallway",
+          "kids_room",
+          "kitchen",
+          "living_dining_room",
+          "master_bedroom"
+        ]
+      },
+      "kinds": [
+        "rug"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "bathroom_bath_rug_0",
+        "hallway_runner_rug_0",
+        "living_dining_room_rug_0",
+        "master_bedroom_rug_0"
+      ],
+      "answer_instances": [
+        "bathroom_bath_rug_0",
+        "hallway_runner_rug_0",
+        "living_dining_room_rug_0",
+        "master_bedroom_rug_0"
+      ],
+      "plan": [],
+      "oracle_answer": "4",
+      "oracle_read": [
+        "count_seen",
+        "rug",
+        [
+          "bathroom",
+          "hallway",
+          "kids_room",
+          "kitchen",
+          "living_dining_room",
+          "master_bedroom"
+        ]
+      ],
+      "truth": {
+        "kind": "rug",
+        "total": 4,
+        "noun": "rug",
+        "rooms": [
+          "bathroom",
+          "hallway",
+          "living_dining_room",
+          "master_bedroom"
+        ],
+        "per_room": {
+          "bathroom": 1,
+          "hallway": 1,
+          "living_dining_room": 1,
+          "master_bedroom": 1
+        },
+        "spawn": {
+          "x": -2.96,
+          "y": 1.5,
+          "z": 4.3,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "hallway"
+        },
+        "category_membership": {
+          "schema": "reviewed-category-members-v1",
+          "aliases": [
+            "bathroom_bath_rug_0",
+            "hallway_runner_rug_0",
+            "living_dining_room_rug_0",
+            "master_bedroom_rug_0"
+          ],
+          "category": "rug"
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'rug' -- the task is about every rug in the house, and the others need not look like this one; follow the counting scope stated in the task, including its exclusions",
+          "../references/a13b5a91e86c87343728ba48160e66f0c9567580aa7afdb8aca1178004901f6a.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relocation__hallway_amber_glass_bottle_0__to__bathroom_bathtub_0",
+      "family": "relocation",
+      "instruction": "Find the amber glass bottle, pick it up, and put it on the bathtub.",
+      "referents": [
+        "hallway_amber_glass_bottle_0",
+        "bathroom_bathtub_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('hallway_amber_glass_bottle_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('hallway_amber_glass_bottle_0','bathroom_bathtub_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "bathroom",
+          "hallway"
+        ],
+        "must_open": [
+          "hallway_shoe_cabinet_0"
+        ],
+        "must_see": [
+          "bathroom_bathtub_0",
+          "hallway_amber_glass_bottle_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "bathroom",
+          "hallway",
+          "kids_room",
+          "kitchen",
+          "living_dining_room",
+          "master_bedroom"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "hallway_amber_glass_bottle_0",
+        "bathroom_bathtub_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "hallway_amber_glass_bottle_0"
+        ],
+        [
+          "pick",
+          "hallway_amber_glass_bottle_0"
+        ],
+        [
+          "navigate",
+          "bathroom_bathtub_0"
+        ],
+        [
+          "place",
+          "bathroom_bathtub_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "hallway_amber_glass_bottle_0",
+        "from_room": "hallway",
+        "from_room_id": "hallway",
+        "dest": "bathroom_bathtub_0",
+        "to_room": "bathroom",
+        "to_room_id": "bathroom",
+        "spawn": {
+          "x": 4.09,
+          "y": 1.5,
+          "z": 7.22,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "kitchen"
+        }
+      },
+      "goal_images": [
+        [
+          "the amber glass bottle this task refers to -- this exact object",
+          "../references/900a80f8400f180cae481a06b29fab72517889b47f8185a5ef5f2f32f65396ba.png"
+        ],
+        [
+          "the bathtub this task refers to -- this exact object",
+          "../references/c1fc21e11d49f2dd75d56f3ebbd3fd29c9e2c3c5d3e097f8298475e84623b345.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "gap_width__kitchen_kitchen_island_0__kitchen_sink_cabinet_0",
+      "family": "gap_width",
+      "instruction": "Find the kitchen island and the sink cabinet in this house; they are in the same room, standing apart. Then tell me roughly how wide the clear gap between them is, in centimetres, as a number. Measure the empty floor from the edge of one to the edge of the other, not the distance between their centres.",
+      "referents": [
+        "kitchen_kitchen_island_0",
+        "kitchen_sink_cabinet_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "cm",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 132,
+      "answer_tolerance": 10,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "kitchen"
+        ],
+        "must_open": [],
+        "must_see": [
+          "kitchen_kitchen_island_0",
+          "kitchen_sink_cabinet_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "kitchen"
+        ]
+      },
+      "kinds": [
+        "kitchen_island",
+        "sink_cabinet"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "kitchen_kitchen_island_0",
+        "kitchen_sink_cabinet_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "132",
+      "oracle_read": [
+        "gap_width",
+        "kitchen_kitchen_island_0",
+        "kitchen_sink_cabinet_0"
+      ],
+      "truth": {
+        "a": "kitchen_kitchen_island_0",
+        "b": "kitchen_sink_cabinet_0",
+        "cm": 132,
+        "room": "kitchen",
+        "tol_cm": 10,
+        "spawn": {
+          "x": 2.5,
+          "y": 1.5,
+          "z": 3.0,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "master_bedroom"
+        }
+      },
+      "goal_images": [
+        [
+          "the kitchen island this task refers to -- this exact object",
+          "../references/4e85e9d8b800e09f81cc30593014ac24c341b86d6120fafaf00c9ac522ea5971.png"
+        ],
+        [
+          "the sink cabinet this task refers to -- this exact object",
+          "../references/9d5348a4293d2fbd86d780e7b60b0084b65b6a5822d67f43b4ea2cfd8648f171.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "nearer_object_comparison__kids_room_writing_desk_0",
+      "family": "nearer_object_comparison",
+      "instruction": "Somewhere in this house there are the bedroom bench, the shoe bench and the wall shelf. None of them is in the same room as the writing desk. Find out which one of them is closest to the writing desk, and answer with just that one thing. Compare the straight-line distances, not how far you had to walk.",
+      "referents": [
+        "kids_room_writing_desk_0",
+        "hallway_shoe_bench_0",
+        "master_bedroom_bedroom_bench_0",
+        "living_dining_room_wall_shelf_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "shoe bench"
+        ]
+      ],
+      "answer_choices": [
+        "bedroom bench",
+        "shoe bench",
+        "wall shelf"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "hallway",
+          "kids_room",
+          "living_dining_room",
+          "master_bedroom"
+        ],
+        "must_open": [],
+        "must_see": [
+          "hallway_shoe_bench_0",
+          "kids_room_writing_desk_0",
+          "living_dining_room_wall_shelf_0",
+          "master_bedroom_bedroom_bench_0"
+        ],
+        "min_distinct_viewpoints": 4,
+        "search_regions": [
+          "hallway",
+          "kids_room",
+          "living_dining_room",
+          "master_bedroom"
+        ]
+      },
+      "kinds": [
+        "shoe_bench",
+        "bedroom_bench",
+        "wall_shelf",
+        "writing_desk"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "kids_room_writing_desk_0",
+        "hallway_shoe_bench_0",
+        "master_bedroom_bedroom_bench_0",
+        "living_dining_room_wall_shelf_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "shoe bench",
+      "oracle_read": [
+        "nearest_of",
+        "kids_room_writing_desk_0",
+        [
+          [
+            "hallway_shoe_bench_0",
+            "shoe bench"
+          ],
+          [
+            "master_bedroom_bedroom_bench_0",
+            "bedroom bench"
+          ],
+          [
+            "living_dining_room_wall_shelf_0",
+            "wall shelf"
+          ]
+        ]
+      ],
+      "truth": {
+        "x": "kids_room_writing_desk_0",
+        "winner": "hallway_shoe_bench_0",
+        "choices": [
+          "hallway_shoe_bench_0",
+          "master_bedroom_bedroom_bench_0",
+          "living_dining_room_wall_shelf_0"
+        ],
+        "words": [
+          "bedroom bench",
+          "shoe bench",
+          "wall shelf"
+        ],
+        "metres": {
+          "hallway_shoe_bench_0": 3.49,
+          "master_bedroom_bedroom_bench_0": 5.73,
+          "living_dining_room_wall_shelf_0": 6.01
+        },
+        "lead_m": 2.24,
+        "x_room": "kids_room",
+        "spawn": {
+          "x": 3.34,
+          "y": 1.5,
+          "z": 9.72,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "kitchen"
+        }
+      },
+      "answer_choice_labels": [
+        "bedroom bench",
+        "shoe bench",
+        "wall shelf"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the writing desk this task refers to -- this exact object",
+          "../references/50c86ee49a2d841d9bfec6e8a6411fc603be22eee372c1bd6c78e308157ce84c.png"
+        ],
+        [
+          "the shoe bench this task refers to -- this exact object",
+          "../references/a57d63c3f3ba423a74c871cbb10a622dcd758b4c7c18f232ece1dde9b5887980.png"
+        ],
+        [
+          "the bedroom bench this task refers to -- this exact object",
+          "../references/1b8d1771a0061dd580acf20d4003ac653b0ff3b19d805fe5c4254a7d2800e944.png"
+        ],
+        [
+          "the wall shelf this task refers to -- this exact object",
+          "../references/f9121dfd9c50eabaf5deed10b2c9efe7df54796c9197213d4706b1a11ead836a.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_count__rug",
+      "family": "room_count",
+      "instruction": "Search this house and find out which rooms contain at least one rug. For this task, include decorative rugs and hallway runners, but exclude the mat used as the children's play area, with toys placed on it. Count two places as different rooms if you have to go through a doorway to get from one to the other. Some rooms contain no rugs at all, and a room with several rugs still counts once. Tell me how many rooms contain at least one rug, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 4,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "bathroom",
+          "hallway",
+          "living_dining_room",
+          "master_bedroom"
+        ],
+        "must_open": [],
+        "must_see": [
+          "bathroom_bath_rug_0",
+          "hallway_runner_rug_0",
+          "living_dining_room_rug_0",
+          "master_bedroom_rug_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "bathroom",
+          "hallway",
+          "kids_room",
+          "kitchen",
+          "living_dining_room",
+          "master_bedroom"
+        ]
+      },
+      "kinds": [
+        "rug"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "bathroom_bath_rug_0",
+        "hallway_runner_rug_0",
+        "living_dining_room_rug_0",
+        "master_bedroom_rug_0"
+      ],
+      "answer_instances": [
+        "bathroom_bath_rug_0",
+        "hallway_runner_rug_0",
+        "living_dining_room_rug_0",
+        "master_bedroom_rug_0"
+      ],
+      "plan": [],
+      "oracle_answer": "4",
+      "oracle_read": [
+        "room_count_seen",
+        "rug",
+        [
+          "bathroom",
+          "hallway",
+          "kids_room",
+          "kitchen",
+          "living_dining_room",
+          "master_bedroom"
+        ],
+        []
+      ],
+      "truth": {
+        "kind": "rug",
+        "n_rooms": 4,
+        "noun": "rug",
+        "rooms": [
+          "bathroom",
+          "hallway",
+          "living_dining_room",
+          "master_bedroom"
+        ],
+        "places": [
+          [
+            "bathroom"
+          ],
+          [
+            "hallway"
+          ],
+          [
+            "living_dining_room"
+          ],
+          [
+            "master_bedroom"
+          ]
+        ],
+        "n_places_in_scope": 6,
+        "total": 4,
+        "spawn": {
+          "x": 1.79,
+          "y": 1.5,
+          "z": 4.55,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "hallway"
+        },
+        "category_membership": {
+          "schema": "reviewed-category-members-v1",
+          "aliases": [
+            "bathroom_bath_rug_0",
+            "hallway_runner_rug_0",
+            "living_dining_room_rug_0",
+            "master_bedroom_rug_0"
+          ],
+          "category": "rug"
+        },
+        "per_room": {
+          "bathroom": 1,
+          "hallway": 1,
+          "living_dining_room": 1,
+          "master_bedroom": 1
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'rug' -- the task is about every rug in the house, and the others need not look like this one; follow the counting scope stated in the task, including its exclusions",
+          "../references/a13b5a91e86c87343728ba48160e66f0c9567580aa7afdb8aca1178004901f6a.png"
+        ]
+      ]
+    }
+  ],
+  "dataset_version": "1.1"
+}

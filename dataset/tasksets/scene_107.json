@@ -1,0 +1,1047 @@
+{
+  "schema_version": 4,
+  "benchmark": "ROAM-Bench",
+  "scene": "scene_107",
+  "spawn": {
+    "x": 1.0,
+    "y": 1.5,
+    "z": 5.0,
+    "yaw_deg": 0.0,
+    "horizon_deg": 0.0,
+    "room": "corridor"
+  },
+  "specs": [
+    {
+      "task_id": "surface_contents__guest_suite_bedroom_side_table_0",
+      "family": "surface_contents",
+      "instruction": "Go to the side table. Which of the following objects are resting on it? Select every option that applies. Answer only with the option IDs.\nOptions:\n- OBJ_01: hotel bedside telephone\n- OBJ_02: stack 4\n- OBJ_03: stack 2\n- OBJ_04: stack 3\n- OBJ_05: drinking tumbler\n- OBJ_06: digital alarm clock\n- OBJ_07: hotel information booklet\n- OBJ_08: water bottle",
+      "referents": [
+        "guest_suite_bedroom_side_table_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "OBJ_03"
+        ],
+        [
+          "OBJ_07"
+        ]
+      ],
+      "answer_choices": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_unit": "",
+      "answer_match": "set",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "guest_suite_bedroom"
+        ],
+        "must_open": [],
+        "must_see": [
+          "guest_suite_bedroom_hotel_information_booklet_1",
+          "guest_suite_bedroom_side_table_0",
+          "guest_suite_bedroom_stack_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "breakfast_nook",
+          "corridor",
+          "ensuite_bathroom",
+          "guest_lounge",
+          "guest_suite_bedroom",
+          "housekeeping_store"
+        ]
+      },
+      "kinds": [
+        "hotel_information_booklet",
+        "stack_2"
+      ],
+      "receptacle_kinds": [
+        "side_table"
+      ],
+      "evidence": [
+        "guest_suite_bedroom_side_table_0",
+        "guest_suite_bedroom_hotel_information_booklet_1",
+        "guest_suite_bedroom_stack_0"
+      ],
+      "answer_instances": [
+        "guest_suite_bedroom_hotel_information_booklet_1",
+        "guest_suite_bedroom_stack_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "guest_suite_bedroom_side_table_0"
+        ]
+      ],
+      "oracle_answer": "OBJ_03, OBJ_07",
+      "oracle_read": [
+        "surface_contents",
+        "guest_suite_bedroom_side_table_0"
+      ],
+      "truth": {
+        "host": "guest_suite_bedroom_side_table_0",
+        "host_kind": "side_table",
+        "room": "guest_suite_bedroom",
+        "children": [
+          {
+            "alias": "guest_suite_bedroom_hotel_information_booklet_1",
+            "kind": "hotel_information_booklet"
+          },
+          {
+            "alias": "guest_suite_bedroom_stack_0",
+            "kind": "stack_2"
+          }
+        ],
+        "spawn": {
+          "x": 0.9,
+          "y": 1.5,
+          "z": 11.0,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "breakfast_nook"
+        },
+        "answer_options": [
+          {
+            "id": "OBJ_01",
+            "label": "hotel bedside telephone",
+            "kind": "hotel_bedside_telephone",
+            "alias": "guest_suite_bedroom_hotel_bedside_telephone_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_02",
+            "label": "stack 4",
+            "kind": "stack_4",
+            "alias": "housekeeping_store_stack_3",
+            "correct": false
+          },
+          {
+            "id": "OBJ_03",
+            "label": "stack 2",
+            "kind": "stack_2",
+            "alias": "guest_suite_bedroom_stack_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_04",
+            "label": "stack 3",
+            "kind": "stack_3",
+            "alias": "housekeeping_store_stack_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_05",
+            "label": "drinking tumbler",
+            "kind": "drinking_tumbler",
+            "alias": "guest_suite_bedroom_drinking_tumbler_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_06",
+            "label": "digital alarm clock",
+            "kind": "digital_alarm_clock",
+            "alias": "guest_suite_bedroom_digital_alarm_clock_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_07",
+            "label": "hotel information booklet",
+            "kind": "hotel_information_booklet",
+            "alias": "guest_suite_bedroom_hotel_information_booklet_1",
+            "correct": true
+          },
+          {
+            "id": "OBJ_08",
+            "label": "water bottle",
+            "kind": "water_bottle",
+            "alias": "guest_suite_bedroom_water_bottle_0",
+            "correct": false
+          }
+        ]
+      },
+      "answer_choice_labels": [
+        "hotel bedside telephone",
+        "stack 4",
+        "stack 2",
+        "stack 3",
+        "drinking tumbler",
+        "digital alarm clock",
+        "hotel information booklet",
+        "water bottle"
+      ],
+      "answer_choice_mode": "multiple",
+      "goal_images": [
+        [
+          "the side table this task refers to -- this exact object",
+          "../references/83ffcd185b1e15625b313be8758801adc8e53da7e620c8d94fc1c81c0d349b1b.png"
+        ],
+        [
+          "Option OBJ_01 — hotel bedside telephone; category reference image",
+          "../references/d14bf3df5f49804de7f88489222a74f8473b27bab652e4cbbfd141e78f01f087.png"
+        ],
+        [
+          "Option OBJ_02 — stack 4; category reference image",
+          "../references/ef1db0b2cc4cebbaeed4134df98c9c7b8e19591e43a2c381562dd5ee6549d6d5.png"
+        ],
+        [
+          "Option OBJ_03 — stack 2; category reference image",
+          "../references/67dd2e86da9e1d59c02f6f5fcc07c00ca5f959e6013ef593438bee9125714af0.png"
+        ],
+        [
+          "Option OBJ_04 — stack 3; category reference image",
+          "../references/7102d8694c0f1c7146ce17d9a43b3752d510715f0ba30e45dcb14023471c648d.png"
+        ],
+        [
+          "Option OBJ_05 — drinking tumbler; category reference image",
+          "../references/834c460763c4411be252b9213d281a2f7602eb8e9d9e9aa621cb3d7d1d2de706.png"
+        ],
+        [
+          "Option OBJ_06 — digital alarm clock; category reference image",
+          "../references/995fef5aff45deeb68bc5cd07f47ef1c0a79f4e2297c82c2b5f1439c22dda41d.png"
+        ],
+        [
+          "Option OBJ_07 — hotel information booklet; category reference image",
+          "../references/8be95a266c4b046d6a474cedce6a41d6464913f9b6766dd15549435a5adc6209.png"
+        ],
+        [
+          "Option OBJ_08 — water bottle; category reference image",
+          "../references/7a4b56fa988b97d59d22ad5aea6271dde692a0acc5d81045f268f75e2d91d9d8.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "object_count__mirror",
+      "family": "object_count",
+      "instruction": "Search this house and count the mirrors. There is more than one room, and there may be mirrors in more than one of them. When you have finished searching, tell me how many mirrors there are in total, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 6,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "breakfast_nook",
+          "corridor",
+          "ensuite_bathroom",
+          "guest_lounge",
+          "guest_suite_bedroom"
+        ],
+        "must_open": [],
+        "must_see": [
+          "breakfast_nook_mirror_0",
+          "corridor_mirror_0",
+          "ensuite_bathroom_vanity_mirror_0",
+          "guest_lounge_mirror_0",
+          "guest_suite_bedroom_dressing_mirror_0",
+          "guest_suite_bedroom_mirror_0"
+        ],
+        "min_distinct_viewpoints": 4,
+        "search_regions": [
+          "breakfast_nook",
+          "corridor",
+          "ensuite_bathroom",
+          "guest_lounge",
+          "guest_suite_bedroom",
+          "housekeeping_store"
+        ]
+      },
+      "kinds": [
+        "mirror"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "breakfast_nook_mirror_0",
+        "corridor_mirror_0",
+        "ensuite_bathroom_vanity_mirror_0",
+        "guest_lounge_mirror_0",
+        "guest_suite_bedroom_dressing_mirror_0",
+        "guest_suite_bedroom_mirror_0"
+      ],
+      "answer_instances": [
+        "breakfast_nook_mirror_0",
+        "corridor_mirror_0",
+        "ensuite_bathroom_vanity_mirror_0",
+        "guest_lounge_mirror_0",
+        "guest_suite_bedroom_dressing_mirror_0",
+        "guest_suite_bedroom_mirror_0"
+      ],
+      "plan": [],
+      "oracle_answer": "6",
+      "oracle_read": [
+        "count_seen",
+        "mirror",
+        [
+          "breakfast_nook",
+          "corridor",
+          "ensuite_bathroom",
+          "guest_lounge",
+          "guest_suite_bedroom",
+          "housekeeping_store"
+        ]
+      ],
+      "truth": {
+        "kind": "mirror",
+        "total": 6,
+        "noun": "mirror",
+        "rooms": [
+          "breakfast_nook",
+          "corridor",
+          "ensuite_bathroom",
+          "guest_lounge",
+          "guest_suite_bedroom"
+        ],
+        "per_room": {
+          "breakfast_nook": 1,
+          "corridor": 1,
+          "ensuite_bathroom": 1,
+          "guest_lounge": 1,
+          "guest_suite_bedroom": 2
+        },
+        "spawn": {
+          "x": -0.27,
+          "y": 1.5,
+          "z": -2.3,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "housekeeping_store"
+        },
+        "category_membership": {
+          "schema": "reviewed-category-members-v1",
+          "aliases": [
+            "breakfast_nook_mirror_0",
+            "corridor_mirror_0",
+            "ensuite_bathroom_vanity_mirror_0",
+            "guest_lounge_mirror_0",
+            "guest_suite_bedroom_dressing_mirror_0",
+            "guest_suite_bedroom_mirror_0"
+          ],
+          "category": "mirror"
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'mirror' -- the task is about every mirror in the house, and the others need not look like this one",
+          "../references/d2445629d004c85f6f72d533a92d0ca26b3d244f11a3b21cc491ccc82b576b5f.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "object_count__side_table",
+      "family": "object_count",
+      "instruction": "Search this house and count the side tables. There is more than one room, and there may be side tables in more than one of them. When you have finished searching, tell me how many side tables there are in total, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 2,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "guest_lounge",
+          "guest_suite_bedroom"
+        ],
+        "must_open": [],
+        "must_see": [
+          "guest_lounge_side_table_0",
+          "guest_suite_bedroom_side_table_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "breakfast_nook",
+          "corridor",
+          "ensuite_bathroom",
+          "guest_lounge",
+          "guest_suite_bedroom",
+          "housekeeping_store"
+        ]
+      },
+      "kinds": [
+        "side_table"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "guest_lounge_side_table_0",
+        "guest_suite_bedroom_side_table_0"
+      ],
+      "answer_instances": [
+        "guest_lounge_side_table_0",
+        "guest_suite_bedroom_side_table_0"
+      ],
+      "plan": [],
+      "oracle_answer": "2",
+      "oracle_read": [
+        "count_seen",
+        "side_table",
+        [
+          "breakfast_nook",
+          "corridor",
+          "ensuite_bathroom",
+          "guest_lounge",
+          "guest_suite_bedroom",
+          "housekeeping_store"
+        ]
+      ],
+      "truth": {
+        "kind": "side_table",
+        "total": 2,
+        "noun": "side table",
+        "rooms": [
+          "guest_lounge",
+          "guest_suite_bedroom"
+        ],
+        "per_room": {
+          "guest_lounge": 1,
+          "guest_suite_bedroom": 1
+        },
+        "spawn": {
+          "x": 5.35,
+          "y": 1.5,
+          "z": 7.75,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "ensuite_bathroom"
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'side table' -- the task is about every side table in the house, and the others need not look like this one",
+          "../references/9fd7b36e9424d70a14519a583f0c212ea56907ee2fb146fc48c60ad0a026d3e4.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "object_distance__guest_suite_bedroom_dresser_0__housekeeping_store_linen_cart_0",
+      "family": "object_distance",
+      "instruction": "Find the dresser and the linen cart in this house; they are in different rooms. Then tell me roughly how far apart they are, in metres, as a number. Measure the straight line between them, not the distance you walked.",
+      "referents": [
+        "guest_suite_bedroom_dresser_0",
+        "housekeeping_store_linen_cart_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 9,
+      "answer_tolerance": 2.0,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "guest_suite_bedroom",
+          "housekeeping_store"
+        ],
+        "must_open": [],
+        "must_see": [
+          "guest_suite_bedroom_dresser_0",
+          "housekeeping_store_linen_cart_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "guest_suite_bedroom",
+          "housekeeping_store"
+        ]
+      },
+      "kinds": [
+        "dresser",
+        "linen_cart"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "guest_suite_bedroom_dresser_0",
+        "housekeeping_store_linen_cart_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "9",
+      "oracle_read": [
+        "object_distance",
+        "guest_suite_bedroom_dresser_0",
+        "housekeeping_store_linen_cart_0"
+      ],
+      "truth": {
+        "a": "guest_suite_bedroom_dresser_0",
+        "b": "housekeeping_store_linen_cart_0",
+        "metres": 8.95,
+        "a_room": "guest_suite_bedroom",
+        "b_room": "housekeeping_store",
+        "tol_m": 1,
+        "spawn": {
+          "x": 2.8,
+          "y": 1.5,
+          "z": 1.65,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "guest_lounge"
+        }
+      },
+      "goal_images": [
+        [
+          "the dresser this task refers to -- this exact object",
+          "../references/5e63d6f5246e5f10591b37f8d670cf125b344afc08284b05be8d4e5bff610410.png"
+        ],
+        [
+          "the linen cart this task refers to -- this exact object",
+          "../references/e145ddba8a12851a37300b16d2c6c501b657999e126387841cc2aef991a5c3cf.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "gap_width__housekeeping_store_linen_cart_0__housekeeping_store_linen_folding_work_counter_0",
+      "family": "gap_width",
+      "instruction": "Find the linen cart and the linen folding work counter in this house; they are in the same room, standing apart. Then tell me roughly how wide the clear gap between them is, in centimetres, as a number. Measure the empty floor from the edge of one to the edge of the other, not the distance between their centres.",
+      "referents": [
+        "housekeeping_store_linen_cart_0",
+        "housekeeping_store_linen_folding_work_counter_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "cm",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 54,
+      "answer_tolerance": 10,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "housekeeping_store"
+        ],
+        "must_open": [],
+        "must_see": [
+          "housekeeping_store_linen_cart_0",
+          "housekeeping_store_linen_folding_work_counter_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "housekeeping_store"
+        ]
+      },
+      "kinds": [
+        "linen_cart",
+        "linen_folding_work_counter"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "housekeeping_store_linen_cart_0",
+        "housekeeping_store_linen_folding_work_counter_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "54",
+      "oracle_read": [
+        "gap_width",
+        "housekeeping_store_linen_cart_0",
+        "housekeeping_store_linen_folding_work_counter_0"
+      ],
+      "truth": {
+        "a": "housekeeping_store_linen_cart_0",
+        "b": "housekeeping_store_linen_folding_work_counter_0",
+        "cm": 54,
+        "room": "housekeeping_store",
+        "tol_cm": 10,
+        "spawn": {
+          "x": 5.35,
+          "y": 1.5,
+          "z": 7.75,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "ensuite_bathroom"
+        }
+      },
+      "goal_images": [
+        [
+          "the linen cart this task refers to -- this exact object",
+          "../references/e145ddba8a12851a37300b16d2c6c501b657999e126387841cc2aef991a5c3cf.png"
+        ],
+        [
+          "the linen folding work counter this task refers to -- this exact object",
+          "../references/f447af734f25f841e739f0050bf9fb0efda062ac6957c6779acaa11a06e0cc9a.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__breakfast_nook_cafe_table_0__housekeeping_store_linen_folding_work_counter_0",
+      "family": "path_integration",
+      "instruction": "Find the cafe table and then the linen folding work counter; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "breakfast_nook_cafe_table_0",
+        "housekeeping_store_linen_folding_work_counter_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "breakfast_nook",
+          "housekeeping_store"
+        ],
+        "must_open": [],
+        "must_see": [
+          "breakfast_nook_cafe_table_0",
+          "housekeeping_store_linen_folding_work_counter_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "breakfast_nook",
+          "housekeeping_store"
+        ]
+      },
+      "kinds": [
+        "cafe_table",
+        "linen_folding_work_counter"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "breakfast_nook_cafe_table_0",
+        "housekeeping_store_linen_folding_work_counter_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "breakfast_nook_cafe_table_0",
+        "housekeeping_store_linen_folding_work_counter_0"
+      ],
+      "truth": {
+        "x": "breakfast_nook_cafe_table_0",
+        "y": "housekeeping_store_linen_folding_work_counter_0",
+        "x_room": "breakfast_nook",
+        "y_room": "housekeeping_store",
+        "leg_m": 14.26,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": 0.5,
+          "y": 1.5,
+          "z": 2.5,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "corridor"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the cafe table this task refers to -- this exact object",
+          "../references/48e7d5784e516d0c96a4c6d7f97019579cabc0ae3815f58b049716831d32b3cf.png"
+        ],
+        [
+          "the linen folding work counter this task refers to -- this exact object",
+          "../references/f447af734f25f841e739f0050bf9fb0efda062ac6957c6779acaa11a06e0cc9a.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "nearer_object_comparison__guest_lounge_side_table_0",
+      "family": "nearer_object_comparison",
+      "instruction": "Somewhere in this house there are the dresser, the linen cart and the luggage bench. None of them is in the same room as the side table. Find out which one of them is closest to the side table, and answer with just that one thing. Compare the straight-line distances, not how far you had to walk.",
+      "referents": [
+        "guest_lounge_side_table_0",
+        "housekeeping_store_linen_cart_0",
+        "guest_suite_bedroom_dresser_0",
+        "corridor_luggage_bench_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "linen cart"
+        ]
+      ],
+      "answer_choices": [
+        "dresser",
+        "linen cart",
+        "luggage bench"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "corridor",
+          "guest_lounge",
+          "guest_suite_bedroom",
+          "housekeeping_store"
+        ],
+        "must_open": [],
+        "must_see": [
+          "corridor_luggage_bench_0",
+          "guest_lounge_side_table_0",
+          "guest_suite_bedroom_dresser_0",
+          "housekeeping_store_linen_cart_0"
+        ],
+        "min_distinct_viewpoints": 4,
+        "search_regions": [
+          "corridor",
+          "guest_lounge",
+          "guest_suite_bedroom",
+          "housekeeping_store"
+        ]
+      },
+      "kinds": [
+        "linen_cart",
+        "dresser",
+        "luggage_bench",
+        "side_table"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "guest_lounge_side_table_0",
+        "housekeeping_store_linen_cart_0",
+        "guest_suite_bedroom_dresser_0",
+        "corridor_luggage_bench_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "linen cart",
+      "oracle_read": [
+        "nearest_of",
+        "guest_lounge_side_table_0",
+        [
+          [
+            "housekeeping_store_linen_cart_0",
+            "linen cart"
+          ],
+          [
+            "guest_suite_bedroom_dresser_0",
+            "dresser"
+          ],
+          [
+            "corridor_luggage_bench_0",
+            "luggage bench"
+          ]
+        ]
+      ],
+      "truth": {
+        "x": "guest_lounge_side_table_0",
+        "winner": "housekeeping_store_linen_cart_0",
+        "choices": [
+          "housekeeping_store_linen_cart_0",
+          "guest_suite_bedroom_dresser_0",
+          "corridor_luggage_bench_0"
+        ],
+        "words": [
+          "dresser",
+          "linen cart",
+          "luggage bench"
+        ],
+        "metres": {
+          "housekeeping_store_linen_cart_0": 3.56,
+          "guest_suite_bedroom_dresser_0": 7.39,
+          "corridor_luggage_bench_0": 8.42
+        },
+        "lead_m": 3.83,
+        "x_room": "guest_lounge",
+        "spawn": {
+          "x": 0.9,
+          "y": 1.5,
+          "z": 11.0,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "breakfast_nook"
+        }
+      },
+      "answer_choice_labels": [
+        "dresser",
+        "linen cart",
+        "luggage bench"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the side table this task refers to -- this exact object",
+          "../references/9fd7b36e9424d70a14519a583f0c212ea56907ee2fb146fc48c60ad0a026d3e4.png"
+        ],
+        [
+          "the linen cart this task refers to -- this exact object",
+          "../references/e145ddba8a12851a37300b16d2c6c501b657999e126387841cc2aef991a5c3cf.png"
+        ],
+        [
+          "the dresser this task refers to -- this exact object",
+          "../references/5e63d6f5246e5f10591b37f8d670cf125b344afc08284b05be8d4e5bff610410.png"
+        ],
+        [
+          "the luggage bench this task refers to -- this exact object",
+          "../references/349353e151a87ce89995e4dabda9dd97eec83d0a62f4d48c3098b52c7440e8b7.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_area__corridor",
+      "family": "room_area",
+      "instruction": "Find the corridor in this house, then tell me roughly how big its floor is, in square metres, as a number. I want the floor area of that one room, measured inside its walls -- not the whole house, and not the other rooms.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m2",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 18,
+      "answer_tolerance": 5.0,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "corridor"
+        ],
+        "must_open": [],
+        "must_see": [],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "breakfast_nook",
+          "corridor",
+          "ensuite_bathroom",
+          "guest_lounge",
+          "guest_suite_bedroom",
+          "housekeeping_store"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "18",
+      "oracle_read": [
+        "room_area",
+        "corridor"
+      ],
+      "truth": {
+        "room": "corridor",
+        "name": "corridor",
+        "m2": 18,
+        "tol_m2": 3,
+        "spawn": {
+          "x": 1.23,
+          "y": 1.5,
+          "z": -1.05,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "housekeeping_store"
+        }
+      },
+      "goal_images": []
+    },
+    {
+      "task_id": "room_count__mirror",
+      "family": "room_count",
+      "instruction": "Search this house and find out which rooms contain at least one mirror. Count two places as different rooms if you have to go through a doorway to get from one to the other. Some rooms contain no mirrors at all, and a room with several mirrors still counts once. Tell me how many rooms contain at least one mirror, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 5,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "breakfast_nook",
+          "corridor",
+          "ensuite_bathroom",
+          "guest_lounge",
+          "guest_suite_bedroom"
+        ],
+        "must_open": [],
+        "must_see": [
+          "breakfast_nook_mirror_0",
+          "corridor_mirror_0",
+          "ensuite_bathroom_vanity_mirror_0",
+          "guest_lounge_mirror_0",
+          "guest_suite_bedroom_dressing_mirror_0",
+          "guest_suite_bedroom_mirror_0"
+        ],
+        "min_distinct_viewpoints": 4,
+        "search_regions": [
+          "breakfast_nook",
+          "corridor",
+          "ensuite_bathroom",
+          "guest_lounge",
+          "guest_suite_bedroom",
+          "housekeeping_store"
+        ]
+      },
+      "kinds": [
+        "mirror"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "breakfast_nook_mirror_0",
+        "corridor_mirror_0",
+        "ensuite_bathroom_vanity_mirror_0",
+        "guest_lounge_mirror_0",
+        "guest_suite_bedroom_dressing_mirror_0",
+        "guest_suite_bedroom_mirror_0"
+      ],
+      "answer_instances": [
+        "breakfast_nook_mirror_0",
+        "corridor_mirror_0",
+        "ensuite_bathroom_vanity_mirror_0",
+        "guest_lounge_mirror_0",
+        "guest_suite_bedroom_dressing_mirror_0",
+        "guest_suite_bedroom_mirror_0"
+      ],
+      "plan": [],
+      "oracle_answer": "5",
+      "oracle_read": [
+        "room_count_seen",
+        "mirror",
+        [
+          "breakfast_nook",
+          "corridor",
+          "ensuite_bathroom",
+          "guest_lounge",
+          "guest_suite_bedroom",
+          "housekeeping_store"
+        ],
+        []
+      ],
+      "truth": {
+        "kind": "mirror",
+        "n_rooms": 5,
+        "noun": "mirror",
+        "rooms": [
+          "breakfast_nook",
+          "corridor",
+          "ensuite_bathroom",
+          "guest_lounge",
+          "guest_suite_bedroom"
+        ],
+        "places": [
+          [
+            "breakfast_nook"
+          ],
+          [
+            "corridor"
+          ],
+          [
+            "ensuite_bathroom"
+          ],
+          [
+            "guest_lounge"
+          ],
+          [
+            "guest_suite_bedroom"
+          ]
+        ],
+        "n_places_in_scope": 6,
+        "total": 6,
+        "spawn": {
+          "x": -0.27,
+          "y": 1.5,
+          "z": -2.3,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "housekeeping_store"
+        },
+        "category_membership": {
+          "schema": "reviewed-category-members-v1",
+          "aliases": [
+            "breakfast_nook_mirror_0",
+            "corridor_mirror_0",
+            "ensuite_bathroom_vanity_mirror_0",
+            "guest_lounge_mirror_0",
+            "guest_suite_bedroom_dressing_mirror_0",
+            "guest_suite_bedroom_mirror_0"
+          ],
+          "category": "mirror"
+        },
+        "per_room": {
+          "breakfast_nook": 1,
+          "corridor": 1,
+          "ensuite_bathroom": 1,
+          "guest_lounge": 1,
+          "guest_suite_bedroom": 2
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'mirror' -- the task is about every mirror in the house, and the others need not look like this one",
+          "../references/d2445629d004c85f6f72d533a92d0ca26b3d244f11a3b21cc491ccc82b576b5f.png"
+        ]
+      ]
+    }
+  ],
+  "dataset_version": "1.1"
+}

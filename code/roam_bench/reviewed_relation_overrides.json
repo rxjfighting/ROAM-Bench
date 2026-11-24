@@ -1,0 +1,41 @@
+{
+  "scene_108/bathroom_filled_container_0": {
+    "original_relation": {
+      "child": "bathroom_filled_container_0",
+      "room_id": "bathroom",
+      "parent_surface_id": "S_0",
+      "placement_method": "fill_container",
+      "host": "bathroom_bathroom_vanity_0",
+      "link_name": null,
+      "relation": "inside",
+      "ambiguous_parent_surface": false
+    },
+    "house_state_sha256": "31ecde8dc80025c0bb88b83fd5a33315ec8221a88684b576b3fd4e3d0eebccee"
+  },
+  "scene_109/kitchen_filled_container_0": {
+    "original_relation": {
+      "child": "kitchen_filled_container_0",
+      "room_id": "kitchen",
+      "parent_surface_id": "S_1",
+      "placement_method": "fill_container",
+      "host": "kitchen_dining_table_0",
+      "link_name": null,
+      "relation": "inside",
+      "ambiguous_parent_surface": false
+    },
+    "house_state_sha256": "b1869daac61e5446a44735479b11a6882e582b53c96f76424b2bdd162326e627"
+  },
+  "scene_148/germination_testing_room_filled_container_2": {
+    "original_relation": {
+      "child": "germination_testing_room_filled_container_2",
+      "room_id": "germination_testing_room",
+      "parent_surface_id": "S_n",
+      "placement_method": "fill_container",
+      "host": "germination_testing_room_laboratory_workbench_1",
+      "link_name": null,
+      "relation": "inside",
+      "ambiguous_parent_surface": false
+    },
+    "house_state_sha256": "995d92a57c810741a4725a31b6f9f94621ab25ebd0c83e8f3eb7eb29ae9cdcdf"
+  }
+}

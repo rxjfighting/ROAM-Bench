@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.cache/
+.roam-cache/
+.env
+results/
+robot/
+stages/

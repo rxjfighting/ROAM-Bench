@@ -1,0 +1,798 @@
+{
+  "schema_version": 4,
+  "benchmark": "ROAM-Bench",
+  "scene": "scene_100",
+  "spawn": {
+    "x": 2.0,
+    "y": 1.5,
+    "z": 2.0,
+    "yaw_deg": 0.0,
+    "horizon_deg": 0.0,
+    "room": "living_room"
+  },
+  "specs": [
+    {
+      "task_id": "surface_contents__bedroom_nightstand_0",
+      "family": "surface_contents",
+      "instruction": "Go to the nightstand. Which of the following objects are resting on it? Select every option that applies. Answer only with the option IDs.\nOptions:\n- OBJ_01: coffee table book\n- OBJ_02: hardcover novel\n- OBJ_03: drinking glass\n- OBJ_04: dish drying rack\n- OBJ_05: stovetop kettle\n- OBJ_06: bedside table lamp\n- OBJ_07: knife block\n- OBJ_08: scented candle",
+      "referents": [
+        "bedroom_nightstand_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "OBJ_02"
+        ],
+        [
+          "OBJ_03"
+        ],
+        [
+          "OBJ_06"
+        ]
+      ],
+      "answer_choices": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_unit": "",
+      "answer_match": "set",
+      "max_steps": 100,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "bedroom"
+        ],
+        "must_open": [],
+        "must_see": [
+          "bedroom_bedside_table_lamp_0",
+          "bedroom_drinking_glass_0",
+          "bedroom_hardcover_novel_0",
+          "bedroom_nightstand_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "bedroom",
+          "hallway",
+          "kitchen",
+          "living_room"
+        ]
+      },
+      "kinds": [
+        "bedside_table_lamp",
+        "drinking_glass",
+        "hardcover_novel"
+      ],
+      "receptacle_kinds": [
+        "nightstand"
+      ],
+      "evidence": [
+        "bedroom_nightstand_0",
+        "bedroom_bedside_table_lamp_0",
+        "bedroom_drinking_glass_0",
+        "bedroom_hardcover_novel_0"
+      ],
+      "answer_instances": [
+        "bedroom_bedside_table_lamp_0",
+        "bedroom_drinking_glass_0",
+        "bedroom_hardcover_novel_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "bedroom_nightstand_0"
+        ]
+      ],
+      "oracle_answer": "OBJ_02, OBJ_03, OBJ_06",
+      "oracle_read": [
+        "surface_contents",
+        "bedroom_nightstand_0"
+      ],
+      "truth": {
+        "host": "bedroom_nightstand_0",
+        "host_kind": "nightstand",
+        "room": "bedroom",
+        "children": [
+          {
+            "alias": "bedroom_bedside_table_lamp_0",
+            "kind": "bedside_table_lamp"
+          },
+          {
+            "alias": "bedroom_drinking_glass_0",
+            "kind": "drinking_glass"
+          },
+          {
+            "alias": "bedroom_hardcover_novel_0",
+            "kind": "hardcover_novel"
+          }
+        ],
+        "spawn": {
+          "x": -0.75,
+          "y": 1.5,
+          "z": 2.3,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "hallway"
+        },
+        "answer_options": [
+          {
+            "id": "OBJ_01",
+            "label": "coffee table book",
+            "kind": "coffee_table_book",
+            "alias": "living_room_coffee_table_book_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_02",
+            "label": "hardcover novel",
+            "kind": "hardcover_novel",
+            "alias": "bedroom_hardcover_novel_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_03",
+            "label": "drinking glass",
+            "kind": "drinking_glass",
+            "alias": "bedroom_drinking_glass_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_04",
+            "label": "dish drying rack",
+            "kind": "dish_drying_rack",
+            "alias": "kitchen_dish_drying_rack_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_05",
+            "label": "stovetop kettle",
+            "kind": "stovetop_kettle",
+            "alias": "kitchen_stovetop_kettle_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_06",
+            "label": "bedside table lamp",
+            "kind": "bedside_table_lamp",
+            "alias": "bedroom_bedside_table_lamp_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_07",
+            "label": "knife block",
+            "kind": "knife_block",
+            "alias": "kitchen_knife_block_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_08",
+            "label": "scented candle",
+            "kind": "scented_candle",
+            "alias": "living_room_scented_candle_0",
+            "correct": false
+          }
+        ]
+      },
+      "answer_choice_labels": [
+        "coffee table book",
+        "hardcover novel",
+        "drinking glass",
+        "dish drying rack",
+        "stovetop kettle",
+        "bedside table lamp",
+        "knife block",
+        "scented candle"
+      ],
+      "answer_choice_mode": "multiple",
+      "goal_images": [
+        [
+          "the nightstand this task refers to -- this exact object",
+          "../references/f2f201a40c2b84e1a21e29b8e258d4b7d20d7e07b319143654840dd5fd884311.png"
+        ],
+        [
+          "Option OBJ_01 — coffee table book; category reference image",
+          "../references/2b3f7077a7285d9e45c98fc2204932181f942742d23dd14814145f3168de3e19.png"
+        ],
+        [
+          "Option OBJ_02 — hardcover novel; category reference image",
+          "../references/7d1af7084a9126bea20db5100737f079ff5f8f7d3c97f01e1b53d2e8eba3e3fb.png"
+        ],
+        [
+          "Option OBJ_03 — drinking glass; category reference image",
+          "../references/804e06f37c9225f90773a3a584d07d32f8508a4be025c27ff89233e9e1d53296.png"
+        ],
+        [
+          "Option OBJ_04 — dish drying rack; category reference image",
+          "../references/87ab3cb5afed646b58751c96b62816bcc3fda9fccbc3dd6072f95153505e22d4.png"
+        ],
+        [
+          "Option OBJ_05 — stovetop kettle; category reference image",
+          "../references/85cf5d92164388cdba16157815ba4217ae5232d16ad6302463b6a8891c857228.png"
+        ],
+        [
+          "Option OBJ_06 — bedside table lamp; category reference image",
+          "../references/b45e10e258ace6b8dc20517c22c148539e47009d6302e6b99a2a2219b39f7fb1.png"
+        ],
+        [
+          "Option OBJ_07 — knife block; category reference image",
+          "../references/9441ee2c00c2bd0e10a6b2850ca282f6295690f74bf8b543584477df3707f837.png"
+        ],
+        [
+          "Option OBJ_08 — scented candle; category reference image",
+          "../references/78c6952552d09add7ac983c8537517dec76288f9c73a41d76959b93a97535d75.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "object_count__mirror",
+      "family": "object_count",
+      "instruction": "Search this house and count the mirrors. There is more than one room, and there may be mirrors in more than one of them. When you have finished searching, tell me how many mirrors there are in total, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 100,
+      "answer_number": 3,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "bedroom",
+          "hallway",
+          "living_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "bedroom_mirror_0",
+          "hallway_mirror_0",
+          "living_room_mirror_0"
+        ],
+        "min_distinct_viewpoints": 3,
+        "search_regions": [
+          "bedroom",
+          "hallway",
+          "kitchen",
+          "living_room"
+        ]
+      },
+      "kinds": [
+        "mirror"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "bedroom_mirror_0",
+        "hallway_mirror_0",
+        "living_room_mirror_0"
+      ],
+      "answer_instances": [
+        "bedroom_mirror_0",
+        "hallway_mirror_0",
+        "living_room_mirror_0"
+      ],
+      "plan": [],
+      "oracle_answer": "3",
+      "oracle_read": [
+        "count_seen",
+        "mirror",
+        [
+          "bedroom",
+          "hallway",
+          "kitchen",
+          "living_room"
+        ]
+      ],
+      "truth": {
+        "kind": "mirror",
+        "total": 3,
+        "noun": "mirror",
+        "rooms": [
+          "bedroom",
+          "hallway",
+          "living_room"
+        ],
+        "per_room": {
+          "bedroom": 1,
+          "hallway": 1,
+          "living_room": 1
+        },
+        "spawn": {
+          "x": 4.2,
+          "y": 1.5,
+          "z": 2.85,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "kitchen"
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'mirror' -- the task is about every mirror in the house, and the others need not look like this one",
+          "../references/09e184106b4c77f23fff2812dd99bc8d78ae064adcee6cfbd596fb07cea4e1df.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relative_direction__bedroom_nightstand_0__bedroom_wardrobe_0__hallway_shoe_bench_0",
+      "family": "relative_direction",
+      "instruction": "Find the nightstand and the wardrobe; they are in the same room. Also find the shoe bench, which is somewhere else in this house. Then answer this: if you stood at the nightstand and faced the wardrobe, which direction would the shoe bench be in? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "bedroom_nightstand_0",
+        "bedroom_wardrobe_0",
+        "hallway_shoe_bench_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 100,
+      "answer_number": 0,
+      "answer_tolerance": 22,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "bedroom",
+          "hallway"
+        ],
+        "must_open": [],
+        "must_see": [
+          "bedroom_nightstand_0",
+          "bedroom_wardrobe_0",
+          "hallway_shoe_bench_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "bedroom",
+          "hallway"
+        ]
+      },
+      "kinds": [
+        "nightstand",
+        "shoe_bench",
+        "wardrobe"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "bedroom_nightstand_0",
+        "hallway_shoe_bench_0",
+        "bedroom_wardrobe_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "0",
+      "oracle_read": [
+        "relative_direction",
+        "bedroom_nightstand_0",
+        "bedroom_wardrobe_0",
+        "hallway_shoe_bench_0"
+      ],
+      "truth": {
+        "origin": "bedroom_nightstand_0",
+        "forward": "bedroom_wardrobe_0",
+        "target": "hallway_shoe_bench_0",
+        "bearing_deg": 359.09,
+        "sector_deg": 0,
+        "offset_deg": 0.91,
+        "origin_room": "bedroom",
+        "target_room": "hallway",
+        "leg_m": 3.51,
+        "spawn": {
+          "x": 5.45,
+          "y": 1.5,
+          "z": 2.1,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "kitchen"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the nightstand this task refers to -- this exact object",
+          "../references/f2f201a40c2b84e1a21e29b8e258d4b7d20d7e07b319143654840dd5fd884311.png"
+        ],
+        [
+          "the wardrobe this task refers to -- this exact object",
+          "../references/a6a8ea9a7f7f434782cb58487129278382c61fb11157fd57369dd61a34f6ebe2.png"
+        ],
+        [
+          "the shoe bench this task refers to -- this exact object",
+          "../references/fe731bc6d6a063c316b838193e92ce45bc8dd144e9bb1d91ec806540015f840d.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relative_direction__bedroom_nightstand_0__bedroom_wardrobe_0__kitchen_base_cooking_unit_0",
+      "family": "relative_direction",
+      "instruction": "Find the nightstand and the wardrobe; they are in the same room. Also find the base cooking unit, which is somewhere else in this house. Then answer this: if you stood at the nightstand and faced the wardrobe, which direction would the base cooking unit be in? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "bedroom_nightstand_0",
+        "bedroom_wardrobe_0",
+        "kitchen_base_cooking_unit_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 100,
+      "answer_number": 315,
+      "answer_tolerance": 22,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "bedroom",
+          "kitchen"
+        ],
+        "must_open": [],
+        "must_see": [
+          "bedroom_nightstand_0",
+          "bedroom_wardrobe_0",
+          "kitchen_base_cooking_unit_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "bedroom",
+          "kitchen"
+        ]
+      },
+      "kinds": [
+        "nightstand",
+        "base_cooking_unit",
+        "wardrobe"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "bedroom_nightstand_0",
+        "kitchen_base_cooking_unit_0",
+        "bedroom_wardrobe_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "315",
+      "oracle_read": [
+        "relative_direction",
+        "bedroom_nightstand_0",
+        "bedroom_wardrobe_0",
+        "kitchen_base_cooking_unit_0"
+      ],
+      "truth": {
+        "origin": "bedroom_nightstand_0",
+        "forward": "bedroom_wardrobe_0",
+        "target": "kitchen_base_cooking_unit_0",
+        "bearing_deg": 309.39,
+        "sector_deg": 315,
+        "offset_deg": 5.61,
+        "origin_room": "bedroom",
+        "target_room": "kitchen",
+        "leg_m": 8.89,
+        "spawn": {
+          "x": -0.75,
+          "y": 1.5,
+          "z": 2.3,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "hallway"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the nightstand this task refers to -- this exact object",
+          "../references/f2f201a40c2b84e1a21e29b8e258d4b7d20d7e07b319143654840dd5fd884311.png"
+        ],
+        [
+          "the wardrobe this task refers to -- this exact object",
+          "../references/a6a8ea9a7f7f434782cb58487129278382c61fb11157fd57369dd61a34f6ebe2.png"
+        ],
+        [
+          "the base cooking unit this task refers to -- this exact object",
+          "../references/fc0dd8466048b5aca3f60dc527b349fbf8995711cfef2e255f3f0de25bf6b4b4.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "nearer_object_comparison__hallway_shoe_bench_0",
+      "family": "nearer_object_comparison",
+      "instruction": "Somewhere in this house there are the nightstand, the tv console and the wardrobe. None of them is in the same room as the shoe bench. Find out which one of them is closest to the shoe bench, and answer with just that one thing. Compare the straight-line distances, not how far you had to walk.",
+      "referents": [
+        "hallway_shoe_bench_0",
+        "bedroom_wardrobe_0",
+        "living_room_tv_console_0",
+        "bedroom_nightstand_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "wardrobe"
+        ]
+      ],
+      "answer_choices": [
+        "nightstand",
+        "tv console",
+        "wardrobe"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 100,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "bedroom",
+          "hallway",
+          "living_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "bedroom_nightstand_0",
+          "bedroom_wardrobe_0",
+          "hallway_shoe_bench_0",
+          "living_room_tv_console_0"
+        ],
+        "min_distinct_viewpoints": 3,
+        "search_regions": [
+          "bedroom",
+          "hallway",
+          "living_room"
+        ]
+      },
+      "kinds": [
+        "wardrobe",
+        "tv_console",
+        "nightstand",
+        "shoe_bench"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "hallway_shoe_bench_0",
+        "bedroom_wardrobe_0",
+        "living_room_tv_console_0",
+        "bedroom_nightstand_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "wardrobe",
+      "oracle_read": [
+        "nearest_of",
+        "hallway_shoe_bench_0",
+        [
+          [
+            "bedroom_wardrobe_0",
+            "wardrobe"
+          ],
+          [
+            "living_room_tv_console_0",
+            "tv console"
+          ],
+          [
+            "bedroom_nightstand_0",
+            "nightstand"
+          ]
+        ]
+      ],
+      "truth": {
+        "x": "hallway_shoe_bench_0",
+        "winner": "bedroom_wardrobe_0",
+        "choices": [
+          "bedroom_wardrobe_0",
+          "living_room_tv_console_0",
+          "bedroom_nightstand_0"
+        ],
+        "words": [
+          "nightstand",
+          "tv console",
+          "wardrobe"
+        ],
+        "metres": {
+          "bedroom_wardrobe_0": 0.61,
+          "living_room_tv_console_0": 2.95,
+          "bedroom_nightstand_0": 3.51
+        },
+        "lead_m": 2.34,
+        "x_room": "hallway",
+        "spawn": {
+          "x": 6.2,
+          "y": 1.5,
+          "z": 0.6,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "kitchen"
+        }
+      },
+      "answer_choice_labels": [
+        "nightstand",
+        "tv console",
+        "wardrobe"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the shoe bench this task refers to -- this exact object",
+          "../references/fe731bc6d6a063c316b838193e92ce45bc8dd144e9bb1d91ec806540015f840d.png"
+        ],
+        [
+          "the wardrobe this task refers to -- this exact object",
+          "../references/a6a8ea9a7f7f434782cb58487129278382c61fb11157fd57369dd61a34f6ebe2.png"
+        ],
+        [
+          "the tv console this task refers to -- this exact object",
+          "../references/46df91cf723e1284121b77a5c3198cc35263a8dad374402d8c77f6bb568530d4.png"
+        ],
+        [
+          "the nightstand this task refers to -- this exact object",
+          "../references/f2f201a40c2b84e1a21e29b8e258d4b7d20d7e07b319143654840dd5fd884311.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_count__mirror",
+      "family": "room_count",
+      "instruction": "Search this house and find out which rooms contain at least one mirror. Count two places as different rooms if you have to go through a doorway to get from one to the other. Some rooms contain no mirrors at all, and a room with several mirrors still counts once. Tell me how many rooms contain at least one mirror, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 100,
+      "answer_number": 3,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "bedroom",
+          "hallway",
+          "living_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "bedroom_mirror_0",
+          "hallway_mirror_0",
+          "living_room_mirror_0"
+        ],
+        "min_distinct_viewpoints": 3,
+        "search_regions": [
+          "bedroom",
+          "hallway",
+          "kitchen",
+          "living_room"
+        ]
+      },
+      "kinds": [
+        "mirror"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "bedroom_mirror_0",
+        "hallway_mirror_0",
+        "living_room_mirror_0"
+      ],
+      "answer_instances": [
+        "bedroom_mirror_0",
+        "hallway_mirror_0",
+        "living_room_mirror_0"
+      ],
+      "plan": [],
+      "oracle_answer": "3",
+      "oracle_read": [
+        "room_count_seen",
+        "mirror",
+        [
+          "bedroom",
+          "hallway",
+          "kitchen",
+          "living_room"
+        ],
+        []
+      ],
+      "truth": {
+        "kind": "mirror",
+        "n_rooms": 3,
+        "noun": "mirror",
+        "rooms": [
+          "bedroom",
+          "hallway",
+          "living_room"
+        ],
+        "places": [
+          [
+            "bedroom"
+          ],
+          [
+            "hallway"
+          ],
+          [
+            "living_room"
+          ]
+        ],
+        "n_places_in_scope": 4,
+        "total": 3,
+        "spawn": {
+          "x": 5.45,
+          "y": 1.5,
+          "z": 2.1,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "kitchen"
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'mirror' -- the task is about every mirror in the house, and the others need not look like this one",
+          "../references/09e184106b4c77f23fff2812dd99bc8d78ae064adcee6cfbd596fb07cea4e1df.png"
+        ]
+      ]
+    }
+  ],
+  "dataset_version": "1.1"
+}

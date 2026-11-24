@@ -1,0 +1,1396 @@
+{
+  "schema_version": 4,
+  "benchmark": "ROAM-Bench",
+  "scene": "scene_208",
+  "spawn": {
+    "x": 8.75,
+    "y": 1.5,
+    "z": 7.0,
+    "yaw_deg": 0.0,
+    "horizon_deg": 0.0,
+    "room": "main_hall"
+  },
+  "specs": [
+    {
+      "task_id": "surface_contents__main_hall_table_0",
+      "family": "surface_contents",
+      "instruction": "Go to the table. Which of the following objects are resting on it? Select every option that applies. Answer only with the option IDs.\nOptions:\n- OBJ_01: laptop\n- OBJ_02: laptop computer\n- OBJ_03: xlr audio cable\n- OBJ_04: sign in notepad pad\n- OBJ_05: usb audio interface\n- OBJ_06: podium microphone\n- OBJ_07: studio monitoring headphones\n- OBJ_08: power strip",
+      "referents": [
+        "main_hall_table_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "OBJ_01"
+        ],
+        [
+          "OBJ_03"
+        ],
+        [
+          "OBJ_05"
+        ],
+        [
+          "OBJ_07"
+        ],
+        [
+          "OBJ_08"
+        ]
+      ],
+      "answer_choices": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_unit": "",
+      "answer_match": "set",
+      "max_steps": 325,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "main_hall"
+        ],
+        "must_open": [],
+        "must_see": [
+          "main_hall_laptop_0",
+          "main_hall_power_strip_0",
+          "main_hall_studio_monitoring_headphones_0",
+          "main_hall_table_0",
+          "main_hall_usb_audio_interface_0",
+          "main_hall_xlr_audio_cable_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "activity_room_art",
+          "activity_room_crafts",
+          "activity_room_pingpong",
+          "activity_room_yoga",
+          "bathroom_1",
+          "bathroom_2",
+          "hallway",
+          "kitchen",
+          "locker_room",
+          "main_hall",
+          "office",
+          "reception",
+          "storage_room"
+        ]
+      },
+      "kinds": [
+        "laptop",
+        "power_strip",
+        "studio_monitoring_headphones",
+        "usb_audio_interface",
+        "xlr_audio_cable"
+      ],
+      "receptacle_kinds": [
+        "table"
+      ],
+      "evidence": [
+        "main_hall_table_0",
+        "main_hall_laptop_0",
+        "main_hall_power_strip_0",
+        "main_hall_studio_monitoring_headphones_0",
+        "main_hall_usb_audio_interface_0",
+        "main_hall_xlr_audio_cable_0"
+      ],
+      "answer_instances": [
+        "main_hall_laptop_0",
+        "main_hall_power_strip_0",
+        "main_hall_studio_monitoring_headphones_0",
+        "main_hall_usb_audio_interface_0",
+        "main_hall_xlr_audio_cable_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "main_hall_table_0"
+        ]
+      ],
+      "oracle_answer": "OBJ_01, OBJ_03, OBJ_05, OBJ_07, OBJ_08",
+      "oracle_read": [
+        "surface_contents",
+        "main_hall_table_0"
+      ],
+      "truth": {
+        "host": "main_hall_table_0",
+        "host_kind": "table",
+        "room": "main_hall",
+        "children": [
+          {
+            "alias": "main_hall_laptop_0",
+            "kind": "laptop"
+          },
+          {
+            "alias": "main_hall_power_strip_0",
+            "kind": "power_strip"
+          },
+          {
+            "alias": "main_hall_studio_monitoring_headphones_0",
+            "kind": "studio_monitoring_headphones"
+          },
+          {
+            "alias": "main_hall_usb_audio_interface_0",
+            "kind": "usb_audio_interface"
+          },
+          {
+            "alias": "main_hall_xlr_audio_cable_0",
+            "kind": "xlr_audio_cable"
+          }
+        ],
+        "spawn": {
+          "x": 11.2,
+          "y": 1.5,
+          "z": 12.75,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "activity_room_crafts"
+        },
+        "answer_options": [
+          {
+            "id": "OBJ_01",
+            "label": "laptop",
+            "kind": "laptop",
+            "alias": "main_hall_laptop_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_02",
+            "label": "laptop computer",
+            "kind": "laptop_computer",
+            "alias": "activity_room_art_laptop_computer_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_03",
+            "label": "xlr audio cable",
+            "kind": "xlr_audio_cable",
+            "alias": "main_hall_xlr_audio_cable_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_04",
+            "label": "sign in notepad pad",
+            "kind": "sign_in_notepad_pad",
+            "alias": "main_hall_sign_in_notepad_pad_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_05",
+            "label": "usb audio interface",
+            "kind": "usb_audio_interface",
+            "alias": "main_hall_usb_audio_interface_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_06",
+            "label": "podium microphone",
+            "kind": "podium_microphone",
+            "alias": "main_hall_podium_microphone_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_07",
+            "label": "studio monitoring headphones",
+            "kind": "studio_monitoring_headphones",
+            "alias": "main_hall_studio_monitoring_headphones_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_08",
+            "label": "power strip",
+            "kind": "power_strip",
+            "alias": "main_hall_power_strip_0",
+            "correct": true
+          }
+        ]
+      },
+      "answer_choice_labels": [
+        "laptop",
+        "laptop computer",
+        "xlr audio cable",
+        "sign in notepad pad",
+        "usb audio interface",
+        "podium microphone",
+        "studio monitoring headphones",
+        "power strip"
+      ],
+      "answer_choice_mode": "multiple",
+      "goal_images": [
+        [
+          "the table this task refers to -- this exact object",
+          "../references/da03ad53b7dceeac93a7b77e4756923c557de5ec58b59ebaaecaeb22cbfe82d1.png"
+        ],
+        [
+          "Option OBJ_01 — laptop; category reference image",
+          "../references/17b781492e52b94469dfe0e5d2bb9e93c5cda65a5e7a9114b961dcd6ba88f5f7.png"
+        ],
+        [
+          "Option OBJ_02 — laptop computer; category reference image",
+          "../references/c553de4acda888585c48ca10025199b2860db780a54ac62365b93c58d360d18a.png"
+        ],
+        [
+          "Option OBJ_03 — xlr audio cable; category reference image",
+          "../references/29f479632031bb2371b8649b8a7fefb8f25a09294a51ad12dd97c0ed6bdc88af.png"
+        ],
+        [
+          "Option OBJ_04 — sign in notepad pad; category reference image",
+          "../references/eb7c774164c1fb15770cc32f76f84d685e90f7803607dd12338e67d78d39eb8c.png"
+        ],
+        [
+          "Option OBJ_05 — usb audio interface; category reference image",
+          "../references/4f3ad6b7be0489763d9f5de5560c05e92e54b3247e3724b2cf1a1c7b32f67ae8.png"
+        ],
+        [
+          "Option OBJ_06 — podium microphone; category reference image",
+          "../references/55be1ae8d448580d44a4dca3daa91c51b4a8a0c7df2917e0a2529765f70e2fa9.png"
+        ],
+        [
+          "Option OBJ_07 — studio monitoring headphones; category reference image",
+          "../references/c7ef583849b4b4b6f7196c9307f4f91ae28d599b7363989190ad714a444a88de.png"
+        ],
+        [
+          "Option OBJ_08 — power strip; category reference image",
+          "../references/271df5792237c4dd6b19e9be305663e1aae996f40a5d9a04907e1bb0b92da142.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relocation__activity_room_art_drawing_pad_0__to__bathroom_1_toilet_0",
+      "family": "relocation",
+      "instruction": "Find the drawing pad, pick it up, and put it on the toilet.",
+      "referents": [
+        "activity_room_art_drawing_pad_0",
+        "bathroom_1_toilet_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('activity_room_art_drawing_pad_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('activity_room_art_drawing_pad_0','bathroom_1_toilet_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 325,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "activity_room_art",
+          "bathroom_1"
+        ],
+        "must_open": [],
+        "must_see": [
+          "activity_room_art_drawing_pad_0",
+          "bathroom_1_toilet_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "activity_room_art",
+          "activity_room_crafts",
+          "activity_room_pingpong",
+          "activity_room_yoga",
+          "bathroom_1",
+          "bathroom_2",
+          "hallway",
+          "kitchen",
+          "locker_room",
+          "main_hall",
+          "office",
+          "reception",
+          "storage_room"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "activity_room_art_drawing_pad_0",
+        "bathroom_1_toilet_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "activity_room_art_drawing_pad_0"
+        ],
+        [
+          "pick",
+          "activity_room_art_drawing_pad_0"
+        ],
+        [
+          "navigate",
+          "bathroom_1_toilet_0"
+        ],
+        [
+          "place",
+          "bathroom_1_toilet_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "activity_room_art_drawing_pad_0",
+        "from_room": "activity_room_art",
+        "from_room_id": "activity_room_art",
+        "dest": "bathroom_1_toilet_0",
+        "to_room": "bathroom_1",
+        "to_room_id": "bathroom_1",
+        "spawn": {
+          "x": 1.25,
+          "y": 1.5,
+          "z": 13.75,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "hallway"
+        }
+      },
+      "goal_images": [
+        [
+          "the drawing pad this task refers to -- this exact object",
+          "../references/a051208d06f2cd6ff6fbc9f291b08e2fe4c2550bcf273363d167162b54b309ea.png"
+        ],
+        [
+          "the toilet this task refers to -- this exact object",
+          "../references/adcac22eea7f5754baf07e7fc316bd655fff4d022828c950bc1462e2a97c7ee4.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__activity_room_art_desk_0__kitchen_wall_shelf_0",
+      "family": "path_integration",
+      "instruction": "Find the desk and then the wall shelf; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "activity_room_art_desk_0",
+        "kitchen_wall_shelf_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 325,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "activity_room_art",
+          "kitchen"
+        ],
+        "must_open": [],
+        "must_see": [
+          "activity_room_art_desk_0",
+          "kitchen_wall_shelf_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "activity_room_art",
+          "kitchen"
+        ]
+      },
+      "kinds": [
+        "desk",
+        "wall_shelf"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "activity_room_art_desk_0",
+        "kitchen_wall_shelf_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "activity_room_art_desk_0",
+        "kitchen_wall_shelf_0"
+      ],
+      "truth": {
+        "x": "activity_room_art_desk_0",
+        "y": "kitchen_wall_shelf_0",
+        "x_room": "activity_room_art",
+        "y_room": "kitchen",
+        "leg_m": 24.38,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": 2.2,
+          "y": 1.5,
+          "z": -1.5,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "bathroom_2"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the desk this task refers to -- this exact object",
+          "../references/69aaef6092dff6235b249698a1401e4215a7c0448c2167109ed591d634e05df2.png"
+        ],
+        [
+          "the wall shelf this task refers to -- this exact object",
+          "../references/bb80554e96046deeb652efedfe9d4afb0f831d7cdfff37bdff8172bb50cbeea3.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__activity_room_crafts_credenza_0__reception_coffee_table_0",
+      "family": "path_integration",
+      "instruction": "Find the credenza and then the coffee table; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "activity_room_crafts_credenza_0",
+        "reception_coffee_table_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 325,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "activity_room_crafts",
+          "reception"
+        ],
+        "must_open": [],
+        "must_see": [
+          "activity_room_crafts_credenza_0",
+          "reception_coffee_table_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "activity_room_crafts",
+          "reception"
+        ]
+      },
+      "kinds": [
+        "credenza",
+        "coffee_table"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "activity_room_crafts_credenza_0",
+        "reception_coffee_table_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "activity_room_crafts_credenza_0",
+        "reception_coffee_table_0"
+      ],
+      "truth": {
+        "x": "activity_room_crafts_credenza_0",
+        "y": "reception_coffee_table_0",
+        "x_room": "activity_room_crafts",
+        "y_room": "reception",
+        "leg_m": 26.06,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": 15.15,
+          "y": 1.5,
+          "z": 0.1,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "activity_room_art"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the credenza this task refers to -- this exact object",
+          "../references/66df5614ab299ead200cba9c48262a7f8660ac951e766aece07cf9a59079d6a4.png"
+        ],
+        [
+          "the coffee table this task refers to -- this exact object",
+          "../references/68c1db74e84883eb7209ae763f46768c35caa10e289d81a122daa2133c736b47.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__reception_side_table_0__activity_room_crafts_craft_worktable_0",
+      "family": "path_integration",
+      "instruction": "Find the side table and then the craft worktable; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "reception_side_table_0",
+        "activity_room_crafts_craft_worktable_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 325,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "activity_room_crafts",
+          "reception"
+        ],
+        "must_open": [],
+        "must_see": [
+          "activity_room_crafts_craft_worktable_0",
+          "reception_side_table_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "activity_room_crafts",
+          "reception"
+        ]
+      },
+      "kinds": [
+        "side_table",
+        "craft_worktable"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "reception_side_table_0",
+        "activity_room_crafts_craft_worktable_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "reception_side_table_0",
+        "activity_room_crafts_craft_worktable_0"
+      ],
+      "truth": {
+        "x": "reception_side_table_0",
+        "y": "activity_room_crafts_craft_worktable_0",
+        "x_room": "reception",
+        "y_room": "activity_room_crafts",
+        "leg_m": 25.26,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": -5.0,
+          "y": 1.5,
+          "z": 9.9,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "locker_room"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the side table this task refers to -- this exact object",
+          "../references/b3711e39ed038993076f26ef5e386c2a9726a2148f7097aa60c19e3a5439f4d8.png"
+        ],
+        [
+          "the craft worktable this task refers to -- this exact object",
+          "../references/1ec85ddb8913418db740ae5683804497c58dab0989f4f878b4302278e3fb51c6.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__reception_side_table_0__activity_room_crafts_credenza_0",
+      "family": "path_integration",
+      "instruction": "Find the side table and then the credenza; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "reception_side_table_0",
+        "activity_room_crafts_credenza_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 325,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "activity_room_crafts",
+          "reception"
+        ],
+        "must_open": [],
+        "must_see": [
+          "activity_room_crafts_credenza_0",
+          "reception_side_table_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "activity_room_crafts",
+          "reception"
+        ]
+      },
+      "kinds": [
+        "side_table",
+        "credenza"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "reception_side_table_0",
+        "activity_room_crafts_credenza_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "reception_side_table_0",
+        "activity_room_crafts_credenza_0"
+      ],
+      "truth": {
+        "x": "reception_side_table_0",
+        "y": "activity_room_crafts_credenza_0",
+        "x_room": "reception",
+        "y_room": "activity_room_crafts",
+        "leg_m": 26.82,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": 4.79,
+          "y": 1.5,
+          "z": 15.5,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "activity_room_pingpong"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the side table this task refers to -- this exact object",
+          "../references/b3711e39ed038993076f26ef5e386c2a9726a2148f7097aa60c19e3a5439f4d8.png"
+        ],
+        [
+          "the credenza this task refers to -- this exact object",
+          "../references/66df5614ab299ead200cba9c48262a7f8660ac951e766aece07cf9a59079d6a4.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__storage_room_storage_bench_0__activity_room_art_worktable_0",
+      "family": "path_integration",
+      "instruction": "Find the storage bench and then the worktable; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "storage_room_storage_bench_0",
+        "activity_room_art_worktable_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 325,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "activity_room_art",
+          "storage_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "activity_room_art_worktable_0",
+          "storage_room_storage_bench_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "activity_room_art",
+          "storage_room"
+        ]
+      },
+      "kinds": [
+        "storage_bench",
+        "worktable"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "storage_room_storage_bench_0",
+        "activity_room_art_worktable_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "storage_room_storage_bench_0",
+        "activity_room_art_worktable_0"
+      ],
+      "truth": {
+        "x": "storage_room_storage_bench_0",
+        "y": "activity_room_art_worktable_0",
+        "x_room": "storage_room",
+        "y_room": "activity_room_art",
+        "leg_m": 25.67,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": 7.15,
+          "y": 1.5,
+          "z": -3.65,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "activity_room_yoga"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the storage bench this task refers to -- this exact object",
+          "../references/97cdf899737a6b3450bffde872cd4cf167d8f1d7132e074122770b961e50d07e.png"
+        ],
+        [
+          "the worktable this task refers to -- this exact object",
+          "../references/fb30bb7560b3c4cd7ca5502f6f8772514e7dc194cb53a738764d94a0a07b163d.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_localization__kitchen_sanitizer_spray_bottle_0",
+      "family": "room_localization",
+      "instruction": "Find the sanitizer spray bottle somewhere in this house, then tell me which room it is in. If there is no sanitizer spray bottle here, choose NOT_PRESENT instead of guessing a room.\n\nRoom choices (use exactly one option key):\n- ROOM_01 — art room\n- ROOM_02 — bathroom\n- ROOM_03 — crafts room\n- ROOM_04 — hall\n- ROOM_05 — hallway\n- ROOM_06 — kitchen\n- ROOM_07 — locker room\n- ROOM_08 — office\n- ROOM_09 — pingpong room\n- ROOM_10 — reception\n- ROOM_11 — storage room\n- ROOM_12 — yoga room\n- NOT_PRESENT — not present\nReply with only one option key, for example ROOM_01 or NOT_PRESENT.",
+      "referents": [
+        "kitchen_sanitizer_spray_bottle_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "ROOM_06"
+        ]
+      ],
+      "answer_choices": [
+        "ROOM_01",
+        "ROOM_02",
+        "ROOM_03",
+        "ROOM_04",
+        "ROOM_05",
+        "ROOM_06",
+        "ROOM_07",
+        "ROOM_08",
+        "ROOM_09",
+        "ROOM_10",
+        "ROOM_11",
+        "ROOM_12",
+        "NOT_PRESENT"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 325,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "kitchen"
+        ],
+        "must_open": [],
+        "must_see": [
+          "kitchen_sanitizer_spray_bottle_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "activity_room_art",
+          "activity_room_crafts",
+          "activity_room_pingpong",
+          "activity_room_yoga",
+          "bathroom_1",
+          "bathroom_2",
+          "hallway",
+          "kitchen",
+          "locker_room",
+          "main_hall",
+          "office",
+          "reception",
+          "storage_room"
+        ]
+      },
+      "kinds": [
+        "sanitizer_spray_bottle"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "kitchen_sanitizer_spray_bottle_0"
+      ],
+      "answer_instances": [
+        "kitchen_sanitizer_spray_bottle_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "kitchen_sanitizer_spray_bottle_0"
+        ]
+      ],
+      "oracle_answer": "kitchen",
+      "oracle_read": [
+        "room_here"
+      ],
+      "truth": {
+        "alias": "kitchen_sanitizer_spray_bottle_0",
+        "kind": "sanitizer_spray_bottle",
+        "room": "kitchen",
+        "room_id": "kitchen",
+        "room_name": "kitchen",
+        "spawn": {
+          "x": -0.75,
+          "y": 1.5,
+          "z": 3.99,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "office"
+        },
+        "room_answer_choice": "ROOM_06",
+        "room_answer_label": "kitchen",
+        "absence_option": "NOT_PRESENT"
+      },
+      "answer_choice_labels": [
+        "art room",
+        "bathroom",
+        "crafts room",
+        "hall",
+        "hallway",
+        "kitchen",
+        "locker room",
+        "office",
+        "pingpong room",
+        "reception",
+        "storage room",
+        "yoga room",
+        "not present"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the sanitizer spray bottle this task refers to -- this exact object",
+          "../references/515cb5c28ba426c4fc9dbe917c2b7c9a62cc84a8c216d364cc5fdaaa7147213f.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_localization__main_hall_laptop_0",
+      "family": "room_localization",
+      "instruction": "Find the laptop somewhere in this house, then tell me which room it is in. If there is no laptop here, choose NOT_PRESENT instead of guessing a room.\n\nRoom choices (use exactly one option key):\n- ROOM_01 — art room\n- ROOM_02 — bathroom\n- ROOM_03 — crafts room\n- ROOM_04 — hall\n- ROOM_05 — hallway\n- ROOM_06 — kitchen\n- ROOM_07 — locker room\n- ROOM_08 — office\n- ROOM_09 — pingpong room\n- ROOM_10 — reception\n- ROOM_11 — storage room\n- ROOM_12 — yoga room\n- NOT_PRESENT — not present\nReply with only one option key, for example ROOM_01 or NOT_PRESENT.",
+      "referents": [
+        "main_hall_laptop_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "ROOM_04"
+        ]
+      ],
+      "answer_choices": [
+        "ROOM_01",
+        "ROOM_02",
+        "ROOM_03",
+        "ROOM_04",
+        "ROOM_05",
+        "ROOM_06",
+        "ROOM_07",
+        "ROOM_08",
+        "ROOM_09",
+        "ROOM_10",
+        "ROOM_11",
+        "ROOM_12",
+        "NOT_PRESENT"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 325,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "main_hall"
+        ],
+        "must_open": [],
+        "must_see": [
+          "main_hall_laptop_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "activity_room_art",
+          "activity_room_crafts",
+          "activity_room_pingpong",
+          "activity_room_yoga",
+          "bathroom_1",
+          "bathroom_2",
+          "hallway",
+          "kitchen",
+          "locker_room",
+          "main_hall",
+          "office",
+          "reception",
+          "storage_room"
+        ]
+      },
+      "kinds": [
+        "laptop"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "main_hall_laptop_0"
+      ],
+      "answer_instances": [
+        "main_hall_laptop_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "main_hall_laptop_0"
+        ]
+      ],
+      "oracle_answer": "hall",
+      "oracle_read": [
+        "room_here"
+      ],
+      "truth": {
+        "alias": "main_hall_laptop_0",
+        "kind": "laptop",
+        "room": "main_hall",
+        "room_id": "main_hall",
+        "room_name": "hall",
+        "spawn": {
+          "x": 1.75,
+          "y": 1.5,
+          "z": 15.5,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "bathroom_1"
+        },
+        "room_answer_choice": "ROOM_04",
+        "room_answer_label": "hall",
+        "absence_option": "NOT_PRESENT"
+      },
+      "answer_choice_labels": [
+        "art room",
+        "bathroom",
+        "crafts room",
+        "hall",
+        "hallway",
+        "kitchen",
+        "locker room",
+        "office",
+        "pingpong room",
+        "reception",
+        "storage room",
+        "yoga room",
+        "not present"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the laptop this task refers to -- this exact object",
+          "../references/17b781492e52b94469dfe0e5d2bb9e93c5cda65a5e7a9114b961dcd6ba88f5f7.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_localization__storage_room_office_binder_5",
+      "family": "room_localization",
+      "instruction": "Find the office binder somewhere in this house, then tell me which room it is in. If there is no office binder here, choose NOT_PRESENT instead of guessing a room.\n\nRoom choices (use exactly one option key):\n- ROOM_01 — art room\n- ROOM_02 — bathroom\n- ROOM_03 — crafts room\n- ROOM_04 — hall\n- ROOM_05 — hallway\n- ROOM_06 — kitchen\n- ROOM_07 — locker room\n- ROOM_08 — office\n- ROOM_09 — pingpong room\n- ROOM_10 — reception\n- ROOM_11 — storage room\n- ROOM_12 — yoga room\n- NOT_PRESENT — not present\nReply with only one option key, for example ROOM_01 or NOT_PRESENT.",
+      "referents": [
+        "storage_room_office_binder_5"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "ROOM_11"
+        ]
+      ],
+      "answer_choices": [
+        "ROOM_01",
+        "ROOM_02",
+        "ROOM_03",
+        "ROOM_04",
+        "ROOM_05",
+        "ROOM_06",
+        "ROOM_07",
+        "ROOM_08",
+        "ROOM_09",
+        "ROOM_10",
+        "ROOM_11",
+        "ROOM_12",
+        "NOT_PRESENT"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 325,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "storage_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "storage_room_office_binder_5"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "activity_room_art",
+          "activity_room_crafts",
+          "activity_room_pingpong",
+          "activity_room_yoga",
+          "bathroom_1",
+          "bathroom_2",
+          "hallway",
+          "kitchen",
+          "locker_room",
+          "main_hall",
+          "office",
+          "reception",
+          "storage_room"
+        ]
+      },
+      "kinds": [
+        "office_binder"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "storage_room_office_binder_5"
+      ],
+      "answer_instances": [
+        "storage_room_office_binder_5"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "storage_room_office_binder_5"
+        ]
+      ],
+      "oracle_answer": "storage room",
+      "oracle_read": [
+        "room_here"
+      ],
+      "truth": {
+        "alias": "storage_room_office_binder_5",
+        "kind": "office_binder",
+        "room": "storage_room",
+        "room_id": "storage_room",
+        "room_name": "storage room",
+        "spawn": {
+          "x": 0.5,
+          "y": 1.5,
+          "z": 3.5,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "hallway"
+        },
+        "room_answer_choice": "ROOM_11",
+        "room_answer_label": "storage room",
+        "absence_option": "NOT_PRESENT"
+      },
+      "answer_choice_labels": [
+        "art room",
+        "bathroom",
+        "crafts room",
+        "hall",
+        "hallway",
+        "kitchen",
+        "locker room",
+        "office",
+        "pingpong room",
+        "reception",
+        "storage room",
+        "yoga room",
+        "not present"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the office binder this task refers to -- this exact object",
+          "../references/d611d97304339ae971824231d21a3b1d64c41f9cd9ff047808f475e274e33cee.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_area__hallway",
+      "family": "room_area",
+      "instruction": "Find the hallway in this house, then tell me roughly how big its floor is, in square metres, as a number. I want the floor area of that one room, measured inside its walls -- not the whole house, and not the other rooms.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m2",
+      "answer_match": "count",
+      "max_steps": 325,
+      "answer_number": 49,
+      "answer_tolerance": 12.25,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "hallway"
+        ],
+        "must_open": [],
+        "must_see": [],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "activity_room_art",
+          "activity_room_crafts",
+          "activity_room_pingpong",
+          "activity_room_yoga",
+          "bathroom_1",
+          "bathroom_2",
+          "hallway",
+          "kitchen",
+          "locker_room",
+          "main_hall",
+          "office",
+          "reception",
+          "storage_room"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "49",
+      "oracle_read": [
+        "room_area",
+        "hallway"
+      ],
+      "truth": {
+        "room": "hallway",
+        "name": "hallway",
+        "m2": 49,
+        "tol_m2": 6,
+        "spawn": {
+          "x": -1.96,
+          "y": 1.5,
+          "z": 16.94,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "storage_room"
+        }
+      },
+      "goal_images": []
+    },
+    {
+      "task_id": "room_area__main_hall",
+      "family": "room_area",
+      "instruction": "Find the hall in this house, then tell me roughly how big its floor is, in square metres, as a number. I want the floor area of that one room, measured inside its walls -- not the whole house, and not the other rooms.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m2",
+      "answer_match": "count",
+      "max_steps": 325,
+      "answer_number": 109,
+      "answer_tolerance": 27.25,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "main_hall"
+        ],
+        "must_open": [],
+        "must_see": [],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "activity_room_art",
+          "activity_room_crafts",
+          "activity_room_pingpong",
+          "activity_room_yoga",
+          "bathroom_1",
+          "bathroom_2",
+          "hallway",
+          "kitchen",
+          "locker_room",
+          "main_hall",
+          "office",
+          "reception",
+          "storage_room"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "109",
+      "oracle_read": [
+        "room_area",
+        "main_hall"
+      ],
+      "truth": {
+        "room": "main_hall",
+        "name": "hall",
+        "m2": 109,
+        "tol_m2": 13,
+        "spawn": {
+          "x": 9.4,
+          "y": 1.5,
+          "z": -3.65,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "activity_room_yoga"
+        }
+      },
+      "goal_images": []
+    }
+  ],
+  "dataset_version": "1.1"
+}

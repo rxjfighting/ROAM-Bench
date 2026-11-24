@@ -1,0 +1,992 @@
+{
+  "schema_version": 4,
+  "benchmark": "ROAM-Bench",
+  "scene": "scene_108",
+  "spawn": {
+    "x": 1.8,
+    "y": 1.5,
+    "z": 5.4,
+    "yaw_deg": 0.0,
+    "horizon_deg": 0.0,
+    "room": "open_studio"
+  },
+  "specs": [
+    {
+      "task_id": "object_count__painting",
+      "family": "object_count",
+      "instruction": "Search this house and count the paintings. For this task, count abstract wall paintings dominated by large black, rust-orange, and cream rectangular blocks. Do not count pictures depicting plants, landscapes, still-life objects, or architectural sketches. There is more than one room, and there may be paintings in more than one of them. When you have finished searching, tell me how many paintings there are in total, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 100,
+      "answer_number": 2,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "open_studio",
+          "sleeping_alcove"
+        ],
+        "must_open": [],
+        "must_see": [
+          "open_studio_painting_0",
+          "sleeping_alcove_painting_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "bathroom",
+          "kitchen",
+          "open_studio",
+          "sleeping_alcove"
+        ]
+      },
+      "kinds": [
+        "painting"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "open_studio_painting_0",
+        "sleeping_alcove_painting_0"
+      ],
+      "answer_instances": [
+        "open_studio_painting_0",
+        "sleeping_alcove_painting_0"
+      ],
+      "plan": [],
+      "oracle_answer": "2",
+      "oracle_read": [
+        "count_seen",
+        "painting",
+        [
+          "bathroom",
+          "kitchen",
+          "open_studio",
+          "sleeping_alcove"
+        ]
+      ],
+      "truth": {
+        "kind": "painting",
+        "total": 2,
+        "noun": "painting",
+        "rooms": [
+          "open_studio",
+          "sleeping_alcove"
+        ],
+        "per_room": {
+          "open_studio": 1,
+          "sleeping_alcove": 1
+        },
+        "spawn": {
+          "x": 0.33,
+          "y": 1.5,
+          "z": 10.15,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "bathroom"
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'painting' -- the task is about every painting in the house, and the others need not look like this one; follow the counting scope stated in the task, including its exclusions",
+          "../references/0965a1a24c619b2e81fd1fb17226c7ddc8c0a2db0092728783708ba8ac25cc5f.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "object_count__wall_clock",
+      "family": "object_count",
+      "instruction": "Search this house and count the wall clocks. There is more than one room, and there may be wall clocks in more than one of them. When you have finished searching, tell me how many wall clocks there are in total, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 100,
+      "answer_number": 3,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "kitchen",
+          "open_studio",
+          "sleeping_alcove"
+        ],
+        "must_open": [],
+        "must_see": [
+          "kitchen_wall_clock_0",
+          "open_studio_wall_clock_0",
+          "sleeping_alcove_wall_clock_0"
+        ],
+        "min_distinct_viewpoints": 3,
+        "search_regions": [
+          "bathroom",
+          "kitchen",
+          "open_studio",
+          "sleeping_alcove"
+        ]
+      },
+      "kinds": [
+        "wall_clock"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "kitchen_wall_clock_0",
+        "open_studio_wall_clock_0",
+        "sleeping_alcove_wall_clock_0"
+      ],
+      "answer_instances": [
+        "kitchen_wall_clock_0",
+        "open_studio_wall_clock_0",
+        "sleeping_alcove_wall_clock_0"
+      ],
+      "plan": [],
+      "oracle_answer": "3",
+      "oracle_read": [
+        "count_seen",
+        "wall_clock",
+        [
+          "bathroom",
+          "kitchen",
+          "open_studio",
+          "sleeping_alcove"
+        ]
+      ],
+      "truth": {
+        "kind": "wall_clock",
+        "total": 3,
+        "noun": "wall clock",
+        "rooms": [
+          "kitchen",
+          "open_studio",
+          "sleeping_alcove"
+        ],
+        "per_room": {
+          "kitchen": 1,
+          "open_studio": 1,
+          "sleeping_alcove": 1
+        },
+        "spawn": {
+          "x": 0.33,
+          "y": 1.5,
+          "z": 10.15,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "bathroom"
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'wall clock' -- the task is about every wall clock in the house, and the others need not look like this one",
+          "../references/97575e9ab49afae3a8ed7908cbb2feda24bc05323144a3b1b1c665a3a8a4d0df.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "object_distance__bathroom_bathroom_vanity_0__kitchen_refrigerator_0",
+      "family": "object_distance",
+      "instruction": "Find the bathroom vanity and the refrigerator in this house; they are in different rooms. Then tell me roughly how far apart they are, in metres, as a number. Measure the straight line between them, not the distance you walked.",
+      "referents": [
+        "bathroom_bathroom_vanity_0",
+        "kitchen_refrigerator_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m",
+      "answer_match": "count",
+      "max_steps": 100,
+      "answer_number": 5,
+      "answer_tolerance": 2.0,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "bathroom",
+          "kitchen"
+        ],
+        "must_open": [],
+        "must_see": [
+          "bathroom_bathroom_vanity_0",
+          "kitchen_refrigerator_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "bathroom",
+          "kitchen"
+        ]
+      },
+      "kinds": [
+        "bathroom_vanity",
+        "refrigerator"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "bathroom_bathroom_vanity_0",
+        "kitchen_refrigerator_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "5",
+      "oracle_read": [
+        "object_distance",
+        "bathroom_bathroom_vanity_0",
+        "kitchen_refrigerator_0"
+      ],
+      "truth": {
+        "a": "bathroom_bathroom_vanity_0",
+        "b": "kitchen_refrigerator_0",
+        "metres": 4.74,
+        "a_room": "bathroom",
+        "b_room": "kitchen",
+        "tol_m": 1,
+        "spawn": {
+          "x": 1.75,
+          "y": 1.5,
+          "z": 2.5,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "sleeping_alcove"
+        }
+      },
+      "goal_images": [
+        [
+          "the bathroom vanity this task refers to -- this exact object",
+          "../references/2730bb4893c1baf6f45d8142d1f1330a61ecc3622625187030284c69fac22109.png"
+        ],
+        [
+          "the refrigerator this task refers to -- this exact object",
+          "../references/5c3ca0666f1b546b6e466de16b4b24c47bb43a9825cdf60e31d3a978bd448f99.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "object_distance__bathroom_shower_enclosure_0__open_studio_workbench_table_0",
+      "family": "object_distance",
+      "instruction": "Find the shower enclosure and the workbench table in this house; they are in different rooms. Then tell me roughly how far apart they are, in metres, as a number. Measure the straight line between them, not the distance you walked.",
+      "referents": [
+        "bathroom_shower_enclosure_0",
+        "open_studio_workbench_table_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m",
+      "answer_match": "count",
+      "max_steps": 100,
+      "answer_number": 5,
+      "answer_tolerance": 2.0,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "bathroom",
+          "open_studio"
+        ],
+        "must_open": [],
+        "must_see": [
+          "bathroom_shower_enclosure_0",
+          "open_studio_workbench_table_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "bathroom",
+          "open_studio"
+        ]
+      },
+      "kinds": [
+        "shower_enclosure",
+        "workbench_table"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "bathroom_shower_enclosure_0",
+        "open_studio_workbench_table_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "5",
+      "oracle_read": [
+        "object_distance",
+        "bathroom_shower_enclosure_0",
+        "open_studio_workbench_table_0"
+      ],
+      "truth": {
+        "a": "bathroom_shower_enclosure_0",
+        "b": "open_studio_workbench_table_0",
+        "metres": 4.84,
+        "a_room": "bathroom",
+        "b_room": "open_studio",
+        "tol_m": 1,
+        "spawn": {
+          "x": 0.5,
+          "y": 1.5,
+          "z": 2.25,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "sleeping_alcove"
+        }
+      },
+      "goal_images": [
+        [
+          "the shower enclosure this task refers to -- this exact object",
+          "../references/d93a55710f905a6c53cea409df0dd37c3940f4e51ce9fb3db857da070d5c73e7.png"
+        ],
+        [
+          "the workbench table this task refers to -- this exact object",
+          "../references/28eac9ad803bdba0f2e6f35f533d24897351122761616ebc0e6fd3bebc2b7ab1.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "object_distance__kitchen_kitchen_base_counter_0__sleeping_alcove_mattress_platform_0",
+      "family": "object_distance",
+      "instruction": "Find the kitchen base counter and the mattress platform in this house; they are in different rooms. Then tell me roughly how far apart they are, in metres, as a number. Measure the straight line between them, not the distance you walked.",
+      "referents": [
+        "kitchen_kitchen_base_counter_0",
+        "sleeping_alcove_mattress_platform_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m",
+      "answer_match": "count",
+      "max_steps": 100,
+      "answer_number": 11,
+      "answer_tolerance": 2.2,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "kitchen",
+          "sleeping_alcove"
+        ],
+        "must_open": [],
+        "must_see": [
+          "kitchen_kitchen_base_counter_0",
+          "sleeping_alcove_mattress_platform_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "kitchen",
+          "sleeping_alcove"
+        ]
+      },
+      "kinds": [
+        "kitchen_base_counter",
+        "mattress_platform"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "kitchen_kitchen_base_counter_0",
+        "sleeping_alcove_mattress_platform_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "11",
+      "oracle_read": [
+        "object_distance",
+        "kitchen_kitchen_base_counter_0",
+        "sleeping_alcove_mattress_platform_0"
+      ],
+      "truth": {
+        "a": "kitchen_kitchen_base_counter_0",
+        "b": "sleeping_alcove_mattress_platform_0",
+        "metres": 10.74,
+        "a_room": "kitchen",
+        "b_room": "sleeping_alcove",
+        "tol_m": 1,
+        "spawn": {
+          "x": 1.8,
+          "y": 1.5,
+          "z": 8.15,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "open_studio"
+        }
+      },
+      "goal_images": [
+        [
+          "the kitchen base counter this task refers to -- this exact object",
+          "../references/ae40c38b9fbc36e787cc0e570a67d00c6d123233bbbe869912c6fedb0d2445ae.png"
+        ],
+        [
+          "the mattress platform this task refers to -- this exact object",
+          "../references/399fec8e87497e7944320831d2348c0f8101e5dc14b40b32a78fb801fbc91058.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "object_distance__kitchen_refrigerator_0__open_studio_workbench_table_0",
+      "family": "object_distance",
+      "instruction": "Find the refrigerator and the workbench table in this house; they are in different rooms. Then tell me roughly how far apart they are, in metres, as a number. Measure the straight line between them, not the distance you walked.",
+      "referents": [
+        "kitchen_refrigerator_0",
+        "open_studio_workbench_table_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m",
+      "answer_match": "count",
+      "max_steps": 100,
+      "answer_number": 6,
+      "answer_tolerance": 2.0,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "kitchen",
+          "open_studio"
+        ],
+        "must_open": [],
+        "must_see": [
+          "kitchen_refrigerator_0",
+          "open_studio_workbench_table_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "kitchen",
+          "open_studio"
+        ]
+      },
+      "kinds": [
+        "refrigerator",
+        "workbench_table"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "kitchen_refrigerator_0",
+        "open_studio_workbench_table_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "6",
+      "oracle_read": [
+        "object_distance",
+        "kitchen_refrigerator_0",
+        "open_studio_workbench_table_0"
+      ],
+      "truth": {
+        "a": "kitchen_refrigerator_0",
+        "b": "open_studio_workbench_table_0",
+        "metres": 5.64,
+        "a_room": "kitchen",
+        "b_room": "open_studio",
+        "tol_m": 1,
+        "spawn": {
+          "x": 3.0,
+          "y": 1.5,
+          "z": 1.0,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "sleeping_alcove"
+        }
+      },
+      "goal_images": [
+        [
+          "the refrigerator this task refers to -- this exact object",
+          "../references/5c3ca0666f1b546b6e466de16b4b24c47bb43a9825cdf60e31d3a978bd448f99.png"
+        ],
+        [
+          "the workbench table this task refers to -- this exact object",
+          "../references/28eac9ad803bdba0f2e6f35f533d24897351122761616ebc0e6fd3bebc2b7ab1.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "gap_width__kitchen_kitchen_base_counter_0__kitchen_kitchen_prep_counter_0",
+      "family": "gap_width",
+      "instruction": "Find the kitchen base counter and the kitchen prep counter in this house; they are in the same room, standing apart. Then tell me roughly how wide the clear gap between them is, in centimetres, as a number. Measure the empty floor from the edge of one to the edge of the other, not the distance between their centres.",
+      "referents": [
+        "kitchen_kitchen_base_counter_0",
+        "kitchen_kitchen_prep_counter_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "cm",
+      "answer_match": "count",
+      "max_steps": 100,
+      "answer_number": 81,
+      "answer_tolerance": 10,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "kitchen"
+        ],
+        "must_open": [],
+        "must_see": [
+          "kitchen_kitchen_base_counter_0",
+          "kitchen_kitchen_prep_counter_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "kitchen"
+        ]
+      },
+      "kinds": [
+        "kitchen_base_counter",
+        "kitchen_prep_counter"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "kitchen_kitchen_base_counter_0",
+        "kitchen_kitchen_prep_counter_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "81",
+      "oracle_read": [
+        "gap_width",
+        "kitchen_kitchen_base_counter_0",
+        "kitchen_kitchen_prep_counter_0"
+      ],
+      "truth": {
+        "a": "kitchen_kitchen_base_counter_0",
+        "b": "kitchen_kitchen_prep_counter_0",
+        "cm": 81,
+        "room": "kitchen",
+        "tol_cm": 10,
+        "spawn": {
+          "x": 1.8,
+          "y": 1.5,
+          "z": 5.15,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "open_studio"
+        }
+      },
+      "goal_images": [
+        [
+          "the kitchen base counter this task refers to -- this exact object",
+          "../references/ae40c38b9fbc36e787cc0e570a67d00c6d123233bbbe869912c6fedb0d2445ae.png"
+        ],
+        [
+          "the kitchen prep counter this task refers to -- this exact object",
+          "../references/9252db2f0171c0ec9e280cd93ddbf8095cb6c904656d84d90f321075dca62314.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relative_direction__kitchen_kitchen_prep_counter_0__kitchen_refrigerator_0__bathroom_shower_enclosure_0",
+      "family": "relative_direction",
+      "instruction": "Find the kitchen prep counter and the refrigerator; they are in the same room. Also find the shower enclosure, which is somewhere else in this house. Then answer this: if you stood at the kitchen prep counter and faced the refrigerator, which direction would the shower enclosure be in? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "kitchen_kitchen_prep_counter_0",
+        "kitchen_refrigerator_0",
+        "bathroom_shower_enclosure_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 100,
+      "answer_number": 270,
+      "answer_tolerance": 22,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "bathroom",
+          "kitchen"
+        ],
+        "must_open": [],
+        "must_see": [
+          "bathroom_shower_enclosure_0",
+          "kitchen_kitchen_prep_counter_0",
+          "kitchen_refrigerator_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "bathroom",
+          "kitchen"
+        ]
+      },
+      "kinds": [
+        "kitchen_prep_counter",
+        "shower_enclosure",
+        "refrigerator"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "kitchen_kitchen_prep_counter_0",
+        "bathroom_shower_enclosure_0",
+        "kitchen_refrigerator_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "270",
+      "oracle_read": [
+        "relative_direction",
+        "kitchen_kitchen_prep_counter_0",
+        "kitchen_refrigerator_0",
+        "bathroom_shower_enclosure_0"
+      ],
+      "truth": {
+        "origin": "kitchen_kitchen_prep_counter_0",
+        "forward": "kitchen_refrigerator_0",
+        "target": "bathroom_shower_enclosure_0",
+        "bearing_deg": 260.19,
+        "sector_deg": 270,
+        "offset_deg": 9.81,
+        "origin_room": "kitchen",
+        "target_room": "bathroom",
+        "leg_m": 1.55,
+        "spawn": {
+          "x": 0.5,
+          "y": 1.5,
+          "z": 2.25,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "sleeping_alcove"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the kitchen prep counter this task refers to -- this exact object",
+          "../references/9252db2f0171c0ec9e280cd93ddbf8095cb6c904656d84d90f321075dca62314.png"
+        ],
+        [
+          "the refrigerator this task refers to -- this exact object",
+          "../references/5c3ca0666f1b546b6e466de16b4b24c47bb43a9825cdf60e31d3a978bd448f99.png"
+        ],
+        [
+          "the shower enclosure this task refers to -- this exact object",
+          "../references/d93a55710f905a6c53cea409df0dd37c3940f4e51ce9fb3db857da070d5c73e7.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_count__mirror",
+      "family": "room_count",
+      "instruction": "Search this house and find out which rooms contain at least one mirror. Count two places as different rooms if you have to go through a doorway to get from one to the other. Some rooms contain no mirrors at all, and a room with several mirrors still counts once. Tell me how many rooms contain at least one mirror, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 100,
+      "answer_number": 3,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "bathroom",
+          "open_studio",
+          "sleeping_alcove"
+        ],
+        "must_open": [],
+        "must_see": [
+          "bathroom_mirror_0",
+          "open_studio_mirror_0",
+          "sleeping_alcove_mirror_0"
+        ],
+        "min_distinct_viewpoints": 3,
+        "search_regions": [
+          "bathroom",
+          "kitchen",
+          "open_studio",
+          "sleeping_alcove"
+        ]
+      },
+      "kinds": [
+        "mirror"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "bathroom_mirror_0",
+        "open_studio_mirror_0",
+        "sleeping_alcove_mirror_0"
+      ],
+      "answer_instances": [
+        "bathroom_mirror_0",
+        "open_studio_mirror_0",
+        "sleeping_alcove_mirror_0"
+      ],
+      "plan": [],
+      "oracle_answer": "3",
+      "oracle_read": [
+        "room_count_seen",
+        "mirror",
+        [
+          "bathroom",
+          "kitchen",
+          "open_studio",
+          "sleeping_alcove"
+        ],
+        []
+      ],
+      "truth": {
+        "kind": "mirror",
+        "n_rooms": 3,
+        "noun": "mirror",
+        "rooms": [
+          "bathroom",
+          "open_studio",
+          "sleeping_alcove"
+        ],
+        "places": [
+          [
+            "bathroom"
+          ],
+          [
+            "open_studio"
+          ],
+          [
+            "sleeping_alcove"
+          ]
+        ],
+        "n_places_in_scope": 4,
+        "total": 3,
+        "spawn": {
+          "x": 3.93,
+          "y": 1.5,
+          "z": 8.9,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "kitchen"
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'mirror' -- the task is about every mirror in the house, and the others need not look like this one",
+          "../references/a2c1bd595ad4aa851b34bcc8f09385f78101ecf62622447509ada640cf7b3d91.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_count__painting",
+      "family": "room_count",
+      "instruction": "Search this house and find out which rooms contain at least one painting. For this task, count abstract wall paintings dominated by large black, rust-orange, and cream rectangular blocks. Do not count pictures depicting plants, landscapes, still-life objects, or architectural sketches. Count two places as different rooms if you have to go through a doorway to get from one to the other. Some rooms contain no paintings at all, and a room with several paintings still counts once. Tell me how many rooms contain at least one painting, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 100,
+      "answer_number": 2,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "open_studio",
+          "sleeping_alcove"
+        ],
+        "must_open": [],
+        "must_see": [
+          "open_studio_painting_0",
+          "sleeping_alcove_painting_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "bathroom",
+          "kitchen",
+          "open_studio",
+          "sleeping_alcove"
+        ]
+      },
+      "kinds": [
+        "painting"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "open_studio_painting_0",
+        "sleeping_alcove_painting_0"
+      ],
+      "answer_instances": [
+        "open_studio_painting_0",
+        "sleeping_alcove_painting_0"
+      ],
+      "plan": [],
+      "oracle_answer": "2",
+      "oracle_read": [
+        "room_count_seen",
+        "painting",
+        [
+          "bathroom",
+          "kitchen",
+          "open_studio",
+          "sleeping_alcove"
+        ],
+        []
+      ],
+      "truth": {
+        "kind": "painting",
+        "n_rooms": 2,
+        "noun": "painting",
+        "rooms": [
+          "open_studio",
+          "sleeping_alcove"
+        ],
+        "places": [
+          [
+            "open_studio"
+          ],
+          [
+            "sleeping_alcove"
+          ]
+        ],
+        "n_places_in_scope": 4,
+        "total": 2,
+        "spawn": {
+          "x": 3.43,
+          "y": 1.5,
+          "z": 10.4,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "kitchen"
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'painting' -- the task is about every painting in the house, and the others need not look like this one; follow the counting scope stated in the task, including its exclusions",
+          "../references/0965a1a24c619b2e81fd1fb17226c7ddc8c0a2db0092728783708ba8ac25cc5f.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_count__wall_clock",
+      "family": "room_count",
+      "instruction": "Search this house and find out which rooms contain at least one wall clock. Count two places as different rooms if you have to go through a doorway to get from one to the other. Some rooms contain no wall clocks at all, and a room with several wall clocks still counts once. Tell me how many rooms contain at least one wall clock, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 100,
+      "answer_number": 3,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "kitchen",
+          "open_studio",
+          "sleeping_alcove"
+        ],
+        "must_open": [],
+        "must_see": [
+          "kitchen_wall_clock_0",
+          "open_studio_wall_clock_0",
+          "sleeping_alcove_wall_clock_0"
+        ],
+        "min_distinct_viewpoints": 3,
+        "search_regions": [
+          "bathroom",
+          "kitchen",
+          "open_studio",
+          "sleeping_alcove"
+        ]
+      },
+      "kinds": [
+        "wall_clock"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "kitchen_wall_clock_0",
+        "open_studio_wall_clock_0",
+        "sleeping_alcove_wall_clock_0"
+      ],
+      "answer_instances": [
+        "kitchen_wall_clock_0",
+        "open_studio_wall_clock_0",
+        "sleeping_alcove_wall_clock_0"
+      ],
+      "plan": [],
+      "oracle_answer": "3",
+      "oracle_read": [
+        "room_count_seen",
+        "wall_clock",
+        [
+          "bathroom",
+          "kitchen",
+          "open_studio",
+          "sleeping_alcove"
+        ],
+        []
+      ],
+      "truth": {
+        "kind": "wall_clock",
+        "n_rooms": 3,
+        "noun": "wall clock",
+        "rooms": [
+          "kitchen",
+          "open_studio",
+          "sleeping_alcove"
+        ],
+        "places": [
+          [
+            "kitchen"
+          ],
+          [
+            "open_studio"
+          ],
+          [
+            "sleeping_alcove"
+          ]
+        ],
+        "n_places_in_scope": 4,
+        "total": 3,
+        "spawn": {
+          "x": 0.33,
+          "y": 1.5,
+          "z": 10.15,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "bathroom"
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'wall clock' -- the task is about every wall clock in the house, and the others need not look like this one",
+          "../references/97575e9ab49afae3a8ed7908cbb2feda24bc05323144a3b1b1c665a3a8a4d0df.png"
+        ]
+      ]
+    }
+  ],
+  "dataset_version": "1.1"
+}

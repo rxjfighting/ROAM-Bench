@@ -1,0 +1,1419 @@
+{
+  "schema_version": 4,
+  "benchmark": "ROAM-Bench",
+  "scene": "scene_147",
+  "spawn": {
+    "x": 4.0,
+    "y": 1.5,
+    "z": 3.0,
+    "yaw_deg": 0.0,
+    "horizon_deg": 0.0,
+    "room": "press_hall"
+  },
+  "specs": [
+    {
+      "task_id": "surface_contents__press_hall_storage_cabinet_0",
+      "family": "surface_contents",
+      "instruction": "Go to the storage cabinet. Which of the following objects are resting on it? Select every option that applies. Answer only with the option IDs.\nOptions:\n- OBJ_01: printing paper sheet\n- OBJ_02: printers storage box\n- OBJ_03: historic paper sample book\n- OBJ_04: printers paperweight\n- OBJ_05: printers ink tin\n- OBJ_06: printers type case tray\n- OBJ_07: printers bodkin\n- OBJ_08: filled printers type case tray",
+      "referents": [
+        "press_hall_storage_cabinet_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "OBJ_02"
+        ],
+        [
+          "OBJ_03"
+        ],
+        [
+          "OBJ_06"
+        ]
+      ],
+      "answer_choices": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_choice_labels": [
+        "printing paper sheet",
+        "printers storage box",
+        "historic paper sample book",
+        "printers paperweight",
+        "printers ink tin",
+        "printers type case tray",
+        "printers bodkin",
+        "filled printers type case tray"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_unit": "",
+      "answer_match": "set",
+      "max_steps": 50,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "press_hall"
+        ],
+        "must_open": [],
+        "must_see": [
+          "press_hall_historic_paper_sample_book_1",
+          "press_hall_printers_storage_box_0",
+          "press_hall_printers_type_case_tray_0",
+          "press_hall_storage_cabinet_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "press_hall",
+          "typesetting_bookbinding_studio"
+        ]
+      },
+      "kinds": [
+        "historic_paper_sample_book",
+        "printers_storage_box",
+        "printers_type_case_tray"
+      ],
+      "receptacle_kinds": [
+        "storage_cabinet"
+      ],
+      "evidence": [
+        "press_hall_storage_cabinet_0",
+        "press_hall_historic_paper_sample_book_1",
+        "press_hall_printers_storage_box_0",
+        "press_hall_printers_type_case_tray_0"
+      ],
+      "answer_instances": [
+        "press_hall_historic_paper_sample_book_1",
+        "press_hall_printers_storage_box_0",
+        "press_hall_printers_type_case_tray_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "press_hall_storage_cabinet_0"
+        ]
+      ],
+      "oracle_answer": "OBJ_02, OBJ_03, OBJ_06",
+      "oracle_read": [
+        "surface_contents",
+        "press_hall_storage_cabinet_0"
+      ],
+      "truth": {
+        "host": "press_hall_storage_cabinet_0",
+        "host_kind": "storage_cabinet",
+        "room": "press_hall",
+        "children": [
+          {
+            "alias": "press_hall_historic_paper_sample_book_1",
+            "kind": "historic_paper_sample_book"
+          },
+          {
+            "alias": "press_hall_printers_storage_box_0",
+            "kind": "printers_storage_box"
+          },
+          {
+            "alias": "press_hall_printers_type_case_tray_0",
+            "kind": "printers_type_case_tray"
+          }
+        ],
+        "spawn": {
+          "x": 14.5,
+          "y": 1.5,
+          "z": 0.5,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "typesetting_bookbinding_studio"
+        },
+        "answer_options": [
+          {
+            "id": "OBJ_01",
+            "label": "printing paper sheet",
+            "kind": "printing_paper_sheet",
+            "alias": "press_hall_printing_paper_sheet_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_02",
+            "label": "printers storage box",
+            "kind": "printers_storage_box",
+            "alias": "press_hall_printers_storage_box_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_03",
+            "label": "historic paper sample book",
+            "kind": "historic_paper_sample_book",
+            "alias": "press_hall_historic_paper_sample_book_1",
+            "correct": true
+          },
+          {
+            "id": "OBJ_04",
+            "label": "printers paperweight",
+            "kind": "printers_paperweight",
+            "alias": "press_hall_printers_paperweight_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_05",
+            "label": "printers ink tin",
+            "kind": "printers_ink_tin",
+            "alias": "press_hall_printers_ink_tin_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_06",
+            "label": "printers type case tray",
+            "kind": "printers_type_case_tray",
+            "alias": "press_hall_printers_type_case_tray_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_07",
+            "label": "printers bodkin",
+            "kind": "printers_bodkin",
+            "alias": "press_hall_printers_bodkin_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_08",
+            "label": "filled printers type case tray",
+            "kind": "filled_printers_type_case_tray",
+            "alias": "press_hall_filled_container_0",
+            "correct": false
+          }
+        ]
+      },
+      "answer_choice_mode": "multiple",
+      "goal_images": [
+        [
+          "the storage cabinet this task refers to -- this exact object",
+          "../references/05751089c5bb206b13a6a52a9067e55e46799b8967ffa5c6440662a67eb1f95a.png"
+        ],
+        [
+          "Option OBJ_01 — printing paper sheet; category reference image",
+          "../references/4a2c236852dfe27c774b4b7457c1cde9ebcc57783d39b356e5250d8fbb6544be.png"
+        ],
+        [
+          "Option OBJ_02 — printers storage box; category reference image",
+          "../references/8c6eafa5342c307ee82f57d4a24d61fba8983a63e68287d2e5396cefa2f3b494.png"
+        ],
+        [
+          "Option OBJ_03 — historic paper sample book; category reference image",
+          "../references/d29e84c88fdd0a89ce9c6ae89af0b9b6081586271b340e4f4f3c4ed93c7f1698.png"
+        ],
+        [
+          "Option OBJ_04 — printers paperweight; category reference image",
+          "../references/961ec337ee87cb3faed8d8c5fc97718b1562371691be6bbe6da5572b5352a09f.png"
+        ],
+        [
+          "Option OBJ_05 — printers ink tin; category reference image",
+          "../references/0417d5273edf2ca7852afe944758ab0bee4f2bfbd502342228903c7833f3fe4b.png"
+        ],
+        [
+          "Option OBJ_06 — printers type case tray; category reference image",
+          "../references/288d5e26eff8543b45ca7d53ad80a8597453c92c145c4fa1f8e2f99d5d56df04.png"
+        ],
+        [
+          "Option OBJ_07 — printers bodkin; category reference image",
+          "../references/21c96d4a84d6c157f1136de4d4cb7e4c770b5e009d65242e2684d78470728b30.png"
+        ],
+        [
+          "Option OBJ_08 — filled printers type case tray; category reference image",
+          "../references/923d47a11f8fc5db9f09129b4779760a1f9c4c385c9d2c373a08a3b0d0727084.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "object_distance__press_hall_composing_worktable_0__typesetting_bookbinding_studio_bookcase_0",
+      "family": "object_distance",
+      "instruction": "Find the composing worktable and the bookcase in this house; they are in different rooms. Then tell me roughly how far apart they are, in metres, as a number. Measure the straight line between them, not the distance you walked.",
+      "referents": [
+        "press_hall_composing_worktable_0",
+        "typesetting_bookbinding_studio_bookcase_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_choice_labels": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m",
+      "answer_match": "count",
+      "max_steps": 50,
+      "answer_number": 5,
+      "answer_tolerance": 2.0,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "press_hall",
+          "typesetting_bookbinding_studio"
+        ],
+        "must_open": [],
+        "must_see": [
+          "press_hall_composing_worktable_0",
+          "typesetting_bookbinding_studio_bookcase_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "press_hall",
+          "typesetting_bookbinding_studio"
+        ]
+      },
+      "kinds": [
+        "composing_worktable",
+        "bookcase"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "press_hall_composing_worktable_0",
+        "typesetting_bookbinding_studio_bookcase_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "5",
+      "oracle_read": [
+        "object_distance",
+        "press_hall_composing_worktable_0",
+        "typesetting_bookbinding_studio_bookcase_0"
+      ],
+      "truth": {
+        "a": "press_hall_composing_worktable_0",
+        "b": "typesetting_bookbinding_studio_bookcase_0",
+        "metres": 4.83,
+        "a_room": "press_hall",
+        "b_room": "typesetting_bookbinding_studio",
+        "tol_m": 1,
+        "spawn": {
+          "x": 14.5,
+          "y": 1.5,
+          "z": 0.5,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "typesetting_bookbinding_studio"
+        }
+      },
+      "goal_images": [
+        [
+          "the composing worktable this task refers to -- this exact object",
+          "../references/a97625ccd54dd187347da1c5dffd9951c4f9d4cc3d650089c9084a18b3445a2d.png"
+        ],
+        [
+          "the bookcase this task refers to -- this exact object",
+          "../references/1f9e40d7c669d3258f38fffc271a9031c1bf3988a93477fb8d24aad453fb5bcb.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "object_distance__press_hall_composing_worktable_0__typesetting_bookbinding_studio_materials_cabinet_0",
+      "family": "object_distance",
+      "instruction": "Find the composing worktable and the materials cabinet in this house; they are in different rooms. Then tell me roughly how far apart they are, in metres, as a number. Measure the straight line between them, not the distance you walked.",
+      "referents": [
+        "press_hall_composing_worktable_0",
+        "typesetting_bookbinding_studio_materials_cabinet_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_choice_labels": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m",
+      "answer_match": "count",
+      "max_steps": 50,
+      "answer_number": 6,
+      "answer_tolerance": 2.0,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "press_hall",
+          "typesetting_bookbinding_studio"
+        ],
+        "must_open": [],
+        "must_see": [
+          "press_hall_composing_worktable_0",
+          "typesetting_bookbinding_studio_materials_cabinet_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "press_hall",
+          "typesetting_bookbinding_studio"
+        ]
+      },
+      "kinds": [
+        "composing_worktable",
+        "materials_cabinet"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "press_hall_composing_worktable_0",
+        "typesetting_bookbinding_studio_materials_cabinet_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "6",
+      "oracle_read": [
+        "object_distance",
+        "press_hall_composing_worktable_0",
+        "typesetting_bookbinding_studio_materials_cabinet_0"
+      ],
+      "truth": {
+        "a": "press_hall_composing_worktable_0",
+        "b": "typesetting_bookbinding_studio_materials_cabinet_0",
+        "metres": 6.2,
+        "a_room": "press_hall",
+        "b_room": "typesetting_bookbinding_studio",
+        "tol_m": 1,
+        "spawn": {
+          "x": 6.5,
+          "y": 1.5,
+          "z": 0.5,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "press_hall"
+        }
+      },
+      "goal_images": [
+        [
+          "the composing worktable this task refers to -- this exact object",
+          "../references/a97625ccd54dd187347da1c5dffd9951c4f9d4cc3d650089c9084a18b3445a2d.png"
+        ],
+        [
+          "the materials cabinet this task refers to -- this exact object",
+          "../references/359a9cbccedaa3f6fdd777fb8e734c1aafc25df2b8246e5d7d750531969d05a8.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "object_distance__press_hall_storage_cabinet_0__typesetting_bookbinding_studio_bookcase_0",
+      "family": "object_distance",
+      "instruction": "Find the storage cabinet and the bookcase in this house; they are in different rooms. Then tell me roughly how far apart they are, in metres, as a number. Measure the straight line between them, not the distance you walked.",
+      "referents": [
+        "press_hall_storage_cabinet_0",
+        "typesetting_bookbinding_studio_bookcase_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_choice_labels": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m",
+      "answer_match": "count",
+      "max_steps": 50,
+      "answer_number": 9,
+      "answer_tolerance": 2.0,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "press_hall",
+          "typesetting_bookbinding_studio"
+        ],
+        "must_open": [],
+        "must_see": [
+          "press_hall_storage_cabinet_0",
+          "typesetting_bookbinding_studio_bookcase_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "press_hall",
+          "typesetting_bookbinding_studio"
+        ]
+      },
+      "kinds": [
+        "storage_cabinet",
+        "bookcase"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "press_hall_storage_cabinet_0",
+        "typesetting_bookbinding_studio_bookcase_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "9",
+      "oracle_read": [
+        "object_distance",
+        "press_hall_storage_cabinet_0",
+        "typesetting_bookbinding_studio_bookcase_0"
+      ],
+      "truth": {
+        "a": "press_hall_storage_cabinet_0",
+        "b": "typesetting_bookbinding_studio_bookcase_0",
+        "metres": 8.77,
+        "a_room": "press_hall",
+        "b_room": "typesetting_bookbinding_studio",
+        "tol_m": 1,
+        "spawn": {
+          "x": 8.5,
+          "y": 1.5,
+          "z": 2.5,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "typesetting_bookbinding_studio"
+        }
+      },
+      "goal_images": [
+        [
+          "the storage cabinet this task refers to -- this exact object",
+          "../references/05751089c5bb206b13a6a52a9067e55e46799b8967ffa5c6440662a67eb1f95a.png"
+        ],
+        [
+          "the bookcase this task refers to -- this exact object",
+          "../references/1f9e40d7c669d3258f38fffc271a9031c1bf3988a93477fb8d24aad453fb5bcb.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "object_distance__press_hall_storage_cabinet_0__typesetting_bookbinding_studio_materials_cabinet_0",
+      "family": "object_distance",
+      "instruction": "Find the storage cabinet and the materials cabinet in this house; they are in different rooms. Then tell me roughly how far apart they are, in metres, as a number. Measure the straight line between them, not the distance you walked.",
+      "referents": [
+        "press_hall_storage_cabinet_0",
+        "typesetting_bookbinding_studio_materials_cabinet_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_choice_labels": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m",
+      "answer_match": "count",
+      "max_steps": 50,
+      "answer_number": 10,
+      "answer_tolerance": 2.0,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "press_hall",
+          "typesetting_bookbinding_studio"
+        ],
+        "must_open": [],
+        "must_see": [
+          "press_hall_storage_cabinet_0",
+          "typesetting_bookbinding_studio_materials_cabinet_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "press_hall",
+          "typesetting_bookbinding_studio"
+        ]
+      },
+      "kinds": [
+        "storage_cabinet",
+        "materials_cabinet"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "press_hall_storage_cabinet_0",
+        "typesetting_bookbinding_studio_materials_cabinet_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "10",
+      "oracle_read": [
+        "object_distance",
+        "press_hall_storage_cabinet_0",
+        "typesetting_bookbinding_studio_materials_cabinet_0"
+      ],
+      "truth": {
+        "a": "press_hall_storage_cabinet_0",
+        "b": "typesetting_bookbinding_studio_materials_cabinet_0",
+        "metres": 10.07,
+        "a_room": "press_hall",
+        "b_room": "typesetting_bookbinding_studio",
+        "tol_m": 1,
+        "spawn": {
+          "x": 0.75,
+          "y": 1.5,
+          "z": 1.25,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "press_hall"
+        }
+      },
+      "goal_images": [
+        [
+          "the storage cabinet this task refers to -- this exact object",
+          "../references/05751089c5bb206b13a6a52a9067e55e46799b8967ffa5c6440662a67eb1f95a.png"
+        ],
+        [
+          "the materials cabinet this task refers to -- this exact object",
+          "../references/359a9cbccedaa3f6fdd777fb8e734c1aafc25df2b8246e5d7d750531969d05a8.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relocation__press_hall_printed_letterpress_proof_card_0__to__typesetting_bookbinding_studio_bookbinders_workbench_0",
+      "family": "relocation",
+      "instruction": "Find the printed letterpress proof card, pick it up, and put it on the bookbinders workbench.",
+      "referents": [
+        "press_hall_printed_letterpress_proof_card_0",
+        "typesetting_bookbinding_studio_bookbinders_workbench_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('press_hall_printed_letterpress_proof_card_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('press_hall_printed_letterpress_proof_card_0','typesetting_bookbinding_studio_bookbinders_workbench_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_choice_labels": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 50,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "press_hall",
+          "typesetting_bookbinding_studio"
+        ],
+        "must_open": [],
+        "must_see": [
+          "press_hall_printed_letterpress_proof_card_0",
+          "typesetting_bookbinding_studio_bookbinders_workbench_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "press_hall",
+          "typesetting_bookbinding_studio"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "press_hall_printed_letterpress_proof_card_0",
+        "typesetting_bookbinding_studio_bookbinders_workbench_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "press_hall_printed_letterpress_proof_card_0"
+        ],
+        [
+          "pick",
+          "press_hall_printed_letterpress_proof_card_0"
+        ],
+        [
+          "navigate",
+          "typesetting_bookbinding_studio_bookbinders_workbench_0"
+        ],
+        [
+          "place",
+          "typesetting_bookbinding_studio_bookbinders_workbench_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "press_hall_printed_letterpress_proof_card_0",
+        "from_room": "press_hall",
+        "from_room_id": "press_hall",
+        "dest": "typesetting_bookbinding_studio_bookbinders_workbench_0",
+        "to_room": "typesetting_bookbinding_studio",
+        "to_room_id": "typesetting_bookbinding_studio",
+        "spawn": {
+          "x": 14.5,
+          "y": 1.5,
+          "z": 0.5,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "typesetting_bookbinding_studio"
+        }
+      },
+      "goal_images": [
+        [
+          "the printed letterpress proof card this task refers to -- this exact object",
+          "../references/c69cfbaddcf3a308e612b406e856b249b24540cdca3df6d78eaac31b00dcdb16.png"
+        ],
+        [
+          "the bookbinders workbench this task refers to -- this exact object",
+          "../references/f5e4d080e3c58cfc97bc5ff792d32578cd149eaf3512a285985b5a51aa00c58c.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relocation__typesetting_bookbinding_studio_navy_bookbinding_cloth_swatch_0__to__press_hall_storage_cabinet_0",
+      "family": "relocation",
+      "instruction": "Find the navy bookbinding cloth swatch, pick it up, and put it on the storage cabinet.",
+      "referents": [
+        "typesetting_bookbinding_studio_navy_bookbinding_cloth_swatch_0",
+        "press_hall_storage_cabinet_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('typesetting_bookbinding_studio_navy_bookbinding_cloth_swatch_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('typesetting_bookbinding_studio_navy_bookbinding_cloth_swatch_0','press_hall_storage_cabinet_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_choice_labels": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 50,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "press_hall",
+          "typesetting_bookbinding_studio"
+        ],
+        "must_open": [],
+        "must_see": [
+          "press_hall_storage_cabinet_0",
+          "typesetting_bookbinding_studio_navy_bookbinding_cloth_swatch_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "press_hall",
+          "typesetting_bookbinding_studio"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "typesetting_bookbinding_studio_navy_bookbinding_cloth_swatch_0",
+        "press_hall_storage_cabinet_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "typesetting_bookbinding_studio_navy_bookbinding_cloth_swatch_0"
+        ],
+        [
+          "pick",
+          "typesetting_bookbinding_studio_navy_bookbinding_cloth_swatch_0"
+        ],
+        [
+          "navigate",
+          "press_hall_storage_cabinet_0"
+        ],
+        [
+          "place",
+          "press_hall_storage_cabinet_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "typesetting_bookbinding_studio_navy_bookbinding_cloth_swatch_0",
+        "from_room": "typesetting_bookbinding_studio",
+        "from_room_id": "typesetting_bookbinding_studio",
+        "dest": "press_hall_storage_cabinet_0",
+        "to_room": "press_hall",
+        "to_room_id": "press_hall",
+        "spawn": {
+          "x": 11.0,
+          "y": 1.5,
+          "z": 5.0,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "typesetting_bookbinding_studio"
+        }
+      },
+      "goal_images": [
+        [
+          "the navy bookbinding cloth swatch this task refers to -- this exact object",
+          "../references/87a35b18705244ae07f9f96fe794c65cb68dfcbc6850571872533d1fa4b9e474.png"
+        ],
+        [
+          "the storage cabinet this task refers to -- this exact object",
+          "../references/05751089c5bb206b13a6a52a9067e55e46799b8967ffa5c6440662a67eb1f95a.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relocation__typesetting_bookbinding_studio_printers_galley_tray_0__to__press_hall_storage_cabinet_0",
+      "family": "relocation",
+      "instruction": "Find the printers galley tray, pick it up, and put it on the storage cabinet.",
+      "referents": [
+        "typesetting_bookbinding_studio_printers_galley_tray_0",
+        "press_hall_storage_cabinet_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('typesetting_bookbinding_studio_printers_galley_tray_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('typesetting_bookbinding_studio_printers_galley_tray_0','press_hall_storage_cabinet_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_choice_labels": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 50,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "press_hall",
+          "typesetting_bookbinding_studio"
+        ],
+        "must_open": [],
+        "must_see": [
+          "press_hall_storage_cabinet_0",
+          "typesetting_bookbinding_studio_printers_galley_tray_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "press_hall",
+          "typesetting_bookbinding_studio"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "typesetting_bookbinding_studio_printers_galley_tray_0",
+        "press_hall_storage_cabinet_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "typesetting_bookbinding_studio_printers_galley_tray_0"
+        ],
+        [
+          "pick",
+          "typesetting_bookbinding_studio_printers_galley_tray_0"
+        ],
+        [
+          "navigate",
+          "press_hall_storage_cabinet_0"
+        ],
+        [
+          "place",
+          "press_hall_storage_cabinet_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "typesetting_bookbinding_studio_printers_galley_tray_0",
+        "from_room": "typesetting_bookbinding_studio",
+        "from_room_id": "typesetting_bookbinding_studio",
+        "dest": "press_hall_storage_cabinet_0",
+        "to_room": "press_hall",
+        "to_room_id": "press_hall",
+        "spawn": {
+          "x": 11.0,
+          "y": 1.5,
+          "z": 5.0,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "typesetting_bookbinding_studio"
+        }
+      },
+      "goal_images": [
+        [
+          "the printers galley tray this task refers to -- this exact object",
+          "../references/1d89cb06095ab768dfa17709d16ee0ee1205abb4415b59bd454dfde91e677a67.png"
+        ],
+        [
+          "the storage cabinet this task refers to -- this exact object",
+          "../references/05751089c5bb206b13a6a52a9067e55e46799b8967ffa5c6440662a67eb1f95a.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__press_hall_storage_cabinet_0__typesetting_bookbinding_studio_bookcase_0",
+      "family": "path_integration",
+      "instruction": "Find the storage cabinet and then the bookcase; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "press_hall_storage_cabinet_0",
+        "typesetting_bookbinding_studio_bookcase_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 50,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "press_hall",
+          "typesetting_bookbinding_studio"
+        ],
+        "must_open": [],
+        "must_see": [
+          "press_hall_storage_cabinet_0",
+          "typesetting_bookbinding_studio_bookcase_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "press_hall",
+          "typesetting_bookbinding_studio"
+        ]
+      },
+      "kinds": [
+        "storage_cabinet",
+        "bookcase"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "press_hall_storage_cabinet_0",
+        "typesetting_bookbinding_studio_bookcase_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "press_hall_storage_cabinet_0",
+        "typesetting_bookbinding_studio_bookcase_0"
+      ],
+      "truth": {
+        "x": "press_hall_storage_cabinet_0",
+        "y": "typesetting_bookbinding_studio_bookcase_0",
+        "x_room": "press_hall",
+        "y_room": "typesetting_bookbinding_studio",
+        "leg_m": 8.77,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": 1.25,
+          "y": 1.5,
+          "z": 5.5,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "press_hall"
+        }
+      },
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the storage cabinet this task refers to -- this exact object",
+          "../references/05751089c5bb206b13a6a52a9067e55e46799b8967ffa5c6440662a67eb1f95a.png"
+        ],
+        [
+          "the bookcase this task refers to -- this exact object",
+          "../references/1f9e40d7c669d3258f38fffc271a9031c1bf3988a93477fb8d24aad453fb5bcb.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relative_direction__press_hall_storage_cabinet_0__press_hall_composing_worktable_0__typesetting_bookbinding_studio_bookbinders_workbench_0",
+      "family": "relative_direction",
+      "instruction": "Find the storage cabinet and the composing worktable; they are in the same room. Also find the bookbinders workbench, which is somewhere else in this house. Then answer this: if you stood at the storage cabinet and faced the composing worktable, which direction would the bookbinders workbench be in? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "press_hall_storage_cabinet_0",
+        "press_hall_composing_worktable_0",
+        "typesetting_bookbinding_studio_bookbinders_workbench_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 50,
+      "answer_number": 0,
+      "answer_tolerance": 22,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "press_hall",
+          "typesetting_bookbinding_studio"
+        ],
+        "must_open": [],
+        "must_see": [
+          "press_hall_composing_worktable_0",
+          "press_hall_storage_cabinet_0",
+          "typesetting_bookbinding_studio_bookbinders_workbench_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "press_hall",
+          "typesetting_bookbinding_studio"
+        ]
+      },
+      "kinds": [
+        "storage_cabinet",
+        "bookbinders_workbench",
+        "composing_worktable"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "press_hall_storage_cabinet_0",
+        "typesetting_bookbinding_studio_bookbinders_workbench_0",
+        "press_hall_composing_worktable_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "0",
+      "oracle_read": [
+        "relative_direction",
+        "press_hall_storage_cabinet_0",
+        "press_hall_composing_worktable_0",
+        "typesetting_bookbinding_studio_bookbinders_workbench_0"
+      ],
+      "truth": {
+        "origin": "press_hall_storage_cabinet_0",
+        "forward": "press_hall_composing_worktable_0",
+        "target": "typesetting_bookbinding_studio_bookbinders_workbench_0",
+        "bearing_deg": 4.47,
+        "sector_deg": 0,
+        "offset_deg": 4.47,
+        "origin_room": "press_hall",
+        "target_room": "typesetting_bookbinding_studio",
+        "leg_m": 11.86,
+        "spawn": {
+          "x": 11.5,
+          "y": 1.5,
+          "z": 2.5,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "typesetting_bookbinding_studio"
+        }
+      },
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the storage cabinet this task refers to -- this exact object",
+          "../references/05751089c5bb206b13a6a52a9067e55e46799b8967ffa5c6440662a67eb1f95a.png"
+        ],
+        [
+          "the composing worktable this task refers to -- this exact object",
+          "../references/a97625ccd54dd187347da1c5dffd9951c4f9d4cc3d650089c9084a18b3445a2d.png"
+        ],
+        [
+          "the bookbinders workbench this task refers to -- this exact object",
+          "../references/f5e4d080e3c58cfc97bc5ff792d32578cd149eaf3512a285985b5a51aa00c58c.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relative_direction__press_hall_storage_cabinet_0__press_hall_composing_worktable_0__typesetting_bookbinding_studio_bookcase_0",
+      "family": "relative_direction",
+      "instruction": "Find the storage cabinet and the composing worktable; they are in the same room. Also find the bookcase, which is somewhere else in this house. Then answer this: if you stood at the storage cabinet and faced the composing worktable, which direction would the bookcase be in? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "press_hall_storage_cabinet_0",
+        "press_hall_composing_worktable_0",
+        "typesetting_bookbinding_studio_bookcase_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 50,
+      "answer_number": 0,
+      "answer_tolerance": 22,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "press_hall",
+          "typesetting_bookbinding_studio"
+        ],
+        "must_open": [],
+        "must_see": [
+          "press_hall_composing_worktable_0",
+          "press_hall_storage_cabinet_0",
+          "typesetting_bookbinding_studio_bookcase_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "press_hall",
+          "typesetting_bookbinding_studio"
+        ]
+      },
+      "kinds": [
+        "storage_cabinet",
+        "bookcase",
+        "composing_worktable"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "press_hall_storage_cabinet_0",
+        "typesetting_bookbinding_studio_bookcase_0",
+        "press_hall_composing_worktable_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "0",
+      "oracle_read": [
+        "relative_direction",
+        "press_hall_storage_cabinet_0",
+        "press_hall_composing_worktable_0",
+        "typesetting_bookbinding_studio_bookcase_0"
+      ],
+      "truth": {
+        "origin": "press_hall_storage_cabinet_0",
+        "forward": "press_hall_composing_worktable_0",
+        "target": "typesetting_bookbinding_studio_bookcase_0",
+        "bearing_deg": 11.1,
+        "sector_deg": 0,
+        "offset_deg": 11.1,
+        "origin_room": "press_hall",
+        "target_room": "typesetting_bookbinding_studio",
+        "leg_m": 8.77,
+        "spawn": {
+          "x": 6.5,
+          "y": 1.5,
+          "z": 0.5,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "press_hall"
+        }
+      },
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the storage cabinet this task refers to -- this exact object",
+          "../references/05751089c5bb206b13a6a52a9067e55e46799b8967ffa5c6440662a67eb1f95a.png"
+        ],
+        [
+          "the composing worktable this task refers to -- this exact object",
+          "../references/a97625ccd54dd187347da1c5dffd9951c4f9d4cc3d650089c9084a18b3445a2d.png"
+        ],
+        [
+          "the bookcase this task refers to -- this exact object",
+          "../references/1f9e40d7c669d3258f38fffc271a9031c1bf3988a93477fb8d24aad453fb5bcb.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relative_direction__typesetting_bookbinding_studio_bookbinders_workbench_0__typesetting_bookbinding_studio_materials_cabinet_0__press_hall_composing_worktable_0",
+      "family": "relative_direction",
+      "instruction": "Find the bookbinders workbench and the materials cabinet; they are in the same room. Also find the composing worktable, which is somewhere else in this house. Then answer this: if you stood at the bookbinders workbench and faced the materials cabinet, which direction would the composing worktable be in? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "typesetting_bookbinding_studio_bookbinders_workbench_0",
+        "typesetting_bookbinding_studio_materials_cabinet_0",
+        "press_hall_composing_worktable_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 50,
+      "answer_number": 45,
+      "answer_tolerance": 22,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "press_hall",
+          "typesetting_bookbinding_studio"
+        ],
+        "must_open": [],
+        "must_see": [
+          "press_hall_composing_worktable_0",
+          "typesetting_bookbinding_studio_bookbinders_workbench_0",
+          "typesetting_bookbinding_studio_materials_cabinet_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "press_hall",
+          "typesetting_bookbinding_studio"
+        ]
+      },
+      "kinds": [
+        "bookbinders_workbench",
+        "composing_worktable",
+        "materials_cabinet"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "typesetting_bookbinding_studio_bookbinders_workbench_0",
+        "press_hall_composing_worktable_0",
+        "typesetting_bookbinding_studio_materials_cabinet_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "45",
+      "oracle_read": [
+        "relative_direction",
+        "typesetting_bookbinding_studio_bookbinders_workbench_0",
+        "typesetting_bookbinding_studio_materials_cabinet_0",
+        "press_hall_composing_worktable_0"
+      ],
+      "truth": {
+        "origin": "typesetting_bookbinding_studio_bookbinders_workbench_0",
+        "forward": "typesetting_bookbinding_studio_materials_cabinet_0",
+        "target": "press_hall_composing_worktable_0",
+        "bearing_deg": 44.37,
+        "sector_deg": 45,
+        "offset_deg": 0.63,
+        "origin_room": "typesetting_bookbinding_studio",
+        "target_room": "press_hall",
+        "leg_m": 7.8,
+        "spawn": {
+          "x": 8.5,
+          "y": 1.5,
+          "z": 5.5,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "typesetting_bookbinding_studio"
+        }
+      },
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the bookbinders workbench this task refers to -- this exact object",
+          "../references/f5e4d080e3c58cfc97bc5ff792d32578cd149eaf3512a285985b5a51aa00c58c.png"
+        ],
+        [
+          "the materials cabinet this task refers to -- this exact object",
+          "../references/359a9cbccedaa3f6fdd777fb8e734c1aafc25df2b8246e5d7d750531969d05a8.png"
+        ],
+        [
+          "the composing worktable this task refers to -- this exact object",
+          "../references/a97625ccd54dd187347da1c5dffd9951c4f9d4cc3d650089c9084a18b3445a2d.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relative_direction__typesetting_bookbinding_studio_bookbinders_workbench_0__typesetting_bookbinding_studio_materials_cabinet_0__press_hall_storage_cabinet_0",
+      "family": "relative_direction",
+      "instruction": "Find the bookbinders workbench and the materials cabinet; they are in the same room. Also find the storage cabinet, which is somewhere else in this house. Then answer this: if you stood at the bookbinders workbench and faced the materials cabinet, which direction would the storage cabinet be in? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "typesetting_bookbinding_studio_bookbinders_workbench_0",
+        "typesetting_bookbinding_studio_materials_cabinet_0",
+        "press_hall_storage_cabinet_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 50,
+      "answer_number": 45,
+      "answer_tolerance": 22,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "press_hall",
+          "typesetting_bookbinding_studio"
+        ],
+        "must_open": [],
+        "must_see": [
+          "press_hall_storage_cabinet_0",
+          "typesetting_bookbinding_studio_bookbinders_workbench_0",
+          "typesetting_bookbinding_studio_materials_cabinet_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "press_hall",
+          "typesetting_bookbinding_studio"
+        ]
+      },
+      "kinds": [
+        "bookbinders_workbench",
+        "storage_cabinet",
+        "materials_cabinet"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "typesetting_bookbinding_studio_bookbinders_workbench_0",
+        "press_hall_storage_cabinet_0",
+        "typesetting_bookbinding_studio_materials_cabinet_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "45",
+      "oracle_read": [
+        "relative_direction",
+        "typesetting_bookbinding_studio_bookbinders_workbench_0",
+        "typesetting_bookbinding_studio_materials_cabinet_0",
+        "press_hall_storage_cabinet_0"
+      ],
+      "truth": {
+        "origin": "typesetting_bookbinding_studio_bookbinders_workbench_0",
+        "forward": "typesetting_bookbinding_studio_materials_cabinet_0",
+        "target": "press_hall_storage_cabinet_0",
+        "bearing_deg": 42.03,
+        "sector_deg": 45,
+        "offset_deg": 2.97,
+        "origin_room": "typesetting_bookbinding_studio",
+        "target_room": "press_hall",
+        "leg_m": 11.86,
+        "spawn": {
+          "x": 6.5,
+          "y": 1.5,
+          "z": 0.5,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "press_hall"
+        }
+      },
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the bookbinders workbench this task refers to -- this exact object",
+          "../references/f5e4d080e3c58cfc97bc5ff792d32578cd149eaf3512a285985b5a51aa00c58c.png"
+        ],
+        [
+          "the materials cabinet this task refers to -- this exact object",
+          "../references/359a9cbccedaa3f6fdd777fb8e734c1aafc25df2b8246e5d7d750531969d05a8.png"
+        ],
+        [
+          "the storage cabinet this task refers to -- this exact object",
+          "../references/05751089c5bb206b13a6a52a9067e55e46799b8967ffa5c6440662a67eb1f95a.png"
+        ]
+      ]
+    }
+  ],
+  "dataset_version": "1.1"
+}

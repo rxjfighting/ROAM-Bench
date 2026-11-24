@@ -1,0 +1,1280 @@
+{
+  "schema_version": 4,
+  "benchmark": "ROAM-Bench",
+  "scene": "scene_139",
+  "spawn": {
+    "x": 2.0,
+    "y": 1.5,
+    "z": -7.0,
+    "yaw_deg": 0.0,
+    "horizon_deg": 0.0,
+    "room": "shower_room"
+  },
+  "specs": [
+    {
+      "task_id": "surface_contents__relaxation_lounge_spa_bench_0",
+      "family": "surface_contents",
+      "instruction": "Go to the spa bench. Which of the following objects are resting on it? Select every option that applies. Answer only with the option IDs.\nOptions:\n- OBJ_01: spa water tumbler\n- OBJ_02: right spa shower sandal\n- OBJ_03: right spa slipper\n- OBJ_04: spa magazine\n- OBJ_05: bath towel\n- OBJ_06: spa towel\n- OBJ_07: spa hand towel\n- OBJ_08: left spa slipper",
+      "referents": [
+        "relaxation_lounge_spa_bench_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "OBJ_03"
+        ],
+        [
+          "OBJ_05"
+        ],
+        [
+          "OBJ_08"
+        ]
+      ],
+      "answer_choices": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_unit": "",
+      "answer_match": "set",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "relaxation_lounge"
+        ],
+        "must_open": [],
+        "must_see": [
+          "relaxation_lounge_bath_towel_0",
+          "relaxation_lounge_left_spa_slipper_0",
+          "relaxation_lounge_right_spa_slipper_0",
+          "relaxation_lounge_spa_bench_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "changing_room",
+          "dry_sauna",
+          "reception",
+          "relaxation_lounge",
+          "shower_room",
+          "steam_room"
+        ]
+      },
+      "kinds": [
+        "bath_towel",
+        "left_spa_slipper",
+        "right_spa_slipper"
+      ],
+      "receptacle_kinds": [
+        "spa_bench"
+      ],
+      "evidence": [
+        "relaxation_lounge_spa_bench_0",
+        "relaxation_lounge_bath_towel_0",
+        "relaxation_lounge_left_spa_slipper_0",
+        "relaxation_lounge_right_spa_slipper_0"
+      ],
+      "answer_instances": [
+        "relaxation_lounge_bath_towel_0",
+        "relaxation_lounge_left_spa_slipper_0",
+        "relaxation_lounge_right_spa_slipper_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "relaxation_lounge_spa_bench_0"
+        ]
+      ],
+      "oracle_answer": "OBJ_03, OBJ_05, OBJ_08",
+      "oracle_read": [
+        "surface_contents",
+        "relaxation_lounge_spa_bench_0"
+      ],
+      "truth": {
+        "host": "relaxation_lounge_spa_bench_0",
+        "host_kind": "spa_bench",
+        "room": "relaxation_lounge",
+        "children": [
+          {
+            "alias": "relaxation_lounge_bath_towel_0",
+            "kind": "bath_towel"
+          },
+          {
+            "alias": "relaxation_lounge_left_spa_slipper_0",
+            "kind": "left_spa_slipper"
+          },
+          {
+            "alias": "relaxation_lounge_right_spa_slipper_0",
+            "kind": "right_spa_slipper"
+          }
+        ],
+        "spawn": {
+          "x": -1.0,
+          "y": 1.5,
+          "z": -7.25,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "shower_room"
+        },
+        "answer_options": [
+          {
+            "id": "OBJ_01",
+            "label": "spa water tumbler",
+            "kind": "spa_water_tumbler",
+            "alias": "relaxation_lounge_spa_water_tumbler_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_02",
+            "label": "right spa shower sandal",
+            "kind": "right_spa_shower_sandal",
+            "alias": "changing_room_right_spa_shower_sandal_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_03",
+            "label": "right spa slipper",
+            "kind": "right_spa_slipper",
+            "alias": "relaxation_lounge_right_spa_slipper_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_04",
+            "label": "spa magazine",
+            "kind": "spa_magazine",
+            "alias": "relaxation_lounge_spa_magazine_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_05",
+            "label": "bath towel",
+            "kind": "bath_towel",
+            "alias": "relaxation_lounge_bath_towel_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_06",
+            "label": "spa towel",
+            "kind": "spa_towel",
+            "alias": "changing_room_spa_towel_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_07",
+            "label": "spa hand towel",
+            "kind": "spa_hand_towel",
+            "alias": "relaxation_lounge_spa_hand_towel_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_08",
+            "label": "left spa slipper",
+            "kind": "left_spa_slipper",
+            "alias": "relaxation_lounge_left_spa_slipper_0",
+            "correct": true
+          }
+        ]
+      },
+      "answer_choice_labels": [
+        "spa water tumbler",
+        "right spa shower sandal",
+        "right spa slipper",
+        "spa magazine",
+        "bath towel",
+        "spa towel",
+        "spa hand towel",
+        "left spa slipper"
+      ],
+      "answer_choice_mode": "multiple",
+      "goal_images": [
+        [
+          "the spa bench this task refers to -- this exact object",
+          "../references/058239a57df51fda19235c37d31a51750959f4a41de7a301ff18cd68c7b4ef5c.png"
+        ],
+        [
+          "Option OBJ_01 — spa water tumbler; category reference image",
+          "../references/2d83d6fc32b8b0dc76b978e2fa5b77efc119602803ba31af62b956fc770a3a19.png"
+        ],
+        [
+          "Option OBJ_02 — right spa shower sandal; category reference image",
+          "../references/32e5cd7b447dbfc6a4afb331133ba2cd37ac862309732e13d1078cb4c198f8aa.png"
+        ],
+        [
+          "Option OBJ_03 — right spa slipper; category reference image",
+          "../references/393fc98f12ace2cc19379f007d7da5c621db8029d92c12955f494993cb6e68bf.png"
+        ],
+        [
+          "Option OBJ_04 — spa magazine; category reference image",
+          "../references/4204208304f91a629fe63170f75583148651dac9adf4753a8d45e77597b672fb.png"
+        ],
+        [
+          "Option OBJ_05 — bath towel; category reference image",
+          "../references/e07328b86876d85c30696259015897781a15899fba1598c6e52fb65b6d49c972.png"
+        ],
+        [
+          "Option OBJ_06 — spa towel; category reference image",
+          "../references/4e74d37c9574556c110e5cd24a5721dd2739c918d6e013a93f1bc4630b0949e7.png"
+        ],
+        [
+          "Option OBJ_07 — spa hand towel; category reference image",
+          "../references/262c45051fc673665620940ff081a236b9585b7dcd8323dda5cb2a767ba318b1.png"
+        ],
+        [
+          "Option OBJ_08 — left spa slipper; category reference image",
+          "../references/c7299af40cd415b674b2b8e113b42045a57145a2caa21b6abd709ad605743268.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "object_count__side_table",
+      "family": "object_count",
+      "instruction": "Search this house and count the side tables. For this task, count the small square pale-wood side tables and the small round side tables with light stone tops and cylindrical wooden bases. Do not count reception counters or storage cabinets. There is more than one room, and there may be side tables in more than one of them. When you have finished searching, tell me how many side tables there are in total, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 4,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "reception",
+          "relaxation_lounge"
+        ],
+        "must_open": [],
+        "must_see": [
+          "reception_side_table_0",
+          "relaxation_lounge_side_table_0",
+          "relaxation_lounge_side_table_1",
+          "relaxation_lounge_side_table_2"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "changing_room",
+          "dry_sauna",
+          "reception",
+          "relaxation_lounge",
+          "shower_room",
+          "steam_room"
+        ]
+      },
+      "kinds": [
+        "side_table"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "reception_side_table_0",
+        "relaxation_lounge_side_table_0",
+        "relaxation_lounge_side_table_1",
+        "relaxation_lounge_side_table_2"
+      ],
+      "answer_instances": [
+        "reception_side_table_0",
+        "relaxation_lounge_side_table_0",
+        "relaxation_lounge_side_table_1",
+        "relaxation_lounge_side_table_2"
+      ],
+      "plan": [],
+      "oracle_answer": "4",
+      "oracle_read": [
+        "count_seen",
+        "side_table",
+        [
+          "changing_room",
+          "dry_sauna",
+          "reception",
+          "relaxation_lounge",
+          "shower_room",
+          "steam_room"
+        ]
+      ],
+      "truth": {
+        "kind": "side_table",
+        "total": 4,
+        "noun": "side table",
+        "rooms": [
+          "reception",
+          "relaxation_lounge"
+        ],
+        "per_room": {
+          "reception": 1,
+          "relaxation_lounge": 3
+        },
+        "spawn": {
+          "x": -5.5,
+          "y": 1.5,
+          "z": 0.5,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "changing_room"
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'side table' -- the task is about every side table in the house, and the others need not look like this one; follow the counting scope stated in the task, including its exclusions",
+          "../references/5ab124cdf4453926b105db06fb18c02e358d7f77a4740fb2e99e8f3683f36344.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "object_distance__dry_sauna_sauna_bleacher_bench_0__relaxation_lounge_towel_storage_cabinet_0",
+      "family": "object_distance",
+      "instruction": "Find the sauna bleacher bench and the towel storage cabinet in this house; they are in different rooms. Then tell me roughly how far apart they are, in metres, as a number. Measure the straight line between them, not the distance you walked.",
+      "referents": [
+        "dry_sauna_sauna_bleacher_bench_0",
+        "relaxation_lounge_towel_storage_cabinet_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 6,
+      "answer_tolerance": 2.0,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "dry_sauna",
+          "relaxation_lounge"
+        ],
+        "must_open": [],
+        "must_see": [
+          "dry_sauna_sauna_bleacher_bench_0",
+          "relaxation_lounge_towel_storage_cabinet_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "dry_sauna",
+          "relaxation_lounge"
+        ]
+      },
+      "kinds": [
+        "sauna_bleacher_bench",
+        "towel_storage_cabinet"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "dry_sauna_sauna_bleacher_bench_0",
+        "relaxation_lounge_towel_storage_cabinet_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "6",
+      "oracle_read": [
+        "object_distance",
+        "dry_sauna_sauna_bleacher_bench_0",
+        "relaxation_lounge_towel_storage_cabinet_0"
+      ],
+      "truth": {
+        "a": "dry_sauna_sauna_bleacher_bench_0",
+        "b": "relaxation_lounge_towel_storage_cabinet_0",
+        "metres": 5.73,
+        "a_room": "dry_sauna",
+        "b_room": "relaxation_lounge",
+        "tol_m": 1,
+        "spawn": {
+          "x": -1.5,
+          "y": 1.5,
+          "z": 2.5,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "reception"
+        }
+      },
+      "goal_images": [
+        [
+          "the sauna bleacher bench this task refers to -- this exact object",
+          "../references/a132fb91243792f15a3cbb10e1ae928ed6eab3b0a5d8385b5277ca014efd2d70.png"
+        ],
+        [
+          "the towel storage cabinet this task refers to -- this exact object",
+          "../references/3d74a8245b7e8eaab9e165cfe6b734a23428c96e9f527da06c811f18c1449990.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relocation__changing_room_left_shower_slide_sandal_0__to__reception_reception_service_counter_0",
+      "family": "relocation",
+      "instruction": "Find either of the two shower sandals shown, pick it up, and put that same sandal on the reception service counter. Either the left-foot or the right-foot sandal is accepted; move only one.",
+      "referents": [
+        "changing_room_left_shower_slide_sandal_0",
+        "changing_room_right_spa_shower_sandal_0",
+        "reception_reception_service_counter_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('changing_room_left_shower_slide_sandal_0') or holding('changing_room_right_spa_shower_sandal_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('changing_room_left_shower_slide_sandal_0','reception_reception_service_counter_0') or on('changing_room_right_spa_shower_sandal_0','reception_reception_service_counter_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "changing_room",
+          "reception"
+        ],
+        "must_open": [],
+        "must_see": [
+          "changing_room_left_shower_slide_sandal_0",
+          "reception_reception_service_counter_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "changing_room",
+          "dry_sauna",
+          "reception",
+          "relaxation_lounge",
+          "shower_room",
+          "steam_room"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "changing_room_left_shower_slide_sandal_0",
+        "changing_room_right_spa_shower_sandal_0",
+        "reception_reception_service_counter_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "changing_room_left_shower_slide_sandal_0"
+        ],
+        [
+          "pick",
+          "changing_room_left_shower_slide_sandal_0"
+        ],
+        [
+          "navigate",
+          "reception_reception_service_counter_0"
+        ],
+        [
+          "place",
+          "reception_reception_service_counter_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "changing_room_left_shower_slide_sandal_0",
+        "from_room": "changing_room",
+        "from_room_id": "changing_room",
+        "dest": "reception_reception_service_counter_0",
+        "to_room": "reception",
+        "to_room_id": "reception",
+        "spawn": {
+          "x": 3.0,
+          "y": 1.5,
+          "z": -3.5,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "dry_sauna"
+        },
+        "accepted_objects": [
+          "changing_room_left_shower_slide_sandal_0",
+          "changing_room_right_spa_shower_sandal_0"
+        ],
+        "alternative_policy": "same individual picked, placed and stable; no pooling across sandals"
+      },
+      "goal_images": [
+        [
+          "either this left-foot shower sandal or the right-foot sandal shown next is accepted",
+          "../references/207dd9733dea7f516eb0046db626602f93d8726c16536ec331df9b847509a36c.png"
+        ],
+        [
+          "either this right-foot shower sandal or the left-foot sandal shown before is accepted",
+          "../references/f0fcd75a106573085cabad2506d5a25700be0ddd6f88576bc9ea913048330fea.png"
+        ],
+        [
+          "the reception service counter this task refers to -- this exact object",
+          "../references/f32d272a52d99e2012ca293ea2a8020ada37d47757275db842d18c57226dbbf1.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relocation__changing_room_swim_goggles_0__to__reception_side_table_0",
+      "family": "relocation",
+      "instruction": "Find the swim goggles, pick it up, and put it on the side table.",
+      "referents": [
+        "changing_room_swim_goggles_0",
+        "reception_side_table_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('changing_room_swim_goggles_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('changing_room_swim_goggles_0','reception_side_table_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "changing_room",
+          "reception"
+        ],
+        "must_open": [],
+        "must_see": [
+          "changing_room_swim_goggles_0",
+          "reception_side_table_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "changing_room",
+          "dry_sauna",
+          "reception",
+          "relaxation_lounge",
+          "shower_room",
+          "steam_room"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "changing_room_swim_goggles_0",
+        "reception_side_table_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "changing_room_swim_goggles_0"
+        ],
+        [
+          "pick",
+          "changing_room_swim_goggles_0"
+        ],
+        [
+          "navigate",
+          "reception_side_table_0"
+        ],
+        [
+          "place",
+          "reception_side_table_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "changing_room_swim_goggles_0",
+        "from_room": "changing_room",
+        "from_room_id": "changing_room",
+        "dest": "reception_side_table_0",
+        "to_room": "reception",
+        "to_room_id": "reception",
+        "spawn": {
+          "x": 2.0,
+          "y": 1.5,
+          "z": -7.0,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "shower_room"
+        }
+      },
+      "goal_images": [
+        [
+          "the swim goggles this task refers to -- this exact object",
+          "../references/cf2e4215616536ecfc31ce4ed44b1d908e49beb798cc38d731de91e645c9b840.png"
+        ],
+        [
+          "the side table this task refers to -- this exact object",
+          "../references/5ab124cdf4453926b105db06fb18c02e358d7f77a4740fb2e99e8f3683f36344.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relocation__shower_room_facial_cleanser_bottle_0__to__reception_reception_service_counter_0",
+      "family": "relocation",
+      "instruction": "Find the facial cleanser bottle: a short, flat, pale-grey bottle with rounded rectangular sides and a teal-grey flip-top cap. Pick it up and put it on the reception service counter.",
+      "referents": [
+        "shower_room_facial_cleanser_bottle_0",
+        "reception_reception_service_counter_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('shower_room_facial_cleanser_bottle_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('shower_room_facial_cleanser_bottle_0','reception_reception_service_counter_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "reception",
+          "shower_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "reception_reception_service_counter_0",
+          "shower_room_facial_cleanser_bottle_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "changing_room",
+          "dry_sauna",
+          "reception",
+          "relaxation_lounge",
+          "shower_room",
+          "steam_room"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "shower_room_facial_cleanser_bottle_0",
+        "reception_reception_service_counter_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "shower_room_facial_cleanser_bottle_0"
+        ],
+        [
+          "pick",
+          "shower_room_facial_cleanser_bottle_0"
+        ],
+        [
+          "navigate",
+          "reception_reception_service_counter_0"
+        ],
+        [
+          "place",
+          "reception_reception_service_counter_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "shower_room_facial_cleanser_bottle_0",
+        "from_room": "shower_room",
+        "from_room_id": "shower_room",
+        "dest": "reception_reception_service_counter_0",
+        "to_room": "reception",
+        "to_room_id": "reception",
+        "spawn": {
+          "x": 2.25,
+          "y": 1.5,
+          "z": 4.5,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "relaxation_lounge"
+        }
+      },
+      "goal_images": [
+        [
+          "target: short, flat, pale-grey bottle with rounded rectangular sides and a teal-grey flip-top cap",
+          "../references/4608ea0a86c54dc32974a2e078f5fefb49b0fb2747c0df7b3d041deef8c55cb3.png"
+        ],
+        [
+          "the reception service counter this task refers to -- this exact object",
+          "../references/f32d272a52d99e2012ca293ea2a8020ada37d47757275db842d18c57226dbbf1.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_localization__changing_room_spa_towel_0",
+      "family": "room_localization",
+      "instruction": "Find the spa towel somewhere in this house, then tell me which room it is in. If there is no spa towel here, choose NOT_PRESENT instead of guessing a room.\n\nRoom choices (use exactly one option key):\n- ROOM_01 — changing room\n- ROOM_02 — dry sauna\n- ROOM_03 — reception\n- ROOM_04 — relaxation lounge\n- ROOM_05 — shower room\n- ROOM_06 — steam room\n- NOT_PRESENT — not present\nReply with only one option key, for example ROOM_01 or NOT_PRESENT.",
+      "referents": [
+        "changing_room_spa_towel_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "ROOM_01"
+        ]
+      ],
+      "answer_choices": [
+        "ROOM_01",
+        "ROOM_02",
+        "ROOM_03",
+        "ROOM_04",
+        "ROOM_05",
+        "ROOM_06",
+        "NOT_PRESENT"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "changing_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "changing_room_spa_towel_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "changing_room",
+          "dry_sauna",
+          "reception",
+          "relaxation_lounge",
+          "shower_room",
+          "steam_room"
+        ]
+      },
+      "kinds": [
+        "spa_towel"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "changing_room_spa_towel_0"
+      ],
+      "answer_instances": [
+        "changing_room_spa_towel_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "changing_room_spa_towel_0"
+        ]
+      ],
+      "oracle_answer": "changing room",
+      "oracle_read": [
+        "room_here"
+      ],
+      "truth": {
+        "alias": "changing_room_spa_towel_0",
+        "kind": "spa_towel",
+        "room": "changing_room",
+        "room_id": "changing_room",
+        "room_name": "changing room",
+        "spawn": {
+          "x": 4.0,
+          "y": 1.5,
+          "z": 4.5,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "relaxation_lounge"
+        },
+        "room_answer_choice": "ROOM_01",
+        "room_answer_label": "changing room",
+        "absence_option": "NOT_PRESENT"
+      },
+      "answer_choice_labels": [
+        "changing room",
+        "dry sauna",
+        "reception",
+        "relaxation lounge",
+        "shower room",
+        "steam room",
+        "not present"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the spa towel this task refers to -- this exact object",
+          "../references/4e74d37c9574556c110e5cd24a5721dd2739c918d6e013a93f1bc4630b0949e7.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_localization__relaxation_lounge_bath_towel_0",
+      "family": "room_localization",
+      "instruction": "Find the bath towel somewhere in this house, then tell me which room it is in. If there is no bath towel here, choose NOT_PRESENT instead of guessing a room.\n\nRoom choices (use exactly one option key):\n- ROOM_01 — changing room\n- ROOM_02 — dry sauna\n- ROOM_03 — reception\n- ROOM_04 — relaxation lounge\n- ROOM_05 — shower room\n- ROOM_06 — steam room\n- NOT_PRESENT — not present\nReply with only one option key, for example ROOM_01 or NOT_PRESENT.",
+      "referents": [
+        "relaxation_lounge_bath_towel_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "ROOM_04"
+        ]
+      ],
+      "answer_choices": [
+        "ROOM_01",
+        "ROOM_02",
+        "ROOM_03",
+        "ROOM_04",
+        "ROOM_05",
+        "ROOM_06",
+        "NOT_PRESENT"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "relaxation_lounge"
+        ],
+        "must_open": [],
+        "must_see": [
+          "relaxation_lounge_bath_towel_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "changing_room",
+          "dry_sauna",
+          "reception",
+          "relaxation_lounge",
+          "shower_room",
+          "steam_room"
+        ]
+      },
+      "kinds": [
+        "bath_towel"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "relaxation_lounge_bath_towel_0"
+      ],
+      "answer_instances": [
+        "relaxation_lounge_bath_towel_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "relaxation_lounge_bath_towel_0"
+        ]
+      ],
+      "oracle_answer": "relaxation lounge",
+      "oracle_read": [
+        "room_here"
+      ],
+      "truth": {
+        "alias": "relaxation_lounge_bath_towel_0",
+        "kind": "bath_towel",
+        "room": "relaxation_lounge",
+        "room_id": "relaxation_lounge",
+        "room_name": "relaxation lounge",
+        "spawn": {
+          "x": -3.0,
+          "y": 1.5,
+          "z": 3.25,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "reception"
+        },
+        "room_answer_choice": "ROOM_04",
+        "room_answer_label": "relaxation lounge",
+        "absence_option": "NOT_PRESENT"
+      },
+      "answer_choice_labels": [
+        "changing room",
+        "dry sauna",
+        "reception",
+        "relaxation lounge",
+        "shower room",
+        "steam room",
+        "not present"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the bath towel this task refers to -- this exact object",
+          "../references/e07328b86876d85c30696259015897781a15899fba1598c6e52fb65b6d49c972.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_localization__relaxation_lounge_spa_hand_towel_0",
+      "family": "room_localization",
+      "instruction": "Find the ivory spa hand towel resting on a small round table with a light stone top and a cylindrical wooden base. Tell me which room contains that towel. If no towel matches this description, choose NOT_PRESENT instead of guessing a room.\n\nRoom choices (use exactly one option key):\n- ROOM_01 — changing room\n- ROOM_02 — dry sauna\n- ROOM_03 — reception\n- ROOM_04 — relaxation lounge\n- ROOM_05 — shower room\n- ROOM_06 — steam room\n- NOT_PRESENT — not present\nReply with only one option key, for example ROOM_01 or NOT_PRESENT.",
+      "referents": [
+        "relaxation_lounge_spa_hand_towel_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "ROOM_04"
+        ]
+      ],
+      "answer_choices": [
+        "ROOM_01",
+        "ROOM_02",
+        "ROOM_03",
+        "ROOM_04",
+        "ROOM_05",
+        "ROOM_06",
+        "NOT_PRESENT"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "relaxation_lounge"
+        ],
+        "must_open": [],
+        "must_see": [
+          "relaxation_lounge_spa_hand_towel_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "changing_room",
+          "dry_sauna",
+          "reception",
+          "relaxation_lounge",
+          "shower_room",
+          "steam_room"
+        ]
+      },
+      "kinds": [
+        "spa_hand_towel"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "relaxation_lounge_spa_hand_towel_0"
+      ],
+      "answer_instances": [
+        "relaxation_lounge_spa_hand_towel_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "relaxation_lounge_spa_hand_towel_0"
+        ]
+      ],
+      "oracle_answer": "relaxation lounge",
+      "oracle_read": [
+        "room_here"
+      ],
+      "truth": {
+        "alias": "relaxation_lounge_spa_hand_towel_0",
+        "kind": "spa_hand_towel",
+        "room": "relaxation_lounge",
+        "room_id": "relaxation_lounge",
+        "room_name": "relaxation lounge",
+        "spawn": {
+          "x": 1.5,
+          "y": 1.5,
+          "z": -1.75,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "dry_sauna"
+        },
+        "room_answer_choice": "ROOM_04",
+        "room_answer_label": "relaxation lounge",
+        "absence_option": "NOT_PRESENT"
+      },
+      "answer_choice_labels": [
+        "changing room",
+        "dry sauna",
+        "reception",
+        "relaxation lounge",
+        "shower room",
+        "steam room",
+        "not present"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "target towel: identify it by the round light-stone-top table with a cylindrical wooden base described in the task",
+          "../references/262c45051fc673665620940ff081a236b9585b7dcd8323dda5cb2a767ba318b1.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_area__reception",
+      "family": "room_area",
+      "instruction": "Find the reception in this house, then tell me roughly how big its floor is, in square metres, as a number. I want the floor area of that one room, measured inside its walls -- not the whole house, and not the other rooms.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m2",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 27,
+      "answer_tolerance": 6.75,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "reception"
+        ],
+        "must_open": [],
+        "must_see": [],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "changing_room",
+          "dry_sauna",
+          "reception",
+          "relaxation_lounge",
+          "shower_room",
+          "steam_room"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "27",
+      "oracle_read": [
+        "room_area",
+        "reception"
+      ],
+      "truth": {
+        "room": "reception",
+        "name": "reception",
+        "m2": 27,
+        "tol_m2": 3,
+        "spawn": {
+          "x": -1.0,
+          "y": 1.5,
+          "z": -4.0,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "changing_room"
+        }
+      },
+      "goal_images": []
+    },
+    {
+      "task_id": "room_area__shower_room",
+      "family": "room_area",
+      "instruction": "Find the shower room in this house, then tell me roughly how big its floor is, in square metres, as a number. I want the floor area of that one room, measured inside its walls -- not the whole house, and not the other rooms.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m2",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 40,
+      "answer_tolerance": 10.0,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "shower_room"
+        ],
+        "must_open": [],
+        "must_see": [],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "changing_room",
+          "dry_sauna",
+          "reception",
+          "relaxation_lounge",
+          "shower_room",
+          "steam_room"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "40",
+      "oracle_read": [
+        "room_area",
+        "shower_room"
+      ],
+      "truth": {
+        "room": "shower_room",
+        "name": "shower room",
+        "m2": 40,
+        "tol_m2": 5,
+        "spawn": {
+          "x": 1.5,
+          "y": 1.5,
+          "z": -3.5,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "dry_sauna"
+        }
+      },
+      "goal_images": []
+    },
+    {
+      "task_id": "room_count__side_table",
+      "family": "room_count",
+      "instruction": "Search this house and find out which rooms contain at least one side table. For this task, count the small square pale-wood side tables and the small round side tables with light stone tops and cylindrical wooden bases. Do not count reception counters or storage cabinets. Count two places as different rooms if you have to go through a doorway to get from one to the other. Some rooms contain no side tables at all, and a room with several side tables still counts once. Tell me how many rooms contain at least one side table, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 2,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "reception",
+          "relaxation_lounge"
+        ],
+        "must_open": [],
+        "must_see": [
+          "reception_side_table_0",
+          "relaxation_lounge_side_table_0",
+          "relaxation_lounge_side_table_1",
+          "relaxation_lounge_side_table_2"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "changing_room",
+          "dry_sauna",
+          "reception",
+          "relaxation_lounge",
+          "shower_room",
+          "steam_room"
+        ]
+      },
+      "kinds": [
+        "side_table"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "reception_side_table_0",
+        "relaxation_lounge_side_table_0",
+        "relaxation_lounge_side_table_1",
+        "relaxation_lounge_side_table_2"
+      ],
+      "answer_instances": [
+        "reception_side_table_0",
+        "relaxation_lounge_side_table_0",
+        "relaxation_lounge_side_table_1",
+        "relaxation_lounge_side_table_2"
+      ],
+      "plan": [],
+      "oracle_answer": "2",
+      "oracle_read": [
+        "room_count_seen",
+        "side_table",
+        [
+          "changing_room",
+          "dry_sauna",
+          "reception",
+          "relaxation_lounge",
+          "shower_room",
+          "steam_room"
+        ],
+        []
+      ],
+      "truth": {
+        "kind": "side_table",
+        "n_rooms": 2,
+        "noun": "side table",
+        "rooms": [
+          "reception",
+          "relaxation_lounge"
+        ],
+        "places": [
+          [
+            "reception"
+          ],
+          [
+            "relaxation_lounge"
+          ]
+        ],
+        "n_places_in_scope": 6,
+        "total": 4,
+        "spawn": {
+          "x": 4.0,
+          "y": 1.5,
+          "z": -4.5,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "shower_room"
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'side table' -- the task is about every side table in the house, and the others need not look like this one; follow the counting scope stated in the task, including its exclusions",
+          "../references/5ab124cdf4453926b105db06fb18c02e358d7f77a4740fb2e99e8f3683f36344.png"
+        ]
+      ]
+    }
+  ],
+  "dataset_version": "1.1"
+}

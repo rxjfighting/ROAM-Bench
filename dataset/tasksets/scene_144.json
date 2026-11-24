@@ -1,0 +1,325 @@
+{
+  "schema_version": 4,
+  "benchmark": "ROAM-Bench",
+  "scene": "scene_144",
+  "spawn": {
+    "x": 7.0,
+    "y": 1.5,
+    "z": 5.0,
+    "yaw_deg": 0.0,
+    "horizon_deg": 0.0,
+    "room": "courtroom"
+  },
+  "specs": [
+    {
+      "task_id": "gap_width__courtroom_judges_bench_0__courtroom_witness_stand_0",
+      "family": "gap_width",
+      "instruction": "Find the judges bench and the witness stand in this house; they are in the same room, standing apart. Then tell me roughly how wide the clear gap between them is, in centimetres, as a number. Measure the empty floor from the edge of one to the edge of the other, not the distance between their centres.",
+      "referents": [
+        "courtroom_judges_bench_0",
+        "courtroom_witness_stand_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_choice_labels": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "cm",
+      "answer_match": "count",
+      "max_steps": 25,
+      "answer_number": 124,
+      "answer_tolerance": 10,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "courtroom"
+        ],
+        "must_open": [],
+        "must_see": [
+          "courtroom_judges_bench_0",
+          "courtroom_witness_stand_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "courtroom"
+        ]
+      },
+      "kinds": [
+        "judges_bench",
+        "witness_stand"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "courtroom_judges_bench_0",
+        "courtroom_witness_stand_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "124",
+      "oracle_read": [
+        "gap_width",
+        "courtroom_judges_bench_0",
+        "courtroom_witness_stand_0"
+      ],
+      "truth": {
+        "a": "courtroom_judges_bench_0",
+        "b": "courtroom_witness_stand_0",
+        "cm": 124,
+        "room": "courtroom",
+        "tol_cm": 10,
+        "spawn": {
+          "x": 7.0,
+          "y": 1.5,
+          "z": 5.0,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "courtroom"
+        },
+        "reference_gap_cm": 124.25996393625967,
+        "reference_gap_geometry": "projected_visual_mesh_outline"
+      },
+      "goal_images": [
+        [
+          "the judges bench this task refers to -- this exact object",
+          "../references/d2a4f0581bbd1caef67129bd1d24109e24daa733aa1fc59f4ea141108c27db60.png"
+        ],
+        [
+          "the witness stand this task refers to -- this exact object",
+          "../references/afece0bef9d1c2595a1df53ae361838ecb975434781fb40f27d0d6cac3276b46.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_localization__courtroom_water_tumbler_0",
+      "family": "room_localization",
+      "instruction": "Find the water tumbler somewhere in this house, then tell me which room it is in. If there is no water tumbler here, choose NOT_PRESENT instead of guessing a room.\n\nRoom choices (use exactly one option key):\n- ROOM_01 — courtroom\n- NOT_PRESENT — not present\nReply with only one option key, for example ROOM_01 or NOT_PRESENT.",
+      "referents": [
+        "courtroom_water_tumbler_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "ROOM_01"
+        ]
+      ],
+      "answer_choices": [
+        "ROOM_01",
+        "NOT_PRESENT"
+      ],
+      "answer_choice_labels": [
+        "courtroom",
+        "not present"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 25,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "courtroom"
+        ],
+        "must_open": [],
+        "must_see": [
+          "courtroom_water_tumbler_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "courtroom"
+        ]
+      },
+      "kinds": [
+        "water_tumbler"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "courtroom_water_tumbler_0"
+      ],
+      "answer_instances": [
+        "courtroom_water_tumbler_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "courtroom_water_tumbler_0"
+        ]
+      ],
+      "oracle_answer": "courtroom",
+      "oracle_read": [
+        "room_here"
+      ],
+      "truth": {
+        "alias": "courtroom_water_tumbler_0",
+        "kind": "water_tumbler",
+        "room": "courtroom",
+        "room_id": "courtroom",
+        "room_name": "courtroom",
+        "spawn": {
+          "x": 0.5,
+          "y": 1.5,
+          "z": 3.0,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "courtroom"
+        },
+        "room_answer_choice": "ROOM_01",
+        "room_answer_label": "courtroom",
+        "absence_option": "NOT_PRESENT"
+      },
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the water tumbler this task refers to -- this exact object",
+          "../references/6b784361986ec46219626cb09af120a3cd2bcc8a2e1128520530c17ef2b66278.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_localization__courtroom_water_tumbler_1",
+      "family": "room_localization",
+      "instruction": "Find the water tumbler somewhere in this house, then tell me which room it is in. If there is no water tumbler here, choose NOT_PRESENT instead of guessing a room.\n\nRoom choices (use exactly one option key):\n- ROOM_01 — courtroom\n- NOT_PRESENT — not present\nReply with only one option key, for example ROOM_01 or NOT_PRESENT.",
+      "referents": [
+        "courtroom_water_tumbler_1"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "ROOM_01"
+        ]
+      ],
+      "answer_choices": [
+        "ROOM_01",
+        "NOT_PRESENT"
+      ],
+      "answer_choice_labels": [
+        "courtroom",
+        "not present"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 25,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "courtroom"
+        ],
+        "must_open": [],
+        "must_see": [
+          "courtroom_water_tumbler_1"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "courtroom"
+        ]
+      },
+      "kinds": [
+        "water_tumbler"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "courtroom_water_tumbler_1"
+      ],
+      "answer_instances": [
+        "courtroom_water_tumbler_1"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "courtroom_water_tumbler_1"
+        ]
+      ],
+      "oracle_answer": "courtroom",
+      "oracle_read": [
+        "room_here"
+      ],
+      "truth": {
+        "alias": "courtroom_water_tumbler_1",
+        "kind": "water_tumbler",
+        "room": "courtroom",
+        "room_id": "courtroom",
+        "room_name": "courtroom",
+        "spawn": {
+          "x": 12.0,
+          "y": 1.5,
+          "z": 4.75,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "courtroom"
+        },
+        "room_answer_choice": "ROOM_01",
+        "room_answer_label": "courtroom",
+        "absence_option": "NOT_PRESENT"
+      },
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the water tumbler this task refers to -- this exact object",
+          "../references/acb248214b734e2301b71d2d1fe2e3cd4cac43987a3ac96f2cc59cc47bf85210.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_area__courtroom",
+      "family": "room_area",
+      "instruction": "Find the courtroom in this house, then tell me roughly how big its floor is, in square metres, as a number. I want the floor area of that one room, measured inside its walls -- not the whole house, and not the other rooms.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_choice_labels": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m2",
+      "answer_match": "count",
+      "max_steps": 25,
+      "answer_number": 140,
+      "answer_tolerance": 35.0,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "courtroom"
+        ],
+        "must_open": [],
+        "must_see": [],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "courtroom"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "140",
+      "oracle_read": [
+        "room_area",
+        "courtroom"
+      ],
+      "truth": {
+        "room": "courtroom",
+        "name": "courtroom",
+        "m2": 140,
+        "tol_m2": 17,
+        "spawn": {
+          "x": 13.5,
+          "y": 1.5,
+          "z": 9.5,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "courtroom"
+        }
+      },
+      "goal_images": []
+    }
+  ],
+  "dataset_version": "1.1"
+}

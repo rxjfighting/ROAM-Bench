@@ -1,0 +1,25 @@
+{
+  "benchmark": "ROAM-Bench",
+  "task_count": 250,
+  "scene_count": 27,
+  "reference_image_count": 388,
+  "components": {
+    "code": {
+      "directory": "code",
+      "file_count": 117,
+      "bytes": 1190080
+    },
+    "dataset": {
+      "directory": "dataset",
+      "file_count": 418,
+      "bytes": 11739875
+    },
+    "media": {
+      "directory": "media",
+      "file_count": 3,
+      "bytes": 12121448
+    }
+  },
+  "scene_archives": "code/scene_archives.json",
+  "github_branch": "main"
+}

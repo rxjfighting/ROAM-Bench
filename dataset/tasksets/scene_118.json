@@ -1,0 +1,1170 @@
+{
+  "schema_version": 4,
+  "benchmark": "ROAM-Bench",
+  "scene": "scene_118",
+  "spawn": {
+    "x": 3.5,
+    "y": 1.5,
+    "z": 1.75,
+    "yaw_deg": 0.0,
+    "horizon_deg": 0.0,
+    "room": "living_room"
+  },
+  "specs": [
+    {
+      "task_id": "object_distance__bathroom_bathroom_vanity_0__kitchen_kitchen_range_cabinet_0",
+      "family": "object_distance",
+      "instruction": "Find the bathroom vanity and the kitchen range cabinet in this house; they are in different rooms. Then tell me roughly how far apart they are, in metres, as a number. Measure the straight line between them, not the distance you walked.",
+      "referents": [
+        "bathroom_bathroom_vanity_0",
+        "kitchen_kitchen_range_cabinet_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m",
+      "answer_match": "count",
+      "max_steps": 175,
+      "answer_number": 8,
+      "answer_tolerance": 2.0,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "bathroom",
+          "kitchen"
+        ],
+        "must_open": [],
+        "must_see": [
+          "bathroom_bathroom_vanity_0",
+          "kitchen_kitchen_range_cabinet_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "bathroom",
+          "kitchen"
+        ]
+      },
+      "kinds": [
+        "bathroom_vanity",
+        "kitchen_range_cabinet"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "bathroom_bathroom_vanity_0",
+        "kitchen_kitchen_range_cabinet_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "8",
+      "oracle_read": [
+        "object_distance",
+        "bathroom_bathroom_vanity_0",
+        "kitchen_kitchen_range_cabinet_0"
+      ],
+      "truth": {
+        "a": "bathroom_bathroom_vanity_0",
+        "b": "kitchen_kitchen_range_cabinet_0",
+        "metres": 7.99,
+        "a_room": "bathroom",
+        "b_room": "kitchen",
+        "tol_m": 1,
+        "spawn": {
+          "x": 0.95,
+          "y": 1.5,
+          "z": 7.0,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "dining_room"
+        }
+      },
+      "goal_images": [
+        [
+          "the bathroom vanity this task refers to -- this exact object",
+          "../references/ebf9a5feb45776839e2f5b1be70f5a634c2b69d81d02fa12ad708972623f0876.png"
+        ],
+        [
+          "the kitchen range cabinet this task refers to -- this exact object",
+          "../references/4906cc52467c742cf38c4e8e39e3629140c0e2cbddc425c0a05150ac7409480b.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "gap_width__bathroom_bathtub_0__bathroom_toilet_0",
+      "family": "gap_width",
+      "instruction": "Find the bathtub and the toilet in this house; they are in the same room, standing apart. Then tell me roughly how wide the clear gap between them is, in centimetres, as a number. Measure the empty floor from the edge of one to the edge of the other, not the distance between their centres.",
+      "referents": [
+        "bathroom_bathtub_0",
+        "bathroom_toilet_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "cm",
+      "answer_match": "count",
+      "max_steps": 175,
+      "answer_number": 103,
+      "answer_tolerance": 10,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "bathroom"
+        ],
+        "must_open": [],
+        "must_see": [
+          "bathroom_bathtub_0",
+          "bathroom_toilet_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "bathroom"
+        ]
+      },
+      "kinds": [
+        "bathtub",
+        "toilet"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "bathroom_bathtub_0",
+        "bathroom_toilet_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "103",
+      "oracle_read": [
+        "gap_width",
+        "bathroom_bathtub_0",
+        "bathroom_toilet_0"
+      ],
+      "truth": {
+        "a": "bathroom_bathtub_0",
+        "b": "bathroom_toilet_0",
+        "cm": 103,
+        "room": "bathroom",
+        "tol_cm": 10,
+        "spawn": {
+          "x": 4.0,
+          "y": 1.5,
+          "z": 3.75,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "living_room"
+        }
+      },
+      "goal_images": [
+        [
+          "the bathtub this task refers to -- this exact object",
+          "../references/faf08a6b7d6a361afd0299530592791295b579c7df0cffcb7d2eae1a7cba8dd3.png"
+        ],
+        [
+          "the toilet this task refers to -- this exact object",
+          "../references/0a0ce9c54b5bca2da8001641da2fb51c9e6fc3d0d68c9188bb1d8c650cd6ce59.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "gap_width__dining_room_dining_table_0__dining_room_sideboard_0",
+      "family": "gap_width",
+      "instruction": "Find the dining table and the sideboard in this house; they are in the same room, standing apart. Then tell me roughly how wide the clear gap between them is, in centimetres, as a number. Measure the empty floor from the edge of one to the edge of the other, not the distance between their centres.",
+      "referents": [
+        "dining_room_dining_table_0",
+        "dining_room_sideboard_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "cm",
+      "answer_match": "count",
+      "max_steps": 175,
+      "answer_number": 74,
+      "answer_tolerance": 10,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "dining_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "dining_room_dining_table_0",
+          "dining_room_sideboard_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "dining_room"
+        ]
+      },
+      "kinds": [
+        "dining_table",
+        "sideboard"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "dining_room_dining_table_0",
+        "dining_room_sideboard_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "74",
+      "oracle_read": [
+        "gap_width",
+        "dining_room_dining_table_0",
+        "dining_room_sideboard_0"
+      ],
+      "truth": {
+        "a": "dining_room_dining_table_0",
+        "b": "dining_room_sideboard_0",
+        "cm": 74,
+        "room": "dining_room",
+        "tol_cm": 10,
+        "spawn": {
+          "x": 6.0,
+          "y": 1.5,
+          "z": 1.75,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "living_room"
+        }
+      },
+      "goal_images": [
+        [
+          "the dining table this task refers to -- this exact object",
+          "../references/fe018b0fb5313c0c7116280d39b2315f7b2dc5eb5a0eeb988076561171d3cd3f.png"
+        ],
+        [
+          "the sideboard this task refers to -- this exact object",
+          "../references/0f35ff4d131e30e448174207d19bf7e335278d26fd1397e52adca377e70dfef3.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "gap_width__kitchen_breakfast_island_table_0__kitchen_refrigerator_0",
+      "family": "gap_width",
+      "instruction": "Find the breakfast island table and the refrigerator in this house; they are in the same room, standing apart. Then tell me roughly how wide the clear gap between them is, in centimetres, as a number. Measure the empty floor from the edge of one to the edge of the other, not the distance between their centres.",
+      "referents": [
+        "kitchen_breakfast_island_table_0",
+        "kitchen_refrigerator_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "cm",
+      "answer_match": "count",
+      "max_steps": 175,
+      "answer_number": 68,
+      "answer_tolerance": 10,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "kitchen"
+        ],
+        "must_open": [],
+        "must_see": [
+          "kitchen_breakfast_island_table_0",
+          "kitchen_refrigerator_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "kitchen"
+        ]
+      },
+      "kinds": [
+        "breakfast_island_table",
+        "refrigerator"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "kitchen_breakfast_island_table_0",
+        "kitchen_refrigerator_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "68",
+      "oracle_read": [
+        "gap_width",
+        "kitchen_breakfast_island_table_0",
+        "kitchen_refrigerator_0"
+      ],
+      "truth": {
+        "a": "kitchen_breakfast_island_table_0",
+        "b": "kitchen_refrigerator_0",
+        "cm": 68,
+        "room": "kitchen",
+        "tol_cm": 10,
+        "spawn": {
+          "x": 7.0,
+          "y": 1.5,
+          "z": 0.76,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "master_bedroom"
+        }
+      },
+      "goal_images": [
+        [
+          "the breakfast island table this task refers to -- this exact object",
+          "../references/32348de431bf9079a6769a1b68869d1cd9262bee8050447f973b0c1d9f7fa096.png"
+        ],
+        [
+          "the refrigerator this task refers to -- this exact object",
+          "../references/dd5b554f09a470fa8fd451d0c27427c00880f5e03df1f619174929b6fa8d86c4.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "gap_width__kitchen_breakfast_island_table_0__kitchen_utility_counter_0",
+      "family": "gap_width",
+      "instruction": "Find the breakfast island table and the utility counter in this house; they are in the same room, standing apart. Then tell me roughly how wide the clear gap between them is, in centimetres, as a number. Measure the empty floor from the edge of one to the edge of the other, not the distance between their centres.",
+      "referents": [
+        "kitchen_breakfast_island_table_0",
+        "kitchen_utility_counter_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "cm",
+      "answer_match": "count",
+      "max_steps": 175,
+      "answer_number": 85,
+      "answer_tolerance": 10,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "kitchen"
+        ],
+        "must_open": [],
+        "must_see": [
+          "kitchen_breakfast_island_table_0",
+          "kitchen_utility_counter_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "kitchen"
+        ]
+      },
+      "kinds": [
+        "breakfast_island_table",
+        "utility_counter"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "kitchen_breakfast_island_table_0",
+        "kitchen_utility_counter_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "85",
+      "oracle_read": [
+        "gap_width",
+        "kitchen_breakfast_island_table_0",
+        "kitchen_utility_counter_0"
+      ],
+      "truth": {
+        "a": "kitchen_breakfast_island_table_0",
+        "b": "kitchen_utility_counter_0",
+        "cm": 85,
+        "room": "kitchen",
+        "tol_cm": 10,
+        "spawn": {
+          "x": 0.45,
+          "y": 1.5,
+          "z": 5.5,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "dining_room"
+        }
+      },
+      "goal_images": [
+        [
+          "the breakfast island table this task refers to -- this exact object",
+          "../references/32348de431bf9079a6769a1b68869d1cd9262bee8050447f973b0c1d9f7fa096.png"
+        ],
+        [
+          "the utility counter this task refers to -- this exact object",
+          "../references/192c62732f3bc63402631fc8a37efcbbebe28658267305ef5ba5d81a8b4d67a4.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "gap_width__living_room_bookcase_0__living_room_sectional_sofa_0",
+      "family": "gap_width",
+      "instruction": "Find the bookcase and the sectional sofa in this house; they are in the same room, standing apart. Then tell me roughly how wide the clear gap between them is, in centimetres, as a number. Measure the empty floor from the edge of one to the edge of the other, not the distance between their centres.",
+      "referents": [
+        "living_room_bookcase_0",
+        "living_room_sectional_sofa_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "cm",
+      "answer_match": "count",
+      "max_steps": 175,
+      "answer_number": 73,
+      "answer_tolerance": 10,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "living_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "living_room_bookcase_0",
+          "living_room_sectional_sofa_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "living_room"
+        ]
+      },
+      "kinds": [
+        "bookcase",
+        "sectional_sofa"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "living_room_bookcase_0",
+        "living_room_sectional_sofa_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "73",
+      "oracle_read": [
+        "gap_width",
+        "living_room_bookcase_0",
+        "living_room_sectional_sofa_0"
+      ],
+      "truth": {
+        "a": "living_room_bookcase_0",
+        "b": "living_room_sectional_sofa_0",
+        "cm": 73,
+        "room": "living_room",
+        "tol_cm": 10,
+        "spawn": {
+          "x": 0.7,
+          "y": 1.5,
+          "z": -1.2,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "bathroom"
+        }
+      },
+      "goal_images": [
+        [
+          "the bookcase this task refers to -- this exact object",
+          "../references/993bb692791feba80d12d61e50a4114e4ba443f79cbcdbf8d94f70fe0ad2b70d.png"
+        ],
+        [
+          "the sectional sofa this task refers to -- this exact object",
+          "../references/f52163520bee8e960768a2abfdd514913eb4d0b19f227588613a55353e1f720d.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "gap_width__third_bedroom_garment_rack_0__third_bedroom_writing_desk_0",
+      "family": "gap_width",
+      "instruction": "Find the garment rack and the writing desk in this house; they are in the same room, standing apart. Then tell me roughly how wide the clear gap between them is, in centimetres, as a number. Measure the empty floor from the edge of one to the edge of the other, not the distance between their centres.",
+      "referents": [
+        "third_bedroom_garment_rack_0",
+        "third_bedroom_writing_desk_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "cm",
+      "answer_match": "count",
+      "max_steps": 175,
+      "answer_number": 134,
+      "answer_tolerance": 10,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "third_bedroom"
+        ],
+        "must_open": [],
+        "must_see": [
+          "third_bedroom_garment_rack_0",
+          "third_bedroom_writing_desk_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "third_bedroom"
+        ]
+      },
+      "kinds": [
+        "garment_rack",
+        "writing_desk"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "third_bedroom_garment_rack_0",
+        "third_bedroom_writing_desk_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "134",
+      "oracle_read": [
+        "gap_width",
+        "third_bedroom_garment_rack_0",
+        "third_bedroom_writing_desk_0"
+      ],
+      "truth": {
+        "a": "third_bedroom_garment_rack_0",
+        "b": "third_bedroom_writing_desk_0",
+        "cm": 134,
+        "room": "third_bedroom",
+        "tol_cm": 10,
+        "spawn": {
+          "x": -0.3,
+          "y": 1.5,
+          "z": 8.25,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "dining_room"
+        }
+      },
+      "goal_images": [
+        [
+          "the garment rack this task refers to -- this exact object",
+          "../references/5189c3d90dc20c0fbed11c873d10d37852c9a134e167e8bef4f49c4b7b99501c.png"
+        ],
+        [
+          "the writing desk this task refers to -- this exact object",
+          "../references/e804261f151680eda4892e01db4eccec03722c9d285109c0d75065c91b036fe7.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__second_bedroom_writing_desk_0__kitchen_refrigerator_0",
+      "family": "path_integration",
+      "instruction": "Find the writing desk and then the refrigerator; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "second_bedroom_writing_desk_0",
+        "kitchen_refrigerator_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 175,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "kitchen",
+          "second_bedroom"
+        ],
+        "must_open": [],
+        "must_see": [
+          "kitchen_refrigerator_0",
+          "second_bedroom_writing_desk_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "kitchen",
+          "second_bedroom"
+        ]
+      },
+      "kinds": [
+        "writing_desk",
+        "refrigerator"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "second_bedroom_writing_desk_0",
+        "kitchen_refrigerator_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "second_bedroom_writing_desk_0",
+        "kitchen_refrigerator_0"
+      ],
+      "truth": {
+        "x": "second_bedroom_writing_desk_0",
+        "y": "kitchen_refrigerator_0",
+        "x_room": "second_bedroom",
+        "y_room": "kitchen",
+        "leg_m": 10.66,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": 8.5,
+          "y": 1.5,
+          "z": -1.24,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "master_bedroom"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the writing desk this task refers to -- this exact object",
+          "../references/80c7434bce892a2a6fe8d89fbd8d8557290dbdf97f78c5c1af4b57b4b277e079.png"
+        ],
+        [
+          "the refrigerator this task refers to -- this exact object",
+          "../references/dd5b554f09a470fa8fd451d0c27427c00880f5e03df1f619174929b6fa8d86c4.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__third_bedroom_writing_desk_0__bathroom_bathtub_0",
+      "family": "path_integration",
+      "instruction": "Find the writing desk and then the bathtub; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "third_bedroom_writing_desk_0",
+        "bathroom_bathtub_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 175,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "bathroom",
+          "third_bedroom"
+        ],
+        "must_open": [],
+        "must_see": [
+          "bathroom_bathtub_0",
+          "third_bedroom_writing_desk_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "bathroom",
+          "third_bedroom"
+        ]
+      },
+      "kinds": [
+        "writing_desk",
+        "bathtub"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "third_bedroom_writing_desk_0",
+        "bathroom_bathtub_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "third_bedroom_writing_desk_0",
+        "bathroom_bathtub_0"
+      ],
+      "truth": {
+        "x": "third_bedroom_writing_desk_0",
+        "y": "bathroom_bathtub_0",
+        "x_room": "third_bedroom",
+        "y_room": "bathroom",
+        "leg_m": 11.28,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": 5.2,
+          "y": 1.5,
+          "z": -0.35,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "second_bedroom"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the writing desk this task refers to -- this exact object",
+          "../references/e804261f151680eda4892e01db4eccec03722c9d285109c0d75065c91b036fe7.png"
+        ],
+        [
+          "the bathtub this task refers to -- this exact object",
+          "../references/faf08a6b7d6a361afd0299530592791295b579c7df0cffcb7d2eae1a7cba8dd3.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relative_direction__living_room_sectional_sofa_0__living_room_coffee_table_0__master_bedroom_wardrobe_0",
+      "family": "relative_direction",
+      "instruction": "Find the sectional sofa and the coffee table; they are in the same room. Also find the wardrobe, which is somewhere else in this house. Then answer this: if you stood at the sectional sofa and faced the coffee table, which direction would the wardrobe be in? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "living_room_sectional_sofa_0",
+        "living_room_coffee_table_0",
+        "master_bedroom_wardrobe_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 175,
+      "answer_number": 45,
+      "answer_tolerance": 22,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "living_room",
+          "master_bedroom"
+        ],
+        "must_open": [],
+        "must_see": [
+          "living_room_coffee_table_0",
+          "living_room_sectional_sofa_0",
+          "master_bedroom_wardrobe_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "living_room",
+          "master_bedroom"
+        ]
+      },
+      "kinds": [
+        "sectional_sofa",
+        "wardrobe",
+        "coffee_table"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "living_room_sectional_sofa_0",
+        "master_bedroom_wardrobe_0",
+        "living_room_coffee_table_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "45",
+      "oracle_read": [
+        "relative_direction",
+        "living_room_sectional_sofa_0",
+        "living_room_coffee_table_0",
+        "master_bedroom_wardrobe_0"
+      ],
+      "truth": {
+        "origin": "living_room_sectional_sofa_0",
+        "forward": "living_room_coffee_table_0",
+        "target": "master_bedroom_wardrobe_0",
+        "bearing_deg": 44.91,
+        "sector_deg": 45,
+        "offset_deg": 0.09,
+        "origin_room": "living_room",
+        "target_room": "master_bedroom",
+        "leg_m": 5.65,
+        "spawn": {
+          "x": 1.5,
+          "y": 1.5,
+          "z": 7.75,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "kitchen"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the sectional sofa this task refers to -- this exact object",
+          "../references/f52163520bee8e960768a2abfdd514913eb4d0b19f227588613a55353e1f720d.png"
+        ],
+        [
+          "the coffee table this task refers to -- this exact object",
+          "../references/08d71bf834f517b2b6570a9e5c115aa24ca9848a8e8469a0faf707e6a8acea04.png"
+        ],
+        [
+          "the wardrobe this task refers to -- this exact object",
+          "../references/9d8b6620b9c98b13626aaaef427ec8a43e848873d1ab81ebcdd79878a4c0adb4.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "nearer_object_comparison__kitchen_utility_counter_0",
+      "family": "nearer_object_comparison",
+      "instruction": "Somewhere in this house there are the dining table, the sectional sofa and the sideboard. None of them is in the same room as the utility counter. Find out which one of them is closest to the utility counter, and answer with just that one thing. Compare the straight-line distances, not how far you had to walk.",
+      "referents": [
+        "kitchen_utility_counter_0",
+        "dining_room_dining_table_0",
+        "dining_room_sideboard_0",
+        "living_room_sectional_sofa_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "dining table"
+        ]
+      ],
+      "answer_choices": [
+        "dining table",
+        "sectional sofa",
+        "sideboard"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 175,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "dining_room",
+          "kitchen",
+          "living_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "dining_room_dining_table_0",
+          "dining_room_sideboard_0",
+          "kitchen_utility_counter_0",
+          "living_room_sectional_sofa_0"
+        ],
+        "min_distinct_viewpoints": 3,
+        "search_regions": [
+          "dining_room",
+          "kitchen",
+          "living_room"
+        ]
+      },
+      "kinds": [
+        "dining_table",
+        "sideboard",
+        "sectional_sofa",
+        "utility_counter"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "kitchen_utility_counter_0",
+        "dining_room_dining_table_0",
+        "dining_room_sideboard_0",
+        "living_room_sectional_sofa_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "dining table",
+      "oracle_read": [
+        "nearest_of",
+        "kitchen_utility_counter_0",
+        [
+          [
+            "dining_room_dining_table_0",
+            "dining table"
+          ],
+          [
+            "dining_room_sideboard_0",
+            "sideboard"
+          ],
+          [
+            "living_room_sectional_sofa_0",
+            "sectional sofa"
+          ]
+        ]
+      ],
+      "truth": {
+        "x": "kitchen_utility_counter_0",
+        "winner": "dining_room_dining_table_0",
+        "choices": [
+          "dining_room_dining_table_0",
+          "dining_room_sideboard_0",
+          "living_room_sectional_sofa_0"
+        ],
+        "words": [
+          "dining table",
+          "sectional sofa",
+          "sideboard"
+        ],
+        "metres": {
+          "dining_room_dining_table_0": 3.61,
+          "dining_room_sideboard_0": 5.3,
+          "living_room_sectional_sofa_0": 6.06
+        },
+        "lead_m": 1.69,
+        "x_room": "kitchen",
+        "spawn": {
+          "x": 4.2,
+          "y": 1.5,
+          "z": -1.85,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "second_bedroom"
+        }
+      },
+      "answer_choice_labels": [
+        "dining table",
+        "sectional sofa",
+        "sideboard"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the utility counter this task refers to -- this exact object",
+          "../references/192c62732f3bc63402631fc8a37efcbbebe28658267305ef5ba5d81a8b4d67a4.png"
+        ],
+        [
+          "the dining table this task refers to -- this exact object",
+          "../references/fe018b0fb5313c0c7116280d39b2315f7b2dc5eb5a0eeb988076561171d3cd3f.png"
+        ],
+        [
+          "the sideboard this task refers to -- this exact object",
+          "../references/0f35ff4d131e30e448174207d19bf7e335278d26fd1397e52adca377e70dfef3.png"
+        ],
+        [
+          "the sectional sofa this task refers to -- this exact object",
+          "../references/f52163520bee8e960768a2abfdd514913eb4d0b19f227588613a55353e1f720d.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_localization__third_bedroom_laptop_0",
+      "family": "room_localization",
+      "instruction": "Find the laptop somewhere in this house, then tell me which room it is in. If there is no laptop here, choose NOT_PRESENT instead of guessing a room.\n\nRoom choices (use exactly one option key):\n- ROOM_01 — bathroom\n- ROOM_02 — dining room\n- ROOM_03 — kitchen\n- ROOM_04 — living room\n- ROOM_05 — master bedroom\n- ROOM_06 — second bedroom\n- ROOM_07 — third bedroom\n- NOT_PRESENT — not present\nReply with only one option key, for example ROOM_01 or NOT_PRESENT.",
+      "referents": [
+        "third_bedroom_laptop_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "ROOM_07"
+        ]
+      ],
+      "answer_choices": [
+        "ROOM_01",
+        "ROOM_02",
+        "ROOM_03",
+        "ROOM_04",
+        "ROOM_05",
+        "ROOM_06",
+        "ROOM_07",
+        "NOT_PRESENT"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 175,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "third_bedroom"
+        ],
+        "must_open": [
+          "third_bedroom_writing_desk_0"
+        ],
+        "must_see": [
+          "third_bedroom_laptop_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "bathroom",
+          "dining_room",
+          "kitchen",
+          "living_room",
+          "master_bedroom",
+          "second_bedroom",
+          "third_bedroom"
+        ]
+      },
+      "kinds": [
+        "laptop"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "third_bedroom_laptop_0"
+      ],
+      "answer_instances": [
+        "third_bedroom_laptop_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "third_bedroom_laptop_0"
+        ]
+      ],
+      "oracle_answer": "third bedroom",
+      "oracle_read": [
+        "room_here"
+      ],
+      "truth": {
+        "alias": "third_bedroom_laptop_0",
+        "kind": "laptop",
+        "room": "third_bedroom",
+        "room_id": "third_bedroom",
+        "room_name": "third bedroom",
+        "spawn": {
+          "x": 3.5,
+          "y": 1.5,
+          "z": 5.75,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "kitchen"
+        },
+        "room_answer_choice": "ROOM_07",
+        "room_answer_label": "third bedroom",
+        "absence_option": "NOT_PRESENT"
+      },
+      "answer_choice_labels": [
+        "bathroom",
+        "dining room",
+        "kitchen",
+        "living room",
+        "master bedroom",
+        "second bedroom",
+        "third bedroom",
+        "not present"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the laptop this task refers to -- this exact object",
+          "../references/fa6ce746d84918e5713e66c445ef08a3a2efdef6f82cbb3bd8c199f235afe4a8.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_area__living_room",
+      "family": "room_area",
+      "instruction": "Find the living room in this house, then tell me roughly how big its floor is, in square metres, as a number. I want the floor area of that one room, measured inside its walls -- not the whole house, and not the other rooms.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m2",
+      "answer_match": "count",
+      "max_steps": 175,
+      "answer_number": 30,
+      "answer_tolerance": 7.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "living_room"
+        ],
+        "must_open": [],
+        "must_see": [],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "bathroom",
+          "dining_room",
+          "kitchen",
+          "living_room",
+          "master_bedroom",
+          "second_bedroom",
+          "third_bedroom"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "30",
+      "oracle_read": [
+        "room_area",
+        "living_room"
+      ],
+      "truth": {
+        "room": "living_room",
+        "name": "living room",
+        "m2": 30,
+        "tol_m2": 4,
+        "spawn": {
+          "x": 6.0,
+          "y": 1.5,
+          "z": 4.25,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "living_room"
+        }
+      },
+      "goal_images": []
+    }
+  ],
+  "dataset_version": "1.1"
+}

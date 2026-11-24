@@ -1,0 +1,1464 @@
+{
+  "schema_version": 4,
+  "benchmark": "ROAM-Bench",
+  "scene": "scene_106",
+  "spawn": {
+    "x": 1.25,
+    "y": 1.5,
+    "z": 7.0,
+    "yaw_deg": 0.0,
+    "horizon_deg": 0.0,
+    "room": "workspace"
+  },
+  "specs": [
+    {
+      "task_id": "surface_contents__meeting_room_conference_table_0",
+      "family": "surface_contents",
+      "instruction": "Go to the conference table. Which of the following objects are resting on it? Select every option that applies. Answer only with the option IDs.\nOptions:\n- OBJ_01: material sample box\n- OBJ_02: laminating pouches carton\n- OBJ_03: ballpoint pen\n- OBJ_04: stack 3\n- OBJ_05: laptop computer\n- OBJ_06: stack 2\n- OBJ_07: retail package\n- OBJ_08: laptop",
+      "referents": [
+        "meeting_room_conference_table_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "OBJ_06"
+        ],
+        [
+          "OBJ_08"
+        ]
+      ],
+      "answer_choices": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_unit": "",
+      "answer_match": "set",
+      "max_steps": 125,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "meeting_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "meeting_room_conference_table_0",
+          "meeting_room_laptop_0",
+          "meeting_room_stack_0",
+          "meeting_room_stack_1"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "kitchenette",
+          "meeting_room",
+          "print_supply_room",
+          "reception",
+          "workspace"
+        ]
+      },
+      "kinds": [
+        "laptop",
+        "stack_2",
+        "stack_2"
+      ],
+      "receptacle_kinds": [
+        "conference_table"
+      ],
+      "evidence": [
+        "meeting_room_conference_table_0",
+        "meeting_room_laptop_0",
+        "meeting_room_stack_0",
+        "meeting_room_stack_1"
+      ],
+      "answer_instances": [
+        "meeting_room_laptop_0",
+        "meeting_room_stack_0",
+        "meeting_room_stack_1"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "meeting_room_conference_table_0"
+        ]
+      ],
+      "oracle_answer": "OBJ_06, OBJ_08",
+      "oracle_read": [
+        "surface_contents",
+        "meeting_room_conference_table_0"
+      ],
+      "truth": {
+        "host": "meeting_room_conference_table_0",
+        "host_kind": "conference_table",
+        "room": "meeting_room",
+        "children": [
+          {
+            "alias": "meeting_room_laptop_0",
+            "kind": "laptop"
+          },
+          {
+            "alias": "meeting_room_stack_0",
+            "kind": "stack_2"
+          },
+          {
+            "alias": "meeting_room_stack_1",
+            "kind": "stack_2"
+          }
+        ],
+        "spawn": {
+          "x": 7.2,
+          "y": 1.5,
+          "z": 10.5,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "kitchenette"
+        },
+        "answer_options": [
+          {
+            "id": "OBJ_01",
+            "label": "material sample box",
+            "kind": "material_sample_box",
+            "alias": "meeting_room_material_sample_box_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_02",
+            "label": "laminating pouches carton",
+            "kind": "laminating_pouches_carton",
+            "alias": "print_supply_room_laminating_pouches_carton_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_03",
+            "label": "ballpoint pen",
+            "kind": "ballpoint_pen",
+            "alias": "kitchenette_ballpoint_pen_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_04",
+            "label": "stack 3",
+            "kind": "stack_3",
+            "alias": "print_supply_room_stack_4",
+            "correct": false
+          },
+          {
+            "id": "OBJ_05",
+            "label": "laptop computer",
+            "kind": "laptop_computer",
+            "alias": "workspace_laptop_computer_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_06",
+            "label": "stack 2",
+            "kind": "stack_2",
+            "alias": "meeting_room_stack_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_07",
+            "label": "retail package",
+            "kind": "retail_package",
+            "alias": "print_supply_room_retail_package_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_08",
+            "label": "laptop",
+            "kind": "laptop",
+            "alias": "meeting_room_laptop_0",
+            "correct": true
+          }
+        ]
+      },
+      "answer_choice_labels": [
+        "material sample box",
+        "laminating pouches carton",
+        "ballpoint pen",
+        "stack 3",
+        "laptop computer",
+        "stack 2",
+        "retail package",
+        "laptop"
+      ],
+      "answer_choice_mode": "multiple",
+      "goal_images": [
+        [
+          "the conference table this task refers to -- this exact object",
+          "../references/3736b38e74cdc92f52635a5ebf6d9d8f7f9475b347b5d32a78510e311b090a17.png"
+        ],
+        [
+          "Option OBJ_01 — material sample box; category reference image",
+          "../references/6a4b9b8d9dea2c69adaafea0ef720d2c7c9122859c0c19e4c336be6c39cae191.png"
+        ],
+        [
+          "Option OBJ_02 — laminating pouches carton; category reference image",
+          "../references/f03c7361e3e54bd6b0f86d1bac628f54559bc3ec8889030799f7c4e911d3eac5.png"
+        ],
+        [
+          "Option OBJ_03 — ballpoint pen; category reference image",
+          "../references/75069734fe8d7faa3e9354d8716998adae0d53e301da38ee4532ac13e4f0e2ed.png"
+        ],
+        [
+          "Option OBJ_04 — stack 3; category reference image",
+          "../references/756bd9dfcb07d6de6a47b2bd427237c39cedd3c10efce9922027d29d5613f2b5.png"
+        ],
+        [
+          "Option OBJ_05 — laptop computer; category reference image",
+          "../references/1d90c2f8344002f9567c28a9dfff35edf35df80afda6cf4e8a11de093e5fceaf.png"
+        ],
+        [
+          "Option OBJ_06 — stack 2; category reference image",
+          "../references/10803f5bf8d8665da3b6e4581c99d56b17b5c83241e0f9dc0e85cc63cb23cc49.png"
+        ],
+        [
+          "Option OBJ_07 — retail package; category reference image",
+          "../references/bad589430c5d2a40afb96a8be87d4d19656e74af5a497a1ced3efd98b1225f95.png"
+        ],
+        [
+          "Option OBJ_08 — laptop; category reference image",
+          "../references/068ff3f7c448834803ff51e86a364458a7e190b920ac80d9bc9cc00b8613206b.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "object_count__pendant_light",
+      "family": "object_count",
+      "instruction": "Search this house and count the pendant lights. For this task, count complete light fixtures suspended below the ceiling by stems or cables, including both globe-shaped and linear fixtures. Do not count spotlights mounted on a ceiling track. There is more than one room, and there may be pendant lights in more than one of them. When you have finished searching, tell me how many pendant lights there are in total, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 125,
+      "answer_number": 8,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "kitchenette",
+          "meeting_room",
+          "workspace"
+        ],
+        "must_open": [],
+        "must_see": [
+          "kitchenette_pendant_light_0",
+          "meeting_room_linear_led_pendant_0",
+          "workspace_pendant_light_0",
+          "workspace_pendant_light_1",
+          "workspace_pendant_light_2",
+          "workspace_pendant_light_3",
+          "workspace_pendant_light_4",
+          "workspace_pendant_light_5"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "kitchenette",
+          "meeting_room",
+          "print_supply_room",
+          "reception",
+          "workspace"
+        ]
+      },
+      "kinds": [
+        "pendant_light"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "kitchenette_pendant_light_0",
+        "meeting_room_linear_led_pendant_0",
+        "workspace_pendant_light_0",
+        "workspace_pendant_light_1",
+        "workspace_pendant_light_2",
+        "workspace_pendant_light_3",
+        "workspace_pendant_light_4",
+        "workspace_pendant_light_5"
+      ],
+      "answer_instances": [
+        "kitchenette_pendant_light_0",
+        "meeting_room_linear_led_pendant_0",
+        "workspace_pendant_light_0",
+        "workspace_pendant_light_1",
+        "workspace_pendant_light_2",
+        "workspace_pendant_light_3",
+        "workspace_pendant_light_4",
+        "workspace_pendant_light_5"
+      ],
+      "plan": [],
+      "oracle_answer": "8",
+      "oracle_read": [
+        "count_seen",
+        "pendant_light",
+        [
+          "kitchenette",
+          "meeting_room",
+          "print_supply_room",
+          "reception",
+          "workspace"
+        ]
+      ],
+      "truth": {
+        "kind": "pendant_light",
+        "total": 8,
+        "noun": "pendant light",
+        "rooms": [
+          "kitchenette",
+          "meeting_room",
+          "workspace"
+        ],
+        "per_room": {
+          "kitchenette": 1,
+          "meeting_room": 1,
+          "workspace": 6
+        },
+        "spawn": {
+          "x": 6.45,
+          "y": 1.5,
+          "z": 2.75,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "print_supply_room"
+        },
+        "category_membership": {
+          "schema": "reviewed-category-members-v1",
+          "aliases": [
+            "kitchenette_pendant_light_0",
+            "meeting_room_linear_led_pendant_0",
+            "workspace_pendant_light_0",
+            "workspace_pendant_light_1",
+            "workspace_pendant_light_2",
+            "workspace_pendant_light_3",
+            "workspace_pendant_light_4",
+            "workspace_pendant_light_5"
+          ],
+          "category": "pendant_light"
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'pendant light' -- the task is about every pendant light in the house, and the others need not look like this one; follow the counting scope stated in the task, including its exclusions",
+          "../references/e49250bfa401d5fb2e0d5800df46836e1daf7c698328c8ee3b0c99487fb20a23.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "object_count__wall_clock",
+      "family": "object_count",
+      "instruction": "Search this house and count the wall clocks. There is more than one room, and there may be wall clocks in more than one of them. When you have finished searching, tell me how many wall clocks there are in total, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 125,
+      "answer_number": 5,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "kitchenette",
+          "meeting_room",
+          "print_supply_room",
+          "reception",
+          "workspace"
+        ],
+        "must_open": [],
+        "must_see": [
+          "kitchenette_wall_clock_0",
+          "meeting_room_clock_0",
+          "print_supply_room_wall_clock_0",
+          "reception_wall_clock_0",
+          "workspace_wall_clock_0"
+        ],
+        "min_distinct_viewpoints": 4,
+        "search_regions": [
+          "kitchenette",
+          "meeting_room",
+          "print_supply_room",
+          "reception",
+          "workspace"
+        ]
+      },
+      "kinds": [
+        "wall_clock"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "kitchenette_wall_clock_0",
+        "meeting_room_clock_0",
+        "print_supply_room_wall_clock_0",
+        "reception_wall_clock_0",
+        "workspace_wall_clock_0"
+      ],
+      "answer_instances": [
+        "kitchenette_wall_clock_0",
+        "meeting_room_clock_0",
+        "print_supply_room_wall_clock_0",
+        "reception_wall_clock_0",
+        "workspace_wall_clock_0"
+      ],
+      "plan": [],
+      "oracle_answer": "5",
+      "oracle_read": [
+        "count_seen",
+        "wall_clock",
+        [
+          "kitchenette",
+          "meeting_room",
+          "print_supply_room",
+          "reception",
+          "workspace"
+        ]
+      ],
+      "truth": {
+        "kind": "wall_clock",
+        "total": 5,
+        "noun": "wall clock",
+        "rooms": [
+          "kitchenette",
+          "meeting_room",
+          "print_supply_room",
+          "reception",
+          "workspace"
+        ],
+        "per_room": {
+          "kitchenette": 1,
+          "meeting_room": 1,
+          "print_supply_room": 1,
+          "reception": 1,
+          "workspace": 1
+        },
+        "spawn": {
+          "x": -1.3,
+          "y": 1.5,
+          "z": 10.5,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "meeting_room"
+        },
+        "category_membership": {
+          "schema": "reviewed-category-members-v1",
+          "aliases": [
+            "kitchenette_wall_clock_0",
+            "meeting_room_clock_0",
+            "print_supply_room_wall_clock_0",
+            "reception_wall_clock_0",
+            "workspace_wall_clock_0"
+          ],
+          "category": "wall_clock"
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'wall clock' -- the task is about every wall clock in the house, and the others need not look like this one",
+          "../references/682140f6aa1b18a68a3d78f302a8086faf2fa9aa3f46adcb267a179032aaca0a.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relocation__kitchenette_electric_kettle_0__to__reception_side_table_0",
+      "family": "relocation",
+      "instruction": "Find the electric kettle, pick it up, and put it on the side table with a light wooden square top, a black box frame, and crossbars near the floor.",
+      "referents": [
+        "kitchenette_electric_kettle_0",
+        "reception_side_table_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('kitchenette_electric_kettle_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('kitchenette_electric_kettle_0','reception_side_table_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 125,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "kitchenette",
+          "reception"
+        ],
+        "must_open": [
+          "kitchenette_kitchen_workbench_cabinet_0"
+        ],
+        "must_see": [
+          "kitchenette_electric_kettle_0",
+          "reception_side_table_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "kitchenette",
+          "meeting_room",
+          "print_supply_room",
+          "reception",
+          "workspace"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "kitchenette_electric_kettle_0",
+        "reception_side_table_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "kitchenette_electric_kettle_0"
+        ],
+        [
+          "pick",
+          "kitchenette_electric_kettle_0"
+        ],
+        [
+          "navigate",
+          "reception_side_table_0"
+        ],
+        [
+          "place",
+          "reception_side_table_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "kitchenette_electric_kettle_0",
+        "from_room": "kitchenette",
+        "from_room_id": "kitchenette",
+        "dest": "reception_side_table_0",
+        "to_room": "reception",
+        "to_room_id": "reception",
+        "spawn": {
+          "x": -2.0,
+          "y": 1.5,
+          "z": 4.5,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "workspace"
+        }
+      },
+      "goal_images": [
+        [
+          "the electric kettle this task refers to -- this exact object",
+          "../references/5835e8a881f078f15a5fd682d3961493f4bdacef89c79c50351fae813e9154d9.png"
+        ],
+        [
+          "destination: light wooden square top, black box frame, and crossbars near the floor",
+          "../references/6f1879f2e85f1eec6f718058ca7ac8245debc051c234d2ddc638045e4cafe391.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_comparison__pendant_light",
+      "family": "room_comparison",
+      "instruction": "Different rooms hold different numbers of pendant lights. For this task, count complete light fixtures suspended below the ceiling by stems or cables, including both globe-shaped and linear fixtures. Do not count spotlights mounted on a ceiling track. Search this house, then tell me which single room has the most pendant lights in it.\n\nRoom choices (use exactly one option key):\n- ROOM_01 — kitchenette room\n- ROOM_02 — meeting room\n- ROOM_03 — print supply\n- ROOM_04 — reception\n- ROOM_05 — workspace room\nReply with only one option key, for example ROOM_01.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "ROOM_05"
+        ]
+      ],
+      "answer_choices": [
+        "ROOM_01",
+        "ROOM_02",
+        "ROOM_03",
+        "ROOM_04",
+        "ROOM_05"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 125,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "kitchenette",
+          "meeting_room",
+          "workspace"
+        ],
+        "must_open": [],
+        "must_see": [
+          "kitchenette_pendant_light_0",
+          "meeting_room_linear_led_pendant_0",
+          "workspace_pendant_light_0",
+          "workspace_pendant_light_1",
+          "workspace_pendant_light_2",
+          "workspace_pendant_light_3",
+          "workspace_pendant_light_4",
+          "workspace_pendant_light_5"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "kitchenette",
+          "meeting_room",
+          "print_supply_room",
+          "reception",
+          "workspace"
+        ]
+      },
+      "kinds": [
+        "pendant_light"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "kitchenette_pendant_light_0",
+        "meeting_room_linear_led_pendant_0",
+        "workspace_pendant_light_0",
+        "workspace_pendant_light_1",
+        "workspace_pendant_light_2",
+        "workspace_pendant_light_3",
+        "workspace_pendant_light_4",
+        "workspace_pendant_light_5"
+      ],
+      "answer_instances": [
+        "kitchenette_pendant_light_0",
+        "meeting_room_linear_led_pendant_0",
+        "workspace_pendant_light_0",
+        "workspace_pendant_light_1",
+        "workspace_pendant_light_2",
+        "workspace_pendant_light_3",
+        "workspace_pendant_light_4",
+        "workspace_pendant_light_5"
+      ],
+      "plan": [],
+      "oracle_answer": "workspace room",
+      "oracle_read": [
+        "argmax_room_seen",
+        "pendant_light",
+        [
+          "kitchenette",
+          "meeting_room",
+          "print_supply_room",
+          "reception",
+          "workspace"
+        ],
+        {
+          "kitchenette": "kitchenette room",
+          "meeting_room": "meeting room",
+          "print_supply_room": "print supply",
+          "reception": "reception",
+          "workspace": "workspace room"
+        }
+      ],
+      "truth": {
+        "kind": "pendant_light",
+        "winner": "workspace",
+        "winner_label": "workspace",
+        "winner_spoken": "workspace room",
+        "per_room": {
+          "kitchenette": 1,
+          "meeting_room": 1,
+          "workspace": 6
+        },
+        "margin": 5,
+        "spawn": {
+          "x": 2.0,
+          "y": 1.5,
+          "z": 3.75,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "reception"
+        },
+        "room_answer_choice": "ROOM_05",
+        "room_answer_label": "workspace room",
+        "category_membership": {
+          "schema": "reviewed-category-members-v1",
+          "aliases": [
+            "kitchenette_pendant_light_0",
+            "meeting_room_linear_led_pendant_0",
+            "workspace_pendant_light_0",
+            "workspace_pendant_light_1",
+            "workspace_pendant_light_2",
+            "workspace_pendant_light_3",
+            "workspace_pendant_light_4",
+            "workspace_pendant_light_5"
+          ],
+          "category": "pendant_light"
+        },
+        "total": 8,
+        "rooms": [
+          "kitchenette",
+          "meeting_room",
+          "workspace"
+        ]
+      },
+      "answer_choice_labels": [
+        "kitchenette room",
+        "meeting room",
+        "print supply",
+        "reception",
+        "workspace room"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "one visual example of the object category 'pendant light' -- the task is about every pendant light in the house, and the others need not look like this one; follow the counting scope stated in the task, including its exclusions",
+          "../references/e49250bfa401d5fb2e0d5800df46836e1daf7c698328c8ee3b0c99487fb20a23.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__reception_side_table_0__kitchenette_dining_table_0",
+      "family": "path_integration",
+      "instruction": "Find the side table and then the dining table; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "reception_side_table_0",
+        "kitchenette_dining_table_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 125,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "kitchenette",
+          "reception"
+        ],
+        "must_open": [],
+        "must_see": [
+          "kitchenette_dining_table_0",
+          "reception_side_table_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "kitchenette",
+          "reception"
+        ]
+      },
+      "kinds": [
+        "side_table",
+        "dining_table"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "reception_side_table_0",
+        "kitchenette_dining_table_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "reception_side_table_0",
+        "kitchenette_dining_table_0"
+      ],
+      "truth": {
+        "x": "reception_side_table_0",
+        "y": "kitchenette_dining_table_0",
+        "x_room": "reception",
+        "y_room": "kitchenette",
+        "leg_m": 12.37,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": 3.2,
+          "y": 1.5,
+          "z": 10.5,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "meeting_room"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the side table this task refers to -- this exact object",
+          "../references/6f1879f2e85f1eec6f718058ca7ac8245debc051c234d2ddc638045e4cafe391.png"
+        ],
+        [
+          "the dining table this task refers to -- this exact object",
+          "../references/3e1be3fc7a0009b898fedbe9b7c157ac86c270fb64bc7605b1d944923c884397.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__reception_side_table_0__kitchenette_kitchen_workbench_cabinet_0",
+      "family": "path_integration",
+      "instruction": "Find the side table and then the kitchen workbench cabinet; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "reception_side_table_0",
+        "kitchenette_kitchen_workbench_cabinet_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 125,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "kitchenette",
+          "reception"
+        ],
+        "must_open": [],
+        "must_see": [
+          "kitchenette_kitchen_workbench_cabinet_0",
+          "reception_side_table_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "kitchenette",
+          "reception"
+        ]
+      },
+      "kinds": [
+        "side_table",
+        "kitchen_workbench_cabinet"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "reception_side_table_0",
+        "kitchenette_kitchen_workbench_cabinet_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "reception_side_table_0",
+        "kitchenette_kitchen_workbench_cabinet_0"
+      ],
+      "truth": {
+        "x": "reception_side_table_0",
+        "y": "kitchenette_kitchen_workbench_cabinet_0",
+        "x_room": "reception",
+        "y_room": "kitchenette",
+        "leg_m": 11.93,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": 5.7,
+          "y": 1.5,
+          "z": 4.0,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "print_supply_room"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the side table this task refers to -- this exact object",
+          "../references/6f1879f2e85f1eec6f718058ca7ac8245debc051c234d2ddc638045e4cafe391.png"
+        ],
+        [
+          "the kitchen workbench cabinet this task refers to -- this exact object",
+          "../references/45cd39261ce6ae9f85c05611d47f4531e8bebcfac180df2f786ecebf42e7e538.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relative_direction__kitchenette_dining_table_0__kitchenette_kitchen_workbench_cabinet_0__print_supply_room_copier_printer_0",
+      "family": "relative_direction",
+      "instruction": "Find the dining table and the kitchen workbench cabinet; they are in the same room. Also find the copier printer, which is somewhere else in this house. Then answer this: if you stood at the dining table and faced the kitchen workbench cabinet, which direction would the copier printer be in? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "kitchenette_dining_table_0",
+        "kitchenette_kitchen_workbench_cabinet_0",
+        "print_supply_room_copier_printer_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 125,
+      "answer_number": 270,
+      "answer_tolerance": 22,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "kitchenette",
+          "print_supply_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "kitchenette_dining_table_0",
+          "kitchenette_kitchen_workbench_cabinet_0",
+          "print_supply_room_copier_printer_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "kitchenette",
+          "print_supply_room"
+        ]
+      },
+      "kinds": [
+        "dining_table",
+        "copier_printer",
+        "kitchen_workbench_cabinet"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "kitchenette_dining_table_0",
+        "print_supply_room_copier_printer_0",
+        "kitchenette_kitchen_workbench_cabinet_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "270",
+      "oracle_read": [
+        "relative_direction",
+        "kitchenette_dining_table_0",
+        "kitchenette_kitchen_workbench_cabinet_0",
+        "print_supply_room_copier_printer_0"
+      ],
+      "truth": {
+        "origin": "kitchenette_dining_table_0",
+        "forward": "kitchenette_kitchen_workbench_cabinet_0",
+        "target": "print_supply_room_copier_printer_0",
+        "bearing_deg": 271.36,
+        "sector_deg": 270,
+        "offset_deg": 1.36,
+        "origin_room": "kitchenette",
+        "target_room": "print_supply_room",
+        "leg_m": 9.56,
+        "spawn": {
+          "x": 0.5,
+          "y": 1.5,
+          "z": 3.5,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "reception"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the dining table this task refers to -- this exact object",
+          "../references/3e1be3fc7a0009b898fedbe9b7c157ac86c270fb64bc7605b1d944923c884397.png"
+        ],
+        [
+          "the kitchen workbench cabinet this task refers to -- this exact object",
+          "../references/45cd39261ce6ae9f85c05611d47f4531e8bebcfac180df2f786ecebf42e7e538.png"
+        ],
+        [
+          "the copier printer this task refers to -- this exact object",
+          "../references/f0bd60fa66821d13ac0525764a4806c9108e841e7ce2f265a267b13042ce1c33.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relative_direction__reception_side_table_0__reception_reception_service_desk_0__print_supply_room_worktable_0",
+      "family": "relative_direction",
+      "instruction": "Find the side table and the reception service desk; they are in the same room. Also find the worktable, which is somewhere else in this house. Then answer this: if you stood at the side table and faced the reception service desk, which direction would the worktable be in? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "reception_side_table_0",
+        "reception_reception_service_desk_0",
+        "print_supply_room_worktable_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 125,
+      "answer_number": 45,
+      "answer_tolerance": 22,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "print_supply_room",
+          "reception"
+        ],
+        "must_open": [],
+        "must_see": [
+          "print_supply_room_worktable_0",
+          "reception_reception_service_desk_0",
+          "reception_side_table_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "print_supply_room",
+          "reception"
+        ]
+      },
+      "kinds": [
+        "side_table",
+        "worktable",
+        "reception_service_desk"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "reception_side_table_0",
+        "print_supply_room_worktable_0",
+        "reception_reception_service_desk_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "45",
+      "oracle_read": [
+        "relative_direction",
+        "reception_side_table_0",
+        "reception_reception_service_desk_0",
+        "print_supply_room_worktable_0"
+      ],
+      "truth": {
+        "origin": "reception_side_table_0",
+        "forward": "reception_reception_service_desk_0",
+        "target": "print_supply_room_worktable_0",
+        "bearing_deg": 40.85,
+        "sector_deg": 45,
+        "offset_deg": 4.15,
+        "origin_room": "reception",
+        "target_room": "print_supply_room",
+        "leg_m": 4.68,
+        "spawn": {
+          "x": 0.95,
+          "y": 1.5,
+          "z": 11.25,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "meeting_room"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the side table this task refers to -- this exact object",
+          "../references/6f1879f2e85f1eec6f718058ca7ac8245debc051c234d2ddc638045e4cafe391.png"
+        ],
+        [
+          "the reception service desk this task refers to -- this exact object",
+          "../references/5168d41401ecd4d51de527707d3fa84dbb79726837d0a81499945fdd2cc5257f.png"
+        ],
+        [
+          "the worktable this task refers to -- this exact object",
+          "../references/47c139f8fc1de5279f9f60467a471d3502429f40100935cf1f5f34f14a4ad6e7.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_localization__workspace_architect_ruler_0",
+      "family": "room_localization",
+      "instruction": "Find the architect ruler somewhere in this house, then tell me which room it is in. If there is no architect ruler here, choose NOT_PRESENT instead of guessing a room.\n\nRoom choices (use exactly one option key):\n- ROOM_01 — kitchenette room\n- ROOM_02 — meeting room\n- ROOM_03 — print supply\n- ROOM_04 — reception\n- ROOM_05 — workspace room\n- NOT_PRESENT — not present\nReply with only one option key, for example ROOM_01 or NOT_PRESENT.",
+      "referents": [
+        "workspace_architect_ruler_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "ROOM_05"
+        ]
+      ],
+      "answer_choices": [
+        "ROOM_01",
+        "ROOM_02",
+        "ROOM_03",
+        "ROOM_04",
+        "ROOM_05",
+        "NOT_PRESENT"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 125,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "workspace"
+        ],
+        "must_open": [],
+        "must_see": [
+          "workspace_architect_ruler_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "kitchenette",
+          "meeting_room",
+          "print_supply_room",
+          "reception",
+          "workspace"
+        ]
+      },
+      "kinds": [
+        "architect_ruler"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "workspace_architect_ruler_0"
+      ],
+      "answer_instances": [
+        "workspace_architect_ruler_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "workspace_architect_ruler_0"
+        ]
+      ],
+      "oracle_answer": "workspace room",
+      "oracle_read": [
+        "room_here"
+      ],
+      "truth": {
+        "alias": "workspace_architect_ruler_0",
+        "kind": "architect_ruler",
+        "room": "workspace",
+        "room_id": "workspace",
+        "room_name": "workspace room",
+        "spawn": {
+          "x": 4.7,
+          "y": 1.5,
+          "z": 13.0,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "kitchenette"
+        },
+        "room_answer_choice": "ROOM_05",
+        "room_answer_label": "workspace room",
+        "absence_option": "NOT_PRESENT"
+      },
+      "answer_choice_labels": [
+        "kitchenette room",
+        "meeting room",
+        "print supply",
+        "reception",
+        "workspace room",
+        "not present"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the architect ruler this task refers to -- this exact object",
+          "../references/0d2f80723ec59b0a86bc5e0adbecb011c8762787cffc0e2ceed1a924819e000a.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_area__workspace",
+      "family": "room_area",
+      "instruction": "Find the workspace room in this house, then tell me roughly how big its floor is, in square metres, as a number. I want the floor area of that one room, measured inside its walls -- not the whole house, and not the other rooms.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m2",
+      "answer_match": "count",
+      "max_steps": 125,
+      "answer_number": 57,
+      "answer_tolerance": 14.25,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "workspace"
+        ],
+        "must_open": [],
+        "must_see": [],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "kitchenette",
+          "meeting_room",
+          "print_supply_room",
+          "reception",
+          "workspace"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "57",
+      "oracle_read": [
+        "room_area",
+        "workspace"
+      ],
+      "truth": {
+        "room": "workspace",
+        "name": "workspace room",
+        "m2": 57,
+        "tol_m2": 7,
+        "spawn": {
+          "x": 0.5,
+          "y": 1.5,
+          "z": 3.5,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "reception"
+        }
+      },
+      "goal_images": []
+    },
+    {
+      "task_id": "room_count__wall_clock",
+      "family": "room_count",
+      "instruction": "Search this house and find out which rooms contain at least one wall clock. Count two places as different rooms if you have to go through a doorway to get from one to the other. A room with several wall clocks still counts once. Tell me how many rooms contain at least one wall clock, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 125,
+      "answer_number": 5,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "kitchenette",
+          "meeting_room",
+          "print_supply_room",
+          "reception",
+          "workspace"
+        ],
+        "must_open": [],
+        "must_see": [
+          "kitchenette_wall_clock_0",
+          "meeting_room_clock_0",
+          "print_supply_room_wall_clock_0",
+          "reception_wall_clock_0",
+          "workspace_wall_clock_0"
+        ],
+        "min_distinct_viewpoints": 4,
+        "search_regions": [
+          "kitchenette",
+          "meeting_room",
+          "print_supply_room",
+          "reception",
+          "workspace"
+        ]
+      },
+      "kinds": [
+        "wall_clock"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "kitchenette_wall_clock_0",
+        "meeting_room_clock_0",
+        "print_supply_room_wall_clock_0",
+        "reception_wall_clock_0",
+        "workspace_wall_clock_0"
+      ],
+      "answer_instances": [
+        "kitchenette_wall_clock_0",
+        "meeting_room_clock_0",
+        "print_supply_room_wall_clock_0",
+        "reception_wall_clock_0",
+        "workspace_wall_clock_0"
+      ],
+      "plan": [],
+      "oracle_answer": "5",
+      "oracle_read": [
+        "room_count_seen",
+        "wall_clock",
+        [
+          "kitchenette",
+          "meeting_room",
+          "print_supply_room",
+          "reception",
+          "workspace"
+        ],
+        []
+      ],
+      "truth": {
+        "kind": "wall_clock",
+        "n_rooms": 5,
+        "noun": "wall clock",
+        "rooms": [
+          "kitchenette",
+          "meeting_room",
+          "print_supply_room",
+          "reception",
+          "workspace"
+        ],
+        "places": [
+          [
+            "kitchenette"
+          ],
+          [
+            "meeting_room"
+          ],
+          [
+            "print_supply_room"
+          ],
+          [
+            "reception"
+          ],
+          [
+            "workspace"
+          ]
+        ],
+        "n_places_in_scope": 5,
+        "total": 5,
+        "spawn": {
+          "x": 3.2,
+          "y": 1.5,
+          "z": 13.5,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "meeting_room"
+        },
+        "category_membership": {
+          "schema": "reviewed-category-members-v1",
+          "aliases": [
+            "kitchenette_wall_clock_0",
+            "meeting_room_clock_0",
+            "print_supply_room_wall_clock_0",
+            "reception_wall_clock_0",
+            "workspace_wall_clock_0"
+          ],
+          "category": "wall_clock"
+        },
+        "per_room": {
+          "kitchenette": 1,
+          "meeting_room": 1,
+          "print_supply_room": 1,
+          "reception": 1,
+          "workspace": 1
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'wall clock' -- the task is about every wall clock in the house, and the others need not look like this one",
+          "../references/682140f6aa1b18a68a3d78f302a8086faf2fa9aa3f46adcb267a179032aaca0a.png"
+        ]
+      ]
+    }
+  ],
+  "dataset_version": "1.1"
+}

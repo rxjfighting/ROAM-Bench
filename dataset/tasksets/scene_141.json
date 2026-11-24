@@ -1,0 +1,1310 @@
+{
+  "schema_version": 4,
+  "benchmark": "ROAM-Bench",
+  "scene": "scene_141",
+  "spawn": {
+    "x": 6.0,
+    "y": 1.5,
+    "z": 4.5,
+    "yaw_deg": 0.0,
+    "horizon_deg": 0.0,
+    "room": "main_ensemble_hall"
+  },
+  "specs": [
+    {
+      "task_id": "path_integration__musicians_lounge_coffee_table_0__percussion_studio_worktable_0",
+      "family": "path_integration",
+      "instruction": "Find the coffee table and then the worktable; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "musicians_lounge_coffee_table_0",
+        "percussion_studio_worktable_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "musicians_lounge",
+          "percussion_studio"
+        ],
+        "must_open": [],
+        "must_see": [
+          "musicians_lounge_coffee_table_0",
+          "percussion_studio_worktable_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "musicians_lounge",
+          "percussion_studio"
+        ]
+      },
+      "kinds": [
+        "coffee_table",
+        "worktable"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "musicians_lounge_coffee_table_0",
+        "percussion_studio_worktable_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "musicians_lounge_coffee_table_0",
+        "percussion_studio_worktable_0"
+      ],
+      "truth": {
+        "x": "musicians_lounge_coffee_table_0",
+        "y": "percussion_studio_worktable_0",
+        "x_room": "musicians_lounge",
+        "y_room": "percussion_studio",
+        "leg_m": 13.55,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": 11.5,
+          "y": 1.5,
+          "z": 8.5,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "main_ensemble_hall"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the coffee table this task refers to -- this exact object",
+          "../references/2ed8dcbd93d13b6a4fcc90464d334cdc7d268bf22ed232abdbe68efc6460b096.png"
+        ],
+        [
+          "the worktable this task refers to -- this exact object",
+          "../references/9427424b29440fc92c611eab7889e0e9b20193381da6f8de9edef2e8ddf4cc6a.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__percussion_studio_storage_cabinet_0__audio_listening_room_audio_equipment_rack_cabinet_0",
+      "family": "path_integration",
+      "instruction": "Find the storage cabinet and then the audio equipment rack cabinet; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "percussion_studio_storage_cabinet_0",
+        "audio_listening_room_audio_equipment_rack_cabinet_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "audio_listening_room",
+          "percussion_studio"
+        ],
+        "must_open": [],
+        "must_see": [
+          "audio_listening_room_audio_equipment_rack_cabinet_0",
+          "percussion_studio_storage_cabinet_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "audio_listening_room",
+          "percussion_studio"
+        ]
+      },
+      "kinds": [
+        "storage_cabinet",
+        "audio_equipment_rack_cabinet"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "percussion_studio_storage_cabinet_0",
+        "audio_listening_room_audio_equipment_rack_cabinet_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "percussion_studio_storage_cabinet_0",
+        "audio_listening_room_audio_equipment_rack_cabinet_0"
+      ],
+      "truth": {
+        "x": "percussion_studio_storage_cabinet_0",
+        "y": "audio_listening_room_audio_equipment_rack_cabinet_0",
+        "x_room": "percussion_studio",
+        "y_room": "audio_listening_room",
+        "leg_m": 9.51,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": -3.5,
+          "y": 1.5,
+          "z": 11.7,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "musicians_lounge"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the storage cabinet this task refers to -- this exact object",
+          "../references/5c3ca0666f1b546b6e466de16b4b24c47bb43a9825cdf60e31d3a978bd448f99.png"
+        ],
+        [
+          "the audio equipment rack cabinet this task refers to -- this exact object",
+          "../references/576bb48ead14d61078244cdaa6169bb3f3d15d1082e17357f875ce7f76302886.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__percussion_studio_storage_cabinet_0__audio_listening_room_mixing_console_desk_0",
+      "family": "path_integration",
+      "instruction": "Find the storage cabinet and then the mixing console desk; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "percussion_studio_storage_cabinet_0",
+        "audio_listening_room_mixing_console_desk_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "audio_listening_room",
+          "percussion_studio"
+        ],
+        "must_open": [],
+        "must_see": [
+          "audio_listening_room_mixing_console_desk_0",
+          "percussion_studio_storage_cabinet_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "audio_listening_room",
+          "percussion_studio"
+        ]
+      },
+      "kinds": [
+        "storage_cabinet",
+        "mixing_console_desk"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "percussion_studio_storage_cabinet_0",
+        "audio_listening_room_mixing_console_desk_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "percussion_studio_storage_cabinet_0",
+        "audio_listening_room_mixing_console_desk_0"
+      ],
+      "truth": {
+        "x": "percussion_studio_storage_cabinet_0",
+        "y": "audio_listening_room_mixing_console_desk_0",
+        "x_room": "percussion_studio",
+        "y_room": "audio_listening_room",
+        "leg_m": 12.36,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": -2.25,
+          "y": 1.5,
+          "z": 2.3,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "piano_practice_room"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the storage cabinet this task refers to -- this exact object",
+          "../references/5c3ca0666f1b546b6e466de16b4b24c47bb43a9825cdf60e31d3a978bd448f99.png"
+        ],
+        [
+          "the mixing console desk this task refers to -- this exact object",
+          "../references/40d4c9fe41fa0c3d1a1375dd2de5e75ee412f6f242be7ba7b153206f2fff0418.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__percussion_studio_storage_cabinet_0__audio_listening_room_side_table_0",
+      "family": "path_integration",
+      "instruction": "Find the storage cabinet and then the side table; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "percussion_studio_storage_cabinet_0",
+        "audio_listening_room_side_table_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "audio_listening_room",
+          "percussion_studio"
+        ],
+        "must_open": [],
+        "must_see": [
+          "audio_listening_room_side_table_0",
+          "percussion_studio_storage_cabinet_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "audio_listening_room",
+          "percussion_studio"
+        ]
+      },
+      "kinds": [
+        "storage_cabinet",
+        "side_table"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "percussion_studio_storage_cabinet_0",
+        "audio_listening_room_side_table_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "percussion_studio_storage_cabinet_0",
+        "audio_listening_room_side_table_0"
+      ],
+      "truth": {
+        "x": "percussion_studio_storage_cabinet_0",
+        "y": "audio_listening_room_side_table_0",
+        "x_room": "percussion_studio",
+        "y_room": "audio_listening_room",
+        "leg_m": 10.14,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": 0.0,
+          "y": 1.5,
+          "z": 11.75,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "instrument_library"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the storage cabinet this task refers to -- this exact object",
+          "../references/5c3ca0666f1b546b6e466de16b4b24c47bb43a9825cdf60e31d3a978bd448f99.png"
+        ],
+        [
+          "the side table this task refers to -- this exact object",
+          "../references/12125ebc67de178e350ae666e71ef063affe5f0de87eaa7e7352c1f383deb2f7.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__percussion_studio_storage_cabinet_0__instrument_library_shelving_rack_0",
+      "family": "path_integration",
+      "instruction": "Find the storage cabinet and then the shelving rack; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "percussion_studio_storage_cabinet_0",
+        "instrument_library_shelving_rack_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "instrument_library",
+          "percussion_studio"
+        ],
+        "must_open": [],
+        "must_see": [
+          "instrument_library_shelving_rack_0",
+          "percussion_studio_storage_cabinet_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "instrument_library",
+          "percussion_studio"
+        ]
+      },
+      "kinds": [
+        "storage_cabinet",
+        "shelving_rack"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "percussion_studio_storage_cabinet_0",
+        "instrument_library_shelving_rack_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "percussion_studio_storage_cabinet_0",
+        "instrument_library_shelving_rack_0"
+      ],
+      "truth": {
+        "x": "percussion_studio_storage_cabinet_0",
+        "y": "instrument_library_shelving_rack_0",
+        "x_room": "percussion_studio",
+        "y_room": "instrument_library",
+        "leg_m": 10.86,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": -1.75,
+          "y": 1.5,
+          "z": 6.2,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "audio_listening_room"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the storage cabinet this task refers to -- this exact object",
+          "../references/5c3ca0666f1b546b6e466de16b4b24c47bb43a9825cdf60e31d3a978bd448f99.png"
+        ],
+        [
+          "the shelving rack this task refers to -- this exact object",
+          "../references/e1eecd2d0e4cefb8dfbfb0d9fb3b7537dd1e14e15699e1a2d28c35e2255a0496.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__percussion_studio_storage_cabinet_0__musicians_lounge_coffee_table_0",
+      "family": "path_integration",
+      "instruction": "Find the storage cabinet and then the coffee table; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "percussion_studio_storage_cabinet_0",
+        "musicians_lounge_coffee_table_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "musicians_lounge",
+          "percussion_studio"
+        ],
+        "must_open": [],
+        "must_see": [
+          "musicians_lounge_coffee_table_0",
+          "percussion_studio_storage_cabinet_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "musicians_lounge",
+          "percussion_studio"
+        ]
+      },
+      "kinds": [
+        "storage_cabinet",
+        "coffee_table"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "percussion_studio_storage_cabinet_0",
+        "musicians_lounge_coffee_table_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "percussion_studio_storage_cabinet_0",
+        "musicians_lounge_coffee_table_0"
+      ],
+      "truth": {
+        "x": "percussion_studio_storage_cabinet_0",
+        "y": "musicians_lounge_coffee_table_0",
+        "x_room": "percussion_studio",
+        "y_room": "musicians_lounge",
+        "leg_m": 14.23,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": -0.25,
+          "y": 1.5,
+          "z": 9.75,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "instrument_library"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the storage cabinet this task refers to -- this exact object",
+          "../references/5c3ca0666f1b546b6e466de16b4b24c47bb43a9825cdf60e31d3a978bd448f99.png"
+        ],
+        [
+          "the coffee table this task refers to -- this exact object",
+          "../references/2ed8dcbd93d13b6a4fcc90464d334cdc7d268bf22ed232abdbe68efc6460b096.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__percussion_studio_storage_cabinet_0__piano_practice_room_upright_piano_0",
+      "family": "path_integration",
+      "instruction": "Find the storage cabinet and then the upright piano; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "percussion_studio_storage_cabinet_0",
+        "piano_practice_room_upright_piano_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "percussion_studio",
+          "piano_practice_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "percussion_studio_storage_cabinet_0",
+          "piano_practice_room_upright_piano_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "percussion_studio",
+          "piano_practice_room"
+        ]
+      },
+      "kinds": [
+        "storage_cabinet",
+        "upright_piano"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "percussion_studio_storage_cabinet_0",
+        "piano_practice_room_upright_piano_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "percussion_studio_storage_cabinet_0",
+        "piano_practice_room_upright_piano_0"
+      ],
+      "truth": {
+        "x": "percussion_studio_storage_cabinet_0",
+        "y": "piano_practice_room_upright_piano_0",
+        "x_room": "percussion_studio",
+        "y_room": "piano_practice_room",
+        "leg_m": 12.81,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": -3.0,
+          "y": 1.5,
+          "z": 14.2,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "musicians_lounge"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the storage cabinet this task refers to -- this exact object",
+          "../references/5c3ca0666f1b546b6e466de16b4b24c47bb43a9825cdf60e31d3a978bd448f99.png"
+        ],
+        [
+          "the upright piano this task refers to -- this exact object",
+          "../references/cd2c3010bc0d84d2c11013cf57568575aa9b9e2f3ea2b64fe6f6bf31df9add49.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relative_direction__audio_listening_room_audio_equipment_rack_cabinet_0__audio_listening_room_mixing_console_desk_0__musicians_lounge_coffee_table_0",
+      "family": "relative_direction",
+      "instruction": "Find the audio equipment rack cabinet and the mixing console desk; they are in the same room. Also find the coffee table, which is somewhere else in this house. Then answer this: if you stood at the audio equipment rack cabinet and faced the mixing console desk, which direction would the coffee table be in? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "audio_listening_room_audio_equipment_rack_cabinet_0",
+        "audio_listening_room_mixing_console_desk_0",
+        "musicians_lounge_coffee_table_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 150,
+      "answer_number": 90,
+      "answer_tolerance": 22,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "audio_listening_room",
+          "musicians_lounge"
+        ],
+        "must_open": [],
+        "must_see": [
+          "audio_listening_room_audio_equipment_rack_cabinet_0",
+          "audio_listening_room_mixing_console_desk_0",
+          "musicians_lounge_coffee_table_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "audio_listening_room",
+          "musicians_lounge"
+        ]
+      },
+      "kinds": [
+        "audio_equipment_rack_cabinet",
+        "coffee_table",
+        "mixing_console_desk"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "audio_listening_room_audio_equipment_rack_cabinet_0",
+        "musicians_lounge_coffee_table_0",
+        "audio_listening_room_mixing_console_desk_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "90",
+      "oracle_read": [
+        "relative_direction",
+        "audio_listening_room_audio_equipment_rack_cabinet_0",
+        "audio_listening_room_mixing_console_desk_0",
+        "musicians_lounge_coffee_table_0"
+      ],
+      "truth": {
+        "origin": "audio_listening_room_audio_equipment_rack_cabinet_0",
+        "forward": "audio_listening_room_mixing_console_desk_0",
+        "target": "musicians_lounge_coffee_table_0",
+        "bearing_deg": 95.59,
+        "sector_deg": 90,
+        "offset_deg": 5.59,
+        "origin_room": "audio_listening_room",
+        "target_room": "musicians_lounge",
+        "leg_m": 6.0,
+        "spawn": {
+          "x": 3.5,
+          "y": 1.5,
+          "z": 9.5,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "percussion_studio"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the audio equipment rack cabinet this task refers to -- this exact object",
+          "../references/576bb48ead14d61078244cdaa6169bb3f3d15d1082e17357f875ce7f76302886.png"
+        ],
+        [
+          "the mixing console desk this task refers to -- this exact object",
+          "../references/40d4c9fe41fa0c3d1a1375dd2de5e75ee412f6f242be7ba7b153206f2fff0418.png"
+        ],
+        [
+          "the coffee table this task refers to -- this exact object",
+          "../references/2ed8dcbd93d13b6a4fcc90464d334cdc7d268bf22ed232abdbe68efc6460b096.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "nearer_object_comparison__instrument_library_shelving_rack_0",
+      "family": "nearer_object_comparison",
+      "instruction": "Somewhere in this house there are the coffee table, the mixing console desk and the upright piano. None of them is in the same room as the shelving rack. Find out which one of them is closest to the shelving rack, and answer with just that one thing. Compare the straight-line distances, not how far you had to walk.",
+      "referents": [
+        "instrument_library_shelving_rack_0",
+        "musicians_lounge_coffee_table_0",
+        "audio_listening_room_mixing_console_desk_0",
+        "piano_practice_room_upright_piano_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "coffee table"
+        ]
+      ],
+      "answer_choices": [
+        "coffee table",
+        "mixing console desk",
+        "upright piano"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "audio_listening_room",
+          "instrument_library",
+          "musicians_lounge",
+          "piano_practice_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "audio_listening_room_mixing_console_desk_0",
+          "instrument_library_shelving_rack_0",
+          "musicians_lounge_coffee_table_0",
+          "piano_practice_room_upright_piano_0"
+        ],
+        "min_distinct_viewpoints": 4,
+        "search_regions": [
+          "audio_listening_room",
+          "instrument_library",
+          "musicians_lounge",
+          "piano_practice_room"
+        ]
+      },
+      "kinds": [
+        "coffee_table",
+        "mixing_console_desk",
+        "upright_piano",
+        "shelving_rack"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "instrument_library_shelving_rack_0",
+        "musicians_lounge_coffee_table_0",
+        "audio_listening_room_mixing_console_desk_0",
+        "piano_practice_room_upright_piano_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "coffee table",
+      "oracle_read": [
+        "nearest_of",
+        "instrument_library_shelving_rack_0",
+        [
+          [
+            "musicians_lounge_coffee_table_0",
+            "coffee table"
+          ],
+          [
+            "audio_listening_room_mixing_console_desk_0",
+            "mixing console desk"
+          ],
+          [
+            "piano_practice_room_upright_piano_0",
+            "upright piano"
+          ]
+        ]
+      ],
+      "truth": {
+        "x": "instrument_library_shelving_rack_0",
+        "winner": "musicians_lounge_coffee_table_0",
+        "choices": [
+          "musicians_lounge_coffee_table_0",
+          "audio_listening_room_mixing_console_desk_0",
+          "piano_practice_room_upright_piano_0"
+        ],
+        "words": [
+          "coffee table",
+          "mixing console desk",
+          "upright piano"
+        ],
+        "metres": {
+          "musicians_lounge_coffee_table_0": 3.37,
+          "audio_listening_room_mixing_console_desk_0": 6.46,
+          "piano_practice_room_upright_piano_0": 7.77
+        },
+        "lead_m": 3.09,
+        "x_room": "instrument_library",
+        "spawn": {
+          "x": 0.5,
+          "y": 1.5,
+          "z": 8.5,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "main_ensemble_hall"
+        }
+      },
+      "answer_choice_labels": [
+        "coffee table",
+        "mixing console desk",
+        "upright piano"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the shelving rack this task refers to -- this exact object",
+          "../references/e1eecd2d0e4cefb8dfbfb0d9fb3b7537dd1e14e15699e1a2d28c35e2255a0496.png"
+        ],
+        [
+          "the coffee table this task refers to -- this exact object",
+          "../references/2ed8dcbd93d13b6a4fcc90464d334cdc7d268bf22ed232abdbe68efc6460b096.png"
+        ],
+        [
+          "the mixing console desk this task refers to -- this exact object",
+          "../references/40d4c9fe41fa0c3d1a1375dd2de5e75ee412f6f242be7ba7b153206f2fff0418.png"
+        ],
+        [
+          "the upright piano this task refers to -- this exact object",
+          "../references/cd2c3010bc0d84d2c11013cf57568575aa9b9e2f3ea2b64fe6f6bf31df9add49.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "nearer_object_comparison__musicians_lounge_coffee_table_0",
+      "family": "nearer_object_comparison",
+      "instruction": "Somewhere in this house there are the audio equipment rack cabinet, the shelving rack and the side table. None of them is in the same room as the coffee table. Find out which one of them is closest to the coffee table, and answer with just that one thing. Compare the straight-line distances, not how far you had to walk.",
+      "referents": [
+        "musicians_lounge_coffee_table_0",
+        "instrument_library_shelving_rack_0",
+        "audio_listening_room_audio_equipment_rack_cabinet_0",
+        "audio_listening_room_side_table_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "shelving rack"
+        ]
+      ],
+      "answer_choices": [
+        "audio equipment rack cabinet",
+        "shelving rack",
+        "side table"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "audio_listening_room",
+          "instrument_library",
+          "musicians_lounge"
+        ],
+        "must_open": [],
+        "must_see": [
+          "audio_listening_room_audio_equipment_rack_cabinet_0",
+          "audio_listening_room_side_table_0",
+          "instrument_library_shelving_rack_0",
+          "musicians_lounge_coffee_table_0"
+        ],
+        "min_distinct_viewpoints": 3,
+        "search_regions": [
+          "audio_listening_room",
+          "instrument_library",
+          "musicians_lounge"
+        ]
+      },
+      "kinds": [
+        "shelving_rack",
+        "audio_equipment_rack_cabinet",
+        "side_table",
+        "coffee_table"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "musicians_lounge_coffee_table_0",
+        "instrument_library_shelving_rack_0",
+        "audio_listening_room_audio_equipment_rack_cabinet_0",
+        "audio_listening_room_side_table_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "shelving rack",
+      "oracle_read": [
+        "nearest_of",
+        "musicians_lounge_coffee_table_0",
+        [
+          [
+            "instrument_library_shelving_rack_0",
+            "shelving rack"
+          ],
+          [
+            "audio_listening_room_audio_equipment_rack_cabinet_0",
+            "audio equipment rack cabinet"
+          ],
+          [
+            "audio_listening_room_side_table_0",
+            "side table"
+          ]
+        ]
+      ],
+      "truth": {
+        "x": "musicians_lounge_coffee_table_0",
+        "winner": "instrument_library_shelving_rack_0",
+        "choices": [
+          "instrument_library_shelving_rack_0",
+          "audio_listening_room_audio_equipment_rack_cabinet_0",
+          "audio_listening_room_side_table_0"
+        ],
+        "words": [
+          "audio equipment rack cabinet",
+          "shelving rack",
+          "side table"
+        ],
+        "metres": {
+          "instrument_library_shelving_rack_0": 3.37,
+          "audio_listening_room_audio_equipment_rack_cabinet_0": 6.0,
+          "audio_listening_room_side_table_0": 6.5
+        },
+        "lead_m": 2.63,
+        "x_room": "musicians_lounge",
+        "spawn": {
+          "x": 6.75,
+          "y": 1.5,
+          "z": 13.25,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "percussion_studio"
+        }
+      },
+      "answer_choice_labels": [
+        "audio equipment rack cabinet",
+        "shelving rack",
+        "side table"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the coffee table this task refers to -- this exact object",
+          "../references/2ed8dcbd93d13b6a4fcc90464d334cdc7d268bf22ed232abdbe68efc6460b096.png"
+        ],
+        [
+          "the shelving rack this task refers to -- this exact object",
+          "../references/e1eecd2d0e4cefb8dfbfb0d9fb3b7537dd1e14e15699e1a2d28c35e2255a0496.png"
+        ],
+        [
+          "the audio equipment rack cabinet this task refers to -- this exact object",
+          "../references/576bb48ead14d61078244cdaa6169bb3f3d15d1082e17357f875ce7f76302886.png"
+        ],
+        [
+          "the side table this task refers to -- this exact object",
+          "../references/12125ebc67de178e350ae666e71ef063affe5f0de87eaa7e7352c1f383deb2f7.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "nearer_object_comparison__piano_practice_room_upright_piano_0",
+      "family": "nearer_object_comparison",
+      "instruction": "Somewhere in this house there are the audio equipment rack cabinet, the mixing console desk and the side table. None of them is in the same room as the upright piano. Find out which one of them is closest to the upright piano, and answer with just that one thing. Compare the straight-line distances, not how far you had to walk.",
+      "referents": [
+        "piano_practice_room_upright_piano_0",
+        "audio_listening_room_mixing_console_desk_0",
+        "audio_listening_room_side_table_0",
+        "audio_listening_room_audio_equipment_rack_cabinet_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "mixing console desk"
+        ]
+      ],
+      "answer_choices": [
+        "audio equipment rack cabinet",
+        "mixing console desk",
+        "side table"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "audio_listening_room",
+          "piano_practice_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "audio_listening_room_audio_equipment_rack_cabinet_0",
+          "audio_listening_room_mixing_console_desk_0",
+          "audio_listening_room_side_table_0",
+          "piano_practice_room_upright_piano_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "audio_listening_room",
+          "piano_practice_room"
+        ]
+      },
+      "kinds": [
+        "mixing_console_desk",
+        "side_table",
+        "audio_equipment_rack_cabinet",
+        "upright_piano"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "piano_practice_room_upright_piano_0",
+        "audio_listening_room_mixing_console_desk_0",
+        "audio_listening_room_side_table_0",
+        "audio_listening_room_audio_equipment_rack_cabinet_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "mixing console desk",
+      "oracle_read": [
+        "nearest_of",
+        "piano_practice_room_upright_piano_0",
+        [
+          [
+            "audio_listening_room_mixing_console_desk_0",
+            "mixing console desk"
+          ],
+          [
+            "audio_listening_room_side_table_0",
+            "side table"
+          ],
+          [
+            "audio_listening_room_audio_equipment_rack_cabinet_0",
+            "audio equipment rack cabinet"
+          ]
+        ]
+      ],
+      "truth": {
+        "x": "piano_practice_room_upright_piano_0",
+        "winner": "audio_listening_room_mixing_console_desk_0",
+        "choices": [
+          "audio_listening_room_mixing_console_desk_0",
+          "audio_listening_room_side_table_0",
+          "audio_listening_room_audio_equipment_rack_cabinet_0"
+        ],
+        "words": [
+          "audio equipment rack cabinet",
+          "mixing console desk",
+          "side table"
+        ],
+        "metres": {
+          "audio_listening_room_mixing_console_desk_0": 1.33,
+          "audio_listening_room_side_table_0": 3.66,
+          "audio_listening_room_audio_equipment_rack_cabinet_0": 4.86
+        },
+        "lead_m": 2.33,
+        "x_room": "piano_practice_room",
+        "spawn": {
+          "x": 5.75,
+          "y": 1.5,
+          "z": 11.25,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "percussion_studio"
+        }
+      },
+      "answer_choice_labels": [
+        "audio equipment rack cabinet",
+        "mixing console desk",
+        "side table"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the upright piano this task refers to -- this exact object",
+          "../references/cd2c3010bc0d84d2c11013cf57568575aa9b9e2f3ea2b64fe6f6bf31df9add49.png"
+        ],
+        [
+          "the mixing console desk this task refers to -- this exact object",
+          "../references/40d4c9fe41fa0c3d1a1375dd2de5e75ee412f6f242be7ba7b153206f2fff0418.png"
+        ],
+        [
+          "the side table this task refers to -- this exact object",
+          "../references/12125ebc67de178e350ae666e71ef063affe5f0de87eaa7e7352c1f383deb2f7.png"
+        ],
+        [
+          "the audio equipment rack cabinet this task refers to -- this exact object",
+          "../references/576bb48ead14d61078244cdaa6169bb3f3d15d1082e17357f875ce7f76302886.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_area__piano_practice_room",
+      "family": "room_area",
+      "instruction": "Find the piano practice in this house, then tell me roughly how big its floor is, in square metres, as a number. I want the floor area of that one room, measured inside its walls -- not the whole house, and not the other rooms.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m2",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 18,
+      "answer_tolerance": 5.0,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "piano_practice_room"
+        ],
+        "must_open": [],
+        "must_see": [],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "audio_listening_room",
+          "instrument_library",
+          "main_ensemble_hall",
+          "musicians_lounge",
+          "percussion_studio",
+          "piano_practice_room"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "18",
+      "oracle_read": [
+        "room_area",
+        "piano_practice_room"
+      ],
+      "truth": {
+        "room": "piano_practice_room",
+        "name": "piano practice",
+        "m2": 18,
+        "tol_m2": 3,
+        "spawn": {
+          "x": -0.5,
+          "y": 1.5,
+          "z": 0.8,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "piano_practice_room"
+        }
+      },
+      "goal_images": []
+    }
+  ],
+  "dataset_version": "1.1"
+}

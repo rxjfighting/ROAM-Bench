@@ -1,0 +1,601 @@
+{
+  "schema_version": 4,
+  "benchmark": "ROAM-Bench",
+  "scene": "scene_111",
+  "spawn": {
+    "x": 4.78,
+    "y": 1.5,
+    "z": 5.75,
+    "yaw_deg": 0.0,
+    "horizon_deg": 0.0,
+    "room": "treatment_room"
+  },
+  "specs": [
+    {
+      "task_id": "surface_contents__waiting_room_side_table_0",
+      "family": "surface_contents",
+      "instruction": "Go to the side table. Which of the following objects are resting on it? Select every option that applies. Answer only with the option IDs.\nOptions:\n- OBJ_01: disinfectant bottle\n- OBJ_02: landscape computer touchscreen\n- OBJ_03: stack 2\n- OBJ_04: office desk telephone\n- OBJ_05: stack 3\n- OBJ_06: stack 5\n- OBJ_07: computer keyboard\n- OBJ_08: disinfectant wipes canister",
+      "referents": [
+        "waiting_room_side_table_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "OBJ_05"
+        ]
+      ],
+      "answer_choices": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_unit": "",
+      "answer_match": "set",
+      "max_steps": 100,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "waiting_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "waiting_room_side_table_0",
+          "waiting_room_stack_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "staff_restroom",
+          "sterilization_room",
+          "treatment_room",
+          "waiting_room"
+        ]
+      },
+      "kinds": [
+        "stack_3"
+      ],
+      "receptacle_kinds": [
+        "side_table"
+      ],
+      "evidence": [
+        "waiting_room_side_table_0",
+        "waiting_room_stack_0"
+      ],
+      "answer_instances": [
+        "waiting_room_stack_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "waiting_room_side_table_0"
+        ]
+      ],
+      "oracle_answer": "OBJ_05",
+      "oracle_read": [
+        "surface_contents",
+        "waiting_room_side_table_0"
+      ],
+      "truth": {
+        "host": "waiting_room_side_table_0",
+        "host_kind": "side_table",
+        "room": "waiting_room",
+        "children": [
+          {
+            "alias": "waiting_room_stack_0",
+            "kind": "stack_3"
+          }
+        ],
+        "spawn": {
+          "x": 1.78,
+          "y": 1.5,
+          "z": 5.5,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "sterilization_room"
+        },
+        "answer_options": [
+          {
+            "id": "OBJ_01",
+            "label": "disinfectant bottle",
+            "kind": "disinfectant_bottle",
+            "alias": "sterilization_room_disinfectant_bottle_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_02",
+            "label": "landscape computer touchscreen",
+            "kind": "landscape_computer_touchscreen",
+            "alias": "waiting_room_landscape_computer_touchscreen_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_03",
+            "label": "stack 2",
+            "kind": "stack_2",
+            "alias": "sterilization_room_stack_1",
+            "correct": false
+          },
+          {
+            "id": "OBJ_04",
+            "label": "office desk telephone",
+            "kind": "office_desk_telephone",
+            "alias": "waiting_room_office_desk_telephone_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_05",
+            "label": "stack 3",
+            "kind": "stack_3",
+            "alias": "waiting_room_stack_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_06",
+            "label": "stack 5",
+            "kind": "stack_5",
+            "alias": "sterilization_room_stack_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_07",
+            "label": "computer keyboard",
+            "kind": "computer_keyboard",
+            "alias": "waiting_room_computer_keyboard_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_08",
+            "label": "disinfectant wipes canister",
+            "kind": "disinfectant_wipes_canister",
+            "alias": "sterilization_room_disinfectant_wipes_canister_0",
+            "correct": false
+          }
+        ]
+      },
+      "answer_choice_labels": [
+        "disinfectant bottle",
+        "landscape computer touchscreen",
+        "stack 2",
+        "office desk telephone",
+        "stack 3",
+        "stack 5",
+        "computer keyboard",
+        "disinfectant wipes canister"
+      ],
+      "answer_choice_mode": "multiple",
+      "goal_images": [
+        [
+          "the side table this task refers to -- this exact object",
+          "../references/40a525f6d66410d1ac96d8330172bc66d23a2b6566eaeb158b00424b8bcd8678.png"
+        ],
+        [
+          "Option OBJ_01 — disinfectant bottle; category reference image",
+          "../references/450c5634cd36dc1188cba594662c0f1edffee9b58ddab03098a61001c16a936b.png"
+        ],
+        [
+          "Option OBJ_02 — landscape computer touchscreen; category reference image",
+          "../references/991409cf87f6c22afb38908d26427b98060b8374802394ec09aac9ee00a93e28.png"
+        ],
+        [
+          "Option OBJ_03 — stack 2; category reference image",
+          "../references/4bcf6f77cee7ffc6f8474be2c52882967e01ff29f62c218bf1ed5dd314a4d169.png"
+        ],
+        [
+          "Option OBJ_04 — office desk telephone; category reference image",
+          "../references/ea02c11051249348c2be39fe72983aabe78b8e4da13f7355392855248c13b3f9.png"
+        ],
+        [
+          "Option OBJ_05 — stack 3; category reference image",
+          "../references/131ba328748c845504fbdffbe78926587248da857aa29a88d08ee0b8161acc90.png"
+        ],
+        [
+          "Option OBJ_06 — stack 5; category reference image",
+          "../references/8d5c039d0973181325ca725b4f65891f3031eeb77cac70d7b345e3bcd0ae95bc.png"
+        ],
+        [
+          "Option OBJ_07 — computer keyboard; category reference image",
+          "../references/2e30624d1d11cfafc038afb55797b6a2004d5d87fd979e4d4af936b0d579f67b.png"
+        ],
+        [
+          "Option OBJ_08 — disinfectant wipes canister; category reference image",
+          "../references/478dde2449e6d9de96b9754a77e502f0259ec817a068067989cb344238645a18.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "object_count__wall_clock",
+      "family": "object_count",
+      "instruction": "Search this house and count the wall clocks. There is more than one room, and there may be wall clocks in more than one of them. When you have finished searching, tell me how many wall clocks there are in total, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 100,
+      "answer_number": 4,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "staff_restroom",
+          "sterilization_room",
+          "treatment_room",
+          "waiting_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "staff_restroom_wall_clock_0",
+          "sterilization_room_clock_0",
+          "treatment_room_wall_clock_0",
+          "waiting_room_wall_clock_0"
+        ],
+        "min_distinct_viewpoints": 3,
+        "search_regions": [
+          "staff_restroom",
+          "sterilization_room",
+          "treatment_room",
+          "waiting_room"
+        ]
+      },
+      "kinds": [
+        "wall_clock"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "staff_restroom_wall_clock_0",
+        "sterilization_room_clock_0",
+        "treatment_room_wall_clock_0",
+        "waiting_room_wall_clock_0"
+      ],
+      "answer_instances": [
+        "staff_restroom_wall_clock_0",
+        "sterilization_room_clock_0",
+        "treatment_room_wall_clock_0",
+        "waiting_room_wall_clock_0"
+      ],
+      "plan": [],
+      "oracle_answer": "4",
+      "oracle_read": [
+        "count_seen",
+        "wall_clock",
+        [
+          "staff_restroom",
+          "sterilization_room",
+          "treatment_room",
+          "waiting_room"
+        ]
+      ],
+      "truth": {
+        "kind": "wall_clock",
+        "total": 4,
+        "noun": "wall clock",
+        "rooms": [
+          "staff_restroom",
+          "sterilization_room",
+          "treatment_room",
+          "waiting_room"
+        ],
+        "per_room": {
+          "staff_restroom": 1,
+          "sterilization_room": 1,
+          "treatment_room": 1,
+          "waiting_room": 1
+        },
+        "spawn": {
+          "x": 1.78,
+          "y": 1.5,
+          "z": 5.5,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "sterilization_room"
+        },
+        "category_membership": {
+          "schema": "reviewed-category-members-v1",
+          "aliases": [
+            "staff_restroom_wall_clock_0",
+            "sterilization_room_clock_0",
+            "treatment_room_wall_clock_0",
+            "waiting_room_wall_clock_0"
+          ],
+          "category": "wall_clock"
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'wall clock' -- the task is about every wall clock in the house, and the others need not look like this one",
+          "../references/33501abe836363b4b091509c72f9b9861fbd9f3c475d98d882bbbdd3e99dc7f8.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "gap_width__sterilization_room_clinical_utility_cart_0__sterilization_room_workbench_0",
+      "family": "gap_width",
+      "instruction": "Find the clinical utility cart and the workbench in this house; they are in the same room, standing apart. Then tell me roughly how wide the clear gap between them is, in centimetres, as a number. Measure the empty floor from the edge of one to the edge of the other, not the distance between their centres.",
+      "referents": [
+        "sterilization_room_clinical_utility_cart_0",
+        "sterilization_room_workbench_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "cm",
+      "answer_match": "count",
+      "max_steps": 100,
+      "answer_number": 136,
+      "answer_tolerance": 10,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "sterilization_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "sterilization_room_clinical_utility_cart_0",
+          "sterilization_room_workbench_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "sterilization_room"
+        ]
+      },
+      "kinds": [
+        "clinical_utility_cart",
+        "workbench"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "sterilization_room_clinical_utility_cart_0",
+        "sterilization_room_workbench_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "136",
+      "oracle_read": [
+        "gap_width",
+        "sterilization_room_clinical_utility_cart_0",
+        "sterilization_room_workbench_0"
+      ],
+      "truth": {
+        "a": "sterilization_room_clinical_utility_cart_0",
+        "b": "sterilization_room_workbench_0",
+        "cm": 136,
+        "room": "sterilization_room",
+        "tol_cm": 10,
+        "spawn": {
+          "x": 0.5,
+          "y": 1.5,
+          "z": 0.5,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "waiting_room"
+        }
+      },
+      "goal_images": [
+        [
+          "the clinical utility cart this task refers to -- this exact object",
+          "../references/b4b60acf416f98b7a4291ee81ef2b93f721fe5a7f218f02e101a25e488e7ca43.png"
+        ],
+        [
+          "the workbench this task refers to -- this exact object",
+          "../references/bf5ab850219cdd2a4da9efdc1f78c41b1cab4bd7df7b825d17f22acba2b35f3d.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_localization__sterilization_room_clinical_instrument_case_0",
+      "family": "room_localization",
+      "instruction": "Find the clinical instrument case somewhere in this house, then tell me which room it is in. If there is no clinical instrument case here, choose NOT_PRESENT instead of guessing a room.\n\nRoom choices (use exactly one option key):\n- ROOM_01 — staff restroom\n- ROOM_02 — sterilization room\n- ROOM_03 — treatment room\n- ROOM_04 — waiting room\n- NOT_PRESENT — not present\nReply with only one option key, for example ROOM_01 or NOT_PRESENT.",
+      "referents": [
+        "sterilization_room_clinical_instrument_case_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "ROOM_02"
+        ]
+      ],
+      "answer_choices": [
+        "ROOM_01",
+        "ROOM_02",
+        "ROOM_03",
+        "ROOM_04",
+        "NOT_PRESENT"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 100,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "sterilization_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "sterilization_room_clinical_instrument_case_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "staff_restroom",
+          "sterilization_room",
+          "treatment_room",
+          "waiting_room"
+        ]
+      },
+      "kinds": [
+        "clinical_instrument_case"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "sterilization_room_clinical_instrument_case_0"
+      ],
+      "answer_instances": [
+        "sterilization_room_clinical_instrument_case_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "sterilization_room_clinical_instrument_case_0"
+        ]
+      ],
+      "oracle_answer": "sterilization room",
+      "oracle_read": [
+        "room_here"
+      ],
+      "truth": {
+        "alias": "sterilization_room_clinical_instrument_case_0",
+        "kind": "clinical_instrument_case",
+        "room": "sterilization_room",
+        "room_id": "sterilization_room",
+        "room_name": "sterilization room",
+        "spawn": {
+          "x": 5.28,
+          "y": 1.5,
+          "z": 7.5,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "treatment_room"
+        },
+        "room_answer_choice": "ROOM_02",
+        "room_answer_label": "sterilization room",
+        "absence_option": "NOT_PRESENT"
+      },
+      "answer_choice_labels": [
+        "staff restroom",
+        "sterilization room",
+        "treatment room",
+        "waiting room",
+        "not present"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the clinical instrument case this task refers to -- this exact object",
+          "../references/161de96a6b7967d7a0c5c4aa0e92fe2231539f7813e52464482c66bf6359ab51.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_count__poster",
+      "family": "room_count",
+      "instruction": "Search this house and find out which rooms contain at least one informational or educational poster. Count two places as different rooms if you have to go through a doorway to get from one to the other. Some rooms contain no posters at all, and a room with several posters still counts once. Tell me how many rooms contain at least one informational or educational poster, as a number. Decorative framed botanical illustrations are artwork, not informational posters, and do not count.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 100,
+      "answer_number": 2,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "sterilization_room",
+          "treatment_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "sterilization_room_poster_0",
+          "treatment_room_poster_0"
+        ],
+        "min_distinct_viewpoints": 3,
+        "search_regions": [
+          "staff_restroom",
+          "sterilization_room",
+          "treatment_room",
+          "waiting_room"
+        ]
+      },
+      "kinds": [
+        "poster"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "sterilization_room_poster_0",
+        "treatment_room_poster_0"
+      ],
+      "answer_instances": [
+        "sterilization_room_poster_0",
+        "treatment_room_poster_0"
+      ],
+      "plan": [],
+      "oracle_answer": "2",
+      "oracle_read": [
+        "room_count_seen",
+        "poster",
+        [
+          "staff_restroom",
+          "sterilization_room",
+          "treatment_room",
+          "waiting_room"
+        ],
+        []
+      ],
+      "truth": {
+        "kind": "poster",
+        "n_rooms": 2,
+        "noun": "poster",
+        "rooms": [
+          "sterilization_room",
+          "treatment_room"
+        ],
+        "places": [
+          [
+            "sterilization_room"
+          ],
+          [
+            "treatment_room"
+          ]
+        ],
+        "n_places_in_scope": 4,
+        "total": 2,
+        "spawn": {
+          "x": 6.25,
+          "y": 1.5,
+          "z": 2.49,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "staff_restroom"
+        },
+        "excluded_decorative_art": [
+          "waiting_room_poster_0"
+        ]
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'poster' -- the task is about every poster in the house, and the others need not look like this one",
+          "../references/4b4675c52d24cf51ba9a46ec69059965048f179fe707b5d29ebd2ff893138161.png"
+        ]
+      ]
+    }
+  ],
+  "dataset_version": "1.1"
+}

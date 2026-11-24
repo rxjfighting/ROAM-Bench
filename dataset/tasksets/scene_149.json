@@ -1,0 +1,1187 @@
+{
+  "schema_version": 4,
+  "benchmark": "ROAM-Bench",
+  "scene": "scene_149",
+  "spawn": {
+    "x": 3.5,
+    "y": 1.5,
+    "z": 4.25,
+    "yaw_deg": 0.0,
+    "horizon_deg": 0.0,
+    "room": "black_box_theatre"
+  },
+  "specs": [
+    {
+      "task_id": "surface_contents__rehearsal_studio_equipment_cabinet_0",
+      "family": "surface_contents",
+      "instruction": "Go to the equipment cabinet. Which of the following objects are resting on it? Select every option that applies. Answer only with the option IDs.\nOptions:\n- OBJ_01: craft glue bottle\n- OBJ_02: audio mixer\n- OBJ_03: water bottle\n- OBJ_04: parchment scroll\n- OBJ_05: accessory case\n- OBJ_06: hardcover notebook\n- OBJ_07: hand puppet\n- OBJ_08: audio cable",
+      "referents": [
+        "rehearsal_studio_equipment_cabinet_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "OBJ_02"
+        ],
+        [
+          "OBJ_08"
+        ]
+      ],
+      "answer_choices": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_choice_labels": [
+        "craft glue bottle",
+        "audio mixer",
+        "water bottle",
+        "parchment scroll",
+        "accessory case",
+        "hardcover notebook",
+        "hand puppet",
+        "audio cable"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_unit": "",
+      "answer_match": "set",
+      "max_steps": 75,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "rehearsal_studio"
+        ],
+        "must_open": [],
+        "must_see": [
+          "rehearsal_studio_audio_cable_0",
+          "rehearsal_studio_audio_mixer_0",
+          "rehearsal_studio_equipment_cabinet_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "black_box_theatre",
+          "rehearsal_studio",
+          "workshop"
+        ]
+      },
+      "kinds": [
+        "audio_cable",
+        "audio_mixer"
+      ],
+      "receptacle_kinds": [
+        "equipment_cabinet"
+      ],
+      "evidence": [
+        "rehearsal_studio_equipment_cabinet_0",
+        "rehearsal_studio_audio_cable_0",
+        "rehearsal_studio_audio_mixer_0"
+      ],
+      "answer_instances": [
+        "rehearsal_studio_audio_cable_0",
+        "rehearsal_studio_audio_mixer_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "rehearsal_studio_equipment_cabinet_0"
+        ]
+      ],
+      "oracle_answer": "OBJ_02, OBJ_08",
+      "oracle_read": [
+        "surface_contents",
+        "rehearsal_studio_equipment_cabinet_0"
+      ],
+      "truth": {
+        "host": "rehearsal_studio_equipment_cabinet_0",
+        "host_kind": "equipment_cabinet",
+        "room": "rehearsal_studio",
+        "children": [
+          {
+            "alias": "rehearsal_studio_audio_cable_0",
+            "kind": "audio_cable"
+          },
+          {
+            "alias": "rehearsal_studio_audio_mixer_0",
+            "kind": "audio_mixer"
+          }
+        ],
+        "spawn": {
+          "x": 5.25,
+          "y": 1.5,
+          "z": 0.5,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "black_box_theatre"
+        },
+        "answer_options": [
+          {
+            "id": "OBJ_01",
+            "label": "craft glue bottle",
+            "kind": "craft_glue_bottle",
+            "alias": "rehearsal_studio_craft_glue_bottle_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_02",
+            "label": "audio mixer",
+            "kind": "audio_mixer",
+            "alias": "rehearsal_studio_audio_mixer_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_03",
+            "label": "water bottle",
+            "kind": "water_bottle",
+            "alias": "rehearsal_studio_water_bottle_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_04",
+            "label": "parchment scroll",
+            "kind": "parchment_scroll",
+            "alias": "rehearsal_studio_parchment_scroll_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_05",
+            "label": "accessory case",
+            "kind": "accessory_case",
+            "alias": "rehearsal_studio_accessory_case_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_06",
+            "label": "hardcover notebook",
+            "kind": "hardcover_notebook",
+            "alias": "rehearsal_studio_hardcover_notebook_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_07",
+            "label": "hand puppet",
+            "kind": "hand_puppet",
+            "alias": "rehearsal_studio_hand_puppet_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_08",
+            "label": "audio cable",
+            "kind": "audio_cable",
+            "alias": "rehearsal_studio_audio_cable_0",
+            "correct": true
+          }
+        ]
+      },
+      "answer_choice_mode": "multiple",
+      "goal_images": [
+        [
+          "the equipment cabinet this task refers to -- this exact object",
+          "../references/3ff4cc4091968036e25fe25e0a2fdf85ec5c7ec5e28b4b0cd8042706d59e514e.png"
+        ],
+        [
+          "Option OBJ_01 — craft glue bottle; category reference image",
+          "../references/0bc7ba5ef7ba88adc5e60c58c005ed670e69fb2f01c2ef054808f2c9182ad447.png"
+        ],
+        [
+          "Option OBJ_02 — audio mixer; category reference image",
+          "../references/83493908c61a2eb4a7d7aa381f2db3b929d50571a5cafee579de2315c06032f6.png"
+        ],
+        [
+          "Option OBJ_03 — water bottle; category reference image",
+          "../references/99492518703c3b56e8e1ba7cb1b96ba6a5f8bc63bd249a0c587f3d1ebb4570c6.png"
+        ],
+        [
+          "Option OBJ_04 — parchment scroll; category reference image",
+          "../references/bdde8df2a1f74289f9ac7937b32e3f2360585b734d7c0f578bab7ce192bbde64.png"
+        ],
+        [
+          "Option OBJ_05 — accessory case; category reference image",
+          "../references/49595ed3dc3173acb11ef148fa7a6a7730795ce3fb6d25539f2c56fc1355b172.png"
+        ],
+        [
+          "Option OBJ_06 — hardcover notebook; category reference image",
+          "../references/937a5fb00e52c2aae072ad36b420160d9e25994f86b31f4d050fa434daab7fe3.png"
+        ],
+        [
+          "Option OBJ_07 — hand puppet; category reference image",
+          "../references/92acd62edbe0d46d836c224544aa98d06c1b29615eeb098c10f7aee8f3206b78.png"
+        ],
+        [
+          "Option OBJ_08 — audio cable; category reference image",
+          "../references/60b2a987dd1049eea5b899b9cd4a4686d6a963f6fcc22f47305d5325dccb38ea.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "object_count__poster",
+      "family": "object_count",
+      "instruction": "Search this house and count the posters. For this task, count framed graphic posters, not plaques displaying only a name, logo, or mandatory safety symbol. There is more than one room, and there may be posters in more than one of them. When you have finished searching, tell me how many posters there are in total, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_choice_labels": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 75,
+      "answer_number": 3,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "black_box_theatre",
+          "rehearsal_studio"
+        ],
+        "must_open": [],
+        "must_see": [
+          "black_box_theatre_poster_0",
+          "rehearsal_studio_poster_0",
+          "rehearsal_studio_poster_1"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "black_box_theatre",
+          "rehearsal_studio",
+          "workshop"
+        ]
+      },
+      "kinds": [
+        "poster"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "black_box_theatre_poster_0",
+        "rehearsal_studio_poster_0",
+        "rehearsal_studio_poster_1"
+      ],
+      "answer_instances": [
+        "black_box_theatre_poster_0",
+        "rehearsal_studio_poster_0",
+        "rehearsal_studio_poster_1"
+      ],
+      "plan": [],
+      "oracle_answer": "3",
+      "oracle_read": [
+        "count_seen",
+        "poster",
+        [
+          "black_box_theatre",
+          "rehearsal_studio",
+          "workshop"
+        ]
+      ],
+      "truth": {
+        "kind": "poster",
+        "total": 3,
+        "noun": "poster",
+        "rooms": [
+          "black_box_theatre",
+          "rehearsal_studio"
+        ],
+        "per_room": {
+          "black_box_theatre": 1,
+          "rehearsal_studio": 2
+        },
+        "spawn": {
+          "x": 18.25,
+          "y": 1.5,
+          "z": 7.5,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "workshop"
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'poster' -- the task is about every poster in the house, and the others need not look like this one; use the task definition; name, logo, and safety-symbol plaques are excluded",
+          "../references/d36d06ca0fe55c5d291bfb2387a5271b5d9f4f7034da9dcc8f7778d5ca2867f8.png"
+        ]
+      ],
+      "scene_variant": {
+        "schema": "task-scene-variant-v1",
+        "exclude": [
+          "black_box_theatre_art_print_0",
+          "black_box_theatre_diagram_0",
+          "black_box_theatre_framed_diagram_0",
+          "workshop_blueprint_print_0",
+          "workshop_concept_print_0"
+        ]
+      }
+    },
+    {
+      "task_id": "object_distance__black_box_theatre_puppet_theater_booth_0__workshop_paint_storage_rack_0",
+      "family": "object_distance",
+      "instruction": "Find the puppet theater booth and the paint storage rack in this house; they are in different rooms. Then tell me roughly how far apart they are, in metres, as a number. Measure the straight line between them, not the distance you walked.",
+      "referents": [
+        "black_box_theatre_puppet_theater_booth_0",
+        "workshop_paint_storage_rack_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_choice_labels": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m",
+      "answer_match": "count",
+      "max_steps": 75,
+      "answer_number": 18,
+      "answer_tolerance": 3.6,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "black_box_theatre",
+          "workshop"
+        ],
+        "must_open": [],
+        "must_see": [
+          "black_box_theatre_puppet_theater_booth_0",
+          "workshop_paint_storage_rack_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "black_box_theatre",
+          "workshop"
+        ]
+      },
+      "kinds": [
+        "puppet_theater_booth",
+        "paint_storage_rack"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "black_box_theatre_puppet_theater_booth_0",
+        "workshop_paint_storage_rack_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "18",
+      "oracle_read": [
+        "object_distance",
+        "black_box_theatre_puppet_theater_booth_0",
+        "workshop_paint_storage_rack_0"
+      ],
+      "truth": {
+        "a": "black_box_theatre_puppet_theater_booth_0",
+        "b": "workshop_paint_storage_rack_0",
+        "metres": 18.31,
+        "a_room": "black_box_theatre",
+        "b_room": "workshop",
+        "tol_m": 1,
+        "spawn": {
+          "x": 16.5,
+          "y": 1.5,
+          "z": 7.0,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "rehearsal_studio"
+        }
+      },
+      "goal_images": [
+        [
+          "the puppet theater booth this task refers to -- this exact object",
+          "../references/c21182fef5f3154ba3b3f5ea586a82e779974daaabaa82482531c13294081c79.png"
+        ],
+        [
+          "the paint storage rack this task refers to -- this exact object",
+          "../references/59b06eceb883421f14fcceca959d4836a756e9e49b18bbd6655ccda868160a42.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relocation__workshop_sewing_machine_0__to__black_box_theatre_puppet_theater_booth_0",
+      "family": "relocation",
+      "instruction": "Find the sewing machine, pick it up, and put it on the puppet theater booth.",
+      "referents": [
+        "workshop_sewing_machine_0",
+        "black_box_theatre_puppet_theater_booth_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('workshop_sewing_machine_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('workshop_sewing_machine_0','black_box_theatre_puppet_theater_booth_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_choice_labels": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 75,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "black_box_theatre",
+          "workshop"
+        ],
+        "must_open": [],
+        "must_see": [
+          "black_box_theatre_puppet_theater_booth_0",
+          "workshop_sewing_machine_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "black_box_theatre",
+          "rehearsal_studio",
+          "workshop"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "workshop_sewing_machine_0",
+        "black_box_theatre_puppet_theater_booth_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "workshop_sewing_machine_0"
+        ],
+        [
+          "pick",
+          "workshop_sewing_machine_0"
+        ],
+        [
+          "navigate",
+          "black_box_theatre_puppet_theater_booth_0"
+        ],
+        [
+          "place",
+          "black_box_theatre_puppet_theater_booth_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "workshop_sewing_machine_0",
+        "from_room": "workshop",
+        "from_room_id": "workshop",
+        "dest": "black_box_theatre_puppet_theater_booth_0",
+        "to_room": "black_box_theatre",
+        "to_room_id": "black_box_theatre",
+        "spawn": {
+          "x": 16.5,
+          "y": 1.5,
+          "z": 0.5,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "rehearsal_studio"
+        }
+      },
+      "goal_images": [
+        [
+          "the sewing machine this task refers to -- this exact object",
+          "../references/b6d13b1235eb5455d38353a3f5e8cefc7c89174fedb9c299d9f5c3869daa7fde.png"
+        ],
+        [
+          "the puppet theater booth this task refers to -- this exact object",
+          "../references/c21182fef5f3154ba3b3f5ea586a82e779974daaabaa82482531c13294081c79.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relocation__workshop_v_gouge_0__to__rehearsal_studio_puppet_theatre_booth_0",
+      "family": "relocation",
+      "instruction": "Find the v gouge, pick it up, and put it on the puppet theatre booth.",
+      "referents": [
+        "workshop_v_gouge_0",
+        "rehearsal_studio_puppet_theatre_booth_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('workshop_v_gouge_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('workshop_v_gouge_0','rehearsal_studio_puppet_theatre_booth_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_choice_labels": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 75,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "rehearsal_studio",
+          "workshop"
+        ],
+        "must_open": [],
+        "must_see": [
+          "rehearsal_studio_puppet_theatre_booth_0",
+          "workshop_v_gouge_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "black_box_theatre",
+          "rehearsal_studio",
+          "workshop"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "workshop_v_gouge_0",
+        "rehearsal_studio_puppet_theatre_booth_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "workshop_v_gouge_0"
+        ],
+        [
+          "pick",
+          "workshop_v_gouge_0"
+        ],
+        [
+          "navigate",
+          "rehearsal_studio_puppet_theatre_booth_0"
+        ],
+        [
+          "place",
+          "rehearsal_studio_puppet_theatre_booth_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "workshop_v_gouge_0",
+        "from_room": "workshop",
+        "from_room_id": "workshop",
+        "dest": "rehearsal_studio_puppet_theatre_booth_0",
+        "to_room": "rehearsal_studio",
+        "to_room_id": "rehearsal_studio",
+        "spawn": {
+          "x": 7.5,
+          "y": 1.5,
+          "z": 4.0,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "black_box_theatre"
+        }
+      },
+      "goal_images": [
+        [
+          "the v gouge this task refers to -- this exact object",
+          "../references/83178b43fac13b97eeaf0600990c6466ad0a6479357443a9872355e8f811e0f9.png"
+        ],
+        [
+          "the puppet theatre booth this task refers to -- this exact object",
+          "../references/4b30e86a3dfd07d8151bbd29051b56fd86b25ee0d54466b60f7b083f3f61f32e.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "nearer_object_comparison__black_box_theatre_puppet_theater_booth_0",
+      "family": "nearer_object_comparison",
+      "instruction": "Somewhere in this house there are the equipment cabinet, the paint storage rack and the puppet theatre booth. None of them is in the same room as the puppet theater booth. Find out which one of them is closest to the puppet theater booth, and answer with just that one thing. Compare the straight-line distances, not how far you had to walk.",
+      "referents": [
+        "black_box_theatre_puppet_theater_booth_0",
+        "rehearsal_studio_puppet_theatre_booth_0",
+        "rehearsal_studio_equipment_cabinet_0",
+        "workshop_paint_storage_rack_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "puppet theatre booth"
+        ]
+      ],
+      "answer_choices": [
+        "equipment cabinet",
+        "paint storage rack",
+        "puppet theatre booth"
+      ],
+      "answer_choice_labels": [
+        "equipment cabinet",
+        "paint storage rack",
+        "puppet theatre booth"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 75,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "black_box_theatre",
+          "rehearsal_studio",
+          "workshop"
+        ],
+        "must_open": [],
+        "must_see": [
+          "black_box_theatre_puppet_theater_booth_0",
+          "rehearsal_studio_equipment_cabinet_0",
+          "rehearsal_studio_puppet_theatre_booth_0",
+          "workshop_paint_storage_rack_0"
+        ],
+        "min_distinct_viewpoints": 3,
+        "search_regions": [
+          "black_box_theatre",
+          "rehearsal_studio",
+          "workshop"
+        ]
+      },
+      "kinds": [
+        "puppet_theatre_booth",
+        "equipment_cabinet",
+        "paint_storage_rack",
+        "puppet_theater_booth"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "black_box_theatre_puppet_theater_booth_0",
+        "rehearsal_studio_puppet_theatre_booth_0",
+        "rehearsal_studio_equipment_cabinet_0",
+        "workshop_paint_storage_rack_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "puppet theatre booth",
+      "oracle_read": [
+        "nearest_of",
+        "black_box_theatre_puppet_theater_booth_0",
+        [
+          [
+            "rehearsal_studio_puppet_theatre_booth_0",
+            "puppet theatre booth"
+          ],
+          [
+            "rehearsal_studio_equipment_cabinet_0",
+            "equipment cabinet"
+          ],
+          [
+            "workshop_paint_storage_rack_0",
+            "paint storage rack"
+          ]
+        ]
+      ],
+      "truth": {
+        "x": "black_box_theatre_puppet_theater_booth_0",
+        "winner": "rehearsal_studio_puppet_theatre_booth_0",
+        "choices": [
+          "rehearsal_studio_puppet_theatre_booth_0",
+          "rehearsal_studio_equipment_cabinet_0",
+          "workshop_paint_storage_rack_0"
+        ],
+        "words": [
+          "equipment cabinet",
+          "paint storage rack",
+          "puppet theatre booth"
+        ],
+        "metres": {
+          "rehearsal_studio_puppet_theatre_booth_0": 5.53,
+          "rehearsal_studio_equipment_cabinet_0": 7.92,
+          "workshop_paint_storage_rack_0": 18.31
+        },
+        "lead_m": 2.39,
+        "x_room": "black_box_theatre",
+        "spawn": {
+          "x": 13.25,
+          "y": 1.5,
+          "z": 0.5,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "rehearsal_studio"
+        }
+      },
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the puppet theater booth this task refers to -- this exact object",
+          "../references/c21182fef5f3154ba3b3f5ea586a82e779974daaabaa82482531c13294081c79.png"
+        ],
+        [
+          "the puppet theatre booth this task refers to -- this exact object",
+          "../references/4b30e86a3dfd07d8151bbd29051b56fd86b25ee0d54466b60f7b083f3f61f32e.png"
+        ],
+        [
+          "the equipment cabinet this task refers to -- this exact object",
+          "../references/3ff4cc4091968036e25fe25e0a2fdf85ec5c7ec5e28b4b0cd8042706d59e514e.png"
+        ],
+        [
+          "the paint storage rack this task refers to -- this exact object",
+          "../references/59b06eceb883421f14fcceca959d4836a756e9e49b18bbd6655ccda868160a42.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_localization__rehearsal_studio_archival_prop_box_0",
+      "family": "room_localization",
+      "instruction": "Find the archival prop box somewhere in this house, then tell me which room it is in. If there is no archival prop box here, choose NOT_PRESENT instead of guessing a room.\n\nRoom choices (use exactly one option key):\n- ROOM_01 — black box theatre\n- ROOM_02 — rehearsal studio\n- ROOM_03 — workshop room\n- NOT_PRESENT — not present\nReply with only one option key, for example ROOM_01 or NOT_PRESENT.",
+      "referents": [
+        "rehearsal_studio_archival_prop_box_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "ROOM_02"
+        ]
+      ],
+      "answer_choices": [
+        "ROOM_01",
+        "ROOM_02",
+        "ROOM_03",
+        "NOT_PRESENT"
+      ],
+      "answer_choice_labels": [
+        "black box theatre",
+        "rehearsal studio",
+        "workshop room",
+        "not present"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 75,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "rehearsal_studio"
+        ],
+        "must_open": [],
+        "must_see": [
+          "rehearsal_studio_archival_prop_box_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "black_box_theatre",
+          "rehearsal_studio",
+          "workshop"
+        ]
+      },
+      "kinds": [
+        "archival_prop_box"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "rehearsal_studio_archival_prop_box_0"
+      ],
+      "answer_instances": [
+        "rehearsal_studio_archival_prop_box_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "rehearsal_studio_archival_prop_box_0"
+        ]
+      ],
+      "oracle_answer": "rehearsal studio",
+      "oracle_read": [
+        "room_here"
+      ],
+      "truth": {
+        "alias": "rehearsal_studio_archival_prop_box_0",
+        "kind": "archival_prop_box",
+        "room": "rehearsal_studio",
+        "room_id": "rehearsal_studio",
+        "room_name": "rehearsal studio",
+        "spawn": {
+          "x": 20.75,
+          "y": 1.5,
+          "z": 0.5,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "workshop"
+        },
+        "room_answer_choice": "ROOM_02",
+        "room_answer_label": "rehearsal studio",
+        "absence_option": "NOT_PRESENT"
+      },
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the archival prop box this task refers to -- this exact object",
+          "../references/f2f2112b898db6813535d22bf6391e6bcb08bd8ef81cb8304828275b0643f239.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_localization__rehearsal_studio_archival_prop_box_2",
+      "family": "room_localization",
+      "instruction": "Find the archival prop box somewhere in this house, then tell me which room it is in. If there is no archival prop box here, choose NOT_PRESENT instead of guessing a room.\n\nRoom choices (use exactly one option key):\n- ROOM_01 — black box theatre\n- ROOM_02 — rehearsal studio\n- ROOM_03 — workshop room\n- NOT_PRESENT — not present\nReply with only one option key, for example ROOM_01 or NOT_PRESENT.",
+      "referents": [
+        "rehearsal_studio_archival_prop_box_2"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "ROOM_02"
+        ]
+      ],
+      "answer_choices": [
+        "ROOM_01",
+        "ROOM_02",
+        "ROOM_03",
+        "NOT_PRESENT"
+      ],
+      "answer_choice_labels": [
+        "black box theatre",
+        "rehearsal studio",
+        "workshop room",
+        "not present"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 75,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "rehearsal_studio"
+        ],
+        "must_open": [],
+        "must_see": [
+          "rehearsal_studio_archival_prop_box_2"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "black_box_theatre",
+          "rehearsal_studio",
+          "workshop"
+        ]
+      },
+      "kinds": [
+        "archival_prop_box"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "rehearsal_studio_archival_prop_box_2"
+      ],
+      "answer_instances": [
+        "rehearsal_studio_archival_prop_box_2"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "rehearsal_studio_archival_prop_box_2"
+        ]
+      ],
+      "oracle_answer": "rehearsal studio",
+      "oracle_read": [
+        "room_here"
+      ],
+      "truth": {
+        "alias": "rehearsal_studio_archival_prop_box_2",
+        "kind": "archival_prop_box",
+        "room": "rehearsal_studio",
+        "room_id": "rehearsal_studio",
+        "room_name": "rehearsal studio",
+        "spawn": {
+          "x": 17.25,
+          "y": 1.5,
+          "z": 4.75,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "workshop"
+        },
+        "room_answer_choice": "ROOM_02",
+        "room_answer_label": "rehearsal studio",
+        "absence_option": "NOT_PRESENT"
+      },
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the archival prop box this task refers to -- this exact object",
+          "../references/f2f2112b898db6813535d22bf6391e6bcb08bd8ef81cb8304828275b0643f239.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_localization__rehearsal_studio_cream_cotton_fabric_swatch_0",
+      "family": "room_localization",
+      "instruction": "Find the cream cotton fabric swatch somewhere in this house, then tell me which room it is in. If there is no cream cotton fabric swatch here, choose NOT_PRESENT instead of guessing a room.\n\nRoom choices (use exactly one option key):\n- ROOM_01 — black box theatre\n- ROOM_02 — rehearsal studio\n- ROOM_03 — workshop room\n- NOT_PRESENT — not present\nReply with only one option key, for example ROOM_01 or NOT_PRESENT.",
+      "referents": [
+        "rehearsal_studio_cream_cotton_fabric_swatch_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "ROOM_02"
+        ]
+      ],
+      "answer_choices": [
+        "ROOM_01",
+        "ROOM_02",
+        "ROOM_03",
+        "NOT_PRESENT"
+      ],
+      "answer_choice_labels": [
+        "black box theatre",
+        "rehearsal studio",
+        "workshop room",
+        "not present"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 75,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "rehearsal_studio"
+        ],
+        "must_open": [],
+        "must_see": [
+          "rehearsal_studio_cream_cotton_fabric_swatch_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "black_box_theatre",
+          "rehearsal_studio",
+          "workshop"
+        ]
+      },
+      "kinds": [
+        "cream_cotton_fabric_swatch"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "rehearsal_studio_cream_cotton_fabric_swatch_0"
+      ],
+      "answer_instances": [
+        "rehearsal_studio_cream_cotton_fabric_swatch_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "rehearsal_studio_cream_cotton_fabric_swatch_0"
+        ]
+      ],
+      "oracle_answer": "rehearsal studio",
+      "oracle_read": [
+        "room_here"
+      ],
+      "truth": {
+        "alias": "rehearsal_studio_cream_cotton_fabric_swatch_0",
+        "kind": "cream_cotton_fabric_swatch",
+        "room": "rehearsal_studio",
+        "room_id": "rehearsal_studio",
+        "room_name": "rehearsal studio",
+        "spawn": {
+          "x": 9.5,
+          "y": 1.5,
+          "z": 7.5,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "black_box_theatre"
+        },
+        "room_answer_choice": "ROOM_02",
+        "room_answer_label": "rehearsal studio",
+        "absence_option": "NOT_PRESENT"
+      },
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the cream cotton fabric swatch this task refers to -- this exact object",
+          "../references/11f2482f57fe3fbcf6675fae7f21042f3772162fd83a866f0b123db0a1bbc8b1.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_area__black_box_theatre",
+      "family": "room_area",
+      "instruction": "Find the black box theatre in this house, then tell me roughly how big its floor is, in square metres, as a number. I want the floor area of that one room, measured inside its walls -- not the whole house, and not the other rooms.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_choice_labels": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m2",
+      "answer_match": "count",
+      "max_steps": 75,
+      "answer_number": 80,
+      "answer_tolerance": 20.0,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "black_box_theatre"
+        ],
+        "must_open": [],
+        "must_see": [],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "black_box_theatre",
+          "rehearsal_studio",
+          "workshop"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "80",
+      "oracle_read": [
+        "room_area",
+        "black_box_theatre"
+      ],
+      "truth": {
+        "room": "black_box_theatre",
+        "name": "black box theatre",
+        "m2": 80,
+        "tol_m2": 10,
+        "spawn": {
+          "x": 18.25,
+          "y": 1.5,
+          "z": 7.5,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "workshop"
+        }
+      },
+      "goal_images": []
+    },
+    {
+      "task_id": "room_count__whiteboard",
+      "family": "room_count",
+      "instruction": "Search this house and find out which rooms contain at least one whiteboard. Count two places as different rooms if you have to go through a doorway to get from one to the other. Some rooms contain no whiteboards at all, and a room with several whiteboards still counts once. Tell me how many rooms contain at least one whiteboard, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_choice_labels": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 75,
+      "answer_number": 2,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "rehearsal_studio",
+          "workshop"
+        ],
+        "must_open": [],
+        "must_see": [
+          "rehearsal_studio_whiteboard_0",
+          "workshop_whiteboard_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "black_box_theatre",
+          "rehearsal_studio",
+          "workshop"
+        ]
+      },
+      "kinds": [
+        "whiteboard"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "rehearsal_studio_whiteboard_0",
+        "workshop_whiteboard_0"
+      ],
+      "answer_instances": [
+        "rehearsal_studio_whiteboard_0",
+        "workshop_whiteboard_0"
+      ],
+      "plan": [],
+      "oracle_answer": "2",
+      "oracle_read": [
+        "room_count_seen",
+        "whiteboard",
+        [
+          "black_box_theatre",
+          "rehearsal_studio",
+          "workshop"
+        ],
+        []
+      ],
+      "truth": {
+        "kind": "whiteboard",
+        "n_rooms": 2,
+        "noun": "whiteboard",
+        "rooms": [
+          "rehearsal_studio",
+          "workshop"
+        ],
+        "places": [
+          [
+            "rehearsal_studio"
+          ],
+          [
+            "workshop"
+          ]
+        ],
+        "n_places_in_scope": 3,
+        "total": 2,
+        "spawn": {
+          "x": 9.5,
+          "y": 1.5,
+          "z": 0.5,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "black_box_theatre"
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'whiteboard' -- the task is about every whiteboard in the house, and the others need not look like this one",
+          "../references/97a5e2b068d5c64116c809e5a1e00b222c0994c9edc9728b8563c14667b99aac.png"
+        ]
+      ]
+    }
+  ],
+  "dataset_version": "1.1"
+}

@@ -1,0 +1,236 @@
+{
+  "scene_139/room_localization__changing_room_spa_towel_0": [
+    {
+      "alias": "changing_room_stack_0",
+      "room": "changing_room",
+      "kind": "stack_2",
+      "articulated_id": null,
+      "visual_template_sha256": "d1484c64dd21e9b2618fcc60f777437b5aba3e2c7d6f6c4d525db4a32c83d5a8"
+    }
+  ],
+  "scene_143/room_localization__weaving_studio_folded_linen_fabric_0": [
+    {
+      "alias": "weaving_studio_folded_linen_fabric_1",
+      "room": "weaving_studio",
+      "kind": "folded_linen_fabric",
+      "articulated_id": null,
+      "visual_template_sha256": "8c96435d00e41f9c4b8e593cad2dd9f37716815e2154ec198f5b7d8c65a22d18"
+    }
+  ],
+  "scene_144/room_localization__courtroom_water_tumbler_0": [
+    {
+      "alias": "courtroom_water_tumbler_1",
+      "room": "courtroom",
+      "kind": "water_tumbler",
+      "articulated_id": null,
+      "visual_template_sha256": "0546ea52cc35937a920c35a43ac9d1d3281600189b795b39a014907e99960aa2"
+    },
+    {
+      "alias": "courtroom_water_tumbler_2",
+      "room": "courtroom",
+      "kind": "water_tumbler",
+      "articulated_id": null,
+      "visual_template_sha256": "0546ea52cc35937a920c35a43ac9d1d3281600189b795b39a014907e99960aa2"
+    }
+  ],
+  "scene_144/room_localization__courtroom_water_tumbler_1": [
+    {
+      "alias": "courtroom_water_tumbler_0",
+      "room": "courtroom",
+      "kind": "water_tumbler",
+      "articulated_id": null,
+      "visual_template_sha256": "0546ea52cc35937a920c35a43ac9d1d3281600189b795b39a014907e99960aa2"
+    },
+    {
+      "alias": "courtroom_water_tumbler_2",
+      "room": "courtroom",
+      "kind": "water_tumbler",
+      "articulated_id": null,
+      "visual_template_sha256": "0546ea52cc35937a920c35a43ac9d1d3281600189b795b39a014907e99960aa2"
+    }
+  ],
+  "scene_146/room_localization__scent_consultation_salon_fragrance_sample_box_0": [
+    {
+      "alias": "scent_consultation_salon_fragrance_sample_box_1",
+      "room": "scent_consultation_salon",
+      "kind": "fragrance_sample_box",
+      "articulated_id": null,
+      "visual_template_sha256": "417425fdbf3df7593cbb87957c9b6571d06e9f6e129cea38456241c8678e5796"
+    },
+    {
+      "alias": "scent_consultation_salon_fragrance_sample_box_2",
+      "room": "scent_consultation_salon",
+      "kind": "fragrance_sample_box",
+      "articulated_id": null,
+      "visual_template_sha256": "417425fdbf3df7593cbb87957c9b6571d06e9f6e129cea38456241c8678e5796"
+    },
+    {
+      "alias": "scent_consultation_salon_fragrance_sample_box_3",
+      "room": "scent_consultation_salon",
+      "kind": "fragrance_sample_box",
+      "articulated_id": null,
+      "visual_template_sha256": "417425fdbf3df7593cbb87957c9b6571d06e9f6e129cea38456241c8678e5796"
+    }
+  ],
+  "scene_146/room_localization__scent_consultation_salon_fragrance_sample_box_1": [
+    {
+      "alias": "scent_consultation_salon_fragrance_sample_box_0",
+      "room": "scent_consultation_salon",
+      "kind": "fragrance_sample_box",
+      "articulated_id": null,
+      "visual_template_sha256": "417425fdbf3df7593cbb87957c9b6571d06e9f6e129cea38456241c8678e5796"
+    },
+    {
+      "alias": "scent_consultation_salon_fragrance_sample_box_2",
+      "room": "scent_consultation_salon",
+      "kind": "fragrance_sample_box",
+      "articulated_id": null,
+      "visual_template_sha256": "417425fdbf3df7593cbb87957c9b6571d06e9f6e129cea38456241c8678e5796"
+    },
+    {
+      "alias": "scent_consultation_salon_fragrance_sample_box_3",
+      "room": "scent_consultation_salon",
+      "kind": "fragrance_sample_box",
+      "articulated_id": null,
+      "visual_template_sha256": "417425fdbf3df7593cbb87957c9b6571d06e9f6e129cea38456241c8678e5796"
+    }
+  ],
+  "scene_148/room_localization__germination_testing_room_laboratory_microscope_1": [
+    {
+      "alias": "germination_testing_room_laboratory_microscope_0",
+      "room": "germination_testing_room",
+      "kind": "laboratory_microscope",
+      "articulated_id": null,
+      "visual_template_sha256": "e628f4bdfc02cbec0e3a530f91b123e912502f3f441a111bc74fee46a5fce297"
+    }
+  ],
+  "scene_148/room_localization__germination_testing_room_temperature_humidity_monitor_1": [
+    {
+      "alias": "germination_testing_room_temperature_humidity_monitor_0",
+      "room": "germination_testing_room",
+      "kind": "temperature_humidity_monitor",
+      "articulated_id": null,
+      "visual_template_sha256": "3bd852e562a53ffa603705c86870df441d9171f68493c54fffb083e10a53203f"
+    }
+  ],
+  "scene_148/room_localization__seed_vault_barcode_scanner_0": [
+    {
+      "alias": "seed_vault_barcode_scanner_1",
+      "room": "seed_vault",
+      "kind": "barcode_scanner",
+      "articulated_id": null,
+      "visual_template_sha256": "c57ec9826af3f8abb3f33791fc7ce810961aedfc729eae67c5979ccb127bd503"
+    }
+  ],
+  "scene_149/room_localization__rehearsal_studio_archival_prop_box_0": [
+    {
+      "alias": "rehearsal_studio_archival_prop_box_1",
+      "room": "rehearsal_studio",
+      "kind": "archival_prop_box",
+      "articulated_id": null,
+      "visual_template_sha256": "3a20d0d2e855b2e6f98392f054931b02e70062d95c47bdf6d69c6b027ebeca41"
+    },
+    {
+      "alias": "rehearsal_studio_archival_prop_box_2",
+      "room": "rehearsal_studio",
+      "kind": "archival_prop_box",
+      "articulated_id": null,
+      "visual_template_sha256": "3a20d0d2e855b2e6f98392f054931b02e70062d95c47bdf6d69c6b027ebeca41"
+    },
+    {
+      "alias": "rehearsal_studio_archival_prop_box_3",
+      "room": "rehearsal_studio",
+      "kind": "archival_prop_box",
+      "articulated_id": null,
+      "visual_template_sha256": "3a20d0d2e855b2e6f98392f054931b02e70062d95c47bdf6d69c6b027ebeca41"
+    },
+    {
+      "alias": "rehearsal_studio_archival_prop_box_4",
+      "room": "rehearsal_studio",
+      "kind": "archival_prop_box",
+      "articulated_id": null,
+      "visual_template_sha256": "3a20d0d2e855b2e6f98392f054931b02e70062d95c47bdf6d69c6b027ebeca41"
+    },
+    {
+      "alias": "rehearsal_studio_archival_prop_box_5",
+      "room": "rehearsal_studio",
+      "kind": "archival_prop_box",
+      "articulated_id": null,
+      "visual_template_sha256": "3a20d0d2e855b2e6f98392f054931b02e70062d95c47bdf6d69c6b027ebeca41"
+    }
+  ],
+  "scene_149/room_localization__rehearsal_studio_archival_prop_box_2": [
+    {
+      "alias": "rehearsal_studio_archival_prop_box_0",
+      "room": "rehearsal_studio",
+      "kind": "archival_prop_box",
+      "articulated_id": null,
+      "visual_template_sha256": "3a20d0d2e855b2e6f98392f054931b02e70062d95c47bdf6d69c6b027ebeca41"
+    },
+    {
+      "alias": "rehearsal_studio_archival_prop_box_1",
+      "room": "rehearsal_studio",
+      "kind": "archival_prop_box",
+      "articulated_id": null,
+      "visual_template_sha256": "3a20d0d2e855b2e6f98392f054931b02e70062d95c47bdf6d69c6b027ebeca41"
+    },
+    {
+      "alias": "rehearsal_studio_archival_prop_box_3",
+      "room": "rehearsal_studio",
+      "kind": "archival_prop_box",
+      "articulated_id": null,
+      "visual_template_sha256": "3a20d0d2e855b2e6f98392f054931b02e70062d95c47bdf6d69c6b027ebeca41"
+    },
+    {
+      "alias": "rehearsal_studio_archival_prop_box_4",
+      "room": "rehearsal_studio",
+      "kind": "archival_prop_box",
+      "articulated_id": null,
+      "visual_template_sha256": "3a20d0d2e855b2e6f98392f054931b02e70062d95c47bdf6d69c6b027ebeca41"
+    },
+    {
+      "alias": "rehearsal_studio_archival_prop_box_5",
+      "room": "rehearsal_studio",
+      "kind": "archival_prop_box",
+      "articulated_id": null,
+      "visual_template_sha256": "3a20d0d2e855b2e6f98392f054931b02e70062d95c47bdf6d69c6b027ebeca41"
+    }
+  ],
+  "scene_208/room_localization__storage_room_office_binder_5": [
+    {
+      "alias": "storage_room_office_binder_0",
+      "room": "storage_room",
+      "kind": "office_binder",
+      "articulated_id": null,
+      "visual_template_sha256": "e77d02b14ff0065623d6bff900ff89307231addedd6e31db7527ebf39684bc80"
+    },
+    {
+      "alias": "storage_room_office_binder_1",
+      "room": "storage_room",
+      "kind": "office_binder",
+      "articulated_id": null,
+      "visual_template_sha256": "e77d02b14ff0065623d6bff900ff89307231addedd6e31db7527ebf39684bc80"
+    },
+    {
+      "alias": "storage_room_office_binder_2",
+      "room": "storage_room",
+      "kind": "office_binder",
+      "articulated_id": null,
+      "visual_template_sha256": "e77d02b14ff0065623d6bff900ff89307231addedd6e31db7527ebf39684bc80"
+    },
+    {
+      "alias": "storage_room_office_binder_3",
+      "room": "storage_room",
+      "kind": "office_binder",
+      "articulated_id": null,
+      "visual_template_sha256": "e77d02b14ff0065623d6bff900ff89307231addedd6e31db7527ebf39684bc80"
+    },
+    {
+      "alias": "storage_room_office_binder_7",
+      "room": "storage_room",
+      "kind": "office_binder",
+      "articulated_id": null,
+      "visual_template_sha256": "e77d02b14ff0065623d6bff900ff89307231addedd6e31db7527ebf39684bc80"
+    }
+  ]
+}

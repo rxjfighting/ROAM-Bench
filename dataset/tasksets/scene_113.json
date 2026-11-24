@@ -1,0 +1,1706 @@
+{
+  "schema_version": 4,
+  "benchmark": "ROAM-Bench",
+  "scene": "scene_113",
+  "spawn": {
+    "x": 2.25,
+    "y": 1.5,
+    "z": 7.0,
+    "yaw_deg": 0.0,
+    "horizon_deg": 0.0,
+    "room": "main_practice_room"
+  },
+  "specs": [
+    {
+      "task_id": "surface_contents__changing_room_changing_room_bench_0",
+      "family": "surface_contents",
+      "instruction": "Go to the changing room bench. Which of the following objects are resting on it? Select every option that applies. Answer only with the option IDs.\nOptions:\n- OBJ_01: yoga blanket\n- OBJ_02: water bottle\n- OBJ_03: appointment notebook\n- OBJ_04: yoga strap\n- OBJ_05: toiletry pouch\n- OBJ_06: rolled yoga mat\n- OBJ_07: essential oil diffuser\n- OBJ_08: massage oil bottle",
+      "referents": [
+        "changing_room_changing_room_bench_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "OBJ_02"
+        ],
+        [
+          "OBJ_05"
+        ]
+      ],
+      "answer_choices": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_unit": "",
+      "answer_match": "set",
+      "max_steps": 125,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "changing_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "changing_room_changing_room_bench_0",
+          "changing_room_toiletry_pouch_0",
+          "changing_room_water_bottle_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "changing_room",
+          "main_practice_room",
+          "reception",
+          "smaller_practice_room",
+          "treatment_room"
+        ]
+      },
+      "kinds": [
+        "toiletry_pouch",
+        "water_bottle"
+      ],
+      "receptacle_kinds": [
+        "changing_room_bench"
+      ],
+      "evidence": [
+        "changing_room_changing_room_bench_0",
+        "changing_room_toiletry_pouch_0",
+        "changing_room_water_bottle_0"
+      ],
+      "answer_instances": [
+        "changing_room_toiletry_pouch_0",
+        "changing_room_water_bottle_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "changing_room_changing_room_bench_0"
+        ]
+      ],
+      "oracle_answer": "OBJ_02, OBJ_05",
+      "oracle_read": [
+        "surface_contents",
+        "changing_room_changing_room_bench_0"
+      ],
+      "truth": {
+        "host": "changing_room_changing_room_bench_0",
+        "host_kind": "changing_room_bench",
+        "room": "changing_room",
+        "children": [
+          {
+            "alias": "changing_room_toiletry_pouch_0",
+            "kind": "toiletry_pouch"
+          },
+          {
+            "alias": "changing_room_water_bottle_0",
+            "kind": "water_bottle"
+          }
+        ],
+        "spawn": {
+          "x": 0.5,
+          "y": 1.5,
+          "z": 3.5,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "reception"
+        },
+        "answer_options": [
+          {
+            "id": "OBJ_01",
+            "label": "yoga blanket",
+            "kind": "yoga_blanket",
+            "alias": "main_practice_room_yoga_blanket_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_02",
+            "label": "water bottle",
+            "kind": "water_bottle",
+            "alias": "changing_room_water_bottle_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_03",
+            "label": "appointment notebook",
+            "kind": "appointment_notebook",
+            "alias": "reception_appointment_notebook_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_04",
+            "label": "yoga strap",
+            "kind": "yoga_strap",
+            "alias": "main_practice_room_yoga_strap_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_05",
+            "label": "toiletry pouch",
+            "kind": "toiletry_pouch",
+            "alias": "changing_room_toiletry_pouch_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_06",
+            "label": "rolled yoga mat",
+            "kind": "rolled_yoga_mat",
+            "alias": "changing_room_rolled_yoga_mat_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_07",
+            "label": "essential oil diffuser",
+            "kind": "essential_oil_diffuser",
+            "alias": "smaller_practice_room_essential_oil_diffuser_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_08",
+            "label": "massage oil bottle",
+            "kind": "massage_oil_bottle",
+            "alias": "treatment_room_massage_oil_bottle_0",
+            "correct": false
+          }
+        ]
+      },
+      "answer_choice_labels": [
+        "yoga blanket",
+        "water bottle",
+        "appointment notebook",
+        "yoga strap",
+        "toiletry pouch",
+        "rolled yoga mat",
+        "essential oil diffuser",
+        "massage oil bottle"
+      ],
+      "answer_choice_mode": "multiple",
+      "goal_images": [
+        [
+          "the changing room bench this task refers to -- this exact object",
+          "../references/1ba6f1c134fb40001b0cc1f15ddcb8e488768d2da0e7c6df2af15ba4f40df201.png"
+        ],
+        [
+          "Option OBJ_01 — yoga blanket; category reference image",
+          "../references/49fffc4a4626c2b1f316a323437a873d98b9683fbd69f1a53cb802418910946c.png"
+        ],
+        [
+          "Option OBJ_02 — water bottle; category reference image",
+          "../references/182415253a4c425f276fe92c151f2a030d73117a2525d2baa7a688764bbb995a.png"
+        ],
+        [
+          "Option OBJ_03 — appointment notebook; category reference image",
+          "../references/305feec0c6868eb9b68dabbeea923612e7498969bb1e8f36e30fef2a0a5cddad.png"
+        ],
+        [
+          "Option OBJ_04 — yoga strap; category reference image",
+          "../references/8743e93e22612e30c86fade9c4e385461f38bfa75499598dfff909cfcb43e80b.png"
+        ],
+        [
+          "Option OBJ_05 — toiletry pouch; category reference image",
+          "../references/19d842a036841f4cc3e4e7e7270f7c6945533492e6182db751dd245ebc613960.png"
+        ],
+        [
+          "Option OBJ_06 — rolled yoga mat; category reference image",
+          "../references/d4c1a60f7e8521a4f314bc4a79ec19025ed3aced0216f1a475abeab18de87e87.png"
+        ],
+        [
+          "Option OBJ_07 — essential oil diffuser; category reference image",
+          "../references/f9ecbc42945461e0bf760e7e2d16876431954131e89097770be98be4a7f6fae4.png"
+        ],
+        [
+          "Option OBJ_08 — massage oil bottle; category reference image",
+          "../references/4b50fb86a0fc247400a37e6fbc1208209f971523bc96f9a528471271b88f6604.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "surface_contents__smaller_practice_room_storage_cabinet_0",
+      "family": "surface_contents",
+      "instruction": "Go to the storage cabinet. Which of the following objects are resting on it? Select every option that applies. Answer only with the option IDs.\nOptions:\n- OBJ_01: yoga block\n- OBJ_02: appointment notebook\n- OBJ_03: toiletry pouch\n- OBJ_04: ballpoint pen\n- OBJ_05: massage oil bottle\n- OBJ_06: essential oil diffuser\n- OBJ_07: water bottle\n- OBJ_08: singing bowl",
+      "referents": [
+        "smaller_practice_room_storage_cabinet_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "OBJ_06"
+        ],
+        [
+          "OBJ_08"
+        ]
+      ],
+      "answer_choices": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_unit": "",
+      "answer_match": "set",
+      "max_steps": 125,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "smaller_practice_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "smaller_practice_room_essential_oil_diffuser_0",
+          "smaller_practice_room_singing_bowl_0",
+          "smaller_practice_room_storage_cabinet_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "changing_room",
+          "main_practice_room",
+          "reception",
+          "smaller_practice_room",
+          "treatment_room"
+        ]
+      },
+      "kinds": [
+        "essential_oil_diffuser",
+        "singing_bowl"
+      ],
+      "receptacle_kinds": [
+        "storage_cabinet"
+      ],
+      "evidence": [
+        "smaller_practice_room_storage_cabinet_0",
+        "smaller_practice_room_essential_oil_diffuser_0",
+        "smaller_practice_room_singing_bowl_0"
+      ],
+      "answer_instances": [
+        "smaller_practice_room_essential_oil_diffuser_0",
+        "smaller_practice_room_singing_bowl_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "smaller_practice_room_storage_cabinet_0"
+        ]
+      ],
+      "oracle_answer": "OBJ_06, OBJ_08",
+      "oracle_read": [
+        "surface_contents",
+        "smaller_practice_room_storage_cabinet_0"
+      ],
+      "truth": {
+        "host": "smaller_practice_room_storage_cabinet_0",
+        "host_kind": "storage_cabinet",
+        "room": "smaller_practice_room",
+        "children": [
+          {
+            "alias": "smaller_practice_room_essential_oil_diffuser_0",
+            "kind": "essential_oil_diffuser"
+          },
+          {
+            "alias": "smaller_practice_room_singing_bowl_0",
+            "kind": "singing_bowl"
+          }
+        ],
+        "spawn": {
+          "x": -1.2,
+          "y": 1.5,
+          "z": -0.5,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "treatment_room"
+        },
+        "answer_options": [
+          {
+            "id": "OBJ_01",
+            "label": "yoga block",
+            "kind": "yoga_block",
+            "alias": "smaller_practice_room_yoga_block_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_02",
+            "label": "appointment notebook",
+            "kind": "appointment_notebook",
+            "alias": "reception_appointment_notebook_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_03",
+            "label": "toiletry pouch",
+            "kind": "toiletry_pouch",
+            "alias": "changing_room_toiletry_pouch_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_04",
+            "label": "ballpoint pen",
+            "kind": "ballpoint_pen",
+            "alias": "reception_ballpoint_pen_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_05",
+            "label": "massage oil bottle",
+            "kind": "massage_oil_bottle",
+            "alias": "treatment_room_massage_oil_bottle_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_06",
+            "label": "essential oil diffuser",
+            "kind": "essential_oil_diffuser",
+            "alias": "smaller_practice_room_essential_oil_diffuser_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_07",
+            "label": "water bottle",
+            "kind": "water_bottle",
+            "alias": "changing_room_water_bottle_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_08",
+            "label": "singing bowl",
+            "kind": "singing_bowl",
+            "alias": "smaller_practice_room_singing_bowl_0",
+            "correct": true
+          }
+        ]
+      },
+      "answer_choice_labels": [
+        "yoga block",
+        "appointment notebook",
+        "toiletry pouch",
+        "ballpoint pen",
+        "massage oil bottle",
+        "essential oil diffuser",
+        "water bottle",
+        "singing bowl"
+      ],
+      "answer_choice_mode": "multiple",
+      "goal_images": [
+        [
+          "the storage cabinet this task refers to -- this exact object",
+          "../references/2d5a239cc68fe0c8019fd0e25fb1b094039d0b8f5f345b31408f5cc4080e9bac.png"
+        ],
+        [
+          "Option OBJ_01 — yoga block; category reference image",
+          "../references/ed998215b7f678c3cafa1f913ff97588c79d0ecde52a4ff224fd0a3cf4bb05fd.png"
+        ],
+        [
+          "Option OBJ_02 — appointment notebook; category reference image",
+          "../references/305feec0c6868eb9b68dabbeea923612e7498969bb1e8f36e30fef2a0a5cddad.png"
+        ],
+        [
+          "Option OBJ_03 — toiletry pouch; category reference image",
+          "../references/19d842a036841f4cc3e4e7e7270f7c6945533492e6182db751dd245ebc613960.png"
+        ],
+        [
+          "Option OBJ_04 — ballpoint pen; category reference image",
+          "../references/9e707230029361b317eda9dc800422f04c9f0560f93fcd48d7061ee6f7e20ead.png"
+        ],
+        [
+          "Option OBJ_05 — massage oil bottle; category reference image",
+          "../references/4b50fb86a0fc247400a37e6fbc1208209f971523bc96f9a528471271b88f6604.png"
+        ],
+        [
+          "Option OBJ_06 — essential oil diffuser; category reference image",
+          "../references/f9ecbc42945461e0bf760e7e2d16876431954131e89097770be98be4a7f6fae4.png"
+        ],
+        [
+          "Option OBJ_07 — water bottle; category reference image",
+          "../references/182415253a4c425f276fe92c151f2a030d73117a2525d2baa7a688764bbb995a.png"
+        ],
+        [
+          "Option OBJ_08 — singing bowl; category reference image",
+          "../references/414f7d207db91036a454350c5b9e0ab51fdb14d340458a5d7c023b707281704e.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "surface_contents__treatment_room_shelving_unit_0",
+      "family": "surface_contents",
+      "instruction": "Go to the shelving unit. Which of the following objects are resting on it? Select every option that applies. Answer only with the option IDs.\nOptions:\n- OBJ_01: massage oil bottle\n- OBJ_02: stack 2\n- OBJ_03: essential oil diffuser\n- OBJ_04: ballpoint pen\n- OBJ_05: toiletry pouch\n- OBJ_06: singing bowl\n- OBJ_07: appointment notebook\n- OBJ_08: payment card reader",
+      "referents": [
+        "treatment_room_shelving_unit_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "OBJ_01"
+        ],
+        [
+          "OBJ_03"
+        ]
+      ],
+      "answer_choices": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_unit": "",
+      "answer_match": "set",
+      "max_steps": 125,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "treatment_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "treatment_room_essential_oil_diffuser_0",
+          "treatment_room_massage_oil_bottle_0",
+          "treatment_room_massage_oil_bottle_1",
+          "treatment_room_massage_oil_bottle_2",
+          "treatment_room_shelving_unit_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "changing_room",
+          "main_practice_room",
+          "reception",
+          "smaller_practice_room",
+          "treatment_room"
+        ]
+      },
+      "kinds": [
+        "essential_oil_diffuser"
+      ],
+      "receptacle_kinds": [
+        "shelving_unit"
+      ],
+      "evidence": [
+        "treatment_room_essential_oil_diffuser_0",
+        "treatment_room_massage_oil_bottle_0",
+        "treatment_room_massage_oil_bottle_1",
+        "treatment_room_massage_oil_bottle_2",
+        "treatment_room_shelving_unit_0"
+      ],
+      "answer_instances": [
+        "treatment_room_essential_oil_diffuser_0",
+        "treatment_room_massage_oil_bottle_0",
+        "treatment_room_massage_oil_bottle_1",
+        "treatment_room_massage_oil_bottle_2"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "treatment_room_shelving_unit_0"
+        ]
+      ],
+      "oracle_answer": "OBJ_01, OBJ_03",
+      "oracle_read": [
+        "surface_contents",
+        "treatment_room_shelving_unit_0"
+      ],
+      "truth": {
+        "host": "treatment_room_shelving_unit_0",
+        "host_kind": "shelving_unit",
+        "room": "treatment_room",
+        "children": [
+          {
+            "alias": "treatment_room_essential_oil_diffuser_0",
+            "kind": "essential_oil_diffuser"
+          },
+          {
+            "alias": "treatment_room_massage_oil_bottle_0",
+            "kind": "massage_oil_bottle"
+          },
+          {
+            "alias": "treatment_room_massage_oil_bottle_1",
+            "kind": "massage_oil_bottle"
+          },
+          {
+            "alias": "treatment_room_massage_oil_bottle_2",
+            "kind": "massage_oil_bottle"
+          }
+        ],
+        "spawn": {
+          "x": 2.0,
+          "y": 1.5,
+          "z": 14.0,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "smaller_practice_room"
+        },
+        "answer_options": [
+          {
+            "id": "OBJ_01",
+            "label": "massage oil bottle",
+            "kind": "massage_oil_bottle",
+            "alias": "treatment_room_massage_oil_bottle_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_02",
+            "label": "stack 2",
+            "kind": "stack_2",
+            "alias": "main_practice_room_stack_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_03",
+            "label": "essential oil diffuser",
+            "kind": "essential_oil_diffuser",
+            "alias": "treatment_room_essential_oil_diffuser_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_04",
+            "label": "ballpoint pen",
+            "kind": "ballpoint_pen",
+            "alias": "reception_ballpoint_pen_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_05",
+            "label": "toiletry pouch",
+            "kind": "toiletry_pouch",
+            "alias": "changing_room_toiletry_pouch_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_06",
+            "label": "singing bowl",
+            "kind": "singing_bowl",
+            "alias": "smaller_practice_room_singing_bowl_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_07",
+            "label": "appointment notebook",
+            "kind": "appointment_notebook",
+            "alias": "reception_appointment_notebook_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_08",
+            "label": "payment card reader",
+            "kind": "payment_card_reader",
+            "alias": "reception_payment_card_reader_0",
+            "correct": false
+          }
+        ],
+        "reviewed_contents": {
+          "schema": "visually-reviewed-contents-v1",
+          "aliases": [
+            "treatment_room_essential_oil_diffuser_0",
+            "treatment_room_massage_oil_bottle_0",
+            "treatment_room_massage_oil_bottle_1",
+            "treatment_room_massage_oil_bottle_2"
+          ],
+          "evidence_scope": "all reviewed host contents including unlisted objects",
+          "answer_scope": "the eight public reference instances"
+        }
+      },
+      "answer_choice_labels": [
+        "massage oil bottle",
+        "stack 2",
+        "essential oil diffuser",
+        "ballpoint pen",
+        "toiletry pouch",
+        "singing bowl",
+        "appointment notebook",
+        "payment card reader"
+      ],
+      "answer_choice_mode": "multiple",
+      "goal_images": [
+        [
+          "the shelving unit this task refers to -- this exact object",
+          "../references/dfec296b1939c2f1a8be1983ef6e2a90ce0fc54ac206bf17f974cf00d011b33a.png"
+        ],
+        [
+          "Option OBJ_01 — massage oil bottle; category reference image",
+          "../references/4b50fb86a0fc247400a37e6fbc1208209f971523bc96f9a528471271b88f6604.png"
+        ],
+        [
+          "Option OBJ_02 — stack 2; category reference image",
+          "../references/54a9b1c9ea42d04a9f747a907309915dad85417ac52bab1535d6aa734f5a1d5e.png"
+        ],
+        [
+          "Option OBJ_03 — essential oil diffuser; category reference image",
+          "../references/bef5d0b2b90282501488d99b4fe0bb952be79b17de30ce66554faa195e89df44.png"
+        ],
+        [
+          "Option OBJ_04 — ballpoint pen; category reference image",
+          "../references/9e707230029361b317eda9dc800422f04c9f0560f93fcd48d7061ee6f7e20ead.png"
+        ],
+        [
+          "Option OBJ_05 — toiletry pouch; category reference image",
+          "../references/19d842a036841f4cc3e4e7e7270f7c6945533492e6182db751dd245ebc613960.png"
+        ],
+        [
+          "Option OBJ_06 — singing bowl; category reference image",
+          "../references/414f7d207db91036a454350c5b9e0ab51fdb14d340458a5d7c023b707281704e.png"
+        ],
+        [
+          "Option OBJ_07 — appointment notebook; category reference image",
+          "../references/305feec0c6868eb9b68dabbeea923612e7498969bb1e8f36e30fef2a0a5cddad.png"
+        ],
+        [
+          "Option OBJ_08 — payment card reader; category reference image",
+          "../references/65102e325dd75a40d819dc0010c10e9175e75a479dd5a07e98323711f539ac80.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "object_distance__main_practice_room_yoga_equipment_storage_rack_0__smaller_practice_room_storage_cabinet_0",
+      "family": "object_distance",
+      "instruction": "Find the yoga equipment storage rack and the storage cabinet in this house; they are in different rooms. Then tell me roughly how far apart they are, in metres, as a number. Measure the straight line between them, not the distance you walked.",
+      "referents": [
+        "main_practice_room_yoga_equipment_storage_rack_0",
+        "smaller_practice_room_storage_cabinet_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m",
+      "answer_match": "count",
+      "max_steps": 125,
+      "answer_number": 6,
+      "answer_tolerance": 2.0,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "main_practice_room",
+          "smaller_practice_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "main_practice_room_yoga_equipment_storage_rack_0",
+          "smaller_practice_room_storage_cabinet_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "main_practice_room",
+          "smaller_practice_room"
+        ]
+      },
+      "kinds": [
+        "yoga_equipment_storage_rack",
+        "storage_cabinet"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "main_practice_room_yoga_equipment_storage_rack_0",
+        "smaller_practice_room_storage_cabinet_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "6",
+      "oracle_read": [
+        "object_distance",
+        "main_practice_room_yoga_equipment_storage_rack_0",
+        "smaller_practice_room_storage_cabinet_0"
+      ],
+      "truth": {
+        "a": "main_practice_room_yoga_equipment_storage_rack_0",
+        "b": "smaller_practice_room_storage_cabinet_0",
+        "metres": 6.09,
+        "a_room": "main_practice_room",
+        "b_room": "smaller_practice_room",
+        "tol_m": 1,
+        "spawn": {
+          "x": 2.75,
+          "y": 1.5,
+          "z": 3.5,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "reception"
+        }
+      },
+      "goal_images": [
+        [
+          "the yoga equipment storage rack this task refers to -- this exact object",
+          "../references/cfb1c2943fdbb33ce1a5ab071a15582be82c3dfb9a51369b2454cd8ec40ff589.png"
+        ],
+        [
+          "the storage cabinet this task refers to -- this exact object",
+          "../references/2d5a239cc68fe0c8019fd0e25fb1b094039d0b8f5f345b31408f5cc4080e9bac.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relative_direction__main_practice_room_shelving_cabinet_0__main_practice_room_yoga_equipment_storage_rack_0__smaller_practice_room_speaker_pedestal_stand_0",
+      "family": "relative_direction",
+      "instruction": "Find the shelving cabinet and the yoga equipment storage rack; they are in the same room. Also find the speaker pedestal stand, which is somewhere else in this house. Then answer this: if you stood at the shelving cabinet and faced the yoga equipment storage rack, which direction would the speaker pedestal stand be in? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "main_practice_room_shelving_cabinet_0",
+        "main_practice_room_yoga_equipment_storage_rack_0",
+        "smaller_practice_room_speaker_pedestal_stand_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 125,
+      "answer_number": 270,
+      "answer_tolerance": 22,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "main_practice_room",
+          "smaller_practice_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "main_practice_room_shelving_cabinet_0",
+          "main_practice_room_yoga_equipment_storage_rack_0",
+          "smaller_practice_room_speaker_pedestal_stand_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "main_practice_room",
+          "smaller_practice_room"
+        ]
+      },
+      "kinds": [
+        "shelving_cabinet",
+        "speaker_pedestal_stand",
+        "yoga_equipment_storage_rack"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "main_practice_room_shelving_cabinet_0",
+        "smaller_practice_room_speaker_pedestal_stand_0",
+        "main_practice_room_yoga_equipment_storage_rack_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "270",
+      "oracle_read": [
+        "relative_direction",
+        "main_practice_room_shelving_cabinet_0",
+        "main_practice_room_yoga_equipment_storage_rack_0",
+        "smaller_practice_room_speaker_pedestal_stand_0"
+      ],
+      "truth": {
+        "origin": "main_practice_room_shelving_cabinet_0",
+        "forward": "main_practice_room_yoga_equipment_storage_rack_0",
+        "target": "smaller_practice_room_speaker_pedestal_stand_0",
+        "bearing_deg": 265.85,
+        "sector_deg": 270,
+        "offset_deg": 4.15,
+        "origin_room": "main_practice_room",
+        "target_room": "smaller_practice_room",
+        "leg_m": 5.09,
+        "spawn": {
+          "x": -1.2,
+          "y": 1.5,
+          "z": -2.5,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "treatment_room"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the shelving cabinet this task refers to -- this exact object",
+          "../references/3ac9a907f6544eeae9b46132ac0b5fef5499263a1b85d6a23a09e5743b908aab.png"
+        ],
+        [
+          "the yoga equipment storage rack this task refers to -- this exact object",
+          "../references/cfb1c2943fdbb33ce1a5ab071a15582be82c3dfb9a51369b2454cd8ec40ff589.png"
+        ],
+        [
+          "the speaker pedestal stand this task refers to -- this exact object",
+          "../references/0c94e641c0c304566bc8591f31f2859d4f25e7bd9932136d5509aee7be4e68ef.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relative_direction__smaller_practice_room_speaker_pedestal_stand_0__smaller_practice_room_storage_cabinet_0__main_practice_room_shelving_cabinet_0",
+      "family": "relative_direction",
+      "instruction": "Find the speaker pedestal stand and the storage cabinet; they are in the same room. Also find the shelving cabinet, which is somewhere else in this house. Then answer this: if you stood at the speaker pedestal stand and faced the storage cabinet, which direction would the shelving cabinet be in? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "smaller_practice_room_speaker_pedestal_stand_0",
+        "smaller_practice_room_storage_cabinet_0",
+        "main_practice_room_shelving_cabinet_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 125,
+      "answer_number": 0,
+      "answer_tolerance": 22,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "main_practice_room",
+          "smaller_practice_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "main_practice_room_shelving_cabinet_0",
+          "smaller_practice_room_speaker_pedestal_stand_0",
+          "smaller_practice_room_storage_cabinet_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "main_practice_room",
+          "smaller_practice_room"
+        ]
+      },
+      "kinds": [
+        "speaker_pedestal_stand",
+        "shelving_cabinet",
+        "storage_cabinet"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "smaller_practice_room_speaker_pedestal_stand_0",
+        "main_practice_room_shelving_cabinet_0",
+        "smaller_practice_room_storage_cabinet_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "0",
+      "oracle_read": [
+        "relative_direction",
+        "smaller_practice_room_speaker_pedestal_stand_0",
+        "smaller_practice_room_storage_cabinet_0",
+        "main_practice_room_shelving_cabinet_0"
+      ],
+      "truth": {
+        "origin": "smaller_practice_room_speaker_pedestal_stand_0",
+        "forward": "smaller_practice_room_storage_cabinet_0",
+        "target": "main_practice_room_shelving_cabinet_0",
+        "bearing_deg": 354.72,
+        "sector_deg": 0,
+        "offset_deg": 5.28,
+        "origin_room": "smaller_practice_room",
+        "target_room": "main_practice_room",
+        "leg_m": 5.09,
+        "spawn": {
+          "x": 5.3,
+          "y": 1.5,
+          "z": -2.75,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "changing_room"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the speaker pedestal stand this task refers to -- this exact object",
+          "../references/0c94e641c0c304566bc8591f31f2859d4f25e7bd9932136d5509aee7be4e68ef.png"
+        ],
+        [
+          "the storage cabinet this task refers to -- this exact object",
+          "../references/2d5a239cc68fe0c8019fd0e25fb1b094039d0b8f5f345b31408f5cc4080e9bac.png"
+        ],
+        [
+          "the shelving cabinet this task refers to -- this exact object",
+          "../references/3ac9a907f6544eeae9b46132ac0b5fef5499263a1b85d6a23a09e5743b908aab.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relative_direction__smaller_practice_room_speaker_pedestal_stand_0__smaller_practice_room_storage_cabinet_0__main_practice_room_yoga_equipment_storage_rack_0",
+      "family": "relative_direction",
+      "instruction": "Find the speaker pedestal stand and the storage cabinet; they are in the same room. Also find the yoga equipment storage rack, which is somewhere else in this house. Then answer this: if you stood at the speaker pedestal stand and faced the storage cabinet, which direction would the yoga equipment storage rack be in? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "smaller_practice_room_speaker_pedestal_stand_0",
+        "smaller_practice_room_storage_cabinet_0",
+        "main_practice_room_yoga_equipment_storage_rack_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 125,
+      "answer_number": 315,
+      "answer_tolerance": 22,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "main_practice_room",
+          "smaller_practice_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "main_practice_room_yoga_equipment_storage_rack_0",
+          "smaller_practice_room_speaker_pedestal_stand_0",
+          "smaller_practice_room_storage_cabinet_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "main_practice_room",
+          "smaller_practice_room"
+        ]
+      },
+      "kinds": [
+        "speaker_pedestal_stand",
+        "yoga_equipment_storage_rack",
+        "storage_cabinet"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "smaller_practice_room_speaker_pedestal_stand_0",
+        "main_practice_room_yoga_equipment_storage_rack_0",
+        "smaller_practice_room_storage_cabinet_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "315",
+      "oracle_read": [
+        "relative_direction",
+        "smaller_practice_room_speaker_pedestal_stand_0",
+        "smaller_practice_room_storage_cabinet_0",
+        "main_practice_room_yoga_equipment_storage_rack_0"
+      ],
+      "truth": {
+        "origin": "smaller_practice_room_speaker_pedestal_stand_0",
+        "forward": "smaller_practice_room_storage_cabinet_0",
+        "target": "main_practice_room_yoga_equipment_storage_rack_0",
+        "bearing_deg": 310.16,
+        "sector_deg": 315,
+        "offset_deg": 4.84,
+        "origin_room": "smaller_practice_room",
+        "target_room": "main_practice_room",
+        "leg_m": 7.7,
+        "spawn": {
+          "x": 2.25,
+          "y": 1.5,
+          "z": 2.0,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "reception"
+        }
+      },
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the speaker pedestal stand this task refers to -- this exact object",
+          "../references/0c94e641c0c304566bc8591f31f2859d4f25e7bd9932136d5509aee7be4e68ef.png"
+        ],
+        [
+          "the storage cabinet this task refers to -- this exact object",
+          "../references/2d5a239cc68fe0c8019fd0e25fb1b094039d0b8f5f345b31408f5cc4080e9bac.png"
+        ],
+        [
+          "the yoga equipment storage rack this task refers to -- this exact object",
+          "../references/cfb1c2943fdbb33ce1a5ab071a15582be82c3dfb9a51369b2454cd8ec40ff589.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "nearer_object_comparison__changing_room_changing_room_bench_0",
+      "family": "nearer_object_comparison",
+      "instruction": "Somewhere in this house there are the reception desk, the shelving unit and the yoga equipment storage rack. None of them is in the same room as the changing room bench. Find out which one of them is closest to the changing room bench, and answer with just that one thing. Compare the straight-line distances, not how far you had to walk.",
+      "referents": [
+        "changing_room_changing_room_bench_0",
+        "treatment_room_shelving_unit_0",
+        "reception_reception_desk_0",
+        "main_practice_room_yoga_equipment_storage_rack_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "shelving unit"
+        ]
+      ],
+      "answer_choices": [
+        "reception desk",
+        "shelving unit",
+        "yoga equipment storage rack"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 125,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "changing_room",
+          "main_practice_room",
+          "reception",
+          "treatment_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "changing_room_changing_room_bench_0",
+          "main_practice_room_yoga_equipment_storage_rack_0",
+          "reception_reception_desk_0",
+          "treatment_room_shelving_unit_0"
+        ],
+        "min_distinct_viewpoints": 4,
+        "search_regions": [
+          "changing_room",
+          "main_practice_room",
+          "reception",
+          "treatment_room"
+        ]
+      },
+      "kinds": [
+        "shelving_unit",
+        "reception_desk",
+        "yoga_equipment_storage_rack",
+        "changing_room_bench"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "changing_room_changing_room_bench_0",
+        "treatment_room_shelving_unit_0",
+        "reception_reception_desk_0",
+        "main_practice_room_yoga_equipment_storage_rack_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "shelving unit",
+      "oracle_read": [
+        "nearest_of",
+        "changing_room_changing_room_bench_0",
+        [
+          [
+            "treatment_room_shelving_unit_0",
+            "shelving unit"
+          ],
+          [
+            "reception_reception_desk_0",
+            "reception desk"
+          ],
+          [
+            "main_practice_room_yoga_equipment_storage_rack_0",
+            "yoga equipment storage rack"
+          ]
+        ]
+      ],
+      "truth": {
+        "x": "changing_room_changing_room_bench_0",
+        "winner": "treatment_room_shelving_unit_0",
+        "choices": [
+          "treatment_room_shelving_unit_0",
+          "reception_reception_desk_0",
+          "main_practice_room_yoga_equipment_storage_rack_0"
+        ],
+        "words": [
+          "reception desk",
+          "shelving unit",
+          "yoga equipment storage rack"
+        ],
+        "metres": {
+          "treatment_room_shelving_unit_0": 2.81,
+          "reception_reception_desk_0": 4.44,
+          "main_practice_room_yoga_equipment_storage_rack_0": 7.66
+        },
+        "lead_m": 1.63,
+        "x_room": "changing_room",
+        "spawn": {
+          "x": 0.25,
+          "y": 1.5,
+          "z": 14.0,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "smaller_practice_room"
+        }
+      },
+      "answer_choice_labels": [
+        "reception desk",
+        "shelving unit",
+        "yoga equipment storage rack"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the changing room bench this task refers to -- this exact object",
+          "../references/1ba6f1c134fb40001b0cc1f15ddcb8e488768d2da0e7c6df2af15ba4f40df201.png"
+        ],
+        [
+          "the shelving unit this task refers to -- this exact object",
+          "../references/dfec296b1939c2f1a8be1983ef6e2a90ce0fc54ac206bf17f974cf00d011b33a.png"
+        ],
+        [
+          "the reception desk this task refers to -- this exact object",
+          "../references/8695b811ef93bebeb17fc05bf4179ab7420d299aaceb8238a4659f06d64c30d8.png"
+        ],
+        [
+          "the yoga equipment storage rack this task refers to -- this exact object",
+          "../references/cfb1c2943fdbb33ce1a5ab071a15582be82c3dfb9a51369b2454cd8ec40ff589.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "nearer_object_comparison__treatment_room_shelving_unit_0",
+      "family": "nearer_object_comparison",
+      "instruction": "Somewhere in this house there are the changing room bench, the shelving cabinet and the storage cabinet. None of them is in the same room as the shelving unit. Find out which one of them is closest to the shelving unit, and answer with just that one thing. Compare the straight-line distances, not how far you had to walk.",
+      "referents": [
+        "treatment_room_shelving_unit_0",
+        "changing_room_changing_room_bench_0",
+        "main_practice_room_shelving_cabinet_0",
+        "smaller_practice_room_storage_cabinet_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "changing room bench"
+        ]
+      ],
+      "answer_choices": [
+        "changing room bench",
+        "shelving cabinet",
+        "storage cabinet"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 125,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "changing_room",
+          "main_practice_room",
+          "smaller_practice_room",
+          "treatment_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "changing_room_changing_room_bench_0",
+          "main_practice_room_shelving_cabinet_0",
+          "smaller_practice_room_storage_cabinet_0",
+          "treatment_room_shelving_unit_0"
+        ],
+        "min_distinct_viewpoints": 4,
+        "search_regions": [
+          "changing_room",
+          "main_practice_room",
+          "smaller_practice_room",
+          "treatment_room"
+        ]
+      },
+      "kinds": [
+        "changing_room_bench",
+        "shelving_cabinet",
+        "storage_cabinet",
+        "shelving_unit"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "treatment_room_shelving_unit_0",
+        "changing_room_changing_room_bench_0",
+        "main_practice_room_shelving_cabinet_0",
+        "smaller_practice_room_storage_cabinet_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "changing room bench",
+      "oracle_read": [
+        "nearest_of",
+        "treatment_room_shelving_unit_0",
+        [
+          [
+            "changing_room_changing_room_bench_0",
+            "changing room bench"
+          ],
+          [
+            "main_practice_room_shelving_cabinet_0",
+            "shelving cabinet"
+          ],
+          [
+            "smaller_practice_room_storage_cabinet_0",
+            "storage cabinet"
+          ]
+        ]
+      ],
+      "truth": {
+        "x": "treatment_room_shelving_unit_0",
+        "winner": "changing_room_changing_room_bench_0",
+        "choices": [
+          "changing_room_changing_room_bench_0",
+          "main_practice_room_shelving_cabinet_0",
+          "smaller_practice_room_storage_cabinet_0"
+        ],
+        "words": [
+          "changing room bench",
+          "shelving cabinet",
+          "storage cabinet"
+        ],
+        "metres": {
+          "changing_room_changing_room_bench_0": 2.81,
+          "main_practice_room_shelving_cabinet_0": 12.6,
+          "smaller_practice_room_storage_cabinet_0": 12.83
+        },
+        "lead_m": 9.79,
+        "x_room": "treatment_room",
+        "spawn": {
+          "x": -1.25,
+          "y": 1.5,
+          "z": 5.0,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "main_practice_room"
+        }
+      },
+      "answer_choice_labels": [
+        "changing room bench",
+        "shelving cabinet",
+        "storage cabinet"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the shelving unit this task refers to -- this exact object",
+          "../references/dfec296b1939c2f1a8be1983ef6e2a90ce0fc54ac206bf17f974cf00d011b33a.png"
+        ],
+        [
+          "the changing room bench this task refers to -- this exact object",
+          "../references/1ba6f1c134fb40001b0cc1f15ddcb8e488768d2da0e7c6df2af15ba4f40df201.png"
+        ],
+        [
+          "the shelving cabinet this task refers to -- this exact object",
+          "../references/3ac9a907f6544eeae9b46132ac0b5fef5499263a1b85d6a23a09e5743b908aab.png"
+        ],
+        [
+          "the storage cabinet this task refers to -- this exact object",
+          "../references/2d5a239cc68fe0c8019fd0e25fb1b094039d0b8f5f345b31408f5cc4080e9bac.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_area__changing_room",
+      "family": "room_area",
+      "instruction": "Find the changing room in this house, then tell me roughly how big its floor is, in square metres, as a number. I want the floor area of that one room, measured inside its walls -- not the whole house, and not the other rooms.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m2",
+      "answer_match": "count",
+      "max_steps": 125,
+      "answer_number": 14,
+      "answer_tolerance": 5.0,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "changing_room"
+        ],
+        "must_open": [],
+        "must_see": [],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "changing_room",
+          "main_practice_room",
+          "reception",
+          "smaller_practice_room",
+          "treatment_room"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "14",
+      "oracle_read": [
+        "room_area",
+        "changing_room"
+      ],
+      "truth": {
+        "room": "changing_room",
+        "name": "changing room",
+        "m2": 14,
+        "tol_m2": 3,
+        "spawn": {
+          "x": 4.25,
+          "y": 1.5,
+          "z": 11.0,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "smaller_practice_room"
+        }
+      },
+      "goal_images": []
+    },
+    {
+      "task_id": "room_area__main_practice_room",
+      "family": "room_area",
+      "instruction": "Find the practice room in this house, then tell me roughly how big its floor is, in square metres, as a number. I want the floor area of that one room, measured inside its walls -- not the whole house, and not the other rooms.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m2",
+      "answer_match": "count",
+      "max_steps": 125,
+      "answer_number": 48,
+      "answer_tolerance": 12.0,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "main_practice_room"
+        ],
+        "must_open": [],
+        "must_see": [],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "changing_room",
+          "main_practice_room",
+          "reception",
+          "smaller_practice_room",
+          "treatment_room"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "48",
+      "oracle_read": [
+        "room_area",
+        "main_practice_room"
+      ],
+      "truth": {
+        "room": "main_practice_room",
+        "name": "practice room",
+        "m2": 48,
+        "tol_m2": 6,
+        "spawn": {
+          "x": 1.05,
+          "y": 1.5,
+          "z": -2.5,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "treatment_room"
+        }
+      },
+      "goal_images": []
+    },
+    {
+      "task_id": "room_count__flush_mount",
+      "family": "room_count",
+      "instruction": "Search this house and find out which rooms contain at least one flush mount. Count two places as different rooms if you have to go through a doorway to get from one to the other. A room with several flush mounts still counts once. Tell me how many rooms contain at least one flush mount, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 125,
+      "answer_number": 5,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "changing_room",
+          "main_practice_room",
+          "reception",
+          "smaller_practice_room",
+          "treatment_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "changing_room_flush_mount_0",
+          "changing_room_flush_mount_1",
+          "changing_room_flush_mount_2",
+          "main_practice_room_flush_mount_0",
+          "main_practice_room_flush_mount_1",
+          "main_practice_room_flush_mount_2",
+          "main_practice_room_flush_mount_3",
+          "main_practice_room_flush_mount_4",
+          "main_practice_room_flush_mount_5",
+          "reception_flush_mount_0",
+          "smaller_practice_room_flush_mount_0",
+          "smaller_practice_room_flush_mount_1",
+          "smaller_practice_room_flush_mount_2",
+          "smaller_practice_room_flush_mount_3",
+          "smaller_practice_room_flush_mount_4",
+          "treatment_room_flush_mounted_downlight_0",
+          "treatment_room_flush_mounted_downlight_1"
+        ],
+        "min_distinct_viewpoints": 4,
+        "search_regions": [
+          "changing_room",
+          "main_practice_room",
+          "reception",
+          "smaller_practice_room",
+          "treatment_room"
+        ]
+      },
+      "kinds": [
+        "flush_mount"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "changing_room_flush_mount_0",
+        "changing_room_flush_mount_1",
+        "changing_room_flush_mount_2",
+        "main_practice_room_flush_mount_0",
+        "main_practice_room_flush_mount_1",
+        "main_practice_room_flush_mount_2",
+        "main_practice_room_flush_mount_3",
+        "main_practice_room_flush_mount_4",
+        "main_practice_room_flush_mount_5",
+        "reception_flush_mount_0",
+        "smaller_practice_room_flush_mount_0",
+        "smaller_practice_room_flush_mount_1",
+        "smaller_practice_room_flush_mount_2",
+        "smaller_practice_room_flush_mount_3",
+        "smaller_practice_room_flush_mount_4",
+        "treatment_room_flush_mounted_downlight_0",
+        "treatment_room_flush_mounted_downlight_1"
+      ],
+      "answer_instances": [
+        "changing_room_flush_mount_0",
+        "changing_room_flush_mount_1",
+        "changing_room_flush_mount_2",
+        "main_practice_room_flush_mount_0",
+        "main_practice_room_flush_mount_1",
+        "main_practice_room_flush_mount_2",
+        "main_practice_room_flush_mount_3",
+        "main_practice_room_flush_mount_4",
+        "main_practice_room_flush_mount_5",
+        "reception_flush_mount_0",
+        "smaller_practice_room_flush_mount_0",
+        "smaller_practice_room_flush_mount_1",
+        "smaller_practice_room_flush_mount_2",
+        "smaller_practice_room_flush_mount_3",
+        "smaller_practice_room_flush_mount_4",
+        "treatment_room_flush_mounted_downlight_0",
+        "treatment_room_flush_mounted_downlight_1"
+      ],
+      "plan": [],
+      "oracle_answer": "5",
+      "oracle_read": [
+        "room_count_seen",
+        "flush_mount",
+        [
+          "changing_room",
+          "main_practice_room",
+          "reception",
+          "smaller_practice_room",
+          "treatment_room"
+        ],
+        [
+          [
+            "changing_room"
+          ],
+          [
+            "main_practice_room"
+          ],
+          [
+            "reception"
+          ],
+          [
+            "smaller_practice_room"
+          ],
+          [
+            "treatment_room"
+          ]
+        ]
+      ],
+      "truth": {
+        "kind": "flush_mount",
+        "n_rooms": 5,
+        "noun": "flush mount",
+        "rooms": [
+          "changing_room",
+          "main_practice_room",
+          "reception",
+          "smaller_practice_room",
+          "treatment_room"
+        ],
+        "places": [
+          [
+            "changing_room"
+          ],
+          [
+            "main_practice_room"
+          ],
+          [
+            "reception"
+          ],
+          [
+            "smaller_practice_room"
+          ],
+          [
+            "treatment_room"
+          ]
+        ],
+        "n_places_in_scope": 5,
+        "total": 17,
+        "spawn": {
+          "x": 1.55,
+          "y": 1.5,
+          "z": -0.25,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "treatment_room"
+        },
+        "category_membership": {
+          "schema": "reviewed-category-members-v1",
+          "category": "flush_mount",
+          "aliases": [
+            "changing_room_flush_mount_0",
+            "changing_room_flush_mount_1",
+            "changing_room_flush_mount_2",
+            "main_practice_room_flush_mount_0",
+            "main_practice_room_flush_mount_1",
+            "main_practice_room_flush_mount_2",
+            "main_practice_room_flush_mount_3",
+            "main_practice_room_flush_mount_4",
+            "main_practice_room_flush_mount_5",
+            "reception_flush_mount_0",
+            "smaller_practice_room_flush_mount_0",
+            "smaller_practice_room_flush_mount_1",
+            "smaller_practice_room_flush_mount_2",
+            "smaller_practice_room_flush_mount_3",
+            "smaller_practice_room_flush_mount_4",
+            "treatment_room_flush_mounted_downlight_0",
+            "treatment_room_flush_mounted_downlight_1"
+          ],
+          "membership_scope": "confirmed_visual_members; uncertain additional members do not change the answer"
+        },
+        "per_room": {
+          "changing_room": 3,
+          "main_practice_room": 6,
+          "reception": 1,
+          "smaller_practice_room": 5,
+          "treatment_room": 2
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'flush mount' -- the task is about every flush mount in the house, and the others need not look like this one",
+          "../references/e404b39a5eeb360e489453302cab0ebfab56869df85abbfe420a50edb22b27bb.png"
+        ]
+      ]
+    }
+  ],
+  "dataset_version": "1.1"
+}

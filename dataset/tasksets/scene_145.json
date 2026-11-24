@@ -1,0 +1,158 @@
+{
+  "schema_version": 4,
+  "benchmark": "ROAM-Bench",
+  "scene": "scene_145",
+  "spawn": {
+    "x": 6.0,
+    "y": 1.5,
+    "z": 3.25,
+    "yaw_deg": 0.0,
+    "horizon_deg": 0.0,
+    "room": "game_room"
+  },
+  "specs": [
+    {
+      "task_id": "room_localization__game_room_robot_prize_toy_0",
+      "family": "room_localization",
+      "instruction": "Find the robot prize toy somewhere in this house, then tell me which room it is in. If there is no robot prize toy here, choose NOT_PRESENT instead of guessing a room.\n\nRoom choices (use exactly one option key):\n- ROOM_01 — game room\n- NOT_PRESENT — not present\nReply with only one option key, for example ROOM_01 or NOT_PRESENT.",
+      "referents": [
+        "game_room_robot_prize_toy_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "ROOM_01"
+        ]
+      ],
+      "answer_choices": [
+        "ROOM_01",
+        "NOT_PRESENT"
+      ],
+      "answer_choice_labels": [
+        "game room",
+        "not present"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 25,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "game_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "game_room_robot_prize_toy_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "game_room"
+        ]
+      },
+      "kinds": [
+        "robot_prize_toy"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "game_room_robot_prize_toy_0"
+      ],
+      "answer_instances": [
+        "game_room_robot_prize_toy_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "game_room_robot_prize_toy_0"
+        ]
+      ],
+      "oracle_answer": "game room",
+      "oracle_read": [
+        "room_here"
+      ],
+      "truth": {
+        "alias": "game_room_robot_prize_toy_0",
+        "kind": "robot_prize_toy",
+        "room": "game_room",
+        "room_id": "game_room",
+        "room_name": "game room",
+        "spawn": {
+          "x": 6.0,
+          "y": 1.5,
+          "z": 3.25,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "game_room"
+        },
+        "room_answer_choice": "ROOM_01",
+        "room_answer_label": "game room",
+        "absence_option": "NOT_PRESENT"
+      },
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the robot prize toy this task refers to -- this exact object",
+          "../references/c3bfce2fa031f85cb0a57ddd7cc4c7946e3747cdbdc4da8751075ed11ad4a722.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_area__game_room",
+      "family": "room_area",
+      "instruction": "Find the game room in this house, then tell me roughly how big its floor is, in square metres, as a number. I want the floor area of that one room, measured inside its walls -- not the whole house, and not the other rooms.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_choice_labels": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m2",
+      "answer_match": "count",
+      "max_steps": 25,
+      "answer_number": 108,
+      "answer_tolerance": 27.0,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "game_room"
+        ],
+        "must_open": [],
+        "must_see": [],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "game_room"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "108",
+      "oracle_read": [
+        "room_area",
+        "game_room"
+      ],
+      "truth": {
+        "room": "game_room",
+        "name": "game room",
+        "m2": 108,
+        "tol_m2": 13,
+        "spawn": {
+          "x": 5.0,
+          "y": 1.5,
+          "z": 8.5,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "game_room"
+        }
+      },
+      "goal_images": []
+    }
+  ],
+  "dataset_version": "1.1"
+}

@@ -1,0 +1,1436 @@
+{
+  "schema_version": 4,
+  "benchmark": "ROAM-Bench",
+  "scene": "scene_148",
+  "spawn": {
+    "x": 3.5,
+    "y": 1.5,
+    "z": 8.5,
+    "yaw_deg": 0.0,
+    "horizon_deg": 0.0,
+    "room": "accession_laboratory"
+  },
+  "specs": [
+    {
+      "task_id": "object_count__smoke_detector",
+      "family": "object_count",
+      "instruction": "Search this house and count the smoke detectors. There is more than one room, and there may be smoke detectors in more than one of them. When you have finished searching, tell me how many smoke detectors there are in total, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_choice_labels": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 75,
+      "answer_number": 2,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "accession_laboratory",
+          "germination_testing_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "accession_laboratory_smoke_detector_0",
+          "germination_testing_room_smoke_detector_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "accession_laboratory",
+          "germination_testing_room",
+          "seed_vault"
+        ]
+      },
+      "kinds": [
+        "smoke_detector"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "accession_laboratory_smoke_detector_0",
+        "germination_testing_room_smoke_detector_0"
+      ],
+      "answer_instances": [
+        "accession_laboratory_smoke_detector_0",
+        "germination_testing_room_smoke_detector_0"
+      ],
+      "plan": [],
+      "oracle_answer": "2",
+      "oracle_read": [
+        "count_seen",
+        "smoke_detector",
+        [
+          "accession_laboratory",
+          "germination_testing_room",
+          "seed_vault"
+        ]
+      ],
+      "truth": {
+        "kind": "smoke_detector",
+        "total": 2,
+        "noun": "smoke detector",
+        "rooms": [
+          "accession_laboratory",
+          "germination_testing_room"
+        ],
+        "per_room": {
+          "accession_laboratory": 1,
+          "germination_testing_room": 1
+        },
+        "spawn": {
+          "x": 3.25,
+          "y": 1.5,
+          "z": 12.0,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "seed_vault"
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'smoke detector' -- the task is about every smoke detector in the house, and the others need not look like this one",
+          "../references/c3dc08d66073ae89fe124054d74157e0af0056ddb58564a3b5c59f3c0e6c81d3.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relocation__germination_testing_room_dispenser_box_0__to__accession_laboratory_laboratory_bench_0",
+      "family": "relocation",
+      "instruction": "Find the small pale rectangular dispenser box with a dispensing slot on its front, pick it up, and put it on the laboratory bench.",
+      "referents": [
+        "germination_testing_room_dispenser_box_0",
+        "accession_laboratory_laboratory_bench_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('germination_testing_room_dispenser_box_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('germination_testing_room_dispenser_box_0','accession_laboratory_laboratory_bench_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_choice_labels": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 75,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "accession_laboratory",
+          "germination_testing_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "accession_laboratory_laboratory_bench_0",
+          "germination_testing_room_dispenser_box_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "accession_laboratory",
+          "germination_testing_room",
+          "seed_vault"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "germination_testing_room_dispenser_box_0",
+        "accession_laboratory_laboratory_bench_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "germination_testing_room_dispenser_box_0"
+        ],
+        [
+          "pick",
+          "germination_testing_room_dispenser_box_0"
+        ],
+        [
+          "navigate",
+          "accession_laboratory_laboratory_bench_0"
+        ],
+        [
+          "place",
+          "accession_laboratory_laboratory_bench_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "germination_testing_room_dispenser_box_0",
+        "from_room": "germination_testing_room",
+        "from_room_id": "germination_testing_room",
+        "dest": "accession_laboratory_laboratory_bench_0",
+        "to_room": "accession_laboratory",
+        "to_room_id": "accession_laboratory",
+        "spawn": {
+          "x": 1.75,
+          "y": 1.5,
+          "z": 15.25,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "seed_vault"
+        }
+      },
+      "goal_images": [
+        [
+          "target: small pale rectangular dispenser box with a front dispensing slot",
+          "../references/c2510ae49d9902fcbcf6fb2bace8188a470959243d4b79874f8e9b84315622d3.png"
+        ],
+        [
+          "the laboratory bench this task refers to -- this exact object",
+          "../references/f83decd0eb35361afdc8bcc773d1cf821bc81fde51269bfa69622aee533ff394.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relocation__germination_testing_room_dispenser_box_0__to__accession_laboratory_workbench_0",
+      "family": "relocation",
+      "instruction": "Find the small pale rectangular dispenser box with a dispensing slot on its front, pick it up, and put it on the workbench.",
+      "referents": [
+        "germination_testing_room_dispenser_box_0",
+        "accession_laboratory_workbench_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('germination_testing_room_dispenser_box_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('germination_testing_room_dispenser_box_0','accession_laboratory_workbench_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_choice_labels": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 75,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "accession_laboratory",
+          "germination_testing_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "accession_laboratory_workbench_0",
+          "germination_testing_room_dispenser_box_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "accession_laboratory",
+          "germination_testing_room",
+          "seed_vault"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "germination_testing_room_dispenser_box_0",
+        "accession_laboratory_workbench_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "germination_testing_room_dispenser_box_0"
+        ],
+        [
+          "pick",
+          "germination_testing_room_dispenser_box_0"
+        ],
+        [
+          "navigate",
+          "accession_laboratory_workbench_0"
+        ],
+        [
+          "place",
+          "accession_laboratory_workbench_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "germination_testing_room_dispenser_box_0",
+        "from_room": "germination_testing_room",
+        "from_room_id": "germination_testing_room",
+        "dest": "accession_laboratory_workbench_0",
+        "to_room": "accession_laboratory",
+        "to_room_id": "accession_laboratory",
+        "spawn": {
+          "x": 3.25,
+          "y": 1.5,
+          "z": 12.0,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "seed_vault"
+        }
+      },
+      "goal_images": [
+        [
+          "target: small pale rectangular dispenser box with a front dispensing slot",
+          "../references/c2510ae49d9902fcbcf6fb2bace8188a470959243d4b79874f8e9b84315622d3.png"
+        ],
+        [
+          "the workbench this task refers to -- this exact object",
+          "../references/ff9274b9b73e5b4e65ad1a77df6f24024d6374010bc6a3bfdafe3b8f43824e6f.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relocation__germination_testing_room_laboratory_logbook_0__to__accession_laboratory_laboratory_bench_0",
+      "family": "relocation",
+      "instruction": "Find the laboratory logbook, pick it up, and put it on the laboratory bench.",
+      "referents": [
+        "germination_testing_room_laboratory_logbook_0",
+        "accession_laboratory_laboratory_bench_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('germination_testing_room_laboratory_logbook_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('germination_testing_room_laboratory_logbook_0','accession_laboratory_laboratory_bench_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_choice_labels": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 75,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "accession_laboratory",
+          "germination_testing_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "accession_laboratory_laboratory_bench_0",
+          "germination_testing_room_laboratory_logbook_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "accession_laboratory",
+          "germination_testing_room",
+          "seed_vault"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "germination_testing_room_laboratory_logbook_0",
+        "accession_laboratory_laboratory_bench_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "germination_testing_room_laboratory_logbook_0"
+        ],
+        [
+          "pick",
+          "germination_testing_room_laboratory_logbook_0"
+        ],
+        [
+          "navigate",
+          "accession_laboratory_laboratory_bench_0"
+        ],
+        [
+          "place",
+          "accession_laboratory_laboratory_bench_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "germination_testing_room_laboratory_logbook_0",
+        "from_room": "germination_testing_room",
+        "from_room_id": "germination_testing_room",
+        "dest": "accession_laboratory_laboratory_bench_0",
+        "to_room": "accession_laboratory",
+        "to_room_id": "accession_laboratory",
+        "spawn": {
+          "x": 3.25,
+          "y": 1.5,
+          "z": 12.0,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "seed_vault"
+        }
+      },
+      "goal_images": [
+        [
+          "the laboratory logbook this task refers to -- this exact object",
+          "../references/464a16f9a2b73109f93cd4ccf533ba7de8319ea06214cf3c00af70fa979032de.png"
+        ],
+        [
+          "the laboratory bench this task refers to -- this exact object",
+          "../references/f83decd0eb35361afdc8bcc773d1cf821bc81fde51269bfa69622aee533ff394.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relocation__seed_vault_seed_sample_jar_0__to__accession_laboratory_laboratory_bench_0",
+      "family": "relocation",
+      "instruction": "Find the seed sample jar, pick it up, and put it on the laboratory bench.",
+      "referents": [
+        "seed_vault_seed_sample_jar_0",
+        "accession_laboratory_laboratory_bench_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('seed_vault_seed_sample_jar_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('seed_vault_seed_sample_jar_0','accession_laboratory_laboratory_bench_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_choice_labels": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 75,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "accession_laboratory",
+          "seed_vault"
+        ],
+        "must_open": [],
+        "must_see": [
+          "accession_laboratory_laboratory_bench_0",
+          "seed_vault_seed_sample_jar_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "accession_laboratory",
+          "germination_testing_room",
+          "seed_vault"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "seed_vault_seed_sample_jar_0",
+        "accession_laboratory_laboratory_bench_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "seed_vault_seed_sample_jar_0"
+        ],
+        [
+          "pick",
+          "seed_vault_seed_sample_jar_0"
+        ],
+        [
+          "navigate",
+          "accession_laboratory_laboratory_bench_0"
+        ],
+        [
+          "place",
+          "accession_laboratory_laboratory_bench_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "seed_vault_seed_sample_jar_0",
+        "from_room": "seed_vault",
+        "from_room_id": "seed_vault",
+        "dest": "accession_laboratory_laboratory_bench_0",
+        "to_room": "accession_laboratory",
+        "to_room_id": "accession_laboratory",
+        "spawn": {
+          "x": 1.0,
+          "y": 1.5,
+          "z": 0.5,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "germination_testing_room"
+        }
+      },
+      "goal_images": [
+        [
+          "the seed sample jar this task refers to -- this exact object",
+          "../references/0506ca83f9b93ebf7663982da6393882070e5d5026c79cb3e5e15371b027345b.png"
+        ],
+        [
+          "the laboratory bench this task refers to -- this exact object",
+          "../references/f83decd0eb35361afdc8bcc773d1cf821bc81fde51269bfa69622aee533ff394.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relocation__seed_vault_thermal_barcode_label_roll_0__to__accession_laboratory_specimen_storage_cabinet_0",
+      "family": "relocation",
+      "instruction": "Find the thermal barcode label roll, pick it up, and put it on the specimen storage cabinet.",
+      "referents": [
+        "seed_vault_thermal_barcode_label_roll_0",
+        "accession_laboratory_specimen_storage_cabinet_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('seed_vault_thermal_barcode_label_roll_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('seed_vault_thermal_barcode_label_roll_0','accession_laboratory_specimen_storage_cabinet_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_choice_labels": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 75,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "accession_laboratory",
+          "seed_vault"
+        ],
+        "must_open": [],
+        "must_see": [
+          "accession_laboratory_specimen_storage_cabinet_0",
+          "seed_vault_thermal_barcode_label_roll_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "accession_laboratory",
+          "germination_testing_room",
+          "seed_vault"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "seed_vault_thermal_barcode_label_roll_0",
+        "accession_laboratory_specimen_storage_cabinet_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "seed_vault_thermal_barcode_label_roll_0"
+        ],
+        [
+          "pick",
+          "seed_vault_thermal_barcode_label_roll_0"
+        ],
+        [
+          "navigate",
+          "accession_laboratory_specimen_storage_cabinet_0"
+        ],
+        [
+          "place",
+          "accession_laboratory_specimen_storage_cabinet_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "seed_vault_thermal_barcode_label_roll_0",
+        "from_room": "seed_vault",
+        "from_room_id": "seed_vault",
+        "dest": "accession_laboratory_specimen_storage_cabinet_0",
+        "to_room": "accession_laboratory",
+        "to_room_id": "accession_laboratory",
+        "spawn": {
+          "x": 3.5,
+          "y": 1.5,
+          "z": 3.0,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "germination_testing_room"
+        }
+      },
+      "goal_images": [
+        [
+          "the thermal barcode label roll this task refers to -- this exact object",
+          "../references/0bc35ed3fd4958664fb2e30f51e586a21599568961775b834977ebef1c0c57ca.png"
+        ],
+        [
+          "the specimen storage cabinet this task refers to -- this exact object",
+          "../references/5f1d79192459b9dd9dbb1388651bf09479ab19bafc7593f808c6c5a518034f6a.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_localization__germination_testing_room_dispenser_box_0",
+      "family": "room_localization",
+      "instruction": "Find the small pale rectangular dispenser box with a dispensing slot on its front, then tell me which room it is in. If no box matches this description, choose NOT_PRESENT instead of guessing a room.\n\nRoom choices (use exactly one option key):\n- ROOM_01 — accession laboratory\n- ROOM_02 — germination testing\n- ROOM_03 — seed vault\n- NOT_PRESENT — not present\nReply with only one option key, for example ROOM_01 or NOT_PRESENT.",
+      "referents": [
+        "germination_testing_room_dispenser_box_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "ROOM_02"
+        ]
+      ],
+      "answer_choices": [
+        "ROOM_01",
+        "ROOM_02",
+        "ROOM_03",
+        "NOT_PRESENT"
+      ],
+      "answer_choice_labels": [
+        "accession laboratory",
+        "germination testing",
+        "seed vault",
+        "not present"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 75,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "germination_testing_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "germination_testing_room_dispenser_box_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "accession_laboratory",
+          "germination_testing_room",
+          "seed_vault"
+        ]
+      },
+      "kinds": [
+        "dispenser_box"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "germination_testing_room_dispenser_box_0"
+      ],
+      "answer_instances": [
+        "germination_testing_room_dispenser_box_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "germination_testing_room_dispenser_box_0"
+        ]
+      ],
+      "oracle_answer": "germination testing",
+      "oracle_read": [
+        "room_here"
+      ],
+      "truth": {
+        "alias": "germination_testing_room_dispenser_box_0",
+        "kind": "dispenser_box",
+        "room": "germination_testing_room",
+        "room_id": "germination_testing_room",
+        "room_name": "germination testing",
+        "spawn": {
+          "x": 0.5,
+          "y": 1.5,
+          "z": 7.25,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "accession_laboratory"
+        },
+        "room_answer_choice": "ROOM_02",
+        "room_answer_label": "germination testing",
+        "absence_option": "NOT_PRESENT"
+      },
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "target: small pale rectangular dispenser box with a front dispensing slot",
+          "../references/c2510ae49d9902fcbcf6fb2bace8188a470959243d4b79874f8e9b84315622d3.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_localization__germination_testing_room_filled_container_0",
+      "family": "room_localization",
+      "instruction": "Find the filled specimen slide tray somewhere in this house, then tell me which room it is in. If there is no filled specimen slide tray here, choose NOT_PRESENT instead of guessing a room.\n\nRoom choices (use exactly one option key):\n- ROOM_01 — accession laboratory\n- ROOM_02 — germination testing\n- ROOM_03 — seed vault\n- NOT_PRESENT — not present\nReply with only one option key, for example ROOM_01 or NOT_PRESENT.",
+      "referents": [
+        "germination_testing_room_filled_container_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "ROOM_02"
+        ]
+      ],
+      "answer_choices": [
+        "ROOM_01",
+        "ROOM_02",
+        "ROOM_03",
+        "NOT_PRESENT"
+      ],
+      "answer_choice_labels": [
+        "accession laboratory",
+        "germination testing",
+        "seed vault",
+        "not present"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 75,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "germination_testing_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "germination_testing_room_filled_container_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "accession_laboratory",
+          "germination_testing_room",
+          "seed_vault"
+        ]
+      },
+      "kinds": [
+        "filled_specimen_slide_tray"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "germination_testing_room_filled_container_0"
+      ],
+      "answer_instances": [
+        "germination_testing_room_filled_container_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "germination_testing_room_filled_container_0"
+        ]
+      ],
+      "oracle_answer": "germination testing",
+      "oracle_read": [
+        "room_here"
+      ],
+      "truth": {
+        "alias": "germination_testing_room_filled_container_0",
+        "kind": "filled_specimen_slide_tray",
+        "room": "germination_testing_room",
+        "room_id": "germination_testing_room",
+        "room_name": "germination testing",
+        "spawn": {
+          "x": 6.0,
+          "y": 1.5,
+          "z": 11.0,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "accession_laboratory"
+        },
+        "room_answer_choice": "ROOM_02",
+        "room_answer_label": "germination testing",
+        "absence_option": "NOT_PRESENT"
+      },
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the filled specimen slide tray this task refers to -- this exact object",
+          "../references/aa6de56302de1a6d689508240d52d3deabbd0a2a9730cfbaf1642cd474516247.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_localization__germination_testing_room_filled_container_1",
+      "family": "room_localization",
+      "instruction": "Find the filled specimen slide tray somewhere in this house, then tell me which room it is in. If there is no filled specimen slide tray here, choose NOT_PRESENT instead of guessing a room.\n\nRoom choices (use exactly one option key):\n- ROOM_01 — accession laboratory\n- ROOM_02 — germination testing\n- ROOM_03 — seed vault\n- NOT_PRESENT — not present\nReply with only one option key, for example ROOM_01 or NOT_PRESENT.",
+      "referents": [
+        "germination_testing_room_filled_container_1"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "ROOM_02"
+        ]
+      ],
+      "answer_choices": [
+        "ROOM_01",
+        "ROOM_02",
+        "ROOM_03",
+        "NOT_PRESENT"
+      ],
+      "answer_choice_labels": [
+        "accession laboratory",
+        "germination testing",
+        "seed vault",
+        "not present"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 75,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "germination_testing_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "germination_testing_room_filled_container_1"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "accession_laboratory",
+          "germination_testing_room",
+          "seed_vault"
+        ]
+      },
+      "kinds": [
+        "filled_specimen_slide_tray"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "germination_testing_room_filled_container_1"
+      ],
+      "answer_instances": [
+        "germination_testing_room_filled_container_1"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "germination_testing_room_filled_container_1"
+        ]
+      ],
+      "oracle_answer": "germination testing",
+      "oracle_read": [
+        "room_here"
+      ],
+      "truth": {
+        "alias": "germination_testing_room_filled_container_1",
+        "kind": "filled_specimen_slide_tray",
+        "room": "germination_testing_room",
+        "room_id": "germination_testing_room",
+        "room_name": "germination testing",
+        "spawn": {
+          "x": 6.5,
+          "y": 1.5,
+          "z": 6.0,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "accession_laboratory"
+        },
+        "room_answer_choice": "ROOM_02",
+        "room_answer_label": "germination testing",
+        "absence_option": "NOT_PRESENT"
+      },
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the filled specimen slide tray this task refers to -- this exact object",
+          "../references/11f9e9354257640407f544f7cffdba6b58dc1a1e05eb8b3c65330d40dcb4a45e.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_localization__germination_testing_room_laboratory_microscope_1",
+      "family": "room_localization",
+      "instruction": "Find the laboratory microscope somewhere in this house, then tell me which room it is in. If there is no laboratory microscope here, choose NOT_PRESENT instead of guessing a room.\n\nRoom choices (use exactly one option key):\n- ROOM_01 — accession laboratory\n- ROOM_02 — germination testing\n- ROOM_03 — seed vault\n- NOT_PRESENT — not present\nReply with only one option key, for example ROOM_01 or NOT_PRESENT.",
+      "referents": [
+        "germination_testing_room_laboratory_microscope_1"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "ROOM_02"
+        ]
+      ],
+      "answer_choices": [
+        "ROOM_01",
+        "ROOM_02",
+        "ROOM_03",
+        "NOT_PRESENT"
+      ],
+      "answer_choice_labels": [
+        "accession laboratory",
+        "germination testing",
+        "seed vault",
+        "not present"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 75,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "germination_testing_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "germination_testing_room_laboratory_microscope_1"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "accession_laboratory",
+          "germination_testing_room",
+          "seed_vault"
+        ]
+      },
+      "kinds": [
+        "laboratory_microscope"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "germination_testing_room_laboratory_microscope_1"
+      ],
+      "answer_instances": [
+        "germination_testing_room_laboratory_microscope_1"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "germination_testing_room_laboratory_microscope_1"
+        ]
+      ],
+      "oracle_answer": "germination testing",
+      "oracle_read": [
+        "room_here"
+      ],
+      "truth": {
+        "alias": "germination_testing_room_laboratory_microscope_1",
+        "kind": "laboratory_microscope",
+        "room": "germination_testing_room",
+        "room_id": "germination_testing_room",
+        "room_name": "germination testing",
+        "spawn": {
+          "x": 6.0,
+          "y": 1.5,
+          "z": 11.0,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "accession_laboratory"
+        },
+        "room_answer_choice": "ROOM_02",
+        "room_answer_label": "germination testing",
+        "absence_option": "NOT_PRESENT"
+      },
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the laboratory microscope this task refers to -- this exact object",
+          "../references/4ead351bbbd3ff61e4e0066102491ee767b6d42cbc55d8f3db99a32447c37643.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_localization__germination_testing_room_temperature_humidity_monitor_1",
+      "family": "room_localization",
+      "instruction": "Find the temperature humidity monitor somewhere in this house, then tell me which room it is in. If there is no temperature humidity monitor here, choose NOT_PRESENT instead of guessing a room.\n\nRoom choices (use exactly one option key):\n- ROOM_01 — accession laboratory\n- ROOM_02 — germination testing\n- ROOM_03 — seed vault\n- NOT_PRESENT — not present\nReply with only one option key, for example ROOM_01 or NOT_PRESENT.",
+      "referents": [
+        "germination_testing_room_temperature_humidity_monitor_1"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "ROOM_02"
+        ]
+      ],
+      "answer_choices": [
+        "ROOM_01",
+        "ROOM_02",
+        "ROOM_03",
+        "NOT_PRESENT"
+      ],
+      "answer_choice_labels": [
+        "accession laboratory",
+        "germination testing",
+        "seed vault",
+        "not present"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 75,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "germination_testing_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "germination_testing_room_temperature_humidity_monitor_1"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "accession_laboratory",
+          "germination_testing_room",
+          "seed_vault"
+        ]
+      },
+      "kinds": [
+        "temperature_humidity_monitor"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "germination_testing_room_temperature_humidity_monitor_1"
+      ],
+      "answer_instances": [
+        "germination_testing_room_temperature_humidity_monitor_1"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "germination_testing_room_temperature_humidity_monitor_1"
+        ]
+      ],
+      "oracle_answer": "germination testing",
+      "oracle_read": [
+        "room_here"
+      ],
+      "truth": {
+        "alias": "germination_testing_room_temperature_humidity_monitor_1",
+        "kind": "temperature_humidity_monitor",
+        "room": "germination_testing_room",
+        "room_id": "germination_testing_room",
+        "room_name": "germination testing",
+        "spawn": {
+          "x": 6.25,
+          "y": 1.5,
+          "z": 8.5,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "accession_laboratory"
+        },
+        "room_answer_choice": "ROOM_02",
+        "room_answer_label": "germination testing",
+        "absence_option": "NOT_PRESENT"
+      },
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the temperature humidity monitor this task refers to -- this exact object",
+          "../references/5e1e6edf6263e35a8afd3d07a34aa63c3e4aa137474847fd0f998c58af232d3a.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_localization__seed_vault_barcode_scanner_0",
+      "family": "room_localization",
+      "instruction": "Find the barcode scanner somewhere in this house, then tell me which room it is in. If there is no barcode scanner here, choose NOT_PRESENT instead of guessing a room.\n\nRoom choices (use exactly one option key):\n- ROOM_01 — accession laboratory\n- ROOM_02 — germination testing\n- ROOM_03 — seed vault\n- NOT_PRESENT — not present\nReply with only one option key, for example ROOM_01 or NOT_PRESENT.",
+      "referents": [
+        "seed_vault_barcode_scanner_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "ROOM_03"
+        ]
+      ],
+      "answer_choices": [
+        "ROOM_01",
+        "ROOM_02",
+        "ROOM_03",
+        "NOT_PRESENT"
+      ],
+      "answer_choice_labels": [
+        "accession laboratory",
+        "germination testing",
+        "seed vault",
+        "not present"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 75,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "seed_vault"
+        ],
+        "must_open": [],
+        "must_see": [
+          "seed_vault_barcode_scanner_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "accession_laboratory",
+          "germination_testing_room",
+          "seed_vault"
+        ]
+      },
+      "kinds": [
+        "barcode_scanner"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "seed_vault_barcode_scanner_0"
+      ],
+      "answer_instances": [
+        "seed_vault_barcode_scanner_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "seed_vault_barcode_scanner_0"
+        ]
+      ],
+      "oracle_answer": "seed vault",
+      "oracle_read": [
+        "room_here"
+      ],
+      "truth": {
+        "alias": "seed_vault_barcode_scanner_0",
+        "kind": "barcode_scanner",
+        "room": "seed_vault",
+        "room_id": "seed_vault",
+        "room_name": "seed vault",
+        "spawn": {
+          "x": 2.75,
+          "y": 1.5,
+          "z": 6.0,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "accession_laboratory"
+        },
+        "room_answer_choice": "ROOM_03",
+        "room_answer_label": "seed vault",
+        "absence_option": "NOT_PRESENT"
+      },
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the barcode scanner this task refers to -- this exact object",
+          "../references/347bc48652d1a5f60b874ffc78b7391e409f82cf381b5ebb296461c4df57e557.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_localization__seed_vault_filled_container_0",
+      "family": "room_localization",
+      "instruction": "Find the filled laboratory accession tray somewhere in this house, then tell me which room it is in. If there is no filled laboratory accession tray here, choose NOT_PRESENT instead of guessing a room.\n\nRoom choices (use exactly one option key):\n- ROOM_01 — accession laboratory\n- ROOM_02 — germination testing\n- ROOM_03 — seed vault\n- NOT_PRESENT — not present\nReply with only one option key, for example ROOM_01 or NOT_PRESENT.",
+      "referents": [
+        "seed_vault_filled_container_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "ROOM_03"
+        ]
+      ],
+      "answer_choices": [
+        "ROOM_01",
+        "ROOM_02",
+        "ROOM_03",
+        "NOT_PRESENT"
+      ],
+      "answer_choice_labels": [
+        "accession laboratory",
+        "germination testing",
+        "seed vault",
+        "not present"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 75,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "seed_vault"
+        ],
+        "must_open": [],
+        "must_see": [
+          "seed_vault_filled_container_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "accession_laboratory",
+          "germination_testing_room",
+          "seed_vault"
+        ]
+      },
+      "kinds": [
+        "filled_laboratory_accession_tray"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "seed_vault_filled_container_0"
+      ],
+      "answer_instances": [
+        "seed_vault_filled_container_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "seed_vault_filled_container_0"
+        ]
+      ],
+      "oracle_answer": "seed vault",
+      "oracle_read": [
+        "room_here"
+      ],
+      "truth": {
+        "alias": "seed_vault_filled_container_0",
+        "kind": "filled_laboratory_accession_tray",
+        "room": "seed_vault",
+        "room_id": "seed_vault",
+        "room_name": "seed vault",
+        "spawn": {
+          "x": 2.75,
+          "y": 1.5,
+          "z": 6.0,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "accession_laboratory"
+        },
+        "room_answer_choice": "ROOM_03",
+        "room_answer_label": "seed vault",
+        "absence_option": "NOT_PRESENT"
+      },
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the filled laboratory accession tray this task refers to -- this exact object",
+          "../references/2ebf038c7bdc436c980690db6e26c31957847fe4badf643055ebfdc5ff377037.png"
+        ]
+      ],
+      "scene_variant": {
+        "schema": "task-scene-variant-v1",
+        "exclude": [
+          "seed_vault_filled_container_1",
+          "accession_laboratory_filled_container_0",
+          "germination_testing_room_filled_container_0",
+          "germination_testing_room_filled_container_1"
+        ]
+      }
+    },
+    {
+      "task_id": "room_area__seed_vault",
+      "family": "room_area",
+      "instruction": "Find the seed vault in this house, then tell me roughly how big its floor is, in square metres, as a number. I want the floor area of that one room, measured inside its walls -- not the whole house, and not the other rooms.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_choice_labels": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m2",
+      "answer_match": "count",
+      "max_steps": 75,
+      "answer_number": 35,
+      "answer_tolerance": 8.75,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "seed_vault"
+        ],
+        "must_open": [],
+        "must_see": [],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "accession_laboratory",
+          "germination_testing_room",
+          "seed_vault"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "35",
+      "oracle_read": [
+        "room_area",
+        "seed_vault"
+      ],
+      "truth": {
+        "room": "seed_vault",
+        "name": "seed vault",
+        "m2": 35,
+        "tol_m2": 4,
+        "spawn": {
+          "x": 6.0,
+          "y": 1.5,
+          "z": 11.0,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "accession_laboratory"
+        }
+      },
+      "goal_images": []
+    },
+    {
+      "task_id": "room_count__smoke_detector",
+      "family": "room_count",
+      "instruction": "Search this house and find out which rooms contain at least one smoke detector. Count two places as different rooms if you have to go through a doorway to get from one to the other. Some rooms contain no smoke detectors at all, and a room with several smoke detectors still counts once. Tell me how many rooms contain at least one smoke detector, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_choice_labels": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 75,
+      "answer_number": 2,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "accession_laboratory",
+          "germination_testing_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "accession_laboratory_smoke_detector_0",
+          "germination_testing_room_smoke_detector_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "accession_laboratory",
+          "germination_testing_room",
+          "seed_vault"
+        ]
+      },
+      "kinds": [
+        "smoke_detector"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "accession_laboratory_smoke_detector_0",
+        "germination_testing_room_smoke_detector_0"
+      ],
+      "answer_instances": [
+        "accession_laboratory_smoke_detector_0",
+        "germination_testing_room_smoke_detector_0"
+      ],
+      "plan": [],
+      "oracle_answer": "2",
+      "oracle_read": [
+        "room_count_seen",
+        "smoke_detector",
+        [
+          "accession_laboratory",
+          "germination_testing_room",
+          "seed_vault"
+        ],
+        []
+      ],
+      "truth": {
+        "kind": "smoke_detector",
+        "n_rooms": 2,
+        "noun": "smoke detector",
+        "rooms": [
+          "accession_laboratory",
+          "germination_testing_room"
+        ],
+        "places": [
+          [
+            "accession_laboratory"
+          ],
+          [
+            "germination_testing_room"
+          ]
+        ],
+        "n_places_in_scope": 3,
+        "total": 2,
+        "spawn": {
+          "x": 3.5,
+          "y": 1.5,
+          "z": 14.75,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "seed_vault"
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'smoke detector' -- the task is about every smoke detector in the house, and the others need not look like this one",
+          "../references/c3dc08d66073ae89fe124054d74157e0af0056ddb58564a3b5c59f3c0e6c81d3.png"
+        ]
+      ]
+    }
+  ],
+  "dataset_version": "1.1"
+}

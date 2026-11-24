@@ -1,0 +1,491 @@
+{
+  "schema_version": 4,
+  "benchmark": "ROAM-Bench",
+  "scene": "scene_102",
+  "spawn": {
+    "x": 3.0,
+    "y": 1.5,
+    "z": 2.75,
+    "yaw_deg": 0.0,
+    "horizon_deg": 0.0,
+    "room": "reception"
+  },
+  "specs": [
+    {
+      "task_id": "object_count__smoke_detector",
+      "family": "object_count",
+      "instruction": "Search this house and count the smoke detectors. There is more than one room, and there may be smoke detectors in more than one of them. When you have finished searching, tell me how many smoke detectors there are in total, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 3,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "exam_room_1",
+          "laboratory",
+          "staff_break_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "exam_room_1_smoke_detector_0",
+          "laboratory_smoke_detector_0",
+          "staff_break_room_smoke_detector_0"
+        ],
+        "min_distinct_viewpoints": 3,
+        "search_regions": [
+          "exam_room_1",
+          "exam_room_2",
+          "laboratory",
+          "reception",
+          "restroom",
+          "staff_break_room"
+        ]
+      },
+      "kinds": [
+        "smoke_detector"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "exam_room_1_smoke_detector_0",
+        "laboratory_smoke_detector_0",
+        "staff_break_room_smoke_detector_0"
+      ],
+      "answer_instances": [
+        "exam_room_1_smoke_detector_0",
+        "laboratory_smoke_detector_0",
+        "staff_break_room_smoke_detector_0"
+      ],
+      "plan": [],
+      "oracle_answer": "3",
+      "oracle_read": [
+        "count_seen",
+        "smoke_detector",
+        [
+          "exam_room_1",
+          "exam_room_2",
+          "laboratory",
+          "reception",
+          "restroom",
+          "staff_break_room"
+        ]
+      ],
+      "truth": {
+        "kind": "smoke_detector",
+        "total": 3,
+        "noun": "smoke detector",
+        "rooms": [
+          "exam_room_1",
+          "laboratory",
+          "staff_break_room"
+        ],
+        "per_room": {
+          "exam_room_1": 1,
+          "laboratory": 1,
+          "staff_break_room": 1
+        },
+        "spawn": {
+          "x": 5.75,
+          "y": 1.5,
+          "z": 2.75,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "reception"
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'smoke detector' -- the task is about every smoke detector in the house, and the others need not look like this one",
+          "../references/d5329ba6f979b504511633dcd4ee1ef7e8514631a8769aac1d42aea45d8af45e.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relocation__exam_room_2_laptop_computer_0__to__exam_room_1_workstation_desk_0",
+      "family": "relocation",
+      "instruction": "Find the laptop computer, pick it up, and put it on the workstation desk.",
+      "referents": [
+        "exam_room_2_laptop_computer_0",
+        "exam_room_1_workstation_desk_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('exam_room_2_laptop_computer_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('exam_room_2_laptop_computer_0','exam_room_1_workstation_desk_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "exam_room_1",
+          "exam_room_2"
+        ],
+        "must_open": [],
+        "must_see": [
+          "exam_room_1_workstation_desk_0",
+          "exam_room_2_laptop_computer_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "exam_room_1",
+          "exam_room_2",
+          "laboratory",
+          "reception",
+          "restroom",
+          "staff_break_room"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "exam_room_2_laptop_computer_0",
+        "exam_room_1_workstation_desk_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "exam_room_2_laptop_computer_0"
+        ],
+        [
+          "pick",
+          "exam_room_2_laptop_computer_0"
+        ],
+        [
+          "navigate",
+          "exam_room_1_workstation_desk_0"
+        ],
+        [
+          "place",
+          "exam_room_1_workstation_desk_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "exam_room_2_laptop_computer_0",
+        "from_room": "exam_room_2",
+        "from_room_id": "exam_room_2",
+        "dest": "exam_room_1_workstation_desk_0",
+        "to_room": "exam_room_1",
+        "to_room_id": "exam_room_1",
+        "spawn": {
+          "x": 6.78,
+          "y": 1.5,
+          "z": 6.5,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "staff_break_room"
+        }
+      },
+      "goal_images": [
+        [
+          "the laptop computer this task refers to -- this exact object",
+          "../references/13d632c36b5cae76a3157d8473ec87f18c215d922f0b39ccad45648c4b95149e.png"
+        ],
+        [
+          "the workstation desk this task refers to -- this exact object",
+          "../references/07d950bd2957a74e6faf277046003e146fdf0a68364845b21c01932733e406a8.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "gap_width__exam_room_1_examination_table_0__exam_room_1_workstation_desk_0",
+      "family": "gap_width",
+      "instruction": "Find the examination table and the workstation desk in this house; they are in the same room, standing apart. Then tell me roughly how wide the clear gap between them is, in centimetres, as a number. Measure the empty floor from the edge of one to the edge of the other, not the distance between their centres.",
+      "referents": [
+        "exam_room_1_examination_table_0",
+        "exam_room_1_workstation_desk_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "cm",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 77,
+      "answer_tolerance": 10,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "exam_room_1"
+        ],
+        "must_open": [],
+        "must_see": [
+          "exam_room_1_examination_table_0",
+          "exam_room_1_workstation_desk_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "exam_room_1"
+        ]
+      },
+      "kinds": [
+        "examination_table",
+        "workstation_desk"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "exam_room_1_examination_table_0",
+        "exam_room_1_workstation_desk_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "77",
+      "oracle_read": [
+        "gap_width",
+        "exam_room_1_examination_table_0",
+        "exam_room_1_workstation_desk_0"
+      ],
+      "truth": {
+        "a": "exam_room_1_examination_table_0",
+        "b": "exam_room_1_workstation_desk_0",
+        "cm": 77,
+        "room": "exam_room_1",
+        "tol_cm": 10,
+        "spawn": {
+          "x": 3.08,
+          "y": 1.5,
+          "z": 8.5,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "laboratory"
+        }
+      },
+      "goal_images": [
+        [
+          "the examination table this task refers to -- this exact object",
+          "../references/c2b2390e265f7e191d75d857347e989fce3555d98d5c714b243e5a3d9990e354.png"
+        ],
+        [
+          "the workstation desk this task refers to -- this exact object",
+          "../references/07d950bd2957a74e6faf277046003e146fdf0a68364845b21c01932733e406a8.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "nearer_object_comparison__restroom_toilet_0",
+      "family": "nearer_object_comparison",
+      "instruction": "Somewhere in this house there are the break room table, the workstation desk and the writing desk. None of them is in the same room as the toilet. Find out which one of them is closest to the toilet, and answer with just that one thing. Compare the straight-line distances, not how far you had to walk.",
+      "referents": [
+        "restroom_toilet_0",
+        "staff_break_room_break_room_table_0",
+        "exam_room_1_workstation_desk_0",
+        "exam_room_2_writing_desk_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "break room table"
+        ]
+      ],
+      "answer_choices": [
+        "break room table",
+        "workstation desk",
+        "writing desk"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 150,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "exam_room_1",
+          "exam_room_2",
+          "restroom",
+          "staff_break_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "exam_room_1_workstation_desk_0",
+          "exam_room_2_writing_desk_0",
+          "restroom_toilet_0",
+          "staff_break_room_break_room_table_0"
+        ],
+        "min_distinct_viewpoints": 4,
+        "search_regions": [
+          "exam_room_1",
+          "exam_room_2",
+          "restroom",
+          "staff_break_room"
+        ]
+      },
+      "kinds": [
+        "break_room_table",
+        "workstation_desk",
+        "writing_desk",
+        "toilet"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "restroom_toilet_0",
+        "staff_break_room_break_room_table_0",
+        "exam_room_1_workstation_desk_0",
+        "exam_room_2_writing_desk_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "break room table",
+      "oracle_read": [
+        "nearest_of",
+        "restroom_toilet_0",
+        [
+          [
+            "staff_break_room_break_room_table_0",
+            "break room table"
+          ],
+          [
+            "exam_room_1_workstation_desk_0",
+            "workstation desk"
+          ],
+          [
+            "exam_room_2_writing_desk_0",
+            "writing desk"
+          ]
+        ]
+      ],
+      "truth": {
+        "x": "restroom_toilet_0",
+        "winner": "staff_break_room_break_room_table_0",
+        "choices": [
+          "staff_break_room_break_room_table_0",
+          "exam_room_1_workstation_desk_0",
+          "exam_room_2_writing_desk_0"
+        ],
+        "words": [
+          "break room table",
+          "workstation desk",
+          "writing desk"
+        ],
+        "metres": {
+          "staff_break_room_break_room_table_0": 3.87,
+          "exam_room_1_workstation_desk_0": 6.03,
+          "exam_room_2_writing_desk_0": 6.62
+        },
+        "lead_m": 2.16,
+        "x_room": "restroom",
+        "spawn": {
+          "x": 2.58,
+          "y": 1.5,
+          "z": 5.5,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "laboratory"
+        }
+      },
+      "answer_choice_labels": [
+        "break room table",
+        "workstation desk",
+        "writing desk"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the toilet this task refers to -- this exact object",
+          "../references/0ce995ce0f7f7d5dff2bfeced15f24cdc737b3f9106c85774f7ad99f2961c940.png"
+        ],
+        [
+          "the break room table this task refers to -- this exact object",
+          "../references/ca38ee3ded4fe5d4a7c81aaefbaa174bdf149f3925136d270989532bcc958395.png"
+        ],
+        [
+          "the workstation desk this task refers to -- this exact object",
+          "../references/07d950bd2957a74e6faf277046003e146fdf0a68364845b21c01932733e406a8.png"
+        ],
+        [
+          "the writing desk this task refers to -- this exact object",
+          "../references/7abe8cb1c40258e48742692dc9c983ca11bf4bad7a6ca78dc4870c9155fc25ad.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_area__reception",
+      "family": "room_area",
+      "instruction": "Find the reception in this house, then tell me roughly how big its floor is, in square metres, as a number. I want the floor area of that one room, measured inside its walls -- not the whole house, and not the other rooms.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m2",
+      "answer_match": "count",
+      "max_steps": 150,
+      "answer_number": 33,
+      "answer_tolerance": 8.25,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "reception"
+        ],
+        "must_open": [],
+        "must_see": [],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "exam_room_1",
+          "exam_room_2",
+          "laboratory",
+          "reception",
+          "restroom",
+          "staff_break_room"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "33",
+      "oracle_read": [
+        "room_area",
+        "reception"
+      ],
+      "truth": {
+        "room": "reception",
+        "name": "reception",
+        "m2": 33,
+        "tol_m2": 4,
+        "spawn": {
+          "x": 0.5,
+          "y": 1.5,
+          "z": 0.5,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "reception"
+        }
+      },
+      "goal_images": []
+    }
+  ],
+  "dataset_version": "1.1"
+}

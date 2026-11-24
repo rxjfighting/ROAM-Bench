@@ -1,0 +1,1254 @@
+{
+  "schema_version": 4,
+  "benchmark": "ROAM-Bench",
+  "scene": "scene_146",
+  "spawn": {
+    "x": 3.0,
+    "y": 1.5,
+    "z": 8.25,
+    "yaw_deg": 0.0,
+    "horizon_deg": 0.0,
+    "room": "fragrance_formulation_laboratory"
+  },
+  "specs": [
+    {
+      "task_id": "surface_contents__scent_consultation_salon_service_counter_0",
+      "family": "surface_contents",
+      "instruction": "Go to the service counter. Which of the following objects are resting on it? Select every option that applies. Answer only with the option IDs.\nOptions:\n- OBJ_01: filled display tray\n- OBJ_02: fragrance discovery box\n- OBJ_03: perfume tester bottle\n- OBJ_04: perfume sample box\n- OBJ_05: consultation notebook\n- OBJ_06: consultation pen\n- OBJ_07: water glass\n- OBJ_08: ingredient jar",
+      "referents": [
+        "scent_consultation_salon_service_counter_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "OBJ_01"
+        ]
+      ],
+      "answer_choices": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_choice_labels": [
+        "filled display tray",
+        "fragrance discovery box",
+        "perfume tester bottle",
+        "perfume sample box",
+        "consultation notebook",
+        "consultation pen",
+        "water glass",
+        "ingredient jar"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [
+        "OBJ_01",
+        "OBJ_02",
+        "OBJ_03",
+        "OBJ_04",
+        "OBJ_05",
+        "OBJ_06",
+        "OBJ_07",
+        "OBJ_08"
+      ],
+      "answer_unit": "",
+      "answer_match": "set",
+      "max_steps": 50,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "scent_consultation_salon"
+        ],
+        "must_open": [],
+        "must_see": [
+          "scent_consultation_salon_filled_container_0",
+          "scent_consultation_salon_service_counter_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "fragrance_formulation_laboratory",
+          "scent_consultation_salon"
+        ]
+      },
+      "kinds": [
+        "filled_display_tray"
+      ],
+      "receptacle_kinds": [
+        "service_counter"
+      ],
+      "evidence": [
+        "scent_consultation_salon_service_counter_0",
+        "scent_consultation_salon_filled_container_0"
+      ],
+      "answer_instances": [
+        "scent_consultation_salon_filled_container_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "scent_consultation_salon_service_counter_0"
+        ]
+      ],
+      "oracle_answer": "OBJ_01",
+      "oracle_read": [
+        "surface_contents",
+        "scent_consultation_salon_service_counter_0"
+      ],
+      "truth": {
+        "host": "scent_consultation_salon_service_counter_0",
+        "host_kind": "service_counter",
+        "room": "scent_consultation_salon",
+        "children": [
+          {
+            "alias": "scent_consultation_salon_filled_container_0",
+            "kind": "filled_display_tray"
+          }
+        ],
+        "spawn": {
+          "x": 5.0,
+          "y": 1.5,
+          "z": 9.5,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "fragrance_formulation_laboratory"
+        },
+        "answer_options": [
+          {
+            "id": "OBJ_01",
+            "label": "filled display tray",
+            "kind": "filled_display_tray",
+            "alias": "scent_consultation_salon_filled_container_0",
+            "correct": true
+          },
+          {
+            "id": "OBJ_02",
+            "label": "fragrance discovery box",
+            "kind": "fragrance_discovery_box",
+            "alias": "scent_consultation_salon_fragrance_discovery_box_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_03",
+            "label": "perfume tester bottle",
+            "kind": "perfume_tester_bottle",
+            "alias": "scent_consultation_salon_perfume_tester_bottle_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_04",
+            "label": "perfume sample box",
+            "kind": "perfume_sample_box",
+            "alias": "scent_consultation_salon_perfume_sample_box_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_05",
+            "label": "consultation notebook",
+            "kind": "consultation_notebook",
+            "alias": "scent_consultation_salon_consultation_notebook_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_06",
+            "label": "consultation pen",
+            "kind": "consultation_pen",
+            "alias": "scent_consultation_salon_consultation_pen_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_07",
+            "label": "water glass",
+            "kind": "water_glass",
+            "alias": "scent_consultation_salon_water_glass_0",
+            "correct": false
+          },
+          {
+            "id": "OBJ_08",
+            "label": "ingredient jar",
+            "kind": "ingredient_jar",
+            "alias": "scent_consultation_salon_ingredient_jar_0",
+            "correct": false
+          }
+        ]
+      },
+      "answer_choice_mode": "multiple",
+      "goal_images": [
+        [
+          "the service counter this task refers to -- this exact object",
+          "../references/f33fb0dcf4d64087dc1eb1151598b9da5a80bc269f161df36c1f19d198a27d6d.png"
+        ],
+        [
+          "Option OBJ_01 — filled display tray; category reference image",
+          "../references/2afd6c70c90c864be9c42b0da0d8811963af9420c4049f1d126d16315760a32f.png"
+        ],
+        [
+          "Option OBJ_02 — fragrance discovery box; category reference image",
+          "../references/b2e293954465ddefbf26955a71088cda4c36145e921bf1fc2af6bebac5752411.png"
+        ],
+        [
+          "Option OBJ_03 — perfume tester bottle; category reference image",
+          "../references/53a3c786e6a560b7038f7f8854fa4fa905c6411bfab335f51469bb3d22ef915f.png"
+        ],
+        [
+          "Option OBJ_04 — perfume sample box; category reference image",
+          "../references/0941fa6735aa46f33ea942d3b85a9bc4996a621449bc6c619b61502be0ae552e.png"
+        ],
+        [
+          "Option OBJ_05 — consultation notebook; category reference image",
+          "../references/37bc4c27a258f4368ec82fe6bb3ac5a3549a6c52bba341f9d54ba26eaaa29430.png"
+        ],
+        [
+          "Option OBJ_06 — consultation pen; category reference image",
+          "../references/75960ff4b99e2e9f691e294ab9e68ba48e44b2c68e26287480a5f87bbfd4966e.png"
+        ],
+        [
+          "Option OBJ_07 — water glass; category reference image",
+          "../references/4ccff8f9605f8a3f9767d2a61318cfe89c59b8d9a2b74e37392833ac35640f4c.png"
+        ],
+        [
+          "Option OBJ_08 — ingredient jar; category reference image",
+          "../references/bb51b0af04719f37c58a3bfedeef1b9232760558ee2c26f278403dc7b85da354.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "object_distance__fragrance_formulation_laboratory_island_worktable_0__scent_consultation_salon_service_counter_0",
+      "family": "object_distance",
+      "instruction": "Find the island worktable and the service counter in this house; they are in different rooms. Then tell me roughly how far apart they are, in metres, as a number. Measure the straight line between them, not the distance you walked.",
+      "referents": [
+        "fragrance_formulation_laboratory_island_worktable_0",
+        "scent_consultation_salon_service_counter_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_choice_labels": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m",
+      "answer_match": "count",
+      "max_steps": 50,
+      "answer_number": 5,
+      "answer_tolerance": 2.0,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "fragrance_formulation_laboratory",
+          "scent_consultation_salon"
+        ],
+        "must_open": [],
+        "must_see": [
+          "fragrance_formulation_laboratory_island_worktable_0",
+          "scent_consultation_salon_service_counter_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "fragrance_formulation_laboratory",
+          "scent_consultation_salon"
+        ]
+      },
+      "kinds": [
+        "island_worktable",
+        "service_counter"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "fragrance_formulation_laboratory_island_worktable_0",
+        "scent_consultation_salon_service_counter_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "5",
+      "oracle_read": [
+        "object_distance",
+        "fragrance_formulation_laboratory_island_worktable_0",
+        "scent_consultation_salon_service_counter_0"
+      ],
+      "truth": {
+        "a": "fragrance_formulation_laboratory_island_worktable_0",
+        "b": "scent_consultation_salon_service_counter_0",
+        "metres": 5.02,
+        "a_room": "fragrance_formulation_laboratory",
+        "b_room": "scent_consultation_salon",
+        "tol_m": 1,
+        "spawn": {
+          "x": 0.5,
+          "y": 1.5,
+          "z": 5.5,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "fragrance_formulation_laboratory"
+        }
+      },
+      "goal_images": [
+        [
+          "the island worktable this task refers to -- this exact object",
+          "../references/c8758023508441646b24cb57b16214bd29ff10a791c05df7ffe14205ae350fa5.png"
+        ],
+        [
+          "the service counter this task refers to -- this exact object",
+          "../references/f33fb0dcf4d64087dc1eb1151598b9da5a80bc269f161df36c1f19d198a27d6d.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "gap_width__scent_consultation_salon_consultation_table_0__scent_consultation_salon_service_counter_0",
+      "family": "gap_width",
+      "instruction": "Find the consultation table and the service counter in this house; they are in the same room, standing apart. Then tell me roughly how wide the clear gap between them is, in centimetres, as a number. Measure the empty floor from the edge of one to the edge of the other, not the distance between their centres.",
+      "referents": [
+        "scent_consultation_salon_consultation_table_0",
+        "scent_consultation_salon_service_counter_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_choice_labels": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "cm",
+      "answer_match": "count",
+      "max_steps": 50,
+      "answer_number": 65,
+      "answer_tolerance": 10,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "scent_consultation_salon"
+        ],
+        "must_open": [],
+        "must_see": [
+          "scent_consultation_salon_consultation_table_0",
+          "scent_consultation_salon_service_counter_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "scent_consultation_salon"
+        ]
+      },
+      "kinds": [
+        "consultation_table",
+        "service_counter"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "scent_consultation_salon_consultation_table_0",
+        "scent_consultation_salon_service_counter_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "65",
+      "oracle_read": [
+        "gap_width",
+        "scent_consultation_salon_consultation_table_0",
+        "scent_consultation_salon_service_counter_0"
+      ],
+      "truth": {
+        "a": "scent_consultation_salon_consultation_table_0",
+        "b": "scent_consultation_salon_service_counter_0",
+        "cm": 65,
+        "room": "scent_consultation_salon",
+        "tol_cm": 10,
+        "spawn": {
+          "x": 3.0,
+          "y": 1.5,
+          "z": 6.0,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "fragrance_formulation_laboratory"
+        }
+      },
+      "goal_images": [
+        [
+          "the consultation table this task refers to -- this exact object",
+          "../references/495cca7b81484dcfeaa9fd3ee58e3723fe068d673fb1277efbc32516e381ba86.png"
+        ],
+        [
+          "the service counter this task refers to -- this exact object",
+          "../references/f33fb0dcf4d64087dc1eb1151598b9da5a80bc269f161df36c1f19d198a27d6d.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "gap_width__scent_consultation_salon_display_cabinet_0__scent_consultation_salon_service_counter_0",
+      "family": "gap_width",
+      "instruction": "Find the display cabinet and the service counter in this house; they are in the same room, standing apart. Then tell me roughly how wide the clear gap between them is, in centimetres, as a number. Measure the empty floor from the edge of one to the edge of the other, not the distance between their centres.",
+      "referents": [
+        "scent_consultation_salon_display_cabinet_0",
+        "scent_consultation_salon_service_counter_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_choice_labels": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "cm",
+      "answer_match": "count",
+      "max_steps": 50,
+      "answer_number": 104,
+      "answer_tolerance": 10,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "scent_consultation_salon"
+        ],
+        "must_open": [],
+        "must_see": [
+          "scent_consultation_salon_display_cabinet_0",
+          "scent_consultation_salon_service_counter_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "scent_consultation_salon"
+        ]
+      },
+      "kinds": [
+        "display_cabinet",
+        "service_counter"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "scent_consultation_salon_display_cabinet_0",
+        "scent_consultation_salon_service_counter_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "104",
+      "oracle_read": [
+        "gap_width",
+        "scent_consultation_salon_display_cabinet_0",
+        "scent_consultation_salon_service_counter_0"
+      ],
+      "truth": {
+        "a": "scent_consultation_salon_display_cabinet_0",
+        "b": "scent_consultation_salon_service_counter_0",
+        "cm": 104,
+        "room": "scent_consultation_salon",
+        "tol_cm": 10,
+        "spawn": {
+          "x": 3.0,
+          "y": 1.5,
+          "z": 8.25,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "fragrance_formulation_laboratory"
+        }
+      },
+      "goal_images": [
+        [
+          "the display cabinet this task refers to -- this exact object",
+          "../references/3b8f6461fe34436905d783f02c8c4f9f037214f16d036f164f2df5c265c40d53.png"
+        ],
+        [
+          "the service counter this task refers to -- this exact object",
+          "../references/f33fb0dcf4d64087dc1eb1151598b9da5a80bc269f161df36c1f19d198a27d6d.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__fragrance_formulation_laboratory_island_worktable_0__scent_consultation_salon_consultation_table_0",
+      "family": "path_integration",
+      "instruction": "Find the island worktable and then the consultation table; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "fragrance_formulation_laboratory_island_worktable_0",
+        "scent_consultation_salon_consultation_table_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 50,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "fragrance_formulation_laboratory",
+          "scent_consultation_salon"
+        ],
+        "must_open": [],
+        "must_see": [
+          "fragrance_formulation_laboratory_island_worktable_0",
+          "scent_consultation_salon_consultation_table_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "fragrance_formulation_laboratory",
+          "scent_consultation_salon"
+        ]
+      },
+      "kinds": [
+        "island_worktable",
+        "consultation_table"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "fragrance_formulation_laboratory_island_worktable_0",
+        "scent_consultation_salon_consultation_table_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "fragrance_formulation_laboratory_island_worktable_0",
+        "scent_consultation_salon_consultation_table_0"
+      ],
+      "truth": {
+        "x": "fragrance_formulation_laboratory_island_worktable_0",
+        "y": "scent_consultation_salon_consultation_table_0",
+        "x_room": "fragrance_formulation_laboratory",
+        "y_room": "scent_consultation_salon",
+        "leg_m": 5.41,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": 5.5,
+          "y": 1.5,
+          "z": 1.0,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "scent_consultation_salon"
+        }
+      },
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the island worktable this task refers to -- this exact object",
+          "../references/c8758023508441646b24cb57b16214bd29ff10a791c05df7ffe14205ae350fa5.png"
+        ],
+        [
+          "the consultation table this task refers to -- this exact object",
+          "../references/495cca7b81484dcfeaa9fd3ee58e3723fe068d673fb1277efbc32516e381ba86.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "path_integration__fragrance_formulation_laboratory_island_worktable_0__scent_consultation_salon_display_cabinet_0",
+      "family": "path_integration",
+      "instruction": "Find the island worktable and then the display cabinet; they are in different rooms of this house. When you have seen both, stay where you are -- do not walk back -- and answer this: from where you are standing and facing at that moment, which direction is the spot where you started this episode? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "fragrance_formulation_laboratory_island_worktable_0",
+        "scent_consultation_salon_display_cabinet_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [
+        "start"
+      ],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 50,
+      "answer_number": null,
+      "answer_tolerance": 22.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "fragrance_formulation_laboratory",
+          "scent_consultation_salon"
+        ],
+        "must_open": [],
+        "must_see": [
+          "fragrance_formulation_laboratory_island_worktable_0",
+          "scent_consultation_salon_display_cabinet_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "fragrance_formulation_laboratory",
+          "scent_consultation_salon"
+        ]
+      },
+      "kinds": [
+        "island_worktable",
+        "display_cabinet"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "fragrance_formulation_laboratory_island_worktable_0",
+        "scent_consultation_salon_display_cabinet_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "",
+      "oracle_read": [
+        "path_integration",
+        "fragrance_formulation_laboratory_island_worktable_0",
+        "scent_consultation_salon_display_cabinet_0"
+      ],
+      "truth": {
+        "x": "fragrance_formulation_laboratory_island_worktable_0",
+        "y": "scent_consultation_salon_display_cabinet_0",
+        "x_room": "fragrance_formulation_laboratory",
+        "y_room": "scent_consultation_salon",
+        "leg_m": 7.14,
+        "dynamic": "answer_time_pose",
+        "tol_deg": 22.5,
+        "spawn": {
+          "x": 3.0,
+          "y": 1.5,
+          "z": 0.5,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "scent_consultation_salon"
+        }
+      },
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the island worktable this task refers to -- this exact object",
+          "../references/c8758023508441646b24cb57b16214bd29ff10a791c05df7ffe14205ae350fa5.png"
+        ],
+        [
+          "the display cabinet this task refers to -- this exact object",
+          "../references/3b8f6461fe34436905d783f02c8c4f9f037214f16d036f164f2df5c265c40d53.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relative_direction__scent_consultation_salon_service_counter_0__scent_consultation_salon_consultation_table_0__fragrance_formulation_laboratory_island_worktable_0",
+      "family": "relative_direction",
+      "instruction": "Find the service counter and the consultation table; they are in the same room. Also find the island worktable, which is somewhere else in this house. Then answer this: if you stood at the service counter and faced the consultation table, which direction would the island worktable be in? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "scent_consultation_salon_service_counter_0",
+        "scent_consultation_salon_consultation_table_0",
+        "fragrance_formulation_laboratory_island_worktable_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 50,
+      "answer_number": 90,
+      "answer_tolerance": 22,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "fragrance_formulation_laboratory",
+          "scent_consultation_salon"
+        ],
+        "must_open": [],
+        "must_see": [
+          "fragrance_formulation_laboratory_island_worktable_0",
+          "scent_consultation_salon_consultation_table_0",
+          "scent_consultation_salon_service_counter_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "fragrance_formulation_laboratory",
+          "scent_consultation_salon"
+        ]
+      },
+      "kinds": [
+        "service_counter",
+        "island_worktable",
+        "consultation_table"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "scent_consultation_salon_service_counter_0",
+        "fragrance_formulation_laboratory_island_worktable_0",
+        "scent_consultation_salon_consultation_table_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "90",
+      "oracle_read": [
+        "relative_direction",
+        "scent_consultation_salon_service_counter_0",
+        "scent_consultation_salon_consultation_table_0",
+        "fragrance_formulation_laboratory_island_worktable_0"
+      ],
+      "truth": {
+        "origin": "scent_consultation_salon_service_counter_0",
+        "forward": "scent_consultation_salon_consultation_table_0",
+        "target": "fragrance_formulation_laboratory_island_worktable_0",
+        "bearing_deg": 90.67,
+        "sector_deg": 90,
+        "offset_deg": 0.67,
+        "origin_room": "scent_consultation_salon",
+        "target_room": "fragrance_formulation_laboratory",
+        "leg_m": 5.02,
+        "spawn": {
+          "x": 0.5,
+          "y": 1.5,
+          "z": 3.75,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "scent_consultation_salon"
+        }
+      },
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the service counter this task refers to -- this exact object",
+          "../references/f33fb0dcf4d64087dc1eb1151598b9da5a80bc269f161df36c1f19d198a27d6d.png"
+        ],
+        [
+          "the consultation table this task refers to -- this exact object",
+          "../references/495cca7b81484dcfeaa9fd3ee58e3723fe068d673fb1277efbc32516e381ba86.png"
+        ],
+        [
+          "the island worktable this task refers to -- this exact object",
+          "../references/c8758023508441646b24cb57b16214bd29ff10a791c05df7ffe14205ae350fa5.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relative_direction__scent_consultation_salon_side_table_0__scent_consultation_salon_service_counter_0__fragrance_formulation_laboratory_laboratory_sink_bench_0",
+      "family": "relative_direction",
+      "instruction": "Find the side table and the service counter; they are in the same room. Also find the laboratory sink bench, which is somewhere else in this house. Then answer this: if you stood at the side table and faced the service counter, which direction would the laboratory sink bench be in? Answer with one of: ahead, ahead-right, right, behind-right, behind, behind-left, left, ahead-left.",
+      "referents": [
+        "scent_consultation_salon_side_table_0",
+        "scent_consultation_salon_service_counter_0",
+        "fragrance_formulation_laboratory_laboratory_sink_bench_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_choice_labels": [
+        "ahead",
+        "ahead-right",
+        "right",
+        "behind-right",
+        "behind",
+        "behind-left",
+        "left",
+        "ahead-left"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "direction",
+      "max_steps": 50,
+      "answer_number": 315,
+      "answer_tolerance": 22,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "fragrance_formulation_laboratory",
+          "scent_consultation_salon"
+        ],
+        "must_open": [],
+        "must_see": [
+          "fragrance_formulation_laboratory_laboratory_sink_bench_0",
+          "scent_consultation_salon_service_counter_0",
+          "scent_consultation_salon_side_table_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "fragrance_formulation_laboratory",
+          "scent_consultation_salon"
+        ]
+      },
+      "kinds": [
+        "side_table",
+        "laboratory_sink_bench",
+        "service_counter"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "scent_consultation_salon_side_table_0",
+        "fragrance_formulation_laboratory_laboratory_sink_bench_0",
+        "scent_consultation_salon_service_counter_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "315",
+      "oracle_read": [
+        "relative_direction",
+        "scent_consultation_salon_side_table_0",
+        "scent_consultation_salon_service_counter_0",
+        "fragrance_formulation_laboratory_laboratory_sink_bench_0"
+      ],
+      "truth": {
+        "origin": "scent_consultation_salon_side_table_0",
+        "forward": "scent_consultation_salon_service_counter_0",
+        "target": "fragrance_formulation_laboratory_laboratory_sink_bench_0",
+        "bearing_deg": 319.56,
+        "sector_deg": 315,
+        "offset_deg": 4.56,
+        "origin_room": "scent_consultation_salon",
+        "target_room": "fragrance_formulation_laboratory",
+        "leg_m": 4.92,
+        "spawn": {
+          "x": 3.0,
+          "y": 1.5,
+          "z": 8.25,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "fragrance_formulation_laboratory"
+        }
+      },
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the side table this task refers to -- this exact object",
+          "../references/cebbd0a8bb8eac8e7ce2fd2ad025d95bbd01762bd6c2dbcb5436959c211bba7a.png"
+        ],
+        [
+          "the service counter this task refers to -- this exact object",
+          "../references/f33fb0dcf4d64087dc1eb1151598b9da5a80bc269f161df36c1f19d198a27d6d.png"
+        ],
+        [
+          "the laboratory sink bench this task refers to -- this exact object",
+          "../references/be59e1b8e24b29cdc48f3b7ed2fe6dc55a9dfea31ef76c252f3e0fc02f8f5371.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "nearer_object_comparison__fragrance_formulation_laboratory_island_worktable_0",
+      "family": "nearer_object_comparison",
+      "instruction": "Somewhere in this house there are the display cabinet, the display plinth and the side table. None of them is in the same room as the island worktable. Find out which one of them is closest to the island worktable, and answer with just that one thing. Compare the straight-line distances, not how far you had to walk.",
+      "referents": [
+        "fragrance_formulation_laboratory_island_worktable_0",
+        "scent_consultation_salon_display_plinth_0",
+        "scent_consultation_salon_side_table_0",
+        "scent_consultation_salon_display_cabinet_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "display plinth"
+        ]
+      ],
+      "answer_choices": [
+        "display cabinet",
+        "display plinth",
+        "side table"
+      ],
+      "answer_choice_labels": [
+        "display cabinet",
+        "display plinth",
+        "side table"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 50,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "fragrance_formulation_laboratory",
+          "scent_consultation_salon"
+        ],
+        "must_open": [],
+        "must_see": [
+          "fragrance_formulation_laboratory_island_worktable_0",
+          "scent_consultation_salon_display_cabinet_0",
+          "scent_consultation_salon_display_plinth_0",
+          "scent_consultation_salon_side_table_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "fragrance_formulation_laboratory",
+          "scent_consultation_salon"
+        ]
+      },
+      "kinds": [
+        "display_plinth",
+        "side_table",
+        "display_cabinet",
+        "island_worktable"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "fragrance_formulation_laboratory_island_worktable_0",
+        "scent_consultation_salon_display_plinth_0",
+        "scent_consultation_salon_side_table_0",
+        "scent_consultation_salon_display_cabinet_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "display plinth",
+      "oracle_read": [
+        "nearest_of",
+        "fragrance_formulation_laboratory_island_worktable_0",
+        [
+          [
+            "scent_consultation_salon_display_plinth_0",
+            "display plinth"
+          ],
+          [
+            "scent_consultation_salon_side_table_0",
+            "side table"
+          ],
+          [
+            "scent_consultation_salon_display_cabinet_0",
+            "display cabinet"
+          ]
+        ]
+      ],
+      "truth": {
+        "x": "fragrance_formulation_laboratory_island_worktable_0",
+        "winner": "scent_consultation_salon_display_plinth_0",
+        "choices": [
+          "scent_consultation_salon_display_plinth_0",
+          "scent_consultation_salon_side_table_0",
+          "scent_consultation_salon_display_cabinet_0"
+        ],
+        "words": [
+          "display cabinet",
+          "display plinth",
+          "side table"
+        ],
+        "metres": {
+          "scent_consultation_salon_display_plinth_0": 4.36,
+          "scent_consultation_salon_side_table_0": 6.73,
+          "scent_consultation_salon_display_cabinet_0": 7.14
+        },
+        "lead_m": 2.37,
+        "x_room": "fragrance_formulation_laboratory",
+        "spawn": {
+          "x": 5.5,
+          "y": 1.5,
+          "z": 4.5,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "scent_consultation_salon"
+        }
+      },
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the island worktable this task refers to -- this exact object",
+          "../references/c8758023508441646b24cb57b16214bd29ff10a791c05df7ffe14205ae350fa5.png"
+        ],
+        [
+          "the display plinth this task refers to -- this exact object",
+          "../references/71d92fe7a6ba26f536a4d183d8e473778157030b1d6c09bdd6df8bcb735f8bf1.png"
+        ],
+        [
+          "the side table this task refers to -- this exact object",
+          "../references/cebbd0a8bb8eac8e7ce2fd2ad025d95bbd01762bd6c2dbcb5436959c211bba7a.png"
+        ],
+        [
+          "the display cabinet this task refers to -- this exact object",
+          "../references/3b8f6461fe34436905d783f02c8c4f9f037214f16d036f164f2df5c265c40d53.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_localization__scent_consultation_salon_fragrance_sample_box_0",
+      "family": "room_localization",
+      "instruction": "Find the fragrance sample box somewhere in this house, then tell me which room it is in. If there is no fragrance sample box here, choose NOT_PRESENT instead of guessing a room.\n\nRoom choices (use exactly one option key):\n- ROOM_01 — fragrance formulation laboratory\n- ROOM_02 — scent consultation salon\n- NOT_PRESENT — not present\nReply with only one option key, for example ROOM_01 or NOT_PRESENT.",
+      "referents": [
+        "scent_consultation_salon_fragrance_sample_box_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "ROOM_02"
+        ]
+      ],
+      "answer_choices": [
+        "ROOM_01",
+        "ROOM_02",
+        "NOT_PRESENT"
+      ],
+      "answer_choice_labels": [
+        "fragrance formulation laboratory",
+        "scent consultation salon",
+        "not present"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 50,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "scent_consultation_salon"
+        ],
+        "must_open": [],
+        "must_see": [
+          "scent_consultation_salon_fragrance_sample_box_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "fragrance_formulation_laboratory",
+          "scent_consultation_salon"
+        ]
+      },
+      "kinds": [
+        "fragrance_sample_box"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "scent_consultation_salon_fragrance_sample_box_0"
+      ],
+      "answer_instances": [
+        "scent_consultation_salon_fragrance_sample_box_0"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "scent_consultation_salon_fragrance_sample_box_0"
+        ]
+      ],
+      "oracle_answer": "scent consultation salon",
+      "oracle_read": [
+        "room_here"
+      ],
+      "truth": {
+        "alias": "scent_consultation_salon_fragrance_sample_box_0",
+        "kind": "fragrance_sample_box",
+        "room": "scent_consultation_salon",
+        "room_id": "scent_consultation_salon",
+        "room_name": "scent consultation salon",
+        "spawn": {
+          "x": 5.25,
+          "y": 1.5,
+          "z": 5.25,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "fragrance_formulation_laboratory"
+        },
+        "room_answer_choice": "ROOM_02",
+        "room_answer_label": "scent consultation salon",
+        "absence_option": "NOT_PRESENT"
+      },
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the fragrance sample box this task refers to -- this exact object",
+          "../references/9d279b3fe60028ca9a8a26fae9d1471c50eac5837168127a95eb0efc17d0c298.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_localization__scent_consultation_salon_fragrance_sample_box_1",
+      "family": "room_localization",
+      "instruction": "Find the fragrance sample box somewhere in this house, then tell me which room it is in. If there is no fragrance sample box here, choose NOT_PRESENT instead of guessing a room.\n\nRoom choices (use exactly one option key):\n- ROOM_01 — fragrance formulation laboratory\n- ROOM_02 — scent consultation salon\n- NOT_PRESENT — not present\nReply with only one option key, for example ROOM_01 or NOT_PRESENT.",
+      "referents": [
+        "scent_consultation_salon_fragrance_sample_box_1"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "ROOM_02"
+        ]
+      ],
+      "answer_choices": [
+        "ROOM_01",
+        "ROOM_02",
+        "NOT_PRESENT"
+      ],
+      "answer_choice_labels": [
+        "fragrance formulation laboratory",
+        "scent consultation salon",
+        "not present"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 50,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "scent_consultation_salon"
+        ],
+        "must_open": [],
+        "must_see": [
+          "scent_consultation_salon_fragrance_sample_box_1"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "fragrance_formulation_laboratory",
+          "scent_consultation_salon"
+        ]
+      },
+      "kinds": [
+        "fragrance_sample_box"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "scent_consultation_salon_fragrance_sample_box_1"
+      ],
+      "answer_instances": [
+        "scent_consultation_salon_fragrance_sample_box_1"
+      ],
+      "plan": [
+        [
+          "navigate",
+          "scent_consultation_salon_fragrance_sample_box_1"
+        ]
+      ],
+      "oracle_answer": "scent consultation salon",
+      "oracle_read": [
+        "room_here"
+      ],
+      "truth": {
+        "alias": "scent_consultation_salon_fragrance_sample_box_1",
+        "kind": "fragrance_sample_box",
+        "room": "scent_consultation_salon",
+        "room_id": "scent_consultation_salon",
+        "room_name": "scent consultation salon",
+        "spawn": {
+          "x": 3.0,
+          "y": 1.5,
+          "z": 8.25,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "fragrance_formulation_laboratory"
+        },
+        "room_answer_choice": "ROOM_02",
+        "room_answer_label": "scent consultation salon",
+        "absence_option": "NOT_PRESENT"
+      },
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the fragrance sample box this task refers to -- this exact object",
+          "../references/e4f58091fec7c6a6d56061605642a0f6eaf97c94e3ac3ad6b72f296532f7b9cc.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "room_area__fragrance_formulation_laboratory",
+      "family": "room_area",
+      "instruction": "Find the fragrance formulation laboratory in this house, then tell me roughly how big its floor is, in square metres, as a number. I want the floor area of that one room, measured inside its walls -- not the whole house, and not the other rooms.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_choice_labels": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "m2",
+      "answer_match": "count",
+      "max_steps": 50,
+      "answer_number": 30,
+      "answer_tolerance": 7.5,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "fragrance_formulation_laboratory"
+        ],
+        "must_open": [],
+        "must_see": [],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "fragrance_formulation_laboratory",
+          "scent_consultation_salon"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "30",
+      "oracle_read": [
+        "room_area",
+        "fragrance_formulation_laboratory"
+      ],
+      "truth": {
+        "room": "fragrance_formulation_laboratory",
+        "name": "fragrance formulation laboratory",
+        "m2": 30,
+        "tol_m2": 4,
+        "spawn": {
+          "x": 5.5,
+          "y": 1.5,
+          "z": 4.5,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "scent_consultation_salon"
+        }
+      },
+      "goal_images": []
+    }
+  ],
+  "dataset_version": "1.1"
+}

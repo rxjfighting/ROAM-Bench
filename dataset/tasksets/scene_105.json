@@ -1,0 +1,581 @@
+{
+  "schema_version": 4,
+  "benchmark": "ROAM-Bench",
+  "scene": "scene_105",
+  "spawn": {
+    "x": -2.5,
+    "y": 1.5,
+    "z": -0.31,
+    "yaw_deg": 0.0,
+    "horizon_deg": 0.0,
+    "room": "living_room"
+  },
+  "specs": [
+    {
+      "task_id": "object_count__wall_clock",
+      "family": "object_count",
+      "instruction": "Search this house and count the wall clocks. There is more than one room, and there may be wall clocks in more than one of them. When you have finished searching, tell me how many wall clocks there are in total, as a number.",
+      "referents": [],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "count",
+      "max_steps": 175,
+      "answer_number": 6,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "bedroom",
+          "dining_room",
+          "foyer",
+          "kitchen",
+          "living_room",
+          "master_bedroom"
+        ],
+        "must_open": [],
+        "must_see": [
+          "bedroom_wall_clock_0",
+          "dining_room_wall_clock_0",
+          "foyer_wall_clock_0",
+          "kitchen_wall_clock_0",
+          "living_room_clock_0",
+          "master_bedroom_wall_clock_0"
+        ],
+        "min_distinct_viewpoints": 5,
+        "search_regions": [
+          "bathroom",
+          "bedroom",
+          "dining_room",
+          "foyer",
+          "kitchen",
+          "living_room",
+          "master_bedroom"
+        ]
+      },
+      "kinds": [
+        "wall_clock"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "bedroom_wall_clock_0",
+        "dining_room_wall_clock_0",
+        "foyer_wall_clock_0",
+        "kitchen_wall_clock_0",
+        "living_room_clock_0",
+        "master_bedroom_wall_clock_0"
+      ],
+      "answer_instances": [
+        "bedroom_wall_clock_0",
+        "dining_room_wall_clock_0",
+        "foyer_wall_clock_0",
+        "kitchen_wall_clock_0",
+        "living_room_clock_0",
+        "master_bedroom_wall_clock_0"
+      ],
+      "plan": [],
+      "oracle_answer": "6",
+      "oracle_read": [
+        "count_seen",
+        "wall_clock",
+        [
+          "bathroom",
+          "bedroom",
+          "dining_room",
+          "foyer",
+          "kitchen",
+          "living_room",
+          "master_bedroom"
+        ]
+      ],
+      "truth": {
+        "kind": "wall_clock",
+        "total": 6,
+        "noun": "wall clock",
+        "rooms": [
+          "bedroom",
+          "dining_room",
+          "foyer",
+          "kitchen",
+          "living_room",
+          "master_bedroom"
+        ],
+        "per_room": {
+          "bedroom": 1,
+          "dining_room": 1,
+          "foyer": 1,
+          "kitchen": 1,
+          "living_room": 1,
+          "master_bedroom": 1
+        },
+        "spawn": {
+          "x": 1.65,
+          "y": 1.5,
+          "z": -1.35,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "bathroom"
+        },
+        "category_membership": {
+          "schema": "reviewed-category-members-v1",
+          "aliases": [
+            "bedroom_wall_clock_0",
+            "dining_room_wall_clock_0",
+            "foyer_wall_clock_0",
+            "kitchen_wall_clock_0",
+            "living_room_clock_0",
+            "master_bedroom_wall_clock_0"
+          ],
+          "category": "wall_clock"
+        }
+      },
+      "goal_images": [
+        [
+          "one visual example of the object category 'wall clock' -- the task is about every wall clock in the house, and the others need not look like this one",
+          "../references/104358f905b8596ddbfb9c578f594ed6a88faeaf0a7af34d4748e322386ee200.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "relocation__bedroom_digital_alarm_clock_0__to__kitchen_breakfast_table_0",
+      "family": "relocation",
+      "instruction": "Find the digital alarm clock, pick it up, and put it on the breakfast table.",
+      "referents": [
+        "bedroom_digital_alarm_clock_0",
+        "kitchen_breakfast_table_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('bedroom_digital_alarm_clock_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('bedroom_digital_alarm_clock_0','kitchen_breakfast_table_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 175,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "bedroom",
+          "kitchen"
+        ],
+        "must_open": [
+          "bedroom_bedside_table_0"
+        ],
+        "must_see": [
+          "bedroom_digital_alarm_clock_0",
+          "kitchen_breakfast_table_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "bathroom",
+          "bedroom",
+          "dining_room",
+          "foyer",
+          "kitchen",
+          "living_room",
+          "master_bedroom"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "bedroom_digital_alarm_clock_0",
+        "kitchen_breakfast_table_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "bedroom_digital_alarm_clock_0"
+        ],
+        [
+          "pick",
+          "bedroom_digital_alarm_clock_0"
+        ],
+        [
+          "navigate",
+          "kitchen_breakfast_table_0"
+        ],
+        [
+          "place",
+          "kitchen_breakfast_table_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "bedroom_digital_alarm_clock_0",
+        "from_room": "bedroom",
+        "from_room_id": "bedroom",
+        "dest": "kitchen_breakfast_table_0",
+        "to_room": "kitchen",
+        "to_room_id": "kitchen",
+        "spawn": {
+          "x": 0.3,
+          "y": 1.5,
+          "z": 3.0,
+          "yaw_deg": 180.0,
+          "horizon_deg": 0.0,
+          "room": "master_bedroom"
+        }
+      },
+      "goal_images": [
+        [
+          "the digital alarm clock this task refers to -- this exact object",
+          "../references/c3d1299e5b403a7c91c0383541962057b3217f2a8e0c9e71fb77443b0dbc11c2.png"
+        ],
+        [
+          "the breakfast table this task refers to -- this exact object",
+          "../references/f7043e059d6ab9b5c3c670df74ee3fd1bf9342502817f315cb3c86fc303f32c0.png"
+        ]
+      ],
+      "scene_variant": {
+        "schema": "task-scene-variant-v1",
+        "exclude": [
+          "master_bedroom_digital_bedside_alarm_clock_0"
+        ]
+      }
+    },
+    {
+      "task_id": "relocation__master_bedroom_water_tumbler_0__to__living_room_side_table_0",
+      "family": "relocation",
+      "instruction": "Find the water tumbler, pick it up, and put it on the side table.",
+      "referents": [
+        "master_bedroom_water_tumbler_0",
+        "living_room_side_table_0"
+      ],
+      "goals": [
+        {
+          "expr": "holding('master_bedroom_water_tumbler_0')",
+          "when": "ever",
+          "label": "picked up",
+          "weight": 1.0
+        },
+        {
+          "expr": "on('master_bedroom_water_tumbler_0','living_room_side_table_0')",
+          "when": "final",
+          "label": "placed",
+          "weight": 1.0
+        }
+      ],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 175,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "living_room",
+          "master_bedroom"
+        ],
+        "must_open": [
+          "master_bedroom_nightstand_1"
+        ],
+        "must_see": [
+          "living_room_side_table_0",
+          "master_bedroom_water_tumbler_0"
+        ],
+        "min_distinct_viewpoints": 2,
+        "search_regions": [
+          "bathroom",
+          "bedroom",
+          "dining_room",
+          "foyer",
+          "kitchen",
+          "living_room",
+          "master_bedroom"
+        ]
+      },
+      "kinds": [],
+      "receptacle_kinds": [],
+      "evidence": [
+        "master_bedroom_water_tumbler_0",
+        "living_room_side_table_0"
+      ],
+      "answer_instances": [],
+      "plan": [
+        [
+          "navigate",
+          "master_bedroom_water_tumbler_0"
+        ],
+        [
+          "pick",
+          "master_bedroom_water_tumbler_0"
+        ],
+        [
+          "navigate",
+          "living_room_side_table_0"
+        ],
+        [
+          "place",
+          "living_room_side_table_0"
+        ]
+      ],
+      "oracle_answer": null,
+      "oracle_read": null,
+      "truth": {
+        "object": "master_bedroom_water_tumbler_0",
+        "from_room": "master_bedroom",
+        "from_room_id": "master_bedroom",
+        "dest": "living_room_side_table_0",
+        "to_room": "living_room",
+        "to_room_id": "living_room",
+        "spawn": {
+          "x": -3.58,
+          "y": 1.5,
+          "z": 3.39,
+          "yaw_deg": 90.0,
+          "horizon_deg": 0.0,
+          "room": "kitchen"
+        }
+      },
+      "goal_images": [
+        [
+          "the water tumbler this task refers to -- this exact object",
+          "../references/18887f55819897abd3c23b85449ad51b94700b19c21f89194ae1b5b88f3bc5fa.png"
+        ],
+        [
+          "the side table this task refers to -- this exact object",
+          "../references/2a40e0d44aa36bb6052ace0b862363bd3e63521610aad4c2b8c5bf1ca81eb1f3.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "gap_width__bathroom_bathroom_vanity_0__bathroom_shower_cubicle_0",
+      "family": "gap_width",
+      "instruction": "Find the bathroom vanity and the shower cubicle in this house; they are in the same room, standing apart. Then tell me roughly how wide the clear gap between them is, in centimetres, as a number. Measure the empty floor from the edge of one to the edge of the other, not the distance between their centres.",
+      "referents": [
+        "bathroom_bathroom_vanity_0",
+        "bathroom_shower_cubicle_0"
+      ],
+      "goals": [],
+      "answer_keywords": [],
+      "answer_choices": [],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "cm",
+      "answer_match": "count",
+      "max_steps": 175,
+      "answer_number": 62,
+      "answer_tolerance": 10,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "bathroom"
+        ],
+        "must_open": [],
+        "must_see": [
+          "bathroom_bathroom_vanity_0",
+          "bathroom_shower_cubicle_0"
+        ],
+        "min_distinct_viewpoints": 1,
+        "search_regions": [
+          "bathroom"
+        ]
+      },
+      "kinds": [
+        "bathroom_vanity",
+        "shower_cubicle"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "bathroom_bathroom_vanity_0",
+        "bathroom_shower_cubicle_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "62",
+      "oracle_read": [
+        "gap_width",
+        "bathroom_bathroom_vanity_0",
+        "bathroom_shower_cubicle_0"
+      ],
+      "truth": {
+        "a": "bathroom_bathroom_vanity_0",
+        "b": "bathroom_shower_cubicle_0",
+        "cm": 62,
+        "room": "bathroom",
+        "tol_cm": 10,
+        "spawn": {
+          "x": -2.98,
+          "y": 1.5,
+          "z": 4.64,
+          "yaw_deg": 270.0,
+          "horizon_deg": 0.0,
+          "room": "dining_room"
+        }
+      },
+      "goal_images": [
+        [
+          "the bathroom vanity this task refers to -- this exact object",
+          "../references/3f72fa20db900c016d0f662707ba8612ca2a1ef2a7e4790c0a066356f0929c57.png"
+        ],
+        [
+          "the shower cubicle this task refers to -- this exact object",
+          "../references/0bb5be495a3d8ae1b1acb2e70d73e934bbab89ce936209ef89495b56c99575b7.png"
+        ]
+      ]
+    },
+    {
+      "task_id": "nearer_object_comparison__living_room_coffee_table_0",
+      "family": "nearer_object_comparison",
+      "instruction": "Somewhere in this house there are the bookshelf, the shower cubicle and the toilet. None of them is in the same room as the coffee table. Find out which one of them is closest to the coffee table, and answer with just that one thing. Compare the straight-line distances, not how far you had to walk.",
+      "referents": [
+        "living_room_coffee_table_0",
+        "bathroom_shower_cubicle_0",
+        "bathroom_toilet_0",
+        "bedroom_bookshelf_0"
+      ],
+      "goals": [],
+      "answer_keywords": [
+        [
+          "shower cubicle"
+        ]
+      ],
+      "answer_choices": [
+        "bookshelf",
+        "shower cubicle",
+        "toilet"
+      ],
+      "answer_from_pose": [],
+      "mutation": null,
+      "answer_vocabulary": [],
+      "answer_unit": "",
+      "answer_match": "word",
+      "max_steps": 175,
+      "answer_number": null,
+      "answer_tolerance": null,
+      "evidence_bound": {
+        "must_visit_regions": [
+          "bathroom",
+          "bedroom",
+          "living_room"
+        ],
+        "must_open": [],
+        "must_see": [
+          "bathroom_shower_cubicle_0",
+          "bathroom_toilet_0",
+          "bedroom_bookshelf_0",
+          "living_room_coffee_table_0"
+        ],
+        "min_distinct_viewpoints": 3,
+        "search_regions": [
+          "bathroom",
+          "bedroom",
+          "living_room"
+        ]
+      },
+      "kinds": [
+        "shower_cubicle",
+        "toilet",
+        "bookshelf",
+        "coffee_table"
+      ],
+      "receptacle_kinds": [],
+      "evidence": [
+        "living_room_coffee_table_0",
+        "bathroom_shower_cubicle_0",
+        "bathroom_toilet_0",
+        "bedroom_bookshelf_0"
+      ],
+      "answer_instances": [],
+      "plan": [],
+      "oracle_answer": "shower cubicle",
+      "oracle_read": [
+        "nearest_of",
+        "living_room_coffee_table_0",
+        [
+          [
+            "bathroom_shower_cubicle_0",
+            "shower cubicle"
+          ],
+          [
+            "bathroom_toilet_0",
+            "toilet"
+          ],
+          [
+            "bedroom_bookshelf_0",
+            "bookshelf"
+          ]
+        ]
+      ],
+      "truth": {
+        "x": "living_room_coffee_table_0",
+        "winner": "bathroom_shower_cubicle_0",
+        "choices": [
+          "bathroom_shower_cubicle_0",
+          "bathroom_toilet_0",
+          "bedroom_bookshelf_0"
+        ],
+        "words": [
+          "bookshelf",
+          "shower cubicle",
+          "toilet"
+        ],
+        "metres": {
+          "bathroom_shower_cubicle_0": 4.51,
+          "bathroom_toilet_0": 6.4,
+          "bedroom_bookshelf_0": 7.18
+        },
+        "lead_m": 1.89,
+        "x_room": "living_room",
+        "spawn": {
+          "x": -4.08,
+          "y": 1.5,
+          "z": 5.39,
+          "yaw_deg": 0.0,
+          "horizon_deg": 0.0,
+          "room": "kitchen"
+        }
+      },
+      "answer_choice_labels": [
+        "bookshelf",
+        "shower cubicle",
+        "toilet"
+      ],
+      "answer_choice_mode": "single",
+      "goal_images": [
+        [
+          "the coffee table this task refers to -- this exact object",
+          "../references/b2a31603eb888127282c0faad75198b19b9227d28de35782b36dbb55000e308c.png"
+        ],
+        [
+          "the shower cubicle this task refers to -- this exact object",
+          "../references/0bb5be495a3d8ae1b1acb2e70d73e934bbab89ce936209ef89495b56c99575b7.png"
+        ],
+        [
+          "the toilet this task refers to -- this exact object",
+          "../references/d299f6759ad774a8a540ed358167a7def3f2c04afd9299f2e43e61608897d6ac.png"
+        ],
+        [
+          "the bookshelf this task refers to -- this exact object",
+          "../references/91bd22cbb39e1ae1fdc897c8a16c61590558ae40b6c0e1471ca95aec0504700b.png"
+        ]
+      ]
+    }
+  ],
+  "dataset_version": "1.1"
+}
